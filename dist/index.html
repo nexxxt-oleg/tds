@@ -32,55 +32,159 @@
                         <li><a href="">Для скачивания</a></li>
                         <li><a href="">Сервисы</a></li>
                         <li><a href="">Контакты</a></li>
-                        <li><a href="">Цех распила</a></li>
+                        <li>
+                            <a href="">
+                                Цех распила
+                                <svg width="18" height="18" class="ico-red ml-8">
+                                    <use xlink:href="#svg-raspil"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
+                    <div class="d-flex align-items-center header__top__right">
+                        <ul class="nav nav--soc header__top__soc">
+                            <li>
+                                <a href="" target="_blank">
+                                    <svg width="18" height="11">
+                                        <use xlink:href="#svg-vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <svg width="18" height="15">
+                                        <use xlink:href="#svg-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="" class="d-inline-flex align-items-center header__top__cabinet">
+                            <svg width="18" height="18" class="mr-15">
+                                <use xlink:href="#svg-cabinet"></use>
+                            </svg>
+                            Личный кабинет
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="header__center">
+        <div class="header__center" itemscope itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content="ТД Сервер: всё для производства мебели ">
             <div class="container">
 
                 <div class="d-flex align-items-center header__center__row">
                     <a href="/" class="header__logo">
                         <img src="images/dist/logo.svg" alt="" width="192" height="49">
                     </a>
+                    <div class="header__city" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <div class="header__city__ico ico-red">
+                            <svg width="15" height="18">
+                                <use xlink:href="#svg-address"></use>
+                            </svg>
+                        </div>
+                        <div class="dropdown">
+                            <div class="header__city__active dropdown-toggle" data-bs-toggle="dropdown" itemprop="addressLocality">
+                                Москва
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li>1</li>
+                            </ul>
+                        </div>
+                        <time
+                                class="header__worcktime"
+                                itemprop="openingHours"
+                                datetime="Tu,Fr 09:00−18:00">
+                            Пн-Пт: 09:00–18:00
+                        </time>
+                    </div>
+                    <div class="header__phone">
+                        <div class="header__phone__ico ico-red">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-phone"></use>
+                            </svg>
+                        </div>
+                        <a href="tel:+74955101510" class="header__phone__val" itemprop="telephone">+7 495 510-15-10</a>
+                        <span class="header__phone__btn">Заказать звонок</span>
+                    </div>
+                    <div class="header__email">
+                        <div class="header__email__ico ico-red">
+                            <svg width="18" height="16">
+                                <use xlink:href="#svg-email"></use>
+                            </svg>
+                        </div>
+                        <a href="mailto:market@tdserver.ru" class="header__email__val" itemprop="email">market@tdserver.ru</a>
+                    </div>
 
-
-
-                    <div class="col-xl-6 cinema__header__col-menu">
-                        <ul class="nav cinema__header__nav justify-content-center">
+                    <div class="header__icons">
+                        <ul class="nav header__icons__list">
                             <li>
-                                <a href="">РАСПИСАНИЕ</a>
+                                <a href="" class="header__icons__item">
+                                    <div class="header__icons__item__svg">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-compare"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="header__icons__item__label">Сравнить</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="">Бонусная карта</a>
+                                <a href="" class="header__icons__item">
+                                    <span class="header__icons__item__count">0</span>
+                                    <div class="header__icons__item__svg">
+                                        <svg width="22" height="24">
+                                            <use xlink:href="#svg-favourites"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="header__icons__item__label">Избранное</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="">Сертификаты</a>
-                            </li>
-                            <li>
-                                <a href="">АРЕНДА ЗАЛА</a>
-                            </li>
-                            <li>
-                                <a href="">АКЦИИ</a>
+                                <a href="" class="header__icons__item">
+                                    <span class="header__icons__item__count active">3</span>
+                                    <div class="header__icons__item__svg">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-cart"></use>
+                                        </svg>
+                                    </div>
+                                    <span class="header__icons__item__label">Корзина</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6 col-sm-5 col-lg-5 col-xl-2 cinema__header__col-right d-flex align-items-center justify-content-end">
-                        <label class="cinema__theme-switch">
-                            <input class="d-none" type="checkbox" name="theme" id="themeSwitch" value="black" checked>
-                            <span class="cinema__theme-switch__value"></span>
-                        </label>
-                        <a data-bs-toggle="modal" data-bs-target="#regModal" href="#regModal"
-                           class="cinema__header__col-right__link">
-                            <svg width="24" height="24">
-                                <use xlink:href="#svg-account"></use>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom__row d-flex">
+                    <div class="header__bottom__col-btn">
+                        <button class="header__bottom__btn btn btn--red">
+                            <span class="text-uppercase">Каталог</span>
+                            <svg width="18" height="12" >
+                                <use xlink:href="#svg-burger"></use>
                             </svg>
-                        </a>
-                        <a href="" class="cinema__header__col-right__link" data-bs-toggle="modal"
-                           data-bs-target="#menuAccount">
-                            <i class="cinema__header__menu"></i>
-                        </a>
+                        </button>
+                    </div>
+                    <div class="header__bottom__col-btn">
+                        <button class="header__bottom__btn btn btn--silver">
+                            <span class="text-uppercase">БРЕНДЫ</span>
+                            <svg width="18" height="12" >
+                                <use xlink:href="#svg-burger"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="header__bottom__col-search">
+                        <form action="">
+                            <div class="header__bottom__search">
+                                <input type="text" autocomplete="off" required name="s" class="header__bottom__search__inp" placeholder="Поиск по товарам, категориям, брендам">
+                                <button type="submit" class="header__bottom__search__submit">
+                                    <svg width="18" height="18" >
+                                        <use xlink:href="#svg-search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -203,725 +307,468 @@
     </div>
 
 
-<div class="cinema__wrapper">
+<div class="container">
+    <div class="swiper home-slider" id="homeSlider">
 
-    <div class="index-slider">
-        <div id="indexSlider" class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="" class="index-slider__item">
-                        <picture>
-                            <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
-                            <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
-                            <img src="images/dist/sl1.jpg" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="index-slider__item">
-                        <picture>
-                            <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
-                            <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
-                            <img src="images/dist/sl1.jpg" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="index-slider__item">
-                        <picture>
-                            <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
-                            <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
-                            <img src="images/dist/sl1.jpg" alt="">
-                        </picture>
-                    </a>
-                </div>
-                <div class="swiper-slide">
-                    <a href="" class="index-slider__item">
-                        <picture>
-                            <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
-                            <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
-                            <img src="images/dist/sl1.jpg" alt="">
-                        </picture>
-                    </a>
-                </div>
-
-            </div>
-            <div class="swiper-pagination" id="indexSliderPag">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="cinema__top-filter">
-            <div class="cinema__top-filter__row">
-                <ul class="nav cinema__top-filter__date flex-grow-1">
-                    <li>
-                        <label class="cinema__top-filter__date__item">
-                            <input class="d-none" type="radio" name="date" value="today" checked>
-                            <div class="cinema__top-filter__date__item__val">
-                                Сегодня
-                            </div>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="cinema__top-filter__date__item">
-                            <input class="d-none" type="radio" name="date" value="tomorrow">
-                            <div class="cinema__top-filter__date__item__val">
-                                Завтра
-                            </div>
-                        </label>
-                    </li>
-                    <li>
-                        <label class="cinema__top-filter__date__item">
-                            <input class="d-none" type="radio" name="date" value="soon">
-                            <div class="cinema__top-filter__date__item__val">
-                                Скоро
-                            </div>
-                        </label>
-                    </li>
-                    <li>
-                        <div class="cinema__top-filter__date__item">
-                            <input id="dateCustom" class="d-none" type="radio" name="date" value="custom">
-                            <div class="cinema__top-filter__date__item__val cinema__top-filter__date__item__val--date">
-                                <div class="cinema__top-filter__date__ico">
-                                    <svg width="12" height="12">
-                                        <use xlink:href="#svg-date"></use>
-                                    </svg>
-                                </div>
-                                <input class="cinema__top-filter__date-inp" id="datepicker" type="text" readonly
-                                       placeholder="ВЫБРАТЬ ДАТУ">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <span class="cinema__header__city" data-bs-toggle="modal" data-bs-target="#cityFirstModal">
-                    <svg width="10" height="12">
-                        <use xlink:href="#svg-adr"></use>
-                    </svg>
-                    <span>Санкт-Петербург</span>
-                </span>
-            </div>
-        </div>
-        <ul class="nav cinema__top-filter__params">
-            <li>
-                <label class="custom-chekbox">
-                    <input type="radio" name="fiter" value="all" class="d-none" checked>
-                    <span class="custom-chekbox__value">Все</span>
-                </label>
-            </li>
-            <li>
-                <label class="custom-chekbox">
-                    <input type="radio" name="fiter" value="Пушкинская карта" class="d-none">
-                    <span class="custom-chekbox__value">Пушкинская карта</span>
-                </label>
-            </li>
-            <li>
-                <label class="custom-chekbox">
-                    <input type="radio" name="fiter" value="2D" class="d-none">
-                    <span class="custom-chekbox__value">2D</span>
-                </label>
-            </li>
-            <li>
-                <label class="custom-chekbox">
-                    <input type="radio" name="fiter" value="3D" class="d-none">
-                    <span class="custom-chekbox__value">3D</span>
-                </label>
-            </li>
-            <li>
-                <label class="custom-chekbox">
-                    <input type="radio" name="fiter" value="Dolby Atmos" class="d-none">
-                    <span class="custom-chekbox__value">Dolby Atmos</span>
-                </label>
-            </li>
-            <li>
-                <label class="custom-chekbox">
-                    <input type="radio" name="fiter" value="1" class="d-none">
-                    <span class="custom-chekbox__value">
-                        <svg width="16" height="18">
-                            <use xlink:href="#svg-invalid"></use>
-                        </svg>
-                    </span>
-                </label>
-            </li>
-        </ul>
-        <div class="row fpad60 mob-fpad10">
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>3D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">Сердце пармы</a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">12+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">
-                            Либерея: Охотники за сокровищами
-                        </a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">
-                                    <svg width="11" height="12">
-                                        <use xlink:href="#svg-invalid"></use>
-                                    </svg>
-                                </span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">16+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>3D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">Сердце пармы</a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">12+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">
-                            Либерея: Охотники за сокровищами
-                        </a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">16+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>3D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">Сердце пармы</a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">12+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">
-                            Либерея: Охотники за сокровищами
-                        </a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">16+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">
-                            Либерея: Охотники за сокровищами
-                        </a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">ПРЕМЬЕРА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">ПУШКИНСКАЯ КАРТА</span>
-                            </li>
-                            <li>
-                                <span class="cinema__film__tags__item">16+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-6 fpad40">
-                <div class="cinema__film">
-                    <div class="cinema__film__img">
-                        <picture>
-
-                            <source
-                                    data-srcset="images/dist/film.jpg 1x, images/dist/film@2.jpg 2x"/>
-                            <img alt="" class="lazy" data-src="images/dist/film.jpg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                                 width="270" height="385"/>
-                        </picture>
-                        <div class="cinema__film__img__hover">
-                            <ul class="nav cinema__film__info-list justify-content-center">
-                                <li>2D</li>
-                                <li>Dolby Atmos</li>
-                            </ul>
-                            <a href="" class="button-border mb-10"><span>Подробнее о фильме</span></a>
-                            <a href="" class="button-border"><span>Расписание и билеты</span></a>
-                        </div>
-                    </div>
-                    <div class="cinema__film__footer">
-                        <a href="" class="cinema__film__title">
-                            Либерея: Охотники за сокровищами
-                        </a>
-                        <div class="cinema__film__genre">Драма, История</div>
-                        <ul class="nav justify-content-center cinema__film__tags">
-                            <li>
-                                <span class="cinema__film__tags__item">
-                                    <svg width="11" height="12">
-                                        <use xlink:href="#svg-invalid"></use>
-                                    </svg>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="cinema__film__tags__item">16+</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="cinema__action-slider">
-            <div class="cinema__action-slider__header">
-                <div class="cinema__action-slider__caption">
-                    Новости и акции
-                    <div class="dropdown cinema__action-slider__caption__dropdown">
-                        <a class="dropdown__caption" data-bs-toggle="dropdown">
-                            <span>Красноярске</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="">во всех городах</a>
-                            </li>
-                            <li><a href="">Санкт-Петербурге</a></li>
-                            <li class="active"><a href="">Красноярске</a></li>
-                            <li><a href="">Череповце</a></li>
-                            <li><a href="">Красногорске</a></li>
-                            <li><a href="">Мытищах</a></li>
-                            <li><a href="">Волгограде</a></li>
-                            <li><a href="">Тольятти</a></li>
-                            <li><a href="">Кунцево</a></li>
-                            <li><a href="">Пушкино</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hidden-mob">
-                    <a href="" class="more-link">Смотреть все</a>
-                </div>
-            </div>
-            <div class="cinema__action-slider__wrap">
-    <div id="newsSlider" class="swiper">
         <div class="swiper-wrapper">
+
             <div class="swiper-slide">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
+                <div class="home-slider__item">
+                    <div class="home-slider__item__inner">
+                        <h2>AvanTech & Sensys:<br>
+                            команда победителей.</h2>
+                        <p>При покупке ящиков AvanTech YOU* - петли Sensys в подарок!</p>
                     </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__desc">Но, если вы не торопитесь, то можете испытать удачу и выиграть билет в кино на этот фильм!</div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
+                        <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
+                        <img src="images/dist/sl1.jpg" loading="lazy" alt="">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
             </div>
+
             <div class="swiper-slide">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
+                <div class="home-slider__item">
+                    <div class="home-slider__item__inner">
+                        <h2>AvanTech & Sensys:<br>
+                            команда победителей.</h2>
+                        <p>При покупке ящиков AvanTech YOU* - петли Sensys в подарок!</p>
                     </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__date">
-                        21 Октября
-                    </div>
-                </a>
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
+                        <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
+                        <img src="images/dist/sl1.jpg" loading="lazy" alt="">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
             </div>
+
             <div class="swiper-slide">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
+                <div class="home-slider-item">
+                    <div class="home-slider__item__inner">
+                        <h2>AvanTech & Sensys:<br>
+                            команда победителей.</h2>
+                        <p>При покупке ящиков AvanTech YOU* - петли Sensys в подарок!</p>
                     </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__date">
-                        22 Октября
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="" class="cinema__action-item">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="cinema__action-item__date">
-                        19 Октября
-                    </div>
-                </a>
+                    <picture>
+                        <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
+                        <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
+                        <img src="images/dist/sl1.jpg" loading="lazy" alt="">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
             </div>
 
         </div>
-    </div>
-    <button id="newsSliderNext" class="swiper__nav swiper__nav--next swiper-button-disabled">
-        <svg width="15" height="28">
-            <use xlink:href="#svg-next"></use>
-        </svg>
-    </button>
-    <button id="newsSliderPrev" class="swiper__nav swiper__nav--prev swiper-button-disabled">
-        <svg width="15" height="28">
-            <use xlink:href="#svg-prev"></use>
-        </svg>
-    </button>
-</div>
+        <div class="home-slider__pagination"></div>
+        <div class="home-slider__nav">
+            <button class="swiper-prev slider-nav">
+                <svg width="18" height="18" >
+                    <use xlink:href="#svg-prev"></use>
+                </svg>
+            </button>
+            <button class="swiper-next slider-nav">
+                <svg width="18" height="18" >
+                    <use xlink:href="#svg-next"></use>
+                </svg>
+            </button>
         </div>
-        <div class="cinema__action-slider">
-            <div class="cinema__action-slider__header">
-                <div class="cinema__action-slider__caption">
-                    Новости и акции
-                    <div class="dropdown cinema__action-slider__caption__dropdown">
-                        <a class="dropdown__caption" data-bs-toggle="dropdown">
-                            <span>во всех городах</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="active">
-                                <a href="">во всех городах</a>
-                            </li>
-                            <li><a href="">в Санкт-Петербурге</a></li>
-                            <li><a href="">в Красноярске</a></li>
-                            <li><a href="">в Череповце</a></li>
-                            <li><a href="">в Красногорске</a></li>
-                            <li><a href="">в Мытищах</a></li>
-                            <li><a href="">в Волгограде</a></li>
-                            <li><a href="">в Тольятти</a></li>
-                            <li><a href="">в Кунцево</a></li>
-                            <li><a href="">в Пушкино</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="hidden-mob">
-                    <a href="" class="more-link">Смотреть все</a>
-                </div>
-            </div>
-            <div class="cinema__action-slider__wrap">
-    <div id="actionSlider" class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="" class="cinema__action-item d-flex flex-column h-100">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="mt-auto">
-                        <div class="btn-yellow--submit btn-yellow">
-                            Подробнее об акции
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="" class="cinema__action-item d-flex flex-column h-100">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="mt-auto">
-                        <div class="btn-yellow--submit btn-yellow">
-                            Подробнее об акции
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="" class="cinema__action-item d-flex flex-column h-100">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="mt-auto">
-                        <div class="btn-yellow--submit btn-yellow">
-                            Подробнее об акции
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="" class="cinema__action-item d-flex flex-column h-100">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="mt-auto">
-                        <div class="btn-yellow--submit btn-yellow">
-                            Подробнее об акции
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="swiper-slide">
-                <a href="" class="cinema__action-item d-flex flex-column h-100">
-                    <div class="cinema__action-item__img">
-                        <picture>
-                            <source srcset="images/dist/action.jpg 1x, images/dist/action@2.jpg 2x">
-                            <img src="images/dist/action.jpg" alt="" width="370" height="278">
-                        </picture>
-                    </div>
-                    <div class="cinema__action-item__title">
-                        Каждую среду билет в кино, попкорн и напиток по единой цене 250 руб.
-                    </div>
-                    <div class="mt-auto">
-                        <div class="btn-yellow--submit btn-yellow">
-                            Подробнее об акции
-                        </div>
-                    </div>
-                </a>
-            </div>
 
-        </div>
+
     </div>
-    <button id="actionSliderNext" class="swiper__nav swiper__nav--next swiper-button-disabled">
-        <svg width="15" height="28">
-            <use xlink:href="#svg-next"></use>
-        </svg>
-    </button>
-    <button id="actionSliderPrev" class="swiper__nav swiper__nav--prev swiper-button-disabled">
-        <svg width="15" height="28">
-            <use xlink:href="#svg-prev"></use>
-        </svg>
-    </button>
-</div>
+
+    <div class="row catalog-categories">
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat1.jpg, images/dist/cat1@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat1.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Пластики
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat2.jpg, images/dist/cat2@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat2.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Ламинированная<br>
+                    ДСП
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat3.jpg, images/dist/cat3@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat3.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Панели, профили декоративные
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat4.jpg, images/dist/cat4@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat4.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Компакт плиты
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat5.jpg, images/dist/cat5@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat5.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Столешницы и мебельные щиты
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat6.jpg, images/dist/cat6@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat6.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Плитные материалы
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat7.jpg, images/dist/cat7@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat7.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Системы для шкафов
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat8.jpg, images/dist/cat8@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat8.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Кромочные материалы
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat9.jpg, images/dist/cat9@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat9.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Hettich
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat10.jpg, images/dist/cat10@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat10.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Kessebohmer
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat11.jpg, images/dist/cat11@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat11.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Оснащение шкафов
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat12.jpg, images/dist/cat12@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat12.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Оснащение шкафов
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat13.jpg, images/dist/cat13@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat13.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Кухонные комплектующие
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat14.jpg, images/dist/cat14@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat14.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Кухонные мойки, смесители и аксессуары
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat15.jpg, images/dist/cat15@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat15.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Механизмы раздвижных столов
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat16.jpg, images/dist/cat16@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat16.pg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Системы выдвижения
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat17.jpg, images/dist/cat17@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat17.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Петли мебельные
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat18.jpg, images/dist/cat18@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat18.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Крепежная фурнитура
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat19.jpg, images/dist/cat19@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat19.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Торговые, гардеробные и каркасные системы
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat20.jpg, images/dist/cat20@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat20.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Мебельные ноги и опоры
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat21.jpg, images/dist/cat21@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat21.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Лицевая фурнитура
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat22.jpg, images/dist/cat22@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat22.pg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Освещение и электрика
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat23.jpg, images/dist/cat23@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat23.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Мебельные ручки и крючки
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat24.jpg, images/dist/cat24@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat24.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Трубы
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat25.jpg, images/dist/cat25.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat25.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Полкодержатели и консоли
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat26.jpg, images/dist/cat26@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat26.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Замки мебельные
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat27.jpg, images/dist/cat27@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat27.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Фасадный профиль
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat28.jpg, images/dist/cat28@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat28.pg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Реставрационные материалы
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat29.jpg, images/dist/cat29@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat29.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Инструменты, расходники
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-2 col-lg-3 catalog-categories__item">
+            <a href="">
+                <picture>
+                    <source data-srcset="images/dist/cat30.jpg, images/dist/cat30@2.jpg 2x">
+                    <img    width="170" height="170"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                            data-src="images/dist/cat30.jpg" class="lazy" alt="">
+                </picture>
+                <div class="catalog-categories__item__title">
+                    Образцы, буклеты, экспозиторы
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -1606,212 +1453,73 @@
 
 
     <div style="display: none">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-        <symbol id="svg-adr" viewBox="0 0 433.1 512">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="svg-raspil" viewBox="0 0 409.6 409.6">
             <path fill="currentColor"
-                  d="M369.67,63.43A216.55,216.55,0,0,0,0,216.55c0,117,110.64,214.34,170.08,266.62,8.26,7.27,15.39,13.54,21.07,18.85a37.31,37.31,0,0,0,50.8,0c5.68-5.31,12.81-11.58,21.07-18.85C322.46,430.89,433.1,333.56,433.1,216.55A215.13,215.13,0,0,0,369.67,63.43ZM243.21,460.65c-8.44,7.43-15.73,13.84-21.74,19.45a7.22,7.22,0,0,1-9.84,0c-6-5.61-13.3-12-21.75-19.45C134,411.5,30,320,30,216.55,30,113.68,113.68,30,216.55,30S403.1,113.68,403.1,216.55C403.11,320,299.09,411.5,243.21,460.65Z"/>
-            <path fill="currentColor"
-                  d="M216.55,112.94A95.43,95.43,0,1,0,312,208.37,95.54,95.54,0,0,0,216.55,112.94Zm0,160.86A65.44,65.44,0,1,1,282,208.37,65.51,65.51,0,0,1,216.55,273.8Z"/>
+                  d="M367.09,180.7l30.81-4.6c13.84-2,15.67-10.1,4.05-17.9l-56.44-37.78,26.7-16c12-7.2,10.62-15.34-3.11-18.1L302.53,73l18.52-25c8.33-11.23,3.95-18.23-9.8-15.51l-66.6,13.18,7.55-30.21c3.38-13.59-3.35-18.35-15-10.59L180.7,42.51,176.12,11.7C174.05-2.16,166-4,158.2,7.67l-37.77,56.4-16-26.69c-7.2-12-15.34-10.6-18.1,3.13L73,107.07,48,88.54c-11.25-8.33-18.23-3.93-15.5,9.83L45.64,165,15.42,157.4c-13.58-3.4-18.35,3.37-10.58,15l37.67,56.5L11.7,233.5c-13.86,2.05-15.66,10.1-4,17.9l56.4,37.77-26.7,16c-12,7.2-10.6,15.33,3.13,18.08l66.57,13.32-18.51,25c-8.36,11.23-4,18.22,9.81,15.51L165,364l-7.57,30.21c-3.4,13.59,3.37,18.34,15,10.59l56.5-37.67,4.6,30.8c2.05,13.83,10.1,15.67,17.9,4l37.78-56.41,16,26.7c7.2,12,15.33,10.6,18.08-3.13l13.32-66.57,25,18.53c11.23,8.33,18.22,3.94,15.51-9.82L364,244.65l30.22,7.56c13.58,3.38,18.33-3.35,10.58-15ZM204.8,273.07a68.27,68.27,0,1,1,68.26-68.27A68.29,68.29,0,0,1,204.8,273.07Z"/>
         </symbol>
-
-        <symbol id="svg-date" viewBox="0 0 493.04 512">
+        <symbol id="svg-vk" viewBox="0 0 532.34 303.73">
             <path fill="currentColor"
-                  d="M67.89,512H425.15A68,68,0,0,0,493,444.11V105.81a67.94,67.94,0,0,0-67.89-67.88H398.22V19a19,19,0,0,0-37.92,0v19H132.74V19a19,19,0,0,0-37.93,0v19H67.89A67.94,67.94,0,0,0,0,105.81v338.3A68,68,0,0,0,67.89,512Zm-30-406.19a30,30,0,0,1,30-30H94.81v19a19,19,0,1,0,37.93,0v-19H360.3v19a19,19,0,1,0,37.92,0v-19h26.93a30,30,0,0,1,30,30v55.38H37.93Zm0,93.3H455.11v245a30,30,0,0,1-30,30H67.89a30,30,0,0,1-30-30Z"/>
+                  d="M472,127q11.36-14.67,18-23.56Q538,39.67,531.59,21.94l-1.67-2.77q-1.65-2.51-8.59-4.58T503.6,13.9l-79.83.56a22.85,22.85,0,0,0-5.54.13,15.37,15.37,0,0,0-3.61.83l-1.38.69-1.11.83a12.39,12.39,0,0,0-3,2.92,19,19,0,0,0-2.78,4.85,450.83,450.83,0,0,1-29.65,62.36q-10.26,17.19-18.85,29.8T343.4,135.43A98.59,98.59,0,0,1,332.87,145c-3.15,2.42-5.55,3.43-7.2,3.06s-3.24-.74-4.72-1.12a18.13,18.13,0,0,1-6.23-6.78,30.4,30.4,0,0,1-3.19-10.81q-.82-6.51-1-11.23t.14-13.31q.29-8.58.28-11.64,0-10.51.41-22.86t.7-19.54q.27-7.2.27-15.25a63.68,63.68,0,0,0-1-12.61A44.7,44.7,0,0,0,308.48,14a14.83,14.83,0,0,0-5.69-6.64,31.69,31.69,0,0,0-9.28-3.75Q278.81.31,256.09,0,204.54-.5,189.85,6.69A37.53,37.53,0,0,0,179.32,15q-5,6.1-1.39,6.65,16.63,2.49,23.56,11.92l1.67,3.32q1.93,3.62,3.88,12.76a129.15,129.15,0,0,1,2.49,20.23,214,214,0,0,1,0,34.65Q208.15,119,206.9,127a44.79,44.79,0,0,1-3.74,13,52.73,52.73,0,0,1-3.33,6.11,4.71,4.71,0,0,1-1.38,1.38,20.79,20.79,0,0,1-7.48,1.38q-3.89,0-9.43-3.88A65.73,65.73,0,0,1,170,134.32a142.3,142.3,0,0,1-13.45-19q-7.47-12.18-15.52-28.82l-4.43-8q-4.15-7.75-11.36-22.58T112.53,27.2a18.37,18.37,0,0,0-6.65-8.87l-1.39-.83a18.3,18.3,0,0,0-4.43-2.35,29.34,29.34,0,0,0-6.38-1.81l-75.94.55q-11.64,0-15.8,5.28L.83,20.83A9,9,0,0,0,0,25.26a22.22,22.22,0,0,0,1.66,7.48q16.63,39.09,36.17,75.39t34,58.49q14.42,22.19,29.38,41.85T121,233.68q4.85,5.56,7.62,8.32l6.92,6.66q6.65,6.65,19.55,15.94a326.92,326.92,0,0,0,28.55,18.28,154.74,154.74,0,0,0,36.44,14.7,125.87,125.87,0,0,0,40.47,4.57h31.87q9.7-.82,14.69-6.1l1.1-1.38a18.41,18.41,0,0,0,2.08-5.12,28.12,28.12,0,0,0,1-7.62,90.81,90.81,0,0,1,1.8-21.48q2.07-9.57,4.71-14.42a35.45,35.45,0,0,1,6-8.18,23.74,23.74,0,0,1,4.71-4,22.82,22.82,0,0,1,2.22-1q6.64-2.21,15.66,4.3a92.24,92.24,0,0,1,16.91,16.08q7.89,9.56,19,21.48t19.4,17.73l5.55,3.34a67.66,67.66,0,0,0,14.41,6.09q8.87,2.78,15.52,1.39l71-1.12q10.53,0,16.35-3.46c3.88-2.3,6.19-4.85,6.93-7.62a21.61,21.61,0,0,0,.14-9.42,34.74,34.74,0,0,0-1.94-7.34,37.82,37.82,0,0,0-1.81-3.46q-13.86-24.95-52.94-61.26l-.55-.55-.28-.28-.27-.27h-.28Q455.66,191.58,451,185.76q-8.59-11.07-3.88-22.44Q450.37,154.7,472,127Z"/>
         </symbol>
-
-        <symbol id="svg-invalid" viewBox="0 0 451.5 512">
-            <path fill="currentColor"
-                  d="M302.55,360.73c-11.64-4.66-25.6,4.65-27.93,16.29-11.64,51.2-58.18,86.11-111.71,86.11-65.16,0-116.36-51.2-116.36-116.37,0-44.21,25.59-86.11,67.49-104.72,11.63-4.66,16.29-18.62,11.63-30.26s-18.62-16.29-30.25-11.64C37.24,228.07,0,286.25,0,349.09,0,439.86,72.14,512,162.91,512c72.15,0,137.31-51.2,155.93-123.35C323.49,377,314.18,363.05,302.55,360.73Z"/>
-            <path fill="currentColor"
-                  d="M428.23,418.91H411.94L379.36,307.2c-2.33-9.31-11.64-16.29-23.28-16.29l-151.27,9.31L186.26,135.3c26.47-9.55,46.47-34.56,46.47-65.48C232.73,30.25,202.47,0,162.91,0S93.09,30.25,93.09,69.82c0,31.12,18.85,56.22,46.09,65.63l21.41,192.7c2.33,11.63,14,20.94,25.6,20.94l155.93-9.31,30.25,109.39c4.66,9.3,11.64,16.29,23.28,16.29h34.91c11.63,0,20.94-9.31,20.94-23.28S442.19,418.91,428.23,418.91ZM162.91,46.55a23.32,23.32,0,0,1,23.27,23.27c0,14-9.31,23.27-23.27,23.27s-23.27-9.31-23.27-23.27S149,46.55,162.91,46.55Z"/>
-            <path fill="currentColor"
-                  d="M221.09,209.45c0,14,9.31,23.28,23.27,23.28h93.09a23.33,23.33,0,0,0,23.28-23.28c0-14-9.31-23.27-23.28-23.27H244.36C230.4,186.18,221.09,195.49,221.09,209.45Z"/>
-        </symbol>
-
-        <symbol id="svg-account" viewBox="0 0 512 512">
-            <path fill="currentColor"
-                  d="M437,75A256,256,0,0,0,75,437,256,256,0,0,0,437,75ZM128.34,442.39a129.63,129.63,0,0,1,255.32,0,225.52,225.52,0,0,1-255.32,0ZM174.6,223.87a81.4,81.4,0,1,1,81.4,81.4A81.49,81.49,0,0,1,174.6,223.87Zm235,197.71A159.86,159.86,0,0,0,316.7,317.23a111.4,111.4,0,1,0-121.4,0,159.87,159.87,0,0,0-92.94,104.34A225.39,225.39,0,0,1,30,256C30,131.38,131.38,30,256,30S482,131.38,482,256A225.41,225.41,0,0,1,409.64,421.58Z"/>
-        </symbol>
-
-        <symbol id="svg-next" viewBox="0 0 255.99 454.76">
-            <path fill="currentColor"
-                  d="M0,426.32a28.33,28.33,0,0,1,8.33-20.11l179-179-179-179A28.45,28.45,0,0,1,48.55,8L247.67,207.1a28.45,28.45,0,0,1,0,40.22L48.55,446.43A28.45,28.45,0,0,1,0,426.32Z"/>
-        </symbol>
-
-        <symbol id="svg-prev" viewBox="0 0 255.99 454.76">
-            <path fill="currentColor"
-                  d="M256,28.44a28.33,28.33,0,0,1-8.33,20.11l-179,179,179,179a28.44,28.44,0,0,1-40.22,40.22L8.33,247.66a28.43,28.43,0,0,1,0-40.22L207.44,8.33A28.44,28.44,0,0,1,256,28.44Z"/>
-        </symbol>
-
-        <symbol id="svg-vk" viewBox="0 0 511.96 292.11">
-            <path fill="currentColor"
-                  d="M507.4,260.55c-1.38-2.31-9.89-20.8-50.85-58.82-42.88-39.81-37.12-33.34,14.53-102.18,31.46-41.92,44-67.52,40.1-78.46-3.75-10.43-26.88-7.68-26.88-7.68l-76.93.45s-5.7-.77-9.95,1.76-6.79,8.25-6.79,8.25-12.19,32.45-28.45,60c-34.27,58.2-48,61.28-53.6,57.66-13-8.42-9.76-33.86-9.76-51.9,0-56.42,8.55-79.94-16.67-86-8.38-2-14.53-3.36-35.93-3.58-27.46-.29-50.72.09-63.88,6.52C173.58,10.88,166.82,20.45,171,21c5.09.68,16.61,3.11,22.72,11.43,7.91,10.72,7.62,34.85,7.62,34.85s4.54,66.4-10.59,74.65c-10.4,5.67-24.64-5.89-55.2-58.72-15.65-27-27.49-57-27.49-57s-2.27-5.57-6.34-8.54c-4.93-3.62-11.84-4.77-11.84-4.77l-73.15.45s-11,.32-15,5.09c-3.58,4.25-.29,13-.29,13S58.66,165.47,123.5,233c59.48,61.92,127,57.85,127,57.85h30.6s9.24-1,13.95-6.11c4.35-4.67,4.19-13.44,4.19-13.44s-.61-41.06,18.46-47.1c18.79-6,42.92,39.68,68.48,57.24,19.33,13.28,34,10.37,34,10.37l68.38-1S524.36,288.67,507.4,260.55Z"/>
-        </symbol>
-
         <symbol id="svg-telegram" viewBox="0 0 511.99 426.67">
             <path fill="currentColor"
                   d="M200.9,281.2l-8.47,119.13c12.12,0,17.37-5.21,23.66-11.46l56.81-54.29,117.72,86.21c21.59,12,36.8,5.69,42.62-19.86L510.51,38.86l0,0C517.38,6.92,499-5.56,478,2.27L23.77,176.16c-31,12-30.53,29.31-5.27,37.14l116.12,36.12L404.33,80.65c12.7-8.41,24.24-3.76,14.75,4.65Z"/>
         </symbol>
-
-        <symbol id="svg-close" viewBox="0 0 329 328.99">
+        <symbol id="svg-cabinet" viewBox="0 0 512 512">
             <path fill="currentColor"
-                  d="M194.64,164.5,322.75,36.39A21.31,21.31,0,0,0,292.61,6.25L164.5,134.36,36.39,6.25A21.31,21.31,0,0,0,6.25,36.39L134.36,164.5,6.25,292.61a21.31,21.31,0,0,0,30.14,30.14L164.5,194.64,292.61,322.75a21.31,21.31,0,0,0,30.14-30.14Z"/>
+                  d="M256,0C114.84,0,0,114.84,0,256S114.84,512,256,512,512,397.16,512,256,397.16,0,256,0ZM181.76,433.05C184,393.9,216.3,362.67,256,362.67s72,31.23,74.24,70.38a191.81,191.81,0,0,1-148.48,0Zm206.25-38c-17.92-55.83-70.31-96.38-132-96.38s-114.09,40.55-132,96.38A191.37,191.37,0,0,1,64,256C64,150.12,150.14,64,256,64s192,86.12,192,192A191.29,191.29,0,0,1,388,395.05ZM330.65,181.33A74.67,74.67,0,1,1,256,106.67,74.67,74.67,0,0,1,330.65,181.33Z"/>
         </symbol>
-
-
-        <symbol id="svg-marker" viewBox="0 0 433.1 512">
+        <symbol id="svg-compare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.05 512">
             <path fill="currentColor"
-                  d="M369.67,63.43A216.55,216.55,0,0,0,0,216.55c0,117,110.64,214.34,170.08,266.62,8.26,7.27,15.39,13.54,21.07,18.85a37.31,37.31,0,0,0,50.8,0c5.68-5.31,12.81-11.58,21.07-18.85C322.46,430.89,433.1,333.56,433.1,216.55A215.13,215.13,0,0,0,369.67,63.43ZM216.55,303.8A95.43,95.43,0,1,1,312,208.37,95.54,95.54,0,0,1,216.55,303.8Z"/>
+                  d="M101.36,490.67V432.3a79.53,79.53,0,0,0,0-153.49V21.33a21.34,21.34,0,0,0-42.67,0V278.81a79.53,79.53,0,0,0,0,153.49v58.37a21.34,21.34,0,0,0,42.67,0ZM42.69,355.56A37.34,37.34,0,1,1,80,392.9,37.33,37.33,0,0,1,42.69,355.56Z"/>
+            <path fill="currentColor"
+                  d="M234.69,21.33V79.7a79.51,79.51,0,0,0,0,153.47v257.5a21.34,21.34,0,0,0,42.67,0V233.17a79.51,79.51,0,0,0,0-153.47V21.33a21.34,21.34,0,0,0-42.67,0Zm58.67,135.11A37.34,37.34,0,1,1,256,119.1,37.33,37.33,0,0,1,293.36,156.44Z"/>
+            <path fill="currentColor"
+                  d="M410.69,21.33V278.81a79.53,79.53,0,0,0,0,153.49v58.37a21.34,21.34,0,0,0,42.67,0V432.3a79.53,79.53,0,0,0,0-153.49V21.33a21.34,21.34,0,0,0-42.67,0Zm58.67,334.23A37.34,37.34,0,1,1,432,318.23,37.34,37.34,0,0,1,469.36,355.56Z"/>
         </symbol>
-
-        <symbol id="svg-apple" viewBox="0 0 18.57 22.77">
+        <symbol id="svg-favourites" viewBox="0 0 469.34 512.08">
             <path fill="currentColor"
-                  d="M13.67,0h.16A4.87,4.87,0,0,1,12.6,3.67,3.78,3.78,0,0,1,9.25,5.25,4.69,4.69,0,0,1,10.5,1.69,5.38,5.38,0,0,1,13.67,0Z"/>
-            <path fill="currentColor"
-                  d="M18.57,16.72v0a13.51,13.51,0,0,1-1.9,3.66c-.72,1-1.61,2.33-3.19,2.33-1.37,0-2.28-.88-3.68-.9s-2.29.73-3.65.92H5.69a4.07,4.07,0,0,1-2.38-1.64A14.38,14.38,0,0,1,0,12.86v-1A6.69,6.69,0,0,1,2.91,6.36a5,5,0,0,1,3.31-.77,8.64,8.64,0,0,1,1.62.47,4.42,4.42,0,0,0,1.62.48,4.16,4.16,0,0,0,1.13-.34,6.89,6.89,0,0,1,3.65-.65A5.06,5.06,0,0,1,18,7.77a4.77,4.77,0,0,0-2.43,4.74A4.89,4.89,0,0,0,18.57,16.72Z"/>
+                  d="M408.26,512a59.75,59.75,0,0,1-42.39-17.81L234.67,363.75,103.47,494.27a59.72,59.72,0,0,1-66,13A59.73,59.73,0,0,1,0,451.29V106.67A106.67,106.67,0,0,1,106.67,0h256A106.67,106.67,0,0,1,469.34,106.67V451.29a59.73,59.73,0,0,1-37.36,56A61,61,0,0,1,408.26,512ZM106.67,42.67a64,64,0,0,0-64,64V451.29a18,18,0,0,0,30.66,12.8h0L219.74,318.57a21.34,21.34,0,0,1,30.08,0L396.06,464a18,18,0,0,0,30.65-12.8V106.67a64,64,0,0,0-64-64Z"/>
         </symbol>
-
-        <symbol id="svg-gp" viewBox="0 0 480 512.03">
-            <path fill="currentColor" d="M95.74,8.19a65,65,0,0,0-63.45.16l233.28,215.2,78.37-78.37Z"/>
-            <path fill="currentColor" d="M9,30.36A59.67,59.67,0,0,0,0,61.63V450.3a60,60,0,0,0,8.35,30.5L242.94,246.2Z"/>
+        <symbol id="svg-cart" viewBox="0 0 499.44 512">
             <path fill="currentColor"
-                  d="M447.84,202.52l-74.75-41.24-84,84L392,340.19l55.84-30.82C468,298.24,480,278.27,480,255.93S468,213.63,447.84,202.52Z"/>
-            <path fill="currentColor" d="M266.46,267.9,31.23,503.13a64.84,64.84,0,0,0,64.51.61L362.53,356.51Z"/>
+                  d="M484.54,87a63.84,63.84,0,0,0-49.13-23H90.5l-.9-7.49A64,64,0,0,0,26.07,0H21.33a21.34,21.34,0,0,0,0,42.67h4.74A21.32,21.32,0,0,1,47.25,61.5L76.61,311.1a106.67,106.67,0,0,0,105.94,94.23H405.33a21.33,21.33,0,1,0,0-42.66H182.55A64,64,0,0,1,122.39,320H376.68a106.66,106.66,0,0,0,105-87.74l16.75-92.89A63.88,63.88,0,0,0,484.54,87Zm-28,44.82-16.76,92.88a64,64,0,0,1-63.09,52.65H115.61L95.53,106.67H435.41a21.32,21.32,0,0,1,21.46,21.2A20.73,20.73,0,0,1,456.53,131.8Z"/>
+            <circle fill="currentColor" cx="149.33" cy="469.33" r="42.67"/>
+            <circle fill="currentColor" cx="362.67" cy="469.33" r="42.67"/>
         </symbol>
-
-        <symbol id="svg-phone" viewBox="0 0 341.33 512">
+        <symbol id="svg-address" viewBox="0 0 429.53 512">
             <path fill="currentColor"
-                  d="M234.67,0h-128A106.8,106.8,0,0,0,0,106.67V405.33A106.8,106.8,0,0,0,106.67,512h128A106.79,106.79,0,0,0,341.33,405.33V106.67A106.79,106.79,0,0,0,234.67,0Zm-128,42.67h128a64,64,0,0,1,64,64V341.33h-256V106.67A64,64,0,0,1,106.67,42.67Zm128,426.66h-128a64,64,0,0,1-64-64V384h256v21.33A64,64,0,0,1,234.67,469.33Z"/>
-            <circle fill="currentColor" cx="170.67" cy="426.67" r="21.33"/>
+                  d="M214.72,0C96.18.14.13,96.2,0,214.74c0,112.51,174.21,263,194.13,279.83L214.76,512l20.63-17.43c19.88-16.81,194.14-167.32,194.14-279.83C429.4,96.17,333.29.09,214.72,0Zm0,427.58C149.33,368,64,271.25,64,214.74a150.76,150.76,0,0,1,301.52-.1v.1C365.48,271.15,280.09,368,214.72,427.58Z"/>
+            <circle fill="currentColor" cx="214.72" cy="212.93" r="63.94"/>
         </symbol>
-
-        <symbol id="svg-email" viewBox="0 0 512.02 512.15">
+        <symbol id="svg-phone" viewBox="0 0 511.79 512.14">
             <path fill="currentColor"
-                  d="M256,0C114.7.15.18,114.68,0,256c-2.69,204.22,238.06,329.15,403.2,209.43a21.34,21.34,0,0,0-23.63-35.53l-.94.67C241.09,530.26,40.56,426.2,42.69,256c11.71-283,415-282.94,426.67,0v42.67a42.67,42.67,0,0,1-85.34,0V256c-5.37-169.15-250.64-169.13-256,0a128.36,128.36,0,0,0,224.43,83.9A85.33,85.33,0,0,0,512,298.67V256C511.87,114.68,397.34.15,256,0Zm0,341.33A85.33,85.33,0,1,1,341.36,256,85.33,85.33,0,0,1,256,341.33Z"/>
+                  d="M39.68,41.53C14.08,67.13,0,101.69,0,138.81,0,299.23,212.91,512.14,373.33,512.14c37.12,0,71.68-14.08,97.28-39.68.43-.43,20.27-23.25,20.27-23.25a73.25,73.25,0,0,0,20.91-51.84,74.4,74.4,0,0,0-22-52.91l-49.49-45.87a74.7,74.7,0,0,0-104.75.64l-8.74,8.54C271.57,282.17,231,241.63,204,184.46l8.53-8.53a74.68,74.68,0,0,0-.21-105.6L168.11,22.54C138.45-7.11,91.73-7.33,62.51,20.83L39.25,41.1ZM373.33,448.14C255.79,448.14,64,275.34,64,138.81c0-19.84,7.25-38,20.27-51.42,0,0,22.61-19.84,23-20.26a10.93,10.93,0,0,1,15.14,0l44.16,47.78c3.63,3.42,4.06,6.83,4.06,8.32a10.71,10.71,0,0,1-3.2,7.47L143.57,155a31.94,31.94,0,0,0-6.82,34.35c36.05,90,98.77,152.74,186.24,186a32.13,32.13,0,0,0,33.92-7L381,344.46a10.41,10.41,0,0,1,7.47-3.2,10.74,10.74,0,0,1,7.47,3.2l49.49,45.87c1.92,1.7,2.35,5.12,2.35,6.61a10.74,10.74,0,0,1-3.2,7.47c-.64.42-20.27,23-20.27,23-13.44,13-31.79,20.26-51.41,20.26Z"/>
         </symbol>
-
-        <symbol id="svg-pass" viewBox="0 0 426.67 512">
+        <symbol id="svg-email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 469.33">
             <path fill="currentColor"
-                  d="M362.67,170.67V149.33a149.34,149.34,0,0,0-298.67,0v21.34H0V448a64,64,0,0,0,64,64H362.67a64,64,0,0,0,64-64V170.67Zm-256-21.34a106.67,106.67,0,0,1,213.33,0v21.34H106.67ZM384,448a21.33,21.33,0,0,1-21.33,21.33H64A21.33,21.33,0,0,1,42.67,448V213.33H384Z"/>
-            <rect fill="currentColor" x="192" y="298.67" width="42.67" height="85.33"/>
+                  d="M394.67,0H117.33A117.46,117.46,0,0,0,0,117.33V352A117.46,117.46,0,0,0,117.33,469.33H394.67A117.46,117.46,0,0,0,512,352V117.33A117.46,117.46,0,0,0,394.67,0Zm0,64a52.81,52.81,0,0,1,35.05,13.46L291.05,216.13a50.64,50.64,0,0,1-69.93,0L82.45,77.46A52.8,52.8,0,0,1,117.33,64Zm0,341.33H117.33A53.33,53.33,0,0,1,64,352V149.7L175.77,261.46a113.43,113.43,0,0,0,160.41,0l0,0L448,149.7V352A53.33,53.33,0,0,1,394.67,405.33Z"/>
         </symbol>
-
-        <symbol id="svg-pass-toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 386.56">
+        <symbol id="svg-search" viewBox="0 0 512.43 512.43">
             <path fill="currentColor"
-                  d="M507.73,182.14C505,174.7,437.33,0,256,0S7,174.7,4.27,182.14L0,193.28l4.27,11.14C7,211.86,74.67,386.56,256,386.56s249.05-174.7,251.73-182.14L512,193.28ZM256,323.09c-115.58,0-171.54-96.3-187.52-129.81,16-33.6,72-129.81,187.52-129.81s171.48,96.19,187.52,129.81C427.48,226.9,371.52,323.09,256,323.09Z"/>
-            <circle fill="currentColor" cx="256" cy="193.28" r="85.33"/>
+                  d="M506.44,476.27,379.1,348.93c74.7-91.35,61.19-226-30.17-300.67S123-12.93,48.26,78.43s-61.19,226,30.17,300.67a213.67,213.67,0,0,0,270.5,0L476.27,506.44a21.34,21.34,0,0,0,30.17-30.17ZM214,384.69A170.67,170.67,0,1,1,384.69,214,170.67,170.67,0,0,1,214,384.69Z"/>
         </symbol>
-
-        <symbol id="svg-code-phone" viewBox="0 0 511.42 511.39">
+        <symbol id="svg-burger" viewBox="0 0 512 341.33">
             <path fill="currentColor"
-                  d="M319.16,149.6V64.26a21.34,21.34,0,0,1,42.67,0V120C375.27,106.44,462.12,19.14,474.74,6.51a21.33,21.33,0,0,1,30.69,29.64c-.17.18-.34.36-.52.53-12.63,12.63-99,99.52-112.38,112.92h54.63a21.33,21.33,0,0,1,0,42.66H361.83a42.66,42.66,0,0,1-42.67-42.66ZM491.85,357.36a66.14,66.14,0,0,1,0,93.4l-19.45,22.4C297.66,640.37-127.47,215.37,37.2,40.09L61.73,18.76a65.74,65.74,0,0,1,92.31.83c.66.64,40.17,52,40.17,52a66.32,66.32,0,0,1-.13,91.35L169.38,194A272.72,272.72,0,0,0,317.24,342.17l31.25-24.85a66.14,66.14,0,0,1,91.31-.13s51.39,39.53,52.05,40.17Zm-29.33,31s-51-39.3-51.71-39.94a23.47,23.47,0,0,0-33.05,0c-.57.56-43.6,34.86-43.6,34.86a21.35,21.35,0,0,1-20.89,3.25A320.22,320.22,0,0,1,125,198.58a21.33,21.33,0,0,1,3.09-21.34s34.3-43,34.88-43.52a23.46,23.46,0,0,0,0-33C162.34,100,123,48.94,123,48.94a23.47,23.47,0,0,0-32.21.84L66.3,71.11c-120.37,144.7,248.1,492.74,374.89,373l19.45-22.42A23.89,23.89,0,0,0,462.52,388.38Z"/>
+                  d="M21.33,149.33H490.67A21.33,21.33,0,0,1,512,170.67h0A21.33,21.33,0,0,1,490.67,192H21.33A21.33,21.33,0,0,1,0,170.67H0A21.33,21.33,0,0,1,21.33,149.33Z"/>
+            <path fill="currentColor"
+                  d="M21.33,0H490.67A21.33,21.33,0,0,1,512,21.33h0a21.33,21.33,0,0,1-21.33,21.34H21.33A21.33,21.33,0,0,1,0,21.33H0A21.33,21.33,0,0,1,21.33,0Z"/>
+            <path fill="currentColor"
+                  d="M21.33,298.67H490.67A21.33,21.33,0,0,1,512,320h0a21.33,21.33,0,0,1-21.33,21.33H21.33A21.33,21.33,0,0,1,0,320H0A21.33,21.33,0,0,1,21.33,298.67Z"/>
         </symbol>
-
-        <symbol id="svg-user" viewBox="0 0 384 512">
+        <symbol id="svg-next" viewBox="0 0 269.98 512">
             <path fill="currentColor"
-                  d="M192,256A128,128,0,1,0,64,128,128,128,0,0,0,192,256Zm0-213.33A85.33,85.33,0,1,1,106.67,128,85.33,85.33,0,0,1,192,42.67Z"/>
-            <path fill="currentColor"
-                  d="M192,298.67c-106,.11-191.88,86-192,192a21.34,21.34,0,0,0,42.67,0,149.33,149.33,0,1,1,298.66,0,21.34,21.34,0,0,0,42.67,0C383.88,384.68,298,298.78,192,298.67Z"/>
+                  d="M45.38,512,248.19,308.91a74.82,74.82,0,0,0,0-105.56L45.14,0,0,45.25,203.05,248.58a10.67,10.67,0,0,1,0,15.08L.21,466.75Z"/>
         </symbol>
-
-        <symbol id="svg-datepicker" viewBox="0 0 512 512">
-            <path fill="currentColor"
-                  d="M405.33,42.67H384V21.33a21.34,21.34,0,0,0-42.67,0V42.67H170.67V21.33a21.34,21.34,0,0,0-42.67,0V42.67H106.67A106.79,106.79,0,0,0,0,149.33v256A106.79,106.79,0,0,0,106.67,512H405.33A106.79,106.79,0,0,0,512,405.33v-256A106.79,106.79,0,0,0,405.33,42.67ZM106.67,85.33H405.33a64.08,64.08,0,0,1,64,64v21.34H42.67V149.33A64.08,64.08,0,0,1,106.67,85.33Zm298.66,384H106.67a64.07,64.07,0,0,1-64-64v-192H469.33v192A64.07,64.07,0,0,1,405.33,469.33ZM349.8,327.51c0,8.08-5.63,14.89-12.07,18.47l-33.37,18.56,14.81,40.39a18.91,18.91,0,0,1-6.38,21.61h0a18.92,18.92,0,0,1-22.93-.15l-33.2-25.66-33.19,25.66a18.93,18.93,0,0,1-22.94.15h0a18.94,18.94,0,0,1-6.38-21.61L209,364.54,175.59,346c-6.44-3.58-12.07-10.39-12.07-18.47,0-6.85,5.95-14.42,15.59-14.42h47.94l12.72-48.71a17.4,17.4,0,0,1,33.79,0l12.71,48.71h47.94C343.85,313.09,349.8,320.64,349.8,327.51Z"/>
+        <symbol id="svg-prev" viewBox="0 0 269.98 512">
+            <path fill="currentColor" d="M224.61,0,21.79,203.09a74.82,74.82,0,0,0,0,105.56L224.84,512,270,466.75l-203-203.33a10.67,10.67,0,0,1,0-15.08L269.77,45.25Z"/>
         </symbol>
-
-        <symbol id="svg-marker" viewBox="0 0 428.76 511.97">
-            <path fill="currentColor"
-                  d="M214.38,512l-14.87-12.74C179,482.06,0,327.46,0,214.38,0,96,96,0,214.38,0S428.76,96,428.76,214.38c0,113.08-179,267.68-199.43,284.93Zm0-465.61a168.2,168.2,0,0,0-168,168c0,71,110.13,184.53,168,236.47,57.89-52,168-165.52,168-236.47A168.2,168.2,0,0,0,214.38,46.36Z"/>
-            <path fill="currentColor"
-                  d="M214.38,299.36a85,85,0,1,1,85-85A85,85,0,0,1,214.38,299.36Zm0-127.47a42.49,42.49,0,1,0,42.49,42.49A42.49,42.49,0,0,0,214.38,171.89Z"/>
-        </symbol>
-
-        <symbol id="svg-play" viewBox="0 0 30.05 30.05">
-            <path fill="currentColor"
-                  d="M20,14.44,13.74,9.9a.75.75,0,0,0-1.19.61v9.07a.74.74,0,0,0,.41.67.81.81,0,0,0,.34.08.73.73,0,0,0,.44-.15L20,15.65a.75.75,0,0,0,.31-.61A.7.7,0,0,0,20,14.44Z"/>
-            <path fill="currentColor"
-                  d="M15,0a15,15,0,1,0,15,15A15,15,0,0,0,15,0Zm0,27.54A12.52,12.52,0,1,1,27.54,15,12.51,12.51,0,0,1,15,27.54Z"/>
-        </symbol>
-
-        <symbol id="svg-promo" viewBox="0 0 512 426.67">
-            <path fill="currentColor"
-                  d="M414.83,393.75l94.48-170a21.3,21.3,0,0,0,0-20.73l-94.48-170A64,64,0,0,0,358.89,0H106.67A106.8,106.8,0,0,0,0,106.67V320A106.8,106.8,0,0,0,106.67,426.67H358.89A64,64,0,0,0,414.83,393.75ZM106.67,384a64,64,0,0,1-64-64V106.67a64,64,0,0,1,64-64H358.89a21.34,21.34,0,0,1,18.71,11l88.66,159.68L377.6,373a21.35,21.35,0,0,1-18.71,11Z"/>
-            <circle fill="currentColor" cx="362.67" cy="213.33" r="32"/>
-        </symbol>
-
-        <symbol id="svg-sale" viewBox="0 0 512 512">
-            <path fill="currentColor"
-                  d="M256,0C114.84,0,0,114.84,0,256S114.84,512,256,512,512,397.16,512,256,397.16,0,256,0Zm0,469.33c-117.63,0-213.33-95.7-213.33-213.33S138.37,42.67,256,42.67,469.33,138.37,469.33,256,373.63,469.33,256,469.33Z"/>
-            <circle fill="currentColor" cx="192" cy="193.99" r="21.33"/>
-            <circle fill="currentColor" cx="320" cy="321.99" r="21.33"/>
-            <path fill="currentColor"
-                  d="M231.08,333.83l85.34-128a21.34,21.34,0,0,0-35.5-23.68l-85.34,128a21.34,21.34,0,1,0,35.5,23.68Z"/>
-        </symbol>
-
-        <symbol id="svg-card" viewBox="0 0 512 384">
-            <path fill="currentColor"
-                  d="M405.33,0H106.67A106.8,106.8,0,0,0,0,106.67V277.33A106.8,106.8,0,0,0,106.67,384H405.33A106.8,106.8,0,0,0,512,277.33V106.67A106.8,106.8,0,0,0,405.33,0Zm64,277.33a64,64,0,0,1-64,64H106.67a64,64,0,0,1-64-64V106.67a64,64,0,0,1,64-64H405.33a64,64,0,0,1,64,64h-.27Z"/>
-            <rect fill="currentColor" x="256" y="234.67" width="170.67" height="64" rx="32"/>
-        </symbol>
-
-        <symbol id="svg-options" viewBox="0 0 507.43 512">
-            <path fill="currentColor"
-                  d="M317.72,512h-128V437.06a192,192,0,0,1-60.78-35.12L64,439.47,0,328.53l64.92-37.44a193.84,193.84,0,0,1,0-70.18L0,183.47,64,72.53l64.94,37.53a192,192,0,0,1,60.78-35.12V0h128V74.94a192.07,192.07,0,0,1,60.78,35.12l64.93-37.53,64,110.94-64.91,37.44a194.29,194.29,0,0,1,0,70.18l64.91,37.44-64,110.94L378.5,402a192.13,192.13,0,0,1-60.78,35.1Zm-85.34-42.67h42.67V404.76l16-4.14a149,149,0,0,0,69.19-40.09l11.58-11.79,56,32.32,21.33-36.95-55.89-32.28,4.39-15.92a150.24,150.24,0,0,0,0-80L393.24,200l55.89-32.28L427.8,130.77l-56,32.41-11.58-11.71a148.9,148.9,0,0,0-69.19-40l-16-4.23V42.67H232.38v64.57l-16,4.14a149,149,0,0,0-69.18,40.09l-11.59,11.79-55.95-32.4L58.3,167.81l55.9,32.28L109.8,216a150.45,150.45,0,0,0,0,80l4.4,15.91L58.3,344.19l21.34,36.95,56-32.32,11.59,11.8a149.09,149.09,0,0,0,69.18,40l16,4.14Zm21.34-128A85.33,85.33,0,1,1,339.05,256,85.33,85.33,0,0,1,253.72,341.33Zm0-128A42.67,42.67,0,1,0,296.38,256,42.67,42.67,0,0,0,253.72,213.33Z"/>
-        </symbol>
-
-        <symbol id="svg-logout" viewBox="0 0 506.55 512">
-            <path fill="currentColor"
-                  d="M244.82,320a21.33,21.33,0,0,0-21.33,21.33v64a64,64,0,0,1-64,64H106.67a64,64,0,0,1-64-64V106.67a64,64,0,0,1,64-64h52.82a64,64,0,0,1,64,64v64a21.33,21.33,0,1,0,42.66,0v-64A106.79,106.79,0,0,0,159.49,0H106.67A106.8,106.8,0,0,0,0,106.67V405.33A106.8,106.8,0,0,0,106.67,512h52.82A106.79,106.79,0,0,0,266.15,405.33v-64A21.33,21.33,0,0,0,244.82,320Z"/>
-            <path fill="currentColor"
-                  d="M487.83,210.75,390,112.92a21.33,21.33,0,1,0-30.69,29.64l.53.52L450.75,234,128,234.67a21.33,21.33,0,0,0,0,42.66h0l324-.66-92.22,92.25a21.33,21.33,0,1,0,29.64,30.69c.18-.17.35-.35.52-.53l97.84-97.83A64,64,0,0,0,487.83,210.75Z"/>
-        </symbol>
-
-        <symbol id="svg-edit" viewBox="0 0 415.74 415.75">
-            <path fill="currentColor"
-                  d="M415.74,79.75A80,80,0,0,0,279.42,23.18l-.15.17L29.4,273.22c-.18.18-.34.37-.51.56s-.28.3-.41.46-.39.49-.58.74-.26.34-.38.52-.34.53-.5.79-.22.36-.32.55-.3.57-.44.86-.17.36-.25.55-.25.63-.36,1c-.07.17-.13.34-.19.52-.11.35-.2.7-.28,1.06,0,.13-.08.25-.1.38L.36,396.39a.13.13,0,0,0,0,.06c-.1.46-.17.93-.23,1.41l0,.19c0,.43-.07.86-.08,1.29,0,.11,0,.23,0,.34,0,.35,0,.71,0,1.06,0,.19,0,.38,0,.56s.07.59.12.89.07.47.11.7c0,.07,0,.14,0,.21.06.3.15.59.23.89,0,.11.05.22.08.32a15.93,15.93,0,0,0,2.77,5.33,1.34,1.34,0,0,0,.11.14c.27.33.54.64.83,1l.24.25c.26.26.52.51.8.75l.33.29c.27.22.54.43.82.63l.37.28c.33.22.67.44,1,.64l.22.13c.44.25.89.47,1.34.67l.24.1a12.32,12.32,0,0,0,1.2.45l.32.1c.4.13.8.23,1.2.33l.17,0,.15,0c.46.09.92.16,1.38.22a1.81,1.81,0,0,1,.23,0c.52.05,1,.08,1.58.08h0c.52,0,1,0,1.55-.08l.35-.05c.43-.05.86-.12,1.29-.2l.15,0,114.87-24.64.2,0,.15,0,.19-.05c.44-.1.88-.21,1.32-.35l.27-.1c.41-.14.82-.29,1.21-.46l.32-.14c.37-.17.73-.35,1.09-.55a3.79,3.79,0,0,0,.34-.2c.34-.2.67-.4,1-.62l.35-.26c.3-.22.6-.45.9-.7l.31-.28c.23-.21.46-.4.68-.62l250-250a1.22,1.22,0,0,0,.15-.17A79.31,79.31,0,0,0,415.74,79.75ZM369.93,45.82a47.54,47.54,0,0,1,13.81,33.93,47.56,47.56,0,0,1-13.81,33.94c-.05,0-.09.11-.15.16L336,147.64,268.12,79.75l33.93-33.94a48.6,48.6,0,0,1,67.88,0ZM123.26,360.37,36.83,378.91l18.54-86.42L245.49,102.38l67.89,67.88Z"/>
-        </symbol>
-
-        <symbol id="svg-send" viewBox="0 0 512 469.33">
-            <path fill="currentColor"
-                  d="M405.33,0H106.67A106.8,106.8,0,0,0,0,106.67v256A106.79,106.79,0,0,0,106.67,469.33H405.33A106.79,106.79,0,0,0,512,362.67v-256A106.8,106.8,0,0,0,405.33,0ZM106.67,42.67H405.33a64,64,0,0,1,59.31,40.25L301.27,246.31a64.13,64.13,0,0,1-90.54,0L47.36,82.92A64,64,0,0,1,106.67,42.67Zm298.66,384H106.67a64,64,0,0,1-64-64v-224l137.9,137.81a106.8,106.8,0,0,0,150.86,0l137.9-137.81v224A64,64,0,0,1,405.33,426.67Z"/>
-        </symbol>
-
-        <symbol id="svg-orders" viewBox="0 0 512 384">
-            <path fill="currentColor"
-                  d="M0,106.67v2.77a43.11,43.11,0,0,0,32.68,41.41,42.66,42.66,0,0,1,0,82.3A43.11,43.11,0,0,0,0,274.56v2.77A106.8,106.8,0,0,0,106.67,384H448a64,64,0,0,0,64-64V274.56a43.11,43.11,0,0,0-32.68-41.41,42.66,42.66,0,0,1,0-82.3A43.11,43.11,0,0,0,512,109.44V64A64,64,0,0,0,448,0H106.67A106.8,106.8,0,0,0,0,106.67ZM469.33,64,468,109.72a85.33,85.33,0,0,0,1.34,164.84V320A21.33,21.33,0,0,1,448,341.33H362.67V298.67a21.34,21.34,0,1,0-42.67,0v42.66H106.67a64,64,0,0,1-64-64L44,274.28A85.55,85.55,0,0,0,106.67,192a86.85,86.85,0,0,0-64-83v-2.28a64,64,0,0,1,64-64H320V85.33a21.34,21.34,0,1,0,42.67,0V42.67H448A21.33,21.33,0,0,1,469.33,64Z"/>
-            <path fill="currentColor"
-                  d="M363.33,213.33V170.67a21.33,21.33,0,1,0-42.66,0v42.66a21.33,21.33,0,1,0,42.66,0Z"/>
-        </symbol>
-
-        <symbol id="svg-accordion" viewBox="0 0 512 512">
-            <path fill="currentColor"
-                  d="M256,0C114.62,0,0,114.62,0,256S114.62,512,256,512,512,397.38,512,256,397.32.15,256,0Zm0,469.33C138.18,469.33,42.67,373.82,42.67,256S138.18,42.67,256,42.67,469.33,138.18,469.33,256,373.77,469.2,256,469.33Z"/>
-            <path fill="currentColor"
-                  d="M256,341.33a63.82,63.82,0,0,1-42.39-16c-7-6.21-13.59-12.24-17.92-16.58L134.4,248.47A21.33,21.33,0,1,1,163,216.84c.42.39.83.79,1.23,1.21l61.44,60.35c4,4,10,9.41,16.19,14.93a21.31,21.31,0,0,0,28.22,0c6.19-5.5,12.16-10.92,16.05-14.78l61.56-60.5a21.33,21.33,0,0,1,31.1,29.21c-.39.42-.8.82-1.23,1.21l-61.42,60.35c-4.27,4.27-10.81,10.24-17.77,16.41A63.79,63.79,0,0,1,256,341.33Z"/>
-        </symbol>
-
-        <symbol id="svg-alert" viewBox="0 0 426.67 426.67">
-            <path fill-rule="evenodd" fill="currentColor"
-                  d="M213.33,0C95.59,0,0,95.59,0,213.33S95.59,426.67,213.33,426.67s213.34-95.6,213.34-213.34S331.07,0,213.33,0Zm0,42.67C307.52,42.67,384,119.15,384,213.33S307.52,384,213.33,384,42.67,307.52,42.67,213.33,119.15,42.67,213.33,42.67Zm0,234.51A21.34,21.34,0,1,1,192,298.52,21.35,21.35,0,0,1,213.33,277.18Zm21.34-42.51v-128a21.34,21.34,0,1,0-42.67,0v128a21.34,21.34,0,0,0,42.67,0Z"/>
-        </symbol>
-
-        <symbol id="svg-minus" viewBox="0 0 426.67 42.67">
-            <path fill="currentColor" d="M405.33,0h-384a21.34,21.34,0,0,0,0,42.67h384a21.34,21.34,0,1,0,0-42.67Z"/>
-        </symbol>
-
-        <symbol id="svg-plus" viewBox="0 0 426.67 426.67">
-            <path fill="currentColor"
-                  d="M405.33,192H234.67V21.33a21.34,21.34,0,0,0-42.67,0V192H21.33a21.34,21.34,0,0,0,0,42.67H192V405.33a21.34,21.34,0,1,0,42.67,0V234.67H405.33a21.34,21.34,0,1,0,0-42.67Z"/>
-        </symbol>
-
-        <symbol id="svg-complited" viewBox="0 0 469.33 469.33">
-            <path fill="currentColor"
-                  d="M234.67,0C105.06,0,0,105.06,0,234.67S105.06,469.33,234.67,469.33,469.33,364.27,469.33,234.67,364.21.15,234.67,0Zm0,426.67c-106,0-192-86-192-192s86-192,192-192,192,86,192,192S340.66,426.55,234.67,426.67Z"/>
-            <path fill="currentColor"
-                  d="M326.91,165.61,214,269.14l-49.55-49.56a21.33,21.33,0,0,0-30.69,29.64c.17.18.34.36.52.53l64,64a21.33,21.33,0,0,0,29.5.64l128-117.33a21.34,21.34,0,1,0-28.84-31.45Z"/>
-        </symbol>
-
     </svg>
 </div>
 
