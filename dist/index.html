@@ -363,12 +363,12 @@
         </div>
         <div class="home-slider__pagination"></div>
         <div class="home-slider__nav">
-            <button class="swiper-prev slider-nav">
+            <button class="swiper-prev slider-nav swiper-button-disabled">
                 <svg width="18" height="18">
                     <use xlink:href="#svg-prev"></use>
                 </svg>
             </button>
-            <button class="swiper-next slider-nav">
+            <button class="swiper-next slider-nav swiper-button-disabled">
                 <svg width="18" height="18">
                     <use xlink:href="#svg-next"></use>
                 </svg>
@@ -803,179 +803,2032 @@
                              data-navprev="tab1_nav_prev">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slider-product__item">
-                                    <div class="card-product">
-                                        <div class="card-product__badge">
-                                            <div class="card-product__badge__item card-product__badge__item--new">
-                                                Новинка
-                                            </div>
-                                        </div>
-                                        <ul class="nav card-product__icons">
-                                            <li>
-                                                <button class="btn btn--actions">
-                                                    <svg width="18" height="18">
-                                                        <use xlink:href="#svg-compare"></use>
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn--actions">
-                                                    <svg width="16" height="18">
-                                                        <use xlink:href="#svg-favourites"></use>
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                        <a href="" class="card-product__link">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
 
-                                            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
-                                            <div class="card-product__inner">
-                                                <dl class="d-flex card-product__top-attr">
-                                                    <div class="d-flex card-product__top-attr__col1">
-                                                        <dd>
-                                                            Код:
-                                                        </dd>
-                                                        <dt>20050133</dt>
-                                                    </div>
-                                                    <div class="d-flex card-product__top-attr__col2">
-                                                        <dd>
-                                                            Артикул:
-                                                        </dd>
-                                                        <dt>2612/P</dt>
-                                                    </div>
-                                                </dl>
-
-                                                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
-
-                                                <div class="card-product__quantity-ratio">
-                                                    Количество в упаковке: 1 шт
-                                                </div>
-
-                                                <div class="card-product__type-price">
-                                                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
-                                                    <span class="card-product__type-price__value"> Розница</span>
-                                                </div>
-                                                <div class="card-product__price">
-                                                    <span class="card-product__price__val">21 642.00</span>
-                                                    <span class="card-product__price__currency">руб./шт</span>
-                                                </div>
-                                                <div class="card-product__min-count">
-                                                    Минимальная покупка: <span>1 шт</span>
-                                                </div>
-                                            </div>
-                                            <div class="card-product__footer">
-                                                <div class="card-product__footer__col-count">
-                                                    <div class="">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
                     </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
                 </div>
-                <div class="tab-pane fade" id="tab2" role="tabpanel">2</div>
-                <div class="tab-pane fade" id="tab3" role="tabpanel">3</div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
     </div>
 </div>
-
-<footer class="cinema__footer">
-    <div class="container fpad80">
-        <div class="row">
-            <div class="col-12 cinema__footer__top-row">
-                <a href="/" class="cinema__footer__logo">
-                    <img src="images/dist/logo.svg" alt="" width="199" height="41">
-                </a>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
             </div>
-            <div class="col-lg-5 col-12">
-                <div class="row">
-                    <div class="col-6">
-                        <ul class="nav flex-column cinema__footer__nav">
-                            <li><a href="">Расписание</a></li>
-                            <li><a href="">MoriArt</a></li>
-                            <li><a href="">MoriBonus</a></li>
-                            <li><a href="">MoriRent</a></li>
-                            <li><a href="">Киновподарок</a></li>
-                            <li><a href="">Акции</a></li>
-                        </ul>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
                     </div>
-                    <div class="col-6">
-                        <ul class="nav flex-column cinema__footer__nav">
-                            <li><a href="">История компании</a></li>
-                            <li><a href="">Реклама в кинотеатрах</a></li>
-                            <li><a href="">Услуги кинотеатра</a></li>
-                            <li><a href="">Аренда площадей</a></li>
-                            <li><a href="">Вакансии</a></li>
-                            <li><a href="">Обратная связь</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </ul>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
                     </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-            <div class="col-lg-7 col-12">
-                <div class="d-flex cinema__footer__app-row align-items-center fpad40">
-                    <div class="cinema__footer__app-desc">
-                        <b>Приложение MORI CINEMA</b>
-                        Загружайте и покупайте билеты онлайн
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
                     </div>
-                    <div class="cinema__footer__app-link flex-grow-1">
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="" class="btn-yellow btn-yellow--app" target="_blank">
-                                    <span class="btn-yellow__app-ico">
-                                        <svg width="23" height="28">
-                                            <use xlink:href="#svg-apple"></use>
-                                        </svg>
-                                    </span>
-                                    <span class="btn-yellow__app-text">
-                                        Загрузить в
-                                        <b class="text-nowrap">App Store</b>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="" class="btn-yellow btn-yellow--app" target="_blank">
-                                    <span class="btn-yellow__app-ico">
-                                        <svg width="26" height="28">
-                                            <use xlink:href="#svg-gp"></use>
-                                        </svg>
-                                    </span>
-                                    <span class="btn-yellow__app-text">
-                                    Доступно в
-                                    <b class="text-nowrap">Google Play</b>
-                                    </span>
-                                </a>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
                             </div>
                         </div>
+                        <button class="swiper-prev slider-nav swiper-button-disabled" id="tab1_nav_prev">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-prev"/>
+                            </svg>
+                        </button>
+                        <button class="swiper-next slider-nav swiper-button-disabled" id="tab1_nav_next">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-next"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tabs-slider__body__link">
+                        <a href="" class="link-more">
+                            Смотреть все
+                            <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"/>
+                                </svg>
+                            </span>
+                        </a>
                     </div>
                 </div>
-                <div class="d-flex cinema__footer__app-row align-items-center fpad40">
-                    <div class="cinema__footer__app-desc">
-                        <b>Мы в социальных сетях</b>
-                        Будьте в курсе последних событий
+                <div class="tab-pane fade" id="tab2" role="tabpanel">
+                    <div class="tabs-slider__products">
+                        <div class="swiper slider-product"
+                             data-navnext="tab2_nav_next"
+                             data-navprev="tab2_nav_prev">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
                     </div>
-                    <div class="cinema__footer__app-link flex-grow-1">
-                        <ul class="nav cinema__account-menu__footer">
-                            <li>
-                                <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
-                                    <svg width="24" height="13">
-                                        <use xlink:href="#svg-vk"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank" class="btn-yellow btn-yellow--ico">
-                                    <svg width="24" height="20">
-                                        <use xlink:href="#svg-telegram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <button class="swiper-prev slider-nav swiper-button-disabled" id="tab2_nav_prev">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-prev"/>
+                            </svg>
+                        </button>
+                        <button class="swiper-next slider-nav swiper-button-disabled" id="tab2_nav_next">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-next"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tabs-slider__body__link">
+                        <a href="" class="link-more">
+                            Смотреть все
+                            <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab3" role="tabpanel">
+                    <div class="tabs-slider__products">
+                        <div class="swiper slider-product"
+                             data-navnext="tab3_nav_next"
+                             data-navprev="tab3_nav_prev">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="swiper-slide slider-product__item">
+    <div class="card-product">
+        <div class="card-product__badge">
+            <div class="card-product__badge__item card-product__badge__item--new">
+                Новинка
+            </div>
+        </div>
+        <ul class="nav card-product__icons">
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-compare"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn--actions">
+                    <svg width="16" height="18">
+                        <use xlink:href="#svg-favourites"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <a href="" class="card-product__link">
+
+            <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
+            <div class="card-product__inner">
+                <dl class="d-flex card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+
+                <div class="card-product__quantity-ratio">
+                    Количество в упаковке: 1 шт
+                </div>
+
+                <div class="card-product__type-price">
+                    <span class="card-product__type-price__label pe-1">Ваша цена:</span>
+                    <span class="card-product__type-price__value"> Розница</span>
+                </div>
+                <div class="card-product__price">
+                    <span class="card-product__price__val">21 642.00</span>
+                    <span class="card-product__price__currency">руб./шт</span>
+                </div>
+                <div class="card-product__min-count">
+                    Минимальная покупка: <span>1 шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product__footer">
+            <div class="card-product__footer__col-count">
+                <div class="quantity">
+                    <input type="number" class="quantity__val" readonly value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="card-product__footer__col-bay">
+                <button class="btn btn--red w-100">В КОРЗИНУ</button>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                        <button class="swiper-prev slider-nav swiper-button-disabled" id="tab3_nav_prev">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-prev"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-next slider-nav swiper-button-disabled" id="tab3_nav_next">
+                            <svg width="18" height="18">
+                                <use xlink:href="#svg-next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tabs-slider__body__link">
+                        <a href="" class="link-more">
+                            Смотреть все
+                            <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-caption">
+        <h2>Новости и акции</h2>
+        <a href="" class="link-more ms-auto">
+            Смотреть все
+            <span class="link-more__ico">
+                 <svg width="6" height="12">
+                    <use xlink:href="#svg-next"/>
+                </svg>
+            </span>
+        </a>
+    </div>
+    <div class="fpad90 position-relative news-slider">
+        <div id="newsSlider" class="swiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="" class="news-item">
+                <div class="news-item__img">
+                    <picture>
+                        <source srcset="images/dist/news1.jpg 1x, images/dist/news1@2.jpg 2x">
+                        <img loading="lazy" src="images/dist/news1.jpg" alt="" width="210" height="300">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="news-item__desc">
+                    <div class="news-item__date">
+                        19 Октября 2023
+                    </div>
+                    <div class="news-item__title">
+                        Ewigstein-скидка 50% на все модели
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide ">
+            <a href="" class="news-item">
+                <div class="news-item__img">
+                    <picture>
+                        <source srcset="images/dist/news1.jpg 1x, images/dist/news1@2.jpg 2x">
+                        <img loading="lazy" src="images/dist/news1.jpg" alt="" width="210" height="300">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="news-item__desc">
+                    <div class="news-item__date">
+                        19 Октября 2023
+                    </div>
+                    <div class="news-item__title">
+                        Ewigstein-скидка 50% на все модели
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="" class="news-item">
+                <div class="news-item__img">
+                    <picture>
+                        <source srcset="images/dist/news1.jpg 1x, images/dist/news1@2.jpg 2x">
+                        <img loading="lazy" src="images/dist/news1.jpg" alt="" width="210" height="300">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="news-item__desc">
+                    <div class="news-item__date">
+                        19 Октября 2023
+                    </div>
+                    <div class="news-item__title">
+                        Ewigstein-скидка 50% на все модели
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="" class="news-item">
+                <div class="news-item__img">
+                    <picture>
+                        <source srcset="images/dist/news1.jpg 1x, images/dist/news1@2.jpg 2x">
+                        <img loading="lazy" src="images/dist/news1.jpg" alt="" width="210" height="300">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="news-item__desc">
+                    <div class="news-item__date">
+                        19 Октября 2023
+                    </div>
+                    <div class="news-item__title">
+                        Ewigstein-скидка 50% на все модели
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="" class="news-item">
+                <div class="news-item__img">
+                    <picture>
+                        <source srcset="images/dist/news1.jpg 1x, images/dist/news1@2.jpg 2x">
+                        <img loading="lazy" src="images/dist/news1.jpg" alt="" width="210" height="300">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="news-item__desc">
+                    <div class="news-item__date">
+                        19 Октября 2023
+                    </div>
+                    <div class="news-item__title">
+                        Ewigstein-скидка 50% на все модели
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="" class="news-item">
+                <div class="news-item__img">
+                    <picture>
+                        <source srcset="images/dist/news1.jpg 1x, images/dist/news1@2.jpg 2x">
+                        <img loading="lazy" src="images/dist/news1.jpg" alt="" width="210" height="300">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="news-item__desc">
+                    <div class="news-item__date">
+                        19 Октября 2023
+                    </div>
+                    <div class="news-item__title">
+                        Ewigstein-скидка 50% на все модели
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="" class="news-item">
+                <div class="news-item__img">
+                    <picture>
+                        <source srcset="images/dist/news1.jpg 1x, images/dist/news1@2.jpg 2x">
+                        <img loading="lazy" src="images/dist/news1.jpg" alt="" width="210" height="300">
+                    </picture>
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                <div class="news-item__desc">
+                    <div class="news-item__date">
+                        19 Октября 2023
+                    </div>
+                    <div class="news-item__title">
+                        Ewigstein-скидка 50% на все модели
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+<button id="newsSliderNext" class="swiper-next slider-nav swiper-button-disabled">
+    <svg width="15" height="28">
+        <use xlink:href="#svg-next"></use>
+    </svg>
+</button>
+<button id="newsSliderPrev" class="swiper-prev slider-nav swiper-button-disabled">
+    <svg width="15" height="28">
+        <use xlink:href="#svg-prev"></use>
+    </svg>
+</button>
+
+    </div>
+
+    <div class="fpad90">
+        <div class="banner">
+            <div class="banner__inner">
+                <div class="banner__ico">
+                    <img class="d-block" src="./images/dist/banner_ico.svg" width="139" height="37" alt="">
+                </div>
+                <h2>Занимаетесь изготовлением мебели под заказ, <br>но нет своего производства?</h2>
+                <p>Получите приветственную скидку 5% на первый заказ.<br>
+                    Также действует система скидок для постоянных клиентов.</p>
+                <div class="banner__link">
+                    <a href="" class="btn btn--red text-uppercase">подробнее</a>
+                </div>
+            </div>
+            <picture>
+                <source media="(max-width: 640px)" srcset="images/dist/sl1_min.jpg">
+                <source media="(min-width: 641px)"
+                        data-srcset="./images/dist/banner.jpg, ./images/dist/banner@2.jpg 2x">
+                <img class="banner__img lazy"
+                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                     data-src="./images/dist/banner.jpg" alt="">
+            </picture>
+        </div>
+    </div>
+    <div class="page-caption">
+        <h2>Популярные бренды</h2>
+        <a href="" class="link-more ms-auto">
+            Смотреть все
+            <span class="link-more__ico">
+                 <svg width="6" height="12">
+                    <use xlink:href="#svg-next"/>
+                </svg>
+            </span>
+        </a>
+    </div>
+    <div class="fpad60">
+        <div class="row">
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand1.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand2.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand3.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand4.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand5.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand6.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand7.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand8.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand9.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand10.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand11.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand12.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand13.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand14.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand15.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand16.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand17.png" alt="">
+                </a>
+            </div>
+            <div class="fpad30 col-xl-2 col-lg-3 col-md-4 col-6">
+                <a href="" class="brand-item">
+                    <img class="brand-item__img lazy"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                         data-src="./images/dist/brand18.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="fpad90">
+        <div id="seoText" class="text">
+            <h2>Интернет-магазин ТД «Сервер» — поставщик материалов и комплектующих для производствакорпусной
+                мебели. </h2>
+            <p>За время своего существования ТД «Сервер» стал одним из крупнейших поставщиков, доставляющим товары сотням
+            производителей мебели в Москве и Санкт-Петербурге, а также в Северо-западном и Центральном федеральных
+            округах. Наш ассортимент состоит более чем из 1000 позиций — от ЛДСП до крепежных элементов — и включает в
+            себя материалы и комплектующие, необходимые для производства любой модели современной корпусной мебели.</p>
+
+            <p>Но мы не просто поставляем материалы и комплектующие для производства корпусной мебели - мы берем на себя
+            решение целого комплекса проблем снабжения вашего предприятия.</p>
+
+            <p>Мы профессионально занимаемся удаленной торговлей, у нас большой штат квалифицированных сотрудников, мы
+            располагаем самыми современными технологиями учета и управления товарными потоками, мы поддерживаем контакты
+            с несколькими десятками производителей и импортеров материалов и комплектующих.</p>
+            <h2>Интернет-магазин ТД «Сервер» — поставщик материалов и комплектующих для производствакорпусной
+                мебели. </h2>
+            <p>За время своего существования ТД «Сервер» стал одним из крупнейших поставщиков, доставляющим товары сотням
+            производителей мебели в Москве и Санкт-Петербурге, а также в Северо-западном и Центральном федеральных
+            округах. Наш ассортимент состоит более чем из 1000 позиций — от ЛДСП до крепежных элементов — и включает в
+            себя материалы и комплектующие, необходимые для производства любой модели современной корпусной мебели.</p>
+
+            <p>Но мы не просто поставляем материалы и комплектующие для производства корпусной мебели - мы берем на себя
+            решение целого комплекса проблем снабжения вашего предприятия.</p>
+
+            <p>Мы профессионально занимаемся удаленной торговлей, у нас большой штат квалифицированных сотрудников, мы
+            располагаем самыми современными технологиями учета и управления товарными потоками, мы поддерживаем контакты
+            с несколькими десятками производителей и импортеров материалов и комплектующих.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <a href="/" class="footer__logo">
+            <img class="d-block" src="images/dist/logo2.svg" alt="" width="170" height="40">
+        </a>
+        <div class="footer__row">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-12">
+                    <ul class="nav flex-column footer__nav">
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">Бренды</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-12">
+                    <ul class="nav flex-column footer__nav">
+                        <li><a href="">Оплата и доставка</a></li>
+                        <li><a href="">Для скачивания</a></li>
+                        <li><a href="">Сервисы</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Цех распила</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-3 col-12">
+                    <div class="footer__phone">
+                        <a href="tel:+74955101510" class="tel">
+                            <div class="footer__phone__ico ico-red">
+                                <svg width="18" height="18">
+                                    <use xlink:href="#svg-phone"></use>
+                                </svg>
+                            </div>
+                            +7 495 510-15-10
+                        </a>
+                        <div class="footer__address">
+                            <div class="footer__address__ico ico-red">
+                                <svg width="15" height="18">
+                                    <use xlink:href="#svg-address"></use>
+                                </svg>
+                            </div>
+                            <div class="footer__address__val">Москва, ул. Дубнинская, 81, стр-е 2<br>(заезд с Проектируемого проезда)</div>
+                            <div class="footer__worcktime">Пн-Пт: 09:00–18:00</div>
+                        </div>
+                        <a href="mailto:" class="footer__email">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-12">
+                    <div class="footer__phone">
+                        <a href="tel:+78123806600" class="tel">
+                            <div class="footer__phone__ico ico-red">
+                                <svg width="18" height="18">
+                                    <use xlink:href="#svg-phone"></use>
+                                </svg>
+                            </div>
+                            +7 812 380-66-00
+                        </a>
+                        <div class="footer__address">
+                            <div class="footer__address__ico ico-red">
+                                <svg width="15" height="18">
+                                    <use xlink:href="#svg-address"></use>
+                                </svg>
+                            </div>
+                            <div class="footer__address__val">Шушары, ул. Пушкинская 27, к.4<br>(заезд от дома 27, к.3)</div>
+                            <div class="footer__worcktime">Пн-Пт: 09:00–18:00</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1629,7 +3482,15 @@
                   d="M45.38,512,248.19,308.91a74.82,74.82,0,0,0,0-105.56L45.14,0,0,45.25,203.05,248.58a10.67,10.67,0,0,1,0,15.08L.21,466.75Z"/>
         </symbol>
         <symbol id="svg-prev" viewBox="0 0 269.98 512">
-            <path fill="currentColor" d="M224.61,0,21.79,203.09a74.82,74.82,0,0,0,0,105.56L224.84,512,270,466.75l-203-203.33a10.67,10.67,0,0,1,0-15.08L269.77,45.25Z"/>
+            <path fill="currentColor"
+                  d="M224.61,0,21.79,203.09a74.82,74.82,0,0,0,0,105.56L224.84,512,270,466.75l-203-203.33a10.67,10.67,0,0,1,0-15.08L269.77,45.25Z"/>
+        </symbol>
+        <symbol id="svg-minus" viewBox="0 0 256 42.67">
+            <path fill="currentColor"
+                  d="M234.67,0H21.33A21.33,21.33,0,0,0,0,21.33H0A21.33,21.33,0,0,0,21.33,42.67H234.67A21.33,21.33,0,0,0,256,21.33h0A21.33,21.33,0,0,0,234.67,0Z"/>
+        </symbol>
+        <symbol id="svg-plus" viewBox="0 0 256 256">
+            <path fill="currentColor" d="M234.67,106.67H149.33V21.33A21.33,21.33,0,0,0,128,0h0a21.33,21.33,0,0,0-21.33,21.33v85.34H21.33A21.33,21.33,0,0,0,0,128H0a21.33,21.33,0,0,0,21.33,21.33h85.34v85.34A21.33,21.33,0,0,0,128,256h0a21.33,21.33,0,0,0,21.33-21.33V149.33h85.34A21.33,21.33,0,0,0,256,128h0A21.33,21.33,0,0,0,234.67,106.67Z"/>
         </symbol>
     </svg>
 </div>
@@ -1697,7 +3558,8 @@
                         правильную работу сайта.
                     </div>
                     <div class="cinema__cookies__box__btn">
-                        <button class="btn-yellow w-100" onclick="document.getElementById('cookies').remove()">ХОРОШО</button>
+                        <button class="btn-yellow w-100" onclick="document.getElementById('cookies').remove()">ХОРОШО
+                        </button>
                     </div>
                 </div>
             </div>
