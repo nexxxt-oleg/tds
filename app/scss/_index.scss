@@ -313,6 +313,11 @@ a {
     text-align: center;
     justify-content: center;
   }
+
+  &--h36 {
+    height: 36px;
+    padding: 5px 15px;
+  }
 }
 
 .dropdown-toggle::after {
@@ -446,6 +451,7 @@ button:hover,
   outline: none !important;
   box-shadow: none !important;
 }
+
 .form-select {
   height: 48px;
   border-radius: 5px;
@@ -454,6 +460,7 @@ button:hover,
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280.99 161.83'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Bold'%3E%3Cpath fill='%23ad2125' d='M21.33,0H259.66a21.34,21.34,0,0,1,15.09,36.42L155.58,155.58a21.34,21.34,0,0,1-30.17,0L6.25,36.42A21.34,21.34,0,0,1,21.33,0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-size: 6px 3px;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -1262,10 +1269,12 @@ img {
   font-size: 14px;
   line-height: 18px;
 }
+
 .form-ps {
   font-size: 12px;
   line-height: 18px;
   color: #9f9f9f;
+
   a {
     color: #9f9f9f;
   }
@@ -1277,35 +1286,43 @@ img {
   background: #fff;
   border-radius: 5px;
   padding: 20px 20px 0 20px;
+
   &__item {
     padding-bottom: 12px;
+
     &__img {
       width: 68px;
       min-width: 68px;
       padding-right: 20px;
+
       img {
         display: block;
       }
     }
+
     &__desc {
       width: 300px;
       flex-grow: 1;
     }
+
     &__title {
       font-size: 14px;
       line-height: 20px;
       font-weight: 500;
       padding-bottom: 6px;
     }
+
     &__cost {
       display: flex;
       align-items: center;
+
       &__val {
         padding-right: 5px;
         font-size: 18px;
         line-height: 20px;
         font-weight: bold;
       }
+
       &__currency {
         font-size: 14px;
         line-height: 20px;
@@ -1314,8 +1331,238 @@ img {
     }
   }
 }
+
 .title-search-all {
   margin-top: 5px;
   padding: 15px 0;
   border-top: 1px solid #efeff0;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.header__city__dropdown {
+  width: 240px;
+  padding: 18px 20px 15px 20px;
+
+  &__caption {
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__footer {
+    padding-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.checkbox-custom {
+  display: block;
+  cursor: pointer;
+  user-select: none;
+
+  input {
+    display: none;
+
+    &:checked + .checkbox-custom__val::after {
+      background-color: var(--color-red);
+      background-position: 50% 50%;
+      background-size: 8px 6px;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 511.99 368.41'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cpath fill='%23fff' d='M500.09,11.89a40.62,40.62,0,0,0-57.43,0L184.21,270.36,69.33,155.49A40.61,40.61,0,0,0,11.9,212.92L155.48,356.51a40.61,40.61,0,0,0,57.44,0L500.09,69.33A40.62,40.62,0,0,0,500.09,11.89Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
+
+  &__val {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    min-height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      background: #efeff0;
+    }
+  }
+
+}
+
+.header__fix-menu {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  padding: 20px 0;
+  background: #fff;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
+  transform: translateY(-100%);
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    margin-top: -1px;
+  }
+
+  .header__fix-menu__nav-ico__svg {
+    position: relative;
+    width: 30px;
+
+    .header__icons__item__count {
+      right: -3px;
+      top: -2px;
+    }
+  }
+
+  &__cart {
+    flex-grow: 1;
+    width: 140px;
+    align-items: center;
+
+    &__val {
+      white-space: nowrap;
+      padding-left: 10px;
+      font-size: 13px;
+    }
+  }
+
+  &__nav-ico {
+    padding-left: 35px;
+
+    li:not(:last-child) {
+      padding-right: 25px;
+
+    }
+  }
+
+  &__btns__item {
+    padding-left: 20px;
+    width: 145px;
+    min-width: 145px;
+  }
+
+  &__col-search {
+    flex-grow: 1;
+    padding-left: 20px;
+
+    .header__bottom__search__inp {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      height: 36px;
+    }
+  }
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.modal-full-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 82px;
+
+  .btn-close {
+    margin-right: 20px;
+  }
+}
+
+.brand-modal {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 50vw;
+    background: #efeff0;
+    margin-right: -12px;
+  }
+  &__left {
+    margin-right: -30px;
+    position: relative;
+    height: calc(100vh - 82px);
+    background: #efeff0;
+    overflow-y: visible;
+    overflow-x: auto;
+    padding: 30px 0;
+  }
+  &__right {
+    height: calc(100vh - 82px);
+    overflow-y: visible;
+    overflow-x: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    li {
+      padding-bottom: 10px;
+      a {
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__item {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  &__nav {
+    &__item {
+     display: block;
+      height: 65px;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+      &__ico {
+        width: 120px;
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          max-height: 100%;
+          width: auto;
+          filter: grayscale(100%);
+        }
+      }
+      &.active {
+        background: #fff;
+        img {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
 }

@@ -83,12 +83,25 @@
                             </svg>
                         </div>
                         <div class="dropdown">
-                            <div class="header__city__active dropdown-toggle" data-bs-toggle="dropdown" itemprop="addressLocality">
+                            <div class="header__city__active dropdown-toggle" data-bs-toggle="dropdown"
+                                 itemprop="addressLocality">
                                 Москва
                             </div>
-                            <ul class="dropdown-menu">
-                                <li>1</li>
-                            </ul>
+                            <div class="dropdown-menu header__city__dropdown">
+                                <div class="header__city__dropdown__caption">Выберите город</div>
+                                <label class="header__city__dropdown__item checkbox-custom">
+                                    <input type="radio" name="city" value="Москва" checked>
+                                    <span class="checkbox-custom__val">Москва</span>
+                                </label>
+                                <label class="header__city__dropdown__item checkbox-custom">
+                                    <input type="radio" name="city" value="Санкт-Петербург">
+                                    <span class="checkbox-custom__val">Санкт-Петербург</span>
+                                </label>
+                                <div class="header__city__dropdown__footer">От выбранного города зависят
+                                    цены, наличие товара и способы
+                                    доставки
+                                </div>
+                            </div>
                         </div>
                         <time
                                 class="header__worcktime"
@@ -154,22 +167,21 @@
                 </div>
             </div>
         </div>
-
         <div class="header__bottom">
             <div class="container">
                 <div class="header__bottom__row d-flex">
                     <div class="header__bottom__col-btn">
                         <button class="header__bottom__btn btn btn--red">
                             <span class="text-uppercase">Каталог</span>
-                            <svg width="18" height="12" >
+                            <svg width="18" height="12">
                                 <use xlink:href="#svg-burger"/>
                             </svg>
                         </button>
                     </div>
                     <div class="header__bottom__col-btn">
-                        <button class="header__bottom__btn btn btn--silver">
+                        <button class="header__bottom__btn btn btn--silver" data-bs-toggle="modal" data-bs-target="#brandsModal">
                             <span class="text-uppercase">БРЕНДЫ</span>
-                            <svg width="18" height="12" >
+                            <svg width="18" height="12">
                                 <use xlink:href="#svg-burger"/>
                             </svg>
                         </button>
@@ -177,15 +189,99 @@
                     <div class="header__bottom__col-search">
                         <form action="">
                             <div class="header__bottom__search">
-                                <input type="text" autocomplete="off" required name="s" class="header__bottom__search__inp" placeholder="Поиск по товарам, категориям, брендам">
+                                <input type="text" autocomplete="off" required name="s"
+                                       class="header__bottom__search__inp"
+                                       placeholder="Поиск по товарам, категориям, брендам">
                                 <button type="submit" class="header__bottom__search__submit">
-                                    <svg width="18" height="18" >
+                                    <svg width="18" height="18">
                                         <use xlink:href="#svg-search"/>
                                     </svg>
                                 </button>
                             </div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__fix-menu active"  id="fixMenu">
+            <div class="container">
+                <div class="header__fix-menu__wrap d-flex align-items-center">
+                    <a href="/" class="header__fix-menu__logo">
+                        <img src="images/dist/logo.svg" alt="" width="144" height="37">
+                    </a>
+                    <div class="header__fix-menu__btns d-flex">
+                        <div class="header__fix-menu__btns__item">
+                            <button class="header__bottom__btn btn btn--red btn--h36">
+                                <span class="text-uppercase">Каталог</span>
+                                <svg width="18" height="12">
+                                    <use xlink:href="#svg-burger"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="header__fix-menu__btns__item">
+                            <button class="header__bottom__btn btn btn--silver btn--h36" data-bs-toggle="modal" data-bs-target="#brandsModal">
+                                <span class="text-uppercase">БРЕНДЫ</span>
+                                <svg width="18" height="12">
+                                    <use xlink:href="#svg-burger"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__fix-menu__col-search">
+                        <form action="">
+                            <div class="header__bottom__search">
+                                <input type="text" autocomplete="off" required="" name="s" class="header__bottom__search__inp" placeholder="Поиск по товарам, категориям, брендам">
+                                <button type="submit" class="header__bottom__search__submit">
+                                    <svg width="18" height="18">
+                                        <use xlink:href="#svg-search"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav header__fix-menu__nav-ico">
+                        <li>
+                            <a href="">
+                                <div class="header__fix-menu__nav-ico__svg">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#svg-cabinet"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="header__fix-menu__nav-ico__svg">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#svg-compare"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="header__fix-menu__nav-ico__svg">
+                                    <svg width="22" height="24">
+                                        <use xlink:href="#svg-favourites"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="d-flex header__fix-menu__cart">
+                                <div class="header__fix-menu__nav-ico__svg">
+                                    <span class="header__icons__item__count active">3</span>
+                                    <svg width="24" height="24">
+                                        <use xlink:href="#svg-cart"/>
+                                    </svg>
+                                </div>
+                                <div class="header__fix-menu__cart__val">
+                                    10 000 000 руб.
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -2964,8 +3060,154 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="brandsModal" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content p-0">
+            <div class="container">
+                <div class="row modal-full-header align-items-center">
+                    <div class="col-xl-2 col-lg-3 col-4">
+                        <div class="modal__title">
+                            Бренды
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-9 col-8 d-flex align-items-center justify-content-between">
+                        <div class="pl-30">
+                            <a href="" class="link-more">
+                                Все бренды
+                                <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </span>
+                            </a>
+                        </div>
+                        <div class="btn-close" data-bs-dismiss="modal">
+                            <svg width="24" height="24">
+                                <use xlink:href="#svg-close"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row brand-modal">
+                    <div class="col-xl-2 col-lg-3 col-4">
+                        <div class="brand-modal__left">
+                            <ul class="nav flex-column brand-modal__nav">
+                                <li>
+                                    <a data-brand="brand1" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand1.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand2" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand2.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand3" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand3.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand4" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand4.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand5" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand5.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand6" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand6.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand7" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand7.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand8" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand8.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand9" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand9.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-brand="brand10" class="brand-modal__nav__item">
+                                        <div class="brand-modal__nav__item__ico">
+                                            <img src="./images/dist/brand10.png" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-9 col-8">
+                        <div class="pl-30 brand-modal__right">
+                            <div class="brand-modal__right__item" id="brand1">
+                                <ul class="nav flex-column">
+                                    <li><a href="">Планки для столешниц</a></li>
+                                    <li><a href="">Кромка ABS Egger</a></li>
+                                    <li><a href="">МДФ</a></li>
+                                </ul>
+                            </div>
+                            <div class="brand-modal__right__item" id="brand2">
+                                <ul class="nav flex-column">
+                                    <li><a href="">Планки для столешниц</a></li>
+                                    <li><a href="">Кромка ABS Egger</a></li>
+                                    <li><a href="">МДФ</a></li>
+                                    <li><a href="">Планки для столешниц</a></li>
+                                    <li><a href="">Кромка ABS Egger</a></li>
+                                    <li><a href="">МДФ</a></li>
+                                </ul>
+                            </div>
+                            <div class="brand-modal__right__item" id="brand3">
+                                <ul class="nav flex-column">
+                                    <li><a href="">Планки для столешниц</a></li>
+                                    <li><a href="">Кромка ABS Egger</a></li>
+                                    <li><a href="">Планки для столешниц</a></li>
+                                    <li><a href="">Кромка ABS Egger</a></li>
+                                    <li><a href="">Планки для столешниц</a></li>
+                                    <li><a href="">Кромка ABS Egger</a></li>
+                                    <li><a href="">Планки для столешниц</a></li>
+                                    <li><a href="">Кромка ABS Egger</a></li>
+                                    <li><a href="">МДФ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<div id="resSearch" class="title-search-result" style="display: none; position: absolute; top: 210px; margin-left: -265px; left: 50%; width: 850px;">
+        </div>
+    </div>
+</div>
+
+<div id="resSearch" class="title-search-result"
+     style="display: none; position: absolute; top: 210px; margin-left: -265px; left: 50%; width: 850px;">
     <div class="title-search-result__wrap">
 
         <div class="title-search-result__item">
@@ -2975,11 +3217,13 @@
                     <img
                             width="48"
                             height="48"
-                        src="./images/dist/s.jpg"
-                        alt="">
+                            src="./images/dist/s.jpg"
+                            alt="">
                 </div>
                 <div class="title-search-result__item__desc">
-                    <div class="title-search-result__item__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</div>
+                    <div class="title-search-result__item__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3,
+                        Slotex
+                    </div>
                     <div class="title-search-result__item__cost">
                         <span class="title-search-result__item__cost__val">21 642.00</span>
                         <span class="title-search-result__item__cost__currency">руб./шт</span>
@@ -2993,7 +3237,7 @@
                 Все результаты
                 <span class="link-more__ico">
                      <svg width="6" height="12">
-                        <use xlink:href="#svg-next"></use>
+                        <use xlink:href="#svg-next"/>
                     </svg>
                 </span>
             </a>
@@ -3487,6 +3731,7 @@
         <symbol id="svg-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path fill="currentColor" d="M301.25,256,502.62,54.64A32,32,0,0,0,457.36,9.38h0L256,210.75,54.64,9.38A32,32,0,0,0,9.38,54.64L210.75,256,9.38,457.36a32,32,0,0,0,45.26,45.26L256,301.25,457.36,502.62a32,32,0,0,0,45.26-45.26Z"/>
         </symbol>
+
     </svg>
 </div>
 
