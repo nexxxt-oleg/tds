@@ -705,7 +705,6 @@ img {
 .tabs-slider__products .slider-product__item {
   width: 270px;
   height: auto;
-  margin-right: 30px;
 }
 
 .card-product__pic {
@@ -1668,7 +1667,8 @@ img {
   }
 }
 .menu-level2:not(.active),
-.menu-level3:not(.active) {
+.menu-level3:not(.active),
+.header__bottom__col-search__mob {
   display: none;
 }
 .menu-level2__submenu {
@@ -1688,4 +1688,10 @@ img {
 .header__mob-cabinet,
 .header__icons__mob-col {
   display: none;
+}
+.top-more-link {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  z-index: 10;
 }
