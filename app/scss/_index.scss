@@ -5,12 +5,18 @@ body {
   color: var(--color-main);
 
 }
+
 .row {
   --bs-gutter-x: 30px;
 }
+
 .main {
   position: relative;
   overflow: hidden;
+}
+
+.header__top__mob-soc {
+  display: none;
 }
 
 a {
@@ -184,11 +190,15 @@ a {
   }
 
   &__val {
-    color: #231f20;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-    display: block;
+
+
+    span {
+      display: block;
+      color: #231f20;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+    }
   }
 
   &__btn {
@@ -227,6 +237,8 @@ a {
 
 .header__bottom {
   padding-bottom: 25px;
+  position: relative;
+  z-index: 1;
 
   &__col-btn {
     width: 160px;
@@ -1417,7 +1429,7 @@ img {
   background: #fff;
   position: fixed;
   z-index: 100;
-  top: 0;
+  top: -100%;
   left: 0;
   right: 0;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
@@ -1428,6 +1440,7 @@ img {
     visibility: visible;
     transform: translateY(0);
     margin-top: -1px;
+    top: 0;
   }
 
   .header__fix-menu__nav-ico__svg {
@@ -1495,6 +1508,7 @@ img {
 
 .brand-modal {
   position: relative;
+
   &::after {
     content: '';
     display: block;
@@ -1505,8 +1519,9 @@ img {
     height: 100%;
     width: 50vw;
     background: #efeff0;
-    margin-right: -12px;
+    margin-right: -15px;
   }
+
   &__left {
     margin-right: -30px;
     position: relative;
@@ -1516,33 +1531,40 @@ img {
     overflow-x: auto;
     padding: 30px 0;
   }
+
   &__right {
     height: calc(100vh - 82px);
     overflow-y: visible;
     overflow-x: auto;
     padding-top: 30px;
     padding-bottom: 30px;
+
     li {
       padding-bottom: 10px;
+
       a {
         display: block;
         font-size: 14px;
         line-height: 20px;
       }
     }
+
     &__item {
       display: none;
+
       &.active {
         display: block;
       }
     }
   }
+
   &__nav {
     &__item {
-     display: block;
+      display: block;
       height: 65px;
       border-radius: 5px 0 0 5px;
       cursor: pointer;
+
       &__ico {
         width: 120px;
         padding: 15px 20px;
@@ -1550,6 +1572,7 @@ img {
         align-items: center;
         justify-content: center;
         height: 65px;
+
         img {
           display: block;
           max-width: 100%;
@@ -1559,8 +1582,10 @@ img {
           filter: grayscale(100%);
         }
       }
+
       &.active {
         background: #fff;
+
         img {
           filter: grayscale(0);
         }
@@ -1568,8 +1593,10 @@ img {
     }
   }
 }
+
 .catalog-modal {
   position: relative;
+
   &::after {
     content: '';
     display: block;
@@ -1581,6 +1608,7 @@ img {
     width: 50vw;
     background: #efeff0;
   }
+
   &__left {
     position: relative;
     width: 330px;
@@ -1591,16 +1619,18 @@ img {
     overflow-x: auto;
     padding: 30px 0;
   }
+
   &__right {
     position: relative;
     width: 330px;
     flex-grow: 1;
     padding-left: 30px;
   }
+
   &__menu-level1 {
     display: flex;
     align-items: center;
-    padding: 5px 25px 5px  45px;
+    padding: 5px 25px 5px 45px;
     border-radius: 5px 0 0 5px;
     transition: all 0.2s ease-in-out;
     font-size: 14px;
@@ -1608,6 +1638,7 @@ img {
     font-weight: 500;
     position: relative;
     min-height: 36px;
+
     &__ico {
       display: flex;
       align-items: center;
@@ -1618,21 +1649,25 @@ img {
       width: 36px;
       left: 0;
       top: 0;
+
       svg {
         display: block;
         width: 16px;
         height: 16px;
       }
     }
+
     &.active {
       color: var(--color-main);
       background: #fff;
+
       .catalog-modal__menu-level1__ico {
         color: var(--color-red);
       }
     }
   }
 }
+
 .fs-16 {
   font-size: 16px;
 }
@@ -1643,9 +1678,11 @@ img {
   height: calc(100vh - 82px);
   overflow-y: visible;
   overflow-x: auto;
+
   &__group {
     display: flex;
     align-items: flex-start;
+
     &__letter {
       width: 48px;
       min-width: 48px;
@@ -1654,26 +1691,32 @@ img {
       font-weight: 500;
       color: var(--color-red);
     }
+
     .nav {
       flex-grow: 1;
     }
   }
+
   li {
     padding-bottom: 12px;
+
     a {
       font-size: 14px;
       line-height: 20px;
     }
   }
 }
+
 .menu-level2:not(.active),
 .menu-level3:not(.active),
 .header__bottom__col-search__mob {
   display: none;
 }
+
 .menu-level2__submenu {
   display: flex;
   align-items: center;
+
   &__ico {
     display: flex;
     width: 70px;
@@ -1682,6 +1725,7 @@ img {
     margin-left: auto;
   }
 }
+
 .header__mob-col-nav,
 .header__city__active__mob-ico,
 .header__phone__mob-ico,
@@ -1689,9 +1733,61 @@ img {
 .header__icons__mob-col {
   display: none;
 }
+
 .top-more-link {
   position: absolute;
   right: 0;
   top: 8px;
   z-index: 10;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #484848;
+  text-decoration: none;
+
+  &__ico {
+    min-width: 30px;
+    width: 30px;
+
+    svg {
+      display: block;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  span {
+    flex-grow: 1;
+  }
+
+  &__drop {
+    padding: 0 5px;
+  }
+  &:not(.collapsed) .accordion-button__drop {
+    color: var(--color-red);
+    transform: rotate(180deg);
+  }
+}
+.btn-close {
+  background-image: none !important;
+}
+.mob-modal-body__list {
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 5px;
+
+  li a {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    line-height: 20px;
+  }
+}
+.mob-modal-body__sub-list a {
+  display: block;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-size: 12px;
+  line-height: 20px;
 }

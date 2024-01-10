@@ -12,57 +12,85 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="icon" href="images/favicon.png">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/vendor.css">
 
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
 <div class="main">
-
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="d-flex header__top__row align-items-center">
-                    <ul class="nav header__top__nav">
-                        <li><a href="">О нас</a></li>
-                        <li><a href="">Новости</a></li>
-                        <li><a href="">Оплата и доставка</a></li>
-                        <li><a href="">Для скачивания</a></li>
-                        <li><a href="">Сервисы</a></li>
-                        <li><a href="">Контакты</a></li>
-                        <li>
-                            <a href="">
-                                Цех распила
-                                <svg width="18" height="18" class="ico-red ml-8">
-                                    <use xlink:href="#svg-raspil"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="d-flex align-items-center header__top__right">
-                        <ul class="nav nav--soc header__top__soc">
-                            <li>
-                                <a href="" target="_blank">
-                                    <svg width="18" height="11">
-                                        <use xlink:href="#svg-vk"/>
+        <div class="navbar-expand-xl header__mob-top">
+            <div class="collapse navbar-collapse w-100" id="topNavMenu">
+                <div class="header__top w-100">
+                    <div class="container">
+                        <div class="d-flex header__top__row align-items-center">
+                            <ul class="nav header__top__nav">
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="">Оплата и доставка</a></li>
+                                <li><a href="">Для скачивания</a></li>
+                                <li><a href="">Сервисы</a></li>
+                                <li><a href="">Контакты</a></li>
+                                <li>
+                                    <a href="">
+                                        Цех распила
+                                        <svg width="18" height="18" class="ico-red ml-8">
+                                            <use xlink:href="#svg-raspil"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center header__top__right">
+                                <ul class="nav nav--soc header__top__soc">
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <svg width="18" height="11">
+                                                <use xlink:href="#svg-vk"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">
+                                            <svg width="18" height="15">
+                                                <use xlink:href="#svg-telegram"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="" class="d-inline-flex align-items-center header__top__cabinet">
+                                    <svg width="18" height="18" class="mr-15">
+                                        <use xlink:href="#svg-cabinet"/>
                                     </svg>
+                                    Личный кабинет
                                 </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <svg width="18" height="15">
-                                        <use xlink:href="#svg-telegram"/>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="" class="d-inline-flex align-items-center header__top__cabinet">
-                            <svg width="18" height="18" class="mr-15">
-                                <use xlink:href="#svg-cabinet"/>
-                            </svg>
-                            Личный кабинет
-                        </a>
+                            </div>
+                            <div class="header__top__mob-soc">
+                                <div class="header__top__mob-soc__title">Мы в социальных сетях</div>
+                                <ul class="nav footer__nav-soc">
+                                    <li>
+                                        <a href="" target="_blank" class="footer__nav-soc__item">
+                                            <div class="footer__nav-soc__item__ico">
+                                                <svg width="24" height="13">
+                                                    <use xlink:href="#svg-vk"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank" class="footer__nav-soc__item">
+                                            <div class="footer__nav-soc__item__ico">
+                                                <svg width="24" height="20">
+                                                    <use xlink:href="#svg-telegram"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -73,7 +101,9 @@
 
                 <div class="d-flex align-items-center header__center__row">
                     <div class="header__mob-col-nav">
-                        <button class="hamburger hamburger--collapse js-hamburger">
+                        <button data-bs-toggle="collapse"
+                                data-bs-target="#topNavMenu"
+                                id="topNav" class="hamburger hamburger--collapse collapsed">
                             <div class="hamburger-box">
                                 <div class="hamburger-inner"></div>
                             </div>
@@ -197,7 +227,7 @@
                                 </a>
                             </li>
                             <li class="header__icons__mob-col">
-                                <a href="" class="header__icons__item">
+                                <a href="#mobModal" class="header__icons__item" data-bs-toggle="modal" data-bs-target="#mobModal">
                                     <div class="header__icons__item__svg">
                                         <svg width="20" height="20">
                                             <use xlink:href="#svg-catalog"></use>
@@ -266,7 +296,7 @@
             </div>
         </div>
 
-        <div class="header__fix-menu active" id="fixMenu">
+        <div class="header__fix-menu" id="fixMenu">
             <div class="container">
                 <div class="header__fix-menu__wrap d-flex align-items-center">
                     <a href="/" class="header__fix-menu__logo">
