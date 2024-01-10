@@ -290,11 +290,43 @@
       padding: 0 20px 5px;
     }
   }
+  .cookie {
+    bottom: 90px;
+    &__text {
+      padding-right: 30px;
+    }
+  }
+  .header__icons__item__label {
+    display: block;
+    color: #fff;
+  }
+  .footer__bottom {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 991px) {
 
+  .footer__logo {
+    margin-bottom: 20px;
+  }
+  .footer__nav {
+    display: none;
+  }
+  .footer__email {
+    margin-bottom: 20px;
+  }
+  .footer__row {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
 
+  .footer__nav-soc {
+    margin-bottom: 25px;
+  }
+  .footer__row2 {
+    padding-bottom: 25px;
+  }
   .home-slider__item__inner {
     padding: 20px;
     width: 100%;
@@ -352,6 +384,9 @@
   .header__icons__list {
     max-width: 540px;
   }
+  .footer {
+    padding-top: 30px;
+  }
   .home-slider__item__inner h2 {
     font-size: 16px;
   }
@@ -387,6 +422,31 @@
   }
   .page-caption h2 {
     font-size: 20px;
+  }
+  .cookie__wrap {
+    border-radius: 5px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .cookie__ico {
+    padding-bottom: 20px;
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  .cookie__text {
+    padding: 0 0 20px 0;
+  }
+  .swiper-scrollbar--mob {
+    display: block;
+  }
+  .footer__btn-up {
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    bottom: 90px;
+    top: auto;
   }
 }
 
@@ -465,6 +525,43 @@
   .tabs-slider__header .nav-item {
     padding-right: 0;
     width: auto;
+  }
+  .footer__nav-soc__item span {
+    display: none;
+  }
+  .footer__nav-soc li {
+    width: auto;
+  }
+  .footer__form-subscription__row {
+    display: block !important;
+  }
+  .footer__form-subscription__col-inp {
+    padding: 0 0 20px;
+    .form-control {
+      height: 36px;
+    }
+  }
+  .footer__form-subscription {
+    max-width: 100%;
+  }
+  .footer__form-subscription__ps br {
+    display: none;
+  }
+  .footer__bottom a {
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .footer__bottom__row {
+    flex-direction: column-reverse;
+  }
+  .footer__bottom__copy,
+  .footer__address__val,
+  .footer__address__worcktime {
+    font-size: 12px;
+  }
+  .footer__caption {
+    font-size: 16px;
   }
 }
 

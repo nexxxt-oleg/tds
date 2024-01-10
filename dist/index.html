@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="main">
-    <header class="header">
+    <header class="header" id="top">
         <div class="navbar-expand-xl header__mob-top">
             <div class="collapse navbar-collapse w-100" id="topNavMenu">
                 <div class="header__top w-100">
@@ -65,7 +65,7 @@
                                     <svg width="18" height="18" class="mr-15">
                                         <use xlink:href="#svg-cabinet"/>
                                     </svg>
-                                    Личный кабинет
+                                    <span>Личный кабинет</span>
                                 </a>
                             </div>
                             <div class="header__top__mob-soc">
@@ -268,6 +268,7 @@
                             <form action="">
                                 <div class="header__bottom__search">
                                     <input type="text" autocomplete="off" required name="s"
+                                           onclick="document.getElementById('resSearch').classList.toggle('active')"
                                            class="header__bottom__search__inp"
                                            placeholder="Поиск по товарам, категориям, брендам">
                                     <button type="submit" class="header__bottom__search__submit">
@@ -991,6 +992,7 @@
                 <div class="tab-pane fade show active" id="tab1" role="tabpanel">
                     <div class="tabs-slider__products">
                         <div class="swiper slider-product"
+                             data-scrollbar="tab1_scroll"
                              data-navnext="tab1_nav_next"
                              data-navprev="tab1_nav_prev">
                             <div class="swiper-wrapper">
@@ -1493,6 +1495,7 @@
 </div>
 </div>
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab1_scroll"></div>
                         </div>
                         <button class="swiper-prev slider-nav swiper-button-disabled" id="tab1_nav_prev">
                             <svg width="18" height="18">
@@ -1519,6 +1522,7 @@
                 <div class="tab-pane fade" id="tab2" role="tabpanel">
                     <div class="tabs-slider__products">
                         <div class="swiper slider-product"
+                             data-scrollbar="tab2_scroll"
                              data-navnext="tab2_nav_next"
                              data-navprev="tab2_nav_prev">
                             <div class="swiper-wrapper">
@@ -2021,6 +2025,7 @@
 </div>
 </div>
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab2_scroll"></div>
                         </div>
                         <button class="swiper-prev slider-nav swiper-button-disabled" id="tab2_nav_prev">
                             <svg width="18" height="18">
@@ -2047,6 +2052,7 @@
                 <div class="tab-pane fade" id="tab3" role="tabpanel">
                     <div class="tabs-slider__products">
                         <div class="swiper slider-product"
+                             data-scrollbar="tab3_scroll"
                              data-navnext="tab3_nav_next"
                              data-navprev="tab3_nav_prev">
                             <div class="swiper-wrapper">
@@ -2549,6 +2555,7 @@
 </div>
 </div>
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab3_scroll"></div>
                         </div>
                         <button class="swiper-prev slider-nav swiper-button-disabled" id="tab3_nav_prev">
                             <svg width="18" height="18">
@@ -2950,6 +2957,26 @@
         </div>
     </div>
 </div>
+<div class="cookie" id="cookie">
+    <div class="container">
+        <div class="cookie__wrap">
+            <div class="cookie__ico">
+                <svg width="48" height="48" class="d-block">
+                    <use xlink:href="#svg-cookie"></use>
+                </svg>
+            </div>
+            <div class="cookie__text">
+                Мы используем <a href="">cookie</a> файлы, чтобы адаптировать предложения в соответствии с вашими потребностями и
+                обеспечить максимальное удобство при взаимодействии с сайтом. Продолжая пользоваться сайтом, вы
+                соглашаетесь с использованием cookie файлов. <a href="">Подробнее о хранении и использовании персональных данных</a>
+            </div>
+            <div class="cookie__btn">
+                <a onclick="document.getElementById('cookie').classList.add('d-none'); return false;" class="btn btn--red w-100" href="">ПРИНЯТЬ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <footer class="footer">
     <div class="container">
@@ -3061,7 +3088,7 @@
             <div class="col-xl-7 col-lg-6">
                 <div class="footer__caption">Будьте в курсе новостей</div>
                 <form action="" class="footer__form-subscription">
-                    <div class="d-flex">
+                    <div class="d-flex footer__form-subscription__row">
                         <div class="footer__form-subscription__col-inp">
                             <input type="email" placeholder="E-mail" class="form-control" required>
                         </div>
@@ -3079,7 +3106,7 @@
     </div>
     <div class="footer__bottom">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center footer__bottom__row">
                 <div class="col-xl-5 col-lg-6">
                     <span class="footer__bottom__copy">© ТД «Сервер», 2023</span>
                 </div>
@@ -3092,6 +3119,11 @@
             </div>
         </div>
     </div>
+    <a href="#top" id="btnUp" class="footer__btn-up">
+        <svg width="19" height="10" class="d-block">
+            <use xlink:href="#svg-up"></use>
+        </svg>
+    </a>
 </footer>
 <div class="modal fade" id="callbackModal" tabindex="-1">
     <div class="modal-dialog">
@@ -4031,7 +4063,17 @@
                   d="M448,512H277.33V277.33H512V448A64,64,0,0,1,448,512ZM320,469.33H448A21.33,21.33,0,0,0,469.33,448V320H320Z"/>
         </symbol>
         <symbol id="svg-drop" viewBox="0 0 280.99 161.83">
-            <path fill="currentColor" d="M21.33,0H259.66a21.34,21.34,0,0,1,15.09,36.42L155.58,155.58a21.34,21.34,0,0,1-30.17,0L6.25,36.42A21.34,21.34,0,0,1,21.33,0Z"/>
+            <path fill="currentColor"
+                  d="M21.33,0H259.66a21.34,21.34,0,0,1,15.09,36.42L155.58,155.58a21.34,21.34,0,0,1-30.17,0L6.25,36.42A21.34,21.34,0,0,1,21.33,0Z"/>
+        </symbol>
+
+        <symbol id="svg-cookie" viewBox="0 0 384 384">
+            <path fill="#484848"
+                  d="M192,0A192,192,0,1,0,384,192a185.66,185.66,0,0,0-1.5-22.94,39.86,39.86,0,0,1-59.94-19.31A63.86,63.86,0,0,1,224,96a63.18,63.18,0,0,1,8.94-32.12A5,5,0,0,1,232,64a40,40,0,0,1-40-40A39.41,39.41,0,0,1,199.94.31C197.31.19,194.69,0,192,0ZM312,0a24,24,0,1,0,24,24A24,24,0,0,0,312,0ZM160.81,35a72.51,72.51,0,0,0,31.94,49.38A89.86,89.86,0,0,0,192,96a96.1,96.1,0,0,0,96,96,92.79,92.79,0,0,0,23.5-3,72.24,72.24,0,0,0,39.75,18.5C343.44,288.5,275,352,192,352c-88.25,0-160-71.75-160-160C32,114.44,87.5,49.56,160.81,35ZM288,80a16,16,0,1,0,16,16A16,16,0,0,0,288,80ZM160,96a16,16,0,1,0,16,16A16,16,0,0,0,160,96Zm208,0a16,16,0,1,0,16,16A16,16,0,0,0,368,96ZM112,144a32,32,0,1,0,32,32A32,32,0,0,0,112,144Zm80,32a16,16,0,1,0,16,16A16,16,0,0,0,192,176Zm-56,64a24,24,0,1,0,24,24A24,24,0,0,0,136,240Zm112,16a24,24,0,1,0,24,24A24,24,0,0,0,248,256Z"/>
+        </symbol>
+
+        <symbol id="svg-up" viewBox="0 0 512 269.98">
+           <path fill="currentColor"  d="M512,224.61,308.91,21.79a74.82,74.82,0,0,0-105.56,0L0,224.84,45.25,270l203.33-203a10.67,10.67,0,0,1,15.08,0L466.75,269.77Z"/>
         </symbol>
     </svg>
 </div>

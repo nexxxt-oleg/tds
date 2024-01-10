@@ -492,11 +492,13 @@
                 <div class="tab-pane fade show active" id="tab1" role="tabpanel">
                     <div class="tabs-slider__products">
                         <div class="swiper slider-product"
+                             data-scrollbar="tab1_scroll"
                              data-navnext="tab1_nav_next"
                              data-navprev="tab1_nav_prev">
                             <div class="swiper-wrapper">
                                 <!--#include virtual="/parts/slider-product.html" -->
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab1_scroll"></div>
                         </div>
                         <button class="swiper-prev slider-nav swiper-button-disabled" id="tab1_nav_prev">
                             <svg width="18" height="18">
@@ -523,11 +525,13 @@
                 <div class="tab-pane fade" id="tab2" role="tabpanel">
                     <div class="tabs-slider__products">
                         <div class="swiper slider-product"
+                             data-scrollbar="tab2_scroll"
                              data-navnext="tab2_nav_next"
                              data-navprev="tab2_nav_prev">
                             <div class="swiper-wrapper">
                                 <!--#include virtual="/parts/slider-product.html" -->
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab2_scroll"></div>
                         </div>
                         <button class="swiper-prev slider-nav swiper-button-disabled" id="tab2_nav_prev">
                             <svg width="18" height="18">
@@ -554,11 +558,13 @@
                 <div class="tab-pane fade" id="tab3" role="tabpanel">
                     <div class="tabs-slider__products">
                         <div class="swiper slider-product"
+                             data-scrollbar="tab3_scroll"
                              data-navnext="tab3_nav_next"
                              data-navprev="tab3_nav_prev">
                             <div class="swiper-wrapper">
                                 <!--#include virtual="/parts/slider-product.html" -->
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab3_scroll"></div>
                         </div>
                         <button class="swiper-prev slider-nav swiper-button-disabled" id="tab3_nav_prev">
                             <svg width="18" height="18">
@@ -812,5 +818,23 @@
         </div>
     </div>
 </div>
-
+<div class="cookie" id="cookie">
+    <div class="container">
+        <div class="cookie__wrap">
+            <div class="cookie__ico">
+                <svg width="48" height="48" class="d-block">
+                    <use xlink:href="#svg-cookie"></use>
+                </svg>
+            </div>
+            <div class="cookie__text">
+                Мы используем <a href="">cookie</a> файлы, чтобы адаптировать предложения в соответствии с вашими потребностями и
+                обеспечить максимальное удобство при взаимодействии с сайтом. Продолжая пользоваться сайтом, вы
+                соглашаетесь с использованием cookie файлов. <a href="">Подробнее о хранении и использовании персональных данных</a>
+            </div>
+            <div class="cookie__btn">
+                <a onclick="document.getElementById('cookie').classList.add('d-none'); return false;" class="btn btn--red w-100" href="">ПРИНЯТЬ</a>
+            </div>
+        </div>
+    </div>
+</div>
 <!--#include virtual="/parts/footer.html" -->
