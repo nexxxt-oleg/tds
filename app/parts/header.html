@@ -35,7 +35,7 @@
                                 <li><a href="">Сервисы</a></li>
                                 <li><a href="">Контакты</a></li>
                                 <li>
-                                    <a href="">
+                                    <a href="" class="link-raspil">
                                         Цех распила
                                         <svg width="18" height="18" class="ico-red ml-8">
                                             <use xlink:href="#svg-raspil"></use>
@@ -227,7 +227,8 @@
                                 </a>
                             </li>
                             <li class="header__icons__mob-col">
-                                <a href="#mobModal" class="header__icons__item" data-bs-toggle="modal" data-bs-target="#mobModal">
+                                <a href="#mobModal" class="header__icons__item" data-bs-toggle="modal"
+                                   data-bs-target="#mobModal">
                                     <div class="header__icons__item__svg">
                                         <svg width="20" height="20">
                                             <use xlink:href="#svg-catalog"></use>
@@ -264,12 +265,18 @@
                     </div>
                     <div class="header__bottom__col-search">
                         <div class="header__bottom__col-search__pc">
-                            <form action="">
+                            <form action="" id="searchPc">
                                 <div class="header__bottom__search">
-                                    <input type="text" autocomplete="off" required name="s"
-                                           onclick="document.getElementById('resSearch').classList.toggle('active')"
-                                           class="header__bottom__search__inp"
-                                           placeholder="Поиск по товарам, категориям, брендам">
+                                    <div class="position-relative w-100">
+                                        <input type="text"
+                                               autocomplete="off"
+                                               required
+                                               id="searchPcInp"
+                                               name="s"
+                                               onclick="document.getElementById('resSearch').classList.toggle('active')"
+                                               class="header__bottom__search__inp"
+                                               placeholder="Поиск по товарам, категориям, брендам">
+                                    </div>
                                     <button type="submit" class="header__bottom__search__submit">
                                         <svg width="18" height="18">
                                             <use xlink:href="#svg-search"/>
@@ -279,11 +286,14 @@
                             </form>
                         </div>
                         <div class="header__bottom__col-search__mob">
-                            <form action="">
+                            <form action="" id="searchMob">
                                 <div class="header__bottom__search">
-                                    <input type="text" autocomplete="off" required name="s"
-                                           class="header__bottom__search__inp"
-                                           placeholder="Поиск по товарам, категориям, брендам">
+                                    <div class="position-relative w-100">
+                                        <input type="text" autocomplete="off" required name="s"
+                                               class="header__bottom__search__inp"
+                                               id="searchMobInp"
+                                               placeholder="Поиск по товарам, категориям, брендам">
+                                    </div>
                                     <button type="submit" class="header__bottom__search__submit">
                                         <svg width="18" height="18">
                                             <use xlink:href="#svg-search"/>
