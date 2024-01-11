@@ -321,7 +321,9 @@ a {
   &--red {
     background: var(--color-red);
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       background: var(--color-red-hover);
       color: #fff;
     }
@@ -330,7 +332,9 @@ a {
   &--silver {
     background: var(--color-main);
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       background: #363636;
       color: #fff;
     }
