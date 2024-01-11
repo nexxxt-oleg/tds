@@ -30,7 +30,7 @@ a {
 
 .header {
   position: relative;
-  z-index: 10;
+  z-index: 50;
   &__top {
     padding: 10px 0;
     background: #efeff0;
@@ -439,11 +439,6 @@ a {
   background: #fff;
   transition: all 0.2s ease;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-
-  &:hover {
-    background: var(--color-red);
-    color: #fff;
-  }
 }
 
 .catalog-categories {
@@ -457,11 +452,18 @@ a {
       width: 100%;
       height: auto;
       border-radius: 5px;
+      transition: all 0.2s ease-in-out;
     }
 
     &__title {
       text-align: center;
       padding-top: 15px;
+    }
+
+    a:hover {
+      img {
+        transform: scale(1.02);
+      }
     }
   }
 }
@@ -476,7 +478,6 @@ button:hover,
 .form-select:focus,
 .form-select:hover {
   outline: none !important;
-  box-shadow: none !important;
 }
 
 .form-select {
@@ -517,6 +518,10 @@ img {
           opacity: 1;
           margin-top: -1px;
         }
+      }
+
+      &:hover {
+        opacity: 1;
       }
 
       &::after {
@@ -724,6 +729,10 @@ img {
   border-radius: 5px;
   color: var(--color-main);
   background: #f4f4f4;
+  &:hover {
+    color: var(--color-red);
+    background: #f4f4f4;
+  }
 }
 
 .tabs-slider__products .slider-product__item {
@@ -782,12 +791,15 @@ img {
     text-align: center;
     border-radius: 5px;
     font-size: 14px;
-    line-height: 46px;
+    line-height: 36px;
     font-weight: 500;
     padding: 5px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
   }
 }
 
@@ -890,6 +902,10 @@ img {
 }
 
 .news-slider {
+  margin-top: -5px;
+  .swiper-slide {
+    padding-top: 5px;
+  }
   .slider-nav {
     top: 115px;
     position: absolute;
@@ -904,6 +920,17 @@ img {
     }
   }
 }
+.news-item {
+  &__img {
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    .news-item__img {
+      transform: translateY(-5px);
+    }
+  }
+}
+
 
 .banner {
   position: relative;
@@ -973,6 +1000,7 @@ img {
   padding: 25px;
   border-radius: 5px;
   background: #f4f4f4;
+  transition: all 0.2s ease-in-out;
   height: 120px;
 
   &__img {
@@ -986,6 +1014,7 @@ img {
   }
 
   &:hover {
+    background: #fff;
     .brand-item__img {
       filter: grayscale(0%);
     }
@@ -1343,6 +1372,7 @@ img {
     &__cost {
       display: flex;
       align-items: center;
+      color: var(--color-main);
 
       &__val {
         padding-right: 5px;
@@ -1465,6 +1495,10 @@ img {
       right: -3px;
       top: -2px;
     }
+
+    &:hover {
+      color: #000;
+    }
   }
 
   &__cart {
@@ -1504,6 +1538,9 @@ img {
       height: 36px;
     }
   }
+}
+.header__fix-menu__cart:hover {
+  color: #000;
 }
 
 .pl-30 {
@@ -1844,12 +1881,12 @@ img {
 .quantity__btn:hover {
   background: #e1e0e0;
 }
-.home-slider__nav {
-  .slider-nav:hover {
-    background: #fff !important;
-    color:var(--color-red) !important;
-  }
+
+.slider-nav:hover {
+  background: #fff !important;
+  color:var(--color-red) !important;
 }
+
 .footer__nav-soc__item:hover span {
   color: #fff;
 }
