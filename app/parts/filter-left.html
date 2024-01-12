@@ -1,0 +1,29 @@
+<div class="catalog-filter">
+    <div class="catalog-filter__item accordion-item">
+        <div class="catalog-filter__item__header" data-bs-toggle="collapse" data-bs-target="#filter1">
+            Цена, руб.
+        </div>
+        <div class="accordion-collapse collapse show" id="filter1">
+            <div class="catalog-filter__item__body">
+                <div class="catalog-filter__price d-flex">
+                    <div class="catalog-filter__price__col">
+                        <label for="priceMin">
+                           от
+                        </label>
+                        <input type="text" class="catalog-filter__price__val js-number" id="priceMin">
+                    </div>
+                    <div class="catalog-filter__price__sep"></div>
+                    <div class="catalog-filter__price__col">
+                        <label for="priceMax">
+                            до
+                        </label>
+                        <input type="text" class="catalog-filter__price__val js-number" id="priceMax">
+                    </div>
+                </div>
+                <div class="catalog-filter__price-slider">
+                    <div id="priceRange" data-max-price="100000"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
