@@ -610,16 +610,17 @@
   .quantity {
     display: flex;
     padding-right: 0;
+    height: 36px;
   }
   .quantity__val {
-    height: 36px;
+    height: 100%;
     order: 2;
 
   }
   .quantity__btn {
     position: relative;
     right: auto;
-    height: 36px;
+    height: 100%;
     width: 36px;
 
     &--minus {
