@@ -338,8 +338,8 @@ a {
     &:hover,
     &:active,
     &:focus {
-      background: #363636;
-      color: #fff;
+      background: #363636 !important;
+      color: #fff !important;
     }
   }
 
@@ -2183,7 +2183,7 @@ h1 {
 
 .catalog-filter__price-slider {
   height: 20px;
-  padding: 8px 10px 0;
+  padding: 8px 12px 0;
 }
 
 .custom-checkbox {
@@ -2554,7 +2554,7 @@ h1 {
   background: #f4f4f4;
   .card-product {
     background: #fff;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 h2 {
@@ -2562,4 +2562,8 @@ h2 {
   line-height: 1.2;
   font-weight: 500;
   margin-bottom: 35px;
+}
+.catalog-filter__mob-header,
+.catalog-mob-btn-filter {
+  display: none;
 }

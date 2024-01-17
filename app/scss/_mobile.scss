@@ -378,11 +378,24 @@
   .fpad90 {
     padding-bottom: 50px;
   }
+  .breadcrumb {
+    --bs-breadcrumb-margin-bottom: 15px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header__icons__list {
     max-width: 540px;
+  }
+  .breadcrumb li:not(:last-child) {
+    padding-right: 25px;
+    &::after {
+      right: 10px;
+    }
   }
   .footer {
     padding-top: 30px;
@@ -390,7 +403,8 @@
   .home-slider__item__inner h2 {
     font-size: 16px;
   }
-  .home-slider__item__inner p {
+  .home-slider__item__inner p,
+  .breadcrumb a {
     font-size: 12px;
   }
   .header__bottom__col-search__mob {
@@ -626,6 +640,100 @@
   }
   .footer__caption {
     font-size: 16px;
+  }
+  .catalog-filter {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 0;
+    overflow-y: auto;
+    &.active {
+      display: block;
+    }
+    &__footer {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 10px 20px;
+      box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    }
+    &__reset {
+      width: calc(50% - 10px);
+      padding: 0;
+      margin: 0;
+      height: 36px;
+      border-radius: 5px;
+      border: 1px solid #484848;
+      text-transform: uppercase;
+      font-size: 12px;
+
+      svg,
+      & span {
+        display: none;
+      }
+    }
+    .btn {
+      width: calc(50% - 10px) !important;
+    }
+  }
+  .catalog-filter__mob-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #efeff0;
+    span {
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+    .btn-close {
+      padding: 0;
+      width: 13px;
+      height: 13px;
+    }
+  }
+  .catalog-filter__list {
+    padding: 0 20px;
+  }
+  .catalog-filter__item .catalog-filter__item__header {
+    padding-top: 19px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+  .catalog-mob-btn-filter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 !important;
+    border: none !important;
+    overflow: hidden;
+    &__text {
+      flex-grow: 1;
+      text-transform: uppercase;
+      text-align: left;
+      padding-left: 15px;
+    }
+    &__ico {
+      display: flex;
+      height: 100%;
+      width: 48px;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-red);
+    }
+    &__drop {
+      width: 38px;
+      display: flex;
+      justify-content: center;
+      transform: rotate(180deg);
+    }
   }
 }
 
