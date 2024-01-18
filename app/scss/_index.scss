@@ -106,13 +106,13 @@ a {
   margin-left: auto;
 
   &__list {
-    li:not(:last-child) {
-      padding-right: 35px;
-    }
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 22px;
   }
 
   &__item {
-    width: 64px;
+
     position: relative;
     text-align: center;
     display: block;
