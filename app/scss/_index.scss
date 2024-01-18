@@ -734,7 +734,9 @@ img {
   color: var(--color-main);
   background: #f4f4f4;
 
-  &:hover {
+  &:hover,
+  &.active {
+    border: none;
     color: var(--color-red);
     background: #f4f4f4;
   }
@@ -1860,7 +1862,7 @@ img {
 
 .cookie {
   position: fixed;
-  z-index: 20;
+  z-index: 110;
   bottom: 20px;
   left: 0;
   right: 0;
@@ -1873,7 +1875,7 @@ img {
   padding: 30px;
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
 }
 
 .cookie__ico {
@@ -2581,4 +2583,30 @@ h2 {
 .catalog-filter__mob-header,
 .catalog-mob-btn-filter {
   display: none;
+}
+.filter-active {
+  padding-top: 20px;
+  .swiper-slide {
+    margin-right: 10px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 5px 13px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 20px;
+    background: #ad2125;
+    span {
+      white-space: nowrap;
+    }
+    &__close {
+      margin-left: 7px;
+    }
+    &--all {
+      background: #484848;
+    }
+  }
 }

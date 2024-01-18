@@ -149,7 +149,7 @@
 
     .header__icons__item__count {
       top: 5px;
-      right: 10px;
+      right: 0;
     }
 
     &__svg {
@@ -442,6 +442,8 @@
         width: calc(50% - 10px);
         max-width: calc(50% - 10px);
         min-width: calc(50% - 10px);
+        padding-right: 0;
+        padding-bottom: 15px;
       }
     }
     .catalog-item__footer-icons {
@@ -658,13 +660,15 @@
   .quantity__val {
     height: 100%;
     order: 2;
-
+    line-height: 20px;
   }
   .quantity__btn {
     position: relative;
     right: auto;
     height: 100%;
+    padding: 0;
     width: 36px;
+    top: auto;
 
     &--minus {
       order: 1;
@@ -837,6 +841,11 @@
       display: flex;
       justify-content: center;
       transform: rotate(180deg);
+    }
+  }
+  .filter-active {
+    .swiper {
+      overflow: visible;
     }
   }
 }

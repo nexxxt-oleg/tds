@@ -527,7 +527,7 @@
         <sup class="title-sup">50</sup>
     </h1>
     <div class="row">
-        <div class="col-12 col-sm-4 col-lg-3 col-xl-3">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-3">
             <button class="catalog-mob-btn-filter btn btn--silver" id="catalogFilterOpen">
     <span class="catalog-mob-btn-filter__ico">
         <svg width="18" height="12">
@@ -821,7 +821,7 @@
     </form>
 </div>
         </div>
-        <div class="col-12 col-sm-8 col-lg-9 col-xl-9 fpad60">
+        <div class="col-12 col-md-8 col-lg-9 col-xl-9 fpad60">
             <div class="sort-top">
     <div class="row">
         <div class="col-lg-7">
@@ -853,19 +853,56 @@
         </div>
         <div class="col-lg-5">
             <div class="d-flex sort-top__right">
-
+                <div class="sort-top__views-count d-flex">
+                    <label for="views">Показывать по:</label>
+                    <select name="views" id="views">
+                        <option selected>12</option>
+                        <option>24</option>
+                    </select>
+                </div>
+                <ul class="nav sort-top__views">
+                    <li></li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-            <ul class="nav filter-active">
-                <li>
-                    <div class="filter-active__item filter-active__item--all">
-                        <span>Сбросить фильтр</span>
-                        <span class="filter-active__item__close"></span>
+            <div class="filter-active">
+                <div class="swiper" id="activeFilterSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide w-auto">
+                            <div class="filter-active__item filter-active__item--all">
+                                <span>Сбросить фильтр</span>
+                                <span class="filter-active__item__close">
+                                    <svg width="9" height="9">
+                                        <use xlink:href="#svg-close"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <div class="filter-active__item">
+                                <span>Применение: Для аксессуаров</span>
+                                <span class="filter-active__item__close">
+                                    <svg width="9" height="9">
+                                        <use xlink:href="#svg-close"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <div class="filter-active__item">
+                                <span>Применение: Для аксессуаров</span>
+                                <span class="filter-active__item__close">
+                                    <svg width="9" height="9">
+                                        <use xlink:href="#svg-close"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
             <div class="catalog-list">
                 <div class="card-product catalog-item catalog-item--list">
                     <div class="row ">
@@ -940,7 +977,7 @@
 
                             <ul class="nav catalog-item__footer-icons">
                                 <li>
-                                    <button class="btn btn--link active" >
+                                    <button class="btn btn--link active">
                                         <svg width="18" height="18">
                                             <use xlink:href="#svg-compare"></use>
                                         </svg>
@@ -1388,7 +1425,7 @@
                     <div class="swiper-slide slider-product__item">
     <div class="card-product d-flex flex-column h-100">
     <div class="card-product__badge">
-        <div class="card-product__badge__item card-product__badge__item--new">
+        <div class="card-product__badge__item status status--new">
             Новинка
         </div>
     </div>
@@ -1449,14 +1486,14 @@
         </div>
         <ul class="nav card-product__icons">
             <li>
-                <button class="btn btn--actions">
+                <button class="btn btn--actions active">
                     <svg width="18" height="18">
                         <use xlink:href="#svg-compare"></use>
                     </svg>
                 </button>
             </li>
             <li>
-                <button class="btn btn--actions">
+                <button class="btn btn--actions active">
                     <svg width="16" height="18">
                         <use xlink:href="#svg-favourites"></use>
                     </svg>
@@ -1471,9 +1508,6 @@
 </div>
 <div class="swiper-slide slider-product__item">
     <div class="card-product d-flex flex-column h-100">
-    <div class="card-product__badge">
-
-    </div>
     <a href="" class="card-product__link">
 
         <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -1554,7 +1588,7 @@
 <div class="swiper-slide slider-product__item">
     <div class="card-product d-flex flex-column h-100">
     <div class="card-product__badge">
-        <div class="card-product__badge__item card-product__badge__item--new">
+        <div class="card-product__badge__item status status--new">
             Новинка
         </div>
     </div>
@@ -1615,14 +1649,14 @@
         </div>
         <ul class="nav card-product__icons">
             <li>
-                <button class="btn btn--actions">
+                <button class="btn btn--actions active">
                     <svg width="18" height="18">
                         <use xlink:href="#svg-compare"></use>
                     </svg>
                 </button>
             </li>
             <li>
-                <button class="btn btn--actions">
+                <button class="btn btn--actions active">
                     <svg width="16" height="18">
                         <use xlink:href="#svg-favourites"></use>
                     </svg>
@@ -1637,9 +1671,6 @@
 </div>
 <div class="swiper-slide slider-product__item">
     <div class="card-product d-flex flex-column h-100">
-    <div class="card-product__badge">
-
-    </div>
     <a href="" class="card-product__link">
 
         <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -1720,7 +1751,7 @@
 <div class="swiper-slide slider-product__item">
     <div class="card-product d-flex flex-column h-100">
     <div class="card-product__badge">
-        <div class="card-product__badge__item card-product__badge__item--new">
+        <div class="card-product__badge__item status status--new">
             Новинка
         </div>
     </div>
@@ -1781,14 +1812,14 @@
         </div>
         <ul class="nav card-product__icons">
             <li>
-                <button class="btn btn--actions">
+                <button class="btn btn--actions active">
                     <svg width="18" height="18">
                         <use xlink:href="#svg-compare"></use>
                     </svg>
                 </button>
             </li>
             <li>
-                <button class="btn btn--actions">
+                <button class="btn btn--actions active">
                     <svg width="16" height="18">
                         <use xlink:href="#svg-favourites"></use>
                     </svg>
@@ -1803,9 +1834,6 @@
 </div>
 <div class="swiper-slide slider-product__item">
     <div class="card-product d-flex flex-column h-100">
-    <div class="card-product__badge">
-
-    </div>
     <a href="" class="card-product__link">
 
         <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
