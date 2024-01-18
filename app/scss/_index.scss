@@ -2368,13 +2368,14 @@ h1 {
   color: #484848;
   height: auto;
   &:hover {
-    color: #000;
+    color: var(--color-red);
   }
   &.active {
     border: none;
-    svg {
-      color: var(--color-red);
-    }
+    color: var(--color-red);
+  }
+  span {
+    font-size: 13px;
   }
 }
 
@@ -2506,6 +2507,9 @@ h1 {
     line-height: 1;
     font-weight: 500;
     color: #484848;
+    &:hover {
+      color: var(--color-red);
+    }
   }
   &__nav {
     &__item {
@@ -2554,7 +2558,18 @@ h1 {
   background: #f4f4f4;
   .card-product {
     background: #fff;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .card-product__footer,
+  & .card-product__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 h2 {
