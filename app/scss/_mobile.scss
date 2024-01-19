@@ -5,7 +5,7 @@
   .header__phone,
   .header__city,
   .header__email {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .header__icons__list li:not(:last-child) {
     padding-right: 5px;
@@ -88,7 +88,7 @@
     margin-left: auto;
   }
   .header__mob-cabinet {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   .header__bottom {
     padding: 10px 0;
@@ -488,6 +488,10 @@
       right: 10px;
     }
   }
+  .sort-top__views-count label,
+  .sort-top__views-count select {
+    font-size: 12px;
+  }
   .catalog-mob-btn-filter {
     display: flex;
     align-items: center;
@@ -695,6 +699,12 @@
       justify-content: space-between;
       padding: 10px 20px;
       box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #fff;
+      z-index: 10;
     }
     &__reset {
       width: calc(50% - 10px);
@@ -733,10 +743,10 @@
     }
   }
   .catalog-filter__list {
-    padding: 0 20px;
+    padding: 0 20px 60px;
   }
   .catalog-filter__item .catalog-filter__item__header {
-    padding-top: 19px;
+    padding-top: 19px !important;
     padding-bottom: 20px;
     font-size: 14px;
   }
@@ -851,7 +861,8 @@
     display: block !important;
   }
   .footer__form-subscription__col-inp {
-    padding: 0 0 20px;
+    padding: 0;
+    margin-bottom: 20px;
     .form-control {
       height: 36px;
     }

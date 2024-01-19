@@ -1,0 +1,113 @@
+<!--#set var="title" value="Каталог" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li><a href="">Главная</a></li>
+        <li><a href="">Каталог</a></li>
+        <li><a href="">Оснащение шкафов</a></li>
+    </ul>
+    <h1>
+        Наполнения для шкафов
+        <sup class="title-sup">50</sup>
+    </h1>
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-3 col-xl-3">
+            <!--#include virtual="/parts/filter-left.html" -->
+        </div>
+        <div class="col-12 col-md-8 col-lg-9 col-xl-9 fpad60">
+            <!--#include virtual="/parts/sort-top.html" -->
+
+            <div class="catalog-list row">
+                <div class="col-lg-4 tpad30">
+                    <!--#include virtual="/parts/item-product1.html" -->
+                </div>
+                <div class="col-lg-4 tpad30">
+                    <!--#include virtual="/parts/item-product1.html" -->
+                </div>
+                <div class="col-lg-4 tpad30">
+                    <!--#include virtual="/parts/item-product2.html" -->
+                </div>
+                <div class="col-lg-4 tpad30">
+                    <!--#include virtual="/parts/item-product1.html" -->
+                </div>
+                <div class="col-lg-4 tpad30">
+                    <!--#include virtual="/parts/item-product1.html" -->
+                </div>
+                <div class="col-lg-4 tpad30">
+                    <!--#include virtual="/parts/item-product2.html" -->
+                </div>
+            </div>
+            <div class="pagination">
+                <button class="pagination__more">показать еще</button>
+                <ul class="nav justify-content-center pagination__nav">
+                    <li class="pagination__nav__prev">
+                        <a href="" class="pagination__nav__btn">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-prev"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="pagination__nav__item">
+                            1
+                        </a>
+                    </li>
+                    <li>
+                        <span class="pagination__nav__item active">
+                            2
+                        </span>
+                    </li>
+                    <li>
+                        <a href="" class="pagination__nav__item">
+                            3
+                        </a>
+                    </li>
+                    <li>
+                        <span class="pagination__nav__item">
+                            ...
+                        </span>
+                    </li>
+                    <li>
+                        <a href="" class="pagination__nav__item">
+                            12
+                        </a>
+                    </li>
+                    <li class="pagination__nav__next">
+                        <a href="" class="pagination__nav__btn">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-next"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="silver-box">
+    <div class="container">
+        <h2>Просмотренные товары</h2>
+        <div class="tabs-slider__products position-relative">
+            <div class="swiper slider-product"
+                 data-scrollbar="tab1_scroll"
+                 data-navnext="tab1_nav_next"
+                 data-navprev="tab1_nav_prev">
+                <div class="swiper-wrapper">
+                    <!--#include virtual="/parts/slider-product.html" -->
+                </div>
+                <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab1_scroll"></div>
+            </div>
+            <button class="swiper-prev slider-nav swiper-button-disabled" id="tab1_nav_prev">
+                <svg width="10" height="16">
+                    <use xlink:href="#svg-prev"/>
+                </svg>
+            </button>
+            <button class="swiper-next slider-nav swiper-button-disabled" id="tab1_nav_next">
+                <svg width="10" height="16">
+                    <use xlink:href="#svg-next"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
