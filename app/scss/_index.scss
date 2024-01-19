@@ -767,7 +767,7 @@ img {
     z-index: 10;
     right: 0;
     width: 22px;
-
+    color: var(--color-main);
     border-right: none;
     display: flex;
     align-items: center;
@@ -1905,6 +1905,7 @@ img {
 
 .quantity__btn:hover {
   background: #e1e0e0;
+  color: var(--color-main);
 }
 
 .slider-nav:hover {
@@ -2124,8 +2125,6 @@ h1 {
 
     &__body {
       padding-bottom: 20px;
-
-      overflow: hidden;
       position: relative;
     }
 
@@ -2369,13 +2368,16 @@ h1 {
   padding: 0;
   color: #484848;
   height: auto;
+
   &:hover {
     color: var(--color-red);
   }
+
   &.active {
     border: none;
     color: var(--color-red);
   }
+
   span {
     font-size: 13px;
   }
@@ -2436,6 +2438,7 @@ h1 {
     }
   }
 }
+
 .status {
   display: inline-flex;
   padding-left: 6px;
@@ -2445,34 +2448,42 @@ h1 {
   font-size: 12px;
   line-height: 24px;
   color: #fff;
+
   &--under-order {
     background: #484848;
   }
+
   &--new {
     background: #16a085;
   }
+
   &--sale {
     background: #ad2125;
   }
+
   &--hit {
     background: #f9690e;
   }
 }
+
 .catalog-item__top-prop {
   padding-bottom: 12px;
 }
+
 .card-product__price.card-product__price--old {
   display: inline-flex !important;
   position: relative;
   padding-bottom: 0 !important;
   margin-right: auto;
   width: auto;
+
   .card-product__price__val,
   & .card-product__price__currency {
     color: #8a8a8a;
     position: relative;
     z-index: 1;
   }
+
   &::after {
     content: '';
     display: block;
@@ -2485,14 +2496,18 @@ h1 {
     background: #ad2125;
   }
 }
+
 .catalog-list {
   padding-bottom: 30px;
 }
+
 .fpad60 {
   padding-bottom: 60px;
 }
+
 .pagination {
   display: block;
+
   &__more {
     display: flex;
     height: 48px;
@@ -2509,10 +2524,12 @@ h1 {
     line-height: 1;
     font-weight: 500;
     color: #484848;
+
     &:hover {
       color: var(--color-red);
     }
   }
+
   &__nav {
     &__item {
       height: 48px;
@@ -2526,13 +2543,16 @@ h1 {
       color: #484848;
       font-size: 14px;
       font-weight: 500;
+
       &.active {
         border: 1px solid #484848;
       }
+
       &:hover {
         color: var(--color-red);
       }
     }
+
     &__btn {
       height: 48px;
       width: 48px;
@@ -2543,52 +2563,64 @@ h1 {
       border: 1px solid #484848;
       border-radius: 5px;
       color: #484848;
+
       &:hover {
         color: var(--color-red);
       }
     }
+
     &__prev {
       padding-right: 10px;
     }
+
     &__next {
       padding-left: 10px;
     }
   }
 }
+
 .silver-box {
   padding: 60px 0;
   background: #f4f4f4;
+
   .card-product {
     background: #fff;
     padding-bottom: 20px;
     border-radius: 5px;
     overflow: hidden;
   }
+
   .card-product__footer,
   & .card-product__inner {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .btn {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
+
 h2 {
   font-size: 30px;
   line-height: 1.2;
   font-weight: 500;
   margin-bottom: 35px;
 }
+
 .catalog-filter__mob-header,
 .catalog-mob-btn-filter {
   display: none;
 }
+
 .filter-active {
   padding-top: 20px;
+
   .swiper-slide {
     margin-right: 10px;
   }
+
   &__item {
     display: flex;
     align-items: center;
@@ -2599,14 +2631,110 @@ h2 {
     font-size: 12px;
     line-height: 20px;
     background: #ad2125;
+
     span {
       white-space: nowrap;
     }
+
     &__close {
       margin-left: 7px;
     }
+
     &--all {
       background: #484848;
     }
   }
+}
+.sort-top__views-count {
+  padding-bottom: 5px;
+  label {
+    color: #8a8a8a;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 5px;
+  }
+  select {
+    border: none;
+    padding: 0 10px 0 5px;
+    height: 18px;
+    background-color: transparent;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    appearance: none;
+    color: var(--color-main);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280.99 161.83'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Bold'%3E%3Cpath fill='%23ad2125' d='M21.33,0H259.66a21.34,21.34,0,0,1,15.09,36.42L155.58,155.58a21.34,21.34,0,0,1-30.17,0L6.25,36.42A21.34,21.34,0,0,1,21.33,0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 6px 3px;
+    &::-ms-expand {
+      display: none;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+.sort-top__views {
+  margin-left: auto;
+  padding-bottom: 5px;
+  li {
+    padding-right: 20px;
+  }
+  &__item {
+    display: block;
+    cursor: pointer;
+    input {
+      display: none;
+      &:checked + .sort-top__views__item__ico {
+        color: var(--color-red);
+      }
+    }
+    &__ico {
+      display: block;
+      color: #8a8a8a;
+    }
+  }
+}
+.catalog-filter__res {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 100%;
+  white-space: nowrap;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: #484848;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #484848;
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: -5px;
+    margin-top: -6px;
+  }
+  &:hover {
+    color: #fff;
+  }
+}
+
+.catalog-sort__mob-col-sort {
+  display: none;
 }
