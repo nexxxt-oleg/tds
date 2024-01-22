@@ -770,6 +770,11 @@
     font-size: 20px;
     margin-bottom: 30px;
   }
+  .filter-active {
+    order: -1;
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 574px) {
