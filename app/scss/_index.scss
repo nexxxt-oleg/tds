@@ -135,7 +135,8 @@ a {
       position: absolute;
       z-index: 10;
       top: 0;
-      right: 8px;
+      right: 50%;
+      margin-right: -20px;
 
       &:not(.active) {
         display: none;
