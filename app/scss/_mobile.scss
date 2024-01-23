@@ -303,6 +303,11 @@
   .footer__bottom {
     padding-bottom: 60px;
   }
+  .header__top {
+    height: calc(100vh - 53px);
+    padding: 0 0 40px;
+    overflow-y: auto;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -483,6 +488,7 @@
     font-size: 14px;
     line-height: 1.3;
   }
+
 }
 
 @media screen and (max-width: 768px) {
