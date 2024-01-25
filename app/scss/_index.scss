@@ -799,6 +799,18 @@ img {
       height: 34px;
       flex-grow: 1;
     }
+
+    &.h-48 {
+      .quantity__btn {
+        height: 46px;
+        min-width: 47px;
+        width: 47px;
+      }
+
+      .quantity__val {
+        height: 46px;
+      }
+    }
   }
 
   &__btn {
@@ -1096,15 +1108,18 @@ img {
     line-height: 24px;
     margin-bottom: 18px;
   }
+
   ul {
     margin: 0 0 25px 0;
     padding: 0;
     list-style-type: none;
+
     li {
       padding: 0 0 5px 40px;
       position: relative;
       font-size: 14px;
       line-height: 24px;
+
       &::after {
         content: '';
         display: block;
@@ -2979,13 +2994,16 @@ img {
     }
   }
 }
+
 .img-rounded {
   display: block;
   border-radius: 20px;
 }
+
 .fpad40 {
   padding-bottom: 40px;
 }
+
 .card-rounded {
   padding: 30px;
   border-radius: 20px;
@@ -2993,6 +3011,199 @@ img {
   font-size: 14px;
   line-height: 24px;
 }
+
 b {
   font-weight: 500;
+}
+
+.product-page {
+  &__img {
+    position: relative;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 350px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  &__status {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+  }
+
+  &__box-price {
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+
+    &__label {
+      background: #f4f4f4;
+      height: 32px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .quantity {
+      margin-bottom: 20px;
+    }
+
+    &__footer {
+      padding-top: 30px;
+      li {
+        width: 86px;
+        .btn {
+          width: 100%;
+          display: block;
+          text-align: center;
+          svg {
+            display: block;
+            margin: 0 auto;
+          }
+          &__text-bottom {
+            display: block;
+            padding-left: 0;
+            padding-top: 10px;
+            text-align: center;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+  }
+  &__type-price {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    span {
+      font-size: 12px;
+      line-height: 1;
+
+    }
+    &__label {
+      color: #8a8a8a;
+    }
+    &__value {
+      color: #484848;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    padding: 10px;
+    width: 70px;
+    min-width: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #f4f4f4;
+    height: 50px;
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  &__top-prop {
+    flex-grow: 1;
+    padding-left: 15px;
+    &__row {
+      padding: 4px 0;
+      margin: 0;
+      dd {
+        padding-right: 3px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #8a8a8a;
+      }
+      dt {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #484848;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__offers {
+    padding-bottom: 10px;
+    &__title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.3;
+      padding-bottom: 10px;
+    }
+    &__list {
+      margin-right: -10px;
+      li {
+        padding: 0 10px 10px 0;
+      }
+    }
+    &___item {
+      white-space: nowrap;
+      padding: 5px 10px;
+      font-size: 14px;
+      line-height: 20px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      border: 2px solid #efeff0;
+      background: #fff;
+      transition: all 0.2s ease-in-out;
+      &.active {
+        border-color: #484848;
+        background: #484848;
+        color: #fff;
+      }
+    }
+  }
+  &__specifications {
+    display: block;
+    li {
+      display: flex;
+      align-items: flex-start;
+      padding-bottom: 15px;
+    }
+    &__caption {
+      padding-right: 15px;
+      color: #8a8a8a;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__line {
+      flex-grow: 1;
+      min-width: 20px;
+      height: 14px;
+      border-bottom: 1px solid #efeff0;
+    }
+    &__value {
+      padding-left: 15px;
+      color: #484848;
+      font-size: 14px;
+      line-height: 20px;
+      white-space: nowrap;
+    }
+  }
 }
