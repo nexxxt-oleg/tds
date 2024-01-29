@@ -1,4 +1,4 @@
-<!--#set var="title" value="Кромочные материалы" -->
+<!--#set var="title" value="Товар" -->
 <!--#include virtual="/parts/header.html" -->
 <div class="container">
     <ul class="nav breadcrumb">
@@ -376,7 +376,7 @@
                             </ul>
                         </div>
                         <div class="product-page__pre-tab">
-                            <a href="#tabs" class="border-link">
+                            <a href="#tabsComplect" class="border-link">
                                 <span>Посмотреть 1 комплект с этим товаром</span>
                             </a>
                         </div>
@@ -460,39 +460,49 @@
         </div>
         <div class="fpad60 card-product__tab">
             <!-- Nav tabs -->
-            <ul class="nav card-product__tab__nav" id="myTab" role="tablist">
-                <li class="nav-item">
+            <ul class="nav card-product__tab__nav tabs-slider__header" id="myTab" role="tablist">
+                <li>
                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
                             role="tab">
                         Описание
                     </button>
                 </li>
-                <li class="nav-item">
+                <li>
                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">
                         Комплекты с товаром <sup>1</sup>
                     </button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
-                            type="button" role="tab" aria-controls="messages" aria-selected="false">Messages
+                <li>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab">
+                        Обязательные комплектующие <sup>3</sup>
                     </button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings"
-                            type="button" role="tab" aria-controls="settings" aria-selected="false">Settings
+                <li>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">
+                        Аналоги
+                    </button>
+                </li>
+                <li>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab">
+                        Инструкции, сертификаты
+                    </button>
+                </li>
+                <li>
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab6" type="button" role="tab">
+                        Видео
                     </button>
                 </li>
             </ul>
 
             <!-- Tab panes -->
-            <div class="tab-content">
+            <div class="tab-content fpad30">
                 <div class="tab-pane active" id="tab1" role="tabpanel" tabindex="0">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse1">
-                        Accordion Item #1
+                        Описание
                     </button>
                     <div class="accordion-collapse collapse text" id="collapse1">
-                        <h2>Описание</h2>
+                        <h2 class="tab-content__caption">Описание</h2>
                         <p>Направляющие для деревянных ящиков полного выдвижения Quadro V6 с демпфером Silent System
                             Silent System — встроенная система демпфирования для плавного, бесшумного закрывания</p>
 
@@ -504,10 +514,378 @@
                         </ul>
                     </div>
                 </div>
-                <div class="tab-pane" id="tab2" role="tabpanel" tabindex="0">2...</div>
-                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">3...
+                <div class="tab-pane__anchor" id="tabsComplect" ></div>
+                <div class="tab-pane" id="tab2" role="tabpanel" tabindex="0">
+
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2">
+                        Комплекты с товаром
+                    </button>
+                    <div class="accordion-collapse collapse" id="collapse2">
+                        <h2 class="tab-content__caption">Комплекты с товаром</h2>
+                        <div class="complete-set">
+                            <div class="swiper complete-set__filter" >
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-auto">
+                                        <a href="" class="complete-set__filter__item active">
+                                            Все <span class="badge rounded-pill">2</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide w-auto">
+                                        <a href="" class="complete-set__filter__item">
+                                            Направляющие скрытого монтажа <span class="badge rounded-pill">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="complete-set__body">
+                                <h3 class="h3">Направляющие скрытого монтажа</h3>
+                                <div class="complete-set__group">
+                                    <div class="complete-set__group__header">
+                                        <div class="complete-set__group__header__col1">
+                                            Код
+                                        </div>
+                                        <div class="complete-set__group__header__col2">
+                                            Название
+                                        </div>
+                                        <div class="complete-set__group__header__col3">
+                                            Цена за единицу
+                                        </div>
+                                    </div>
+                                    <div class="complete-set__group__item card-product">
+                                        <div class="complete-set__group__item__col1">
+                                            SET1421
+                                        </div>
+                                        <div class="complete-set__group__item__col2">
+                                            <img class="max-img" src="./images/dist/product_min.jpg" alt="">
+                                        </div>
+                                        <div class="complete-set__group__item__col3">
+                                            <a href="" class="card-product__title">
+                                                Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich
+                                            </a>
+                                        </div>
+                                        <div class="complete-set__group__item__col4">
+                                            <div class="card-product__price">
+                                                <span class="card-product__price__val">21 642.00</span>
+                                                <span class="card-product__price__currency">руб./шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col5">
+                                            <a href="" class="btn btn--red w-100">ПОСМОТРЕТЬ НАБОР</a>
+                                        </div>
+                                    </div>
+                                    <div class="complete-set__group__item card-product">
+                                        <div class="complete-set__group__item__col1">
+                                            SET1421
+                                        </div>
+                                        <div class="complete-set__group__item__col2">
+                                            <img class="max-img" src="./images/dist/product_min.jpg" alt="">
+                                        </div>
+                                        <div class="complete-set__group__item__col3">
+                                            <a href="" class="card-product__title">
+                                                Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich
+                                            </a>
+                                        </div>
+                                        <div class="complete-set__group__item__col4">
+                                            <div class="card-product__price">
+                                                <span class="card-product__price__val">21 642.00</span>
+                                                <span class="card-product__price__currency">руб./шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col5">
+                                            <a href="" class="btn btn--red w-100">ПОСМОТРЕТЬ НАБОР</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">.4..
+                <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3">
+                        Обязательные комплектующие
+                    </button>
+                    <div class="accordion-collapse collapse" id="collapse3">
+                        <h2 class="tab-content__caption">Обязательные комплектующие</h2>
+                        <div class="complete-set">
+                            <div class="swiper complete-set__filter" >
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-auto">
+                                        <a href="" class="complete-set__filter__item active">
+                                            Все <span class="badge rounded-pill">2</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide w-auto">
+                                        <a href="" class="complete-set__filter__item">
+                                            Направляющие скрытого монтажа <span class="badge rounded-pill">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="complete-set__body">
+                                <h3 class="h3">Направляющие скрытого монтажа</h3>
+                                <div class="complete-set__group">
+                                    <div class="complete-set__group__header">
+                                        <div class="complete-set__group__header__col1">
+                                            Код
+                                        </div>
+                                        <div class="complete-set__group__header__col2">
+                                            Название
+                                        </div>
+                                        <div class="complete-set__group__header__col3">
+                                            Цена за единицу
+                                        </div>
+                                    </div>
+                                    <div class="complete-set__group__item card-product">
+                                        <div class="complete-set__group__item__col1">
+                                            SET1421
+                                        </div>
+                                        <div class="complete-set__group__item__col2">
+                                            <img class="max-img" src="./images/dist/product_min.jpg" alt="">
+                                        </div>
+                                        <div class="complete-set__group__item__col3">
+                                            <a href="" class="card-product__title">
+                                                Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich
+                                            </a>
+                                        </div>
+                                        <div class="complete-set__group__item__col6">
+                                            <div class="card-product__price">
+                                                <span class="card-product__price__val">21 642.00</span>
+                                                <span class="card-product__price__currency">руб./шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col7">
+                                            <div class="card-product__footer__col-count">
+                                                <div class="quantity">
+                                                    <input type="text" class="quantity__val" value="1">
+                                                    <button class="quantity__btn quantity__btn--plus">
+                                                        <svg width="8" height="8">
+                                                            <use xlink:href="#svg-plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="quantity__btn quantity__btn--minus">
+                                                        <svg width="8" height="2">
+                                                            <use xlink:href="#svg-minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col8">
+                                            <a href="" class="btn btn--red w-100">В КОРЗИНУ</a>
+                                        </div>
+                                    </div>
+                                    <div class="complete-set__group__item card-product">
+                                        <div class="complete-set__group__item__col1">
+                                            SET1421
+                                        </div>
+                                        <div class="complete-set__group__item__col2">
+                                            <img class="max-img" src="./images/dist/product_min.jpg" alt="">
+                                        </div>
+                                        <div class="complete-set__group__item__col3">
+                                            <a href="" class="card-product__title">
+                                                Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich
+                                            </a>
+                                        </div>
+                                        <div class="complete-set__group__item__col6">
+                                            <div class="card-product__price">
+                                                <span class="card-product__price__val">21 642.00</span>
+                                                <span class="card-product__price__currency">руб./шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col7">
+                                            <div class="card-product__footer__col-count">
+                                                <div class="quantity">
+                                                    <input type="text" class="quantity__val" value="1">
+                                                    <button class="quantity__btn quantity__btn--plus">
+                                                        <svg width="8" height="8">
+                                                            <use xlink:href="#svg-plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="quantity__btn quantity__btn--minus">
+                                                        <svg width="8" height="2">
+                                                            <use xlink:href="#svg-minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col8">
+                                            <a href="" class="btn btn--red w-100">В КОРЗИНУ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4">
+                        Аналоги
+                    </button>
+                    <div class="accordion-collapse collapse" id="collapse4">
+                        <h2 class="tab-content__caption">Аналоги</h2>
+                        <div class="complete-set">
+                            <div class="swiper complete-set__filter" >
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-auto">
+                                        <a href="" class="complete-set__filter__item active">
+                                            Все <span class="badge rounded-pill">2</span>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide w-auto">
+                                        <a href="" class="complete-set__filter__item">
+                                            Направляющие скрытого монтажа <span class="badge rounded-pill">1</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="complete-set__body">
+                                <h3 class="h3">Направляющие скрытого монтажа</h3>
+                                <div class="complete-set__group">
+                                    <div class="complete-set__group__header">
+                                        <div class="complete-set__group__header__col1">
+                                            Код
+                                        </div>
+                                        <div class="complete-set__group__header__col2">
+                                            Название
+                                        </div>
+                                        <div class="complete-set__group__header__col3">
+                                            Цена за единицу
+                                        </div>
+                                    </div>
+                                    <div class="complete-set__group__item card-product">
+                                        <div class="complete-set__group__item__col1">
+                                            SET1421
+                                        </div>
+                                        <div class="complete-set__group__item__col2">
+                                            <img class="max-img" src="./images/dist/product_min.jpg" alt="">
+                                        </div>
+                                        <div class="complete-set__group__item__col3">
+                                            <a href="" class="card-product__title">
+                                                Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich
+                                            </a>
+                                        </div>
+                                        <div class="complete-set__group__item__col6">
+                                            <div class="card-product__price">
+                                                <span class="card-product__price__val">21 642.00</span>
+                                                <span class="card-product__price__currency">руб./шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col7">
+                                            <div class="card-product__footer__col-count">
+                                                <div class="quantity">
+                                                    <input type="text" class="quantity__val" value="1">
+                                                    <button class="quantity__btn quantity__btn--plus">
+                                                        <svg width="8" height="8">
+                                                            <use xlink:href="#svg-plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="quantity__btn quantity__btn--minus">
+                                                        <svg width="8" height="2">
+                                                            <use xlink:href="#svg-minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col8">
+                                            <a href="" class="btn btn--red w-100">В КОРЗИНУ</a>
+                                        </div>
+                                    </div>
+                                    <div class="complete-set__group__item card-product">
+                                        <div class="complete-set__group__item__col1">
+                                            SET1421
+                                        </div>
+                                        <div class="complete-set__group__item__col2">
+                                            <img class="max-img" src="./images/dist/product_min.jpg" alt="">
+                                        </div>
+                                        <div class="complete-set__group__item__col3">
+                                            <a href="" class="card-product__title">
+                                                Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich
+                                            </a>
+                                        </div>
+                                        <div class="complete-set__group__item__col6">
+                                            <div class="card-product__price">
+                                                <span class="card-product__price__val">21 642.00</span>
+                                                <span class="card-product__price__currency">руб./шт</span>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col7">
+                                            <div class="card-product__footer__col-count">
+                                                <div class="quantity">
+                                                    <input type="text" class="quantity__val" value="1">
+                                                    <button class="quantity__btn quantity__btn--plus">
+                                                        <svg width="8" height="8">
+                                                            <use xlink:href="#svg-plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button class="quantity__btn quantity__btn--minus">
+                                                        <svg width="8" height="2">
+                                                            <use xlink:href="#svg-minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="complete-set__group__item__col8">
+                                            <a href="" class="btn btn--red w-100">В КОРЗИНУ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5">
+                        Инструкции, сертификаты
+                    </button>
+                    <div class="accordion-collapse collapse" id="collapse5">
+                        <h2 class="tab-content__caption">Инструкции, сертификаты</h2>
+                        <ul class="nav flex-column instructions">
+                            <li>
+                                <a href="" download="" class="instructions__item">
+                                    <div class="instructions__item__ico">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Конфигуратор Hettich для подбора комплектации и расчёта размеров деталей корпуса и фасадов</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" download="" class="instructions__item">
+                                    <div class="instructions__item__ico">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-pdf"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Конфигуратор Hettich для подбора комплектации и расчёта размеров деталей корпуса и фасадов</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab6" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6">
+                        Видео
+                    </button>
+                    <div class="accordion-collapse collapse" id="collapse6">
+                        <h2 class="tab-content__caption">Видео</h2>
+                        <div class="row">
+                            <div class="col-lg-4 fpad30">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
