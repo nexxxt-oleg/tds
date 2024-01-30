@@ -3596,3 +3596,12 @@ b {
 .complete-set__mob-caption {
   display: none;
 }
+.btn--ozon {
+  background: #005bff;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.product-page__box-price__btn2 {
+  padding-top: 20px;
+}
