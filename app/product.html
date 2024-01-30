@@ -262,7 +262,7 @@
                                 </div>
                                 Сохранить в PDF
                             </a>
-                            <a href="javascript:(print());" class="product-page__btns__item btn btn--link">
+                            <a href="javascript:(print());" class="product-page__btns__item btn btn--link hidden-911">
                                 <div class="product-page__btns__item__ico">
                                     <svg width="24" height="24">
                                         <use xlink:href="#svg-print"></use>
@@ -497,7 +497,7 @@
             <!-- Tab panes -->
             <div class="tab-content fpad30">
                 <div class="tab-pane active" id="tab1" role="tabpanel" tabindex="0">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse1">
                         Описание
                     </button>
@@ -517,9 +517,9 @@
                 <div class="tab-pane__anchor" id="tabsComplect" ></div>
                 <div class="tab-pane" id="tab2" role="tabpanel" tabindex="0">
 
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse2">
-                        Комплекты с товаром
+                        Комплекты с товаром <sup>2</sup>
                     </button>
                     <div class="accordion-collapse collapse" id="collapse2">
                         <h2 class="tab-content__caption">Комплекты с товаром</h2>
@@ -566,6 +566,7 @@
                                             </a>
                                         </div>
                                         <div class="complete-set__group__item__col4">
+                                            <div class="complete-set__mob-caption">Цена за единицу:</div>
                                             <div class="card-product__price">
                                                 <span class="card-product__price__val">21 642.00</span>
                                                 <span class="card-product__price__currency">руб./шт</span>
@@ -588,6 +589,7 @@
                                             </a>
                                         </div>
                                         <div class="complete-set__group__item__col4">
+                                            <div class="complete-set__mob-caption">Цена за единицу:</div>
                                             <div class="card-product__price">
                                                 <span class="card-product__price__val">21 642.00</span>
                                                 <span class="card-product__price__currency">руб./шт</span>
@@ -603,9 +605,9 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse3">
-                        Обязательные комплектующие
+                        Обязательные комплектующие <sup>2</sup>
                     </button>
                     <div class="accordion-collapse collapse" id="collapse3">
                         <h2 class="tab-content__caption">Обязательные комплектующие</h2>
@@ -652,6 +654,7 @@
                                             </a>
                                         </div>
                                         <div class="complete-set__group__item__col6">
+                                            <div class="complete-set__mob-caption">Цена за единицу:</div>
                                             <div class="card-product__price">
                                                 <span class="card-product__price__val">21 642.00</span>
                                                 <span class="card-product__price__currency">руб./шт</span>
@@ -691,6 +694,7 @@
                                             </a>
                                         </div>
                                         <div class="complete-set__group__item__col6">
+                                            <div class="complete-set__mob-caption">Цена за единицу:</div>
                                             <div class="card-product__price">
                                                 <span class="card-product__price__val">21 642.00</span>
                                                 <span class="card-product__price__currency">руб./шт</span>
@@ -723,9 +727,9 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse4">
-                        Аналоги
+                        Аналоги <sup>2</sup>
                     </button>
                     <div class="accordion-collapse collapse" id="collapse4">
                         <h2 class="tab-content__caption">Аналоги</h2>
@@ -843,7 +847,7 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse5">
                         Инструкции, сертификаты
                     </button>
@@ -874,7 +878,7 @@
                     </div>
                 </div>
                 <div class="tab-pane" id="tab6" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse6">
                         Видео
                     </button>
@@ -882,7 +886,37 @@
                         <h2 class="tab-content__caption">Видео</h2>
                         <div class="row">
                             <div class="col-lg-4 fpad30">
-
+                                <a href="https://www.youtube.com/watch?v=XVgCLQ_JQfU"
+                                   data-fancybox=""
+                                   data-caption="Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich"
+                                   class="video-link" >
+                                    <div class="video-link__pic">
+                                        <img src="//img.youtube.com/vi/XVgCLQ_JQfU/hqdefault.jpg" alt="">
+                                    </div>
+                                    <div class="video-link__title">Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 fpad30">
+                                <a href="https://www.youtube.com/watch?v=XVgCLQ_JQfU"
+                                   data-fancybox=""
+                                   data-caption="Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich"
+                                   class="video-link" >
+                                    <div class="video-link__pic">
+                                        <img src="//img.youtube.com/vi/XVgCLQ_JQfU/hqdefault.jpg" alt="">
+                                    </div>
+                                    <div class="video-link__title">Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich</div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 fpad30">
+                                <a href="https://www.youtube.com/watch?v=XVgCLQ_JQfU"
+                                   data-fancybox=""
+                                   data-caption="Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich"
+                                   class="video-link" >
+                                    <div class="video-link__pic">
+                                        <img src="//img.youtube.com/vi/XVgCLQ_JQfU/hqdefault.jpg" alt="">
+                                    </div>
+                                    <div class="video-link__title">Комплект скрытых направляющих Quadro V6 30/250 Silent System с фиксаторами, Hettich</div>
+                                </a>
                             </div>
                         </div>
                     </div>
