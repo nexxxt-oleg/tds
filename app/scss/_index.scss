@@ -3690,7 +3690,12 @@ b {
       padding: 20px 10px 0;
 
       .news-page__item__date {
-        padding-bottom: 5px;
+        padding-bottom: 8px;
+      }
+
+      .news-page__item__title {
+        font-size: 14px;
+        line-height: 20px;
       }
     }
 
