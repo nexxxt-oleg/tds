@@ -2447,6 +2447,28 @@ h1 {
 
 .sort-top {
   border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  z-index: 10;
+}
+
+.fpad100 {
+  padding-bottom: 100px;
+}
+.selection-footer {
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  &__wrap {
+    width: 100%;
+    max-width: 570px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    background: #f4f4f4;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
 }
 
 .btn.btn--link {
@@ -3720,4 +3742,95 @@ b {
   padding-top: 100px;
   padding-bottom: 100px;
   border-top: 1px solid #e8e8e8;
+}
+
+.selection {
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  background: #f4f4f4;
+  &__row {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__col {
+    width: 300px;
+    flex-grow: 1;
+    padding-right: 30px;
+  }
+  &__dropdown {
+    width: 100%;
+    &__item {
+      padding: 5px 20px;
+      cursor: pointer;
+      display: block;
+      input {
+        display: none;
+        &:checked + span {
+          color: var(--color-red);
+        }
+      }
+      span {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    .dropdown-item {
+      padding: 0;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    width: 320px;
+    min-width: 320px;
+    justify-content: space-between;
+    .btn {
+      max-width: calc(50% - 15px);
+    }
+  }
+}
+.btn--select {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #cecece !important;
+  background: #fff !important;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  color: #484848;
+  font-size: 14px;
+  font-weight: 400;
+  &::after {
+    margin-left: auto;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background: #fff !important;
+    border: 1px solid #cecece !important;
+  }
+}
+.selection__active-filter__item {
+  &__wrap {
+    padding: 16px 0 0 21px;
+  }
+  &__text {
+    color: var(--color-red);
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 10px;
+  }
+  &__close {
+    color: var(--color-main);
+  }
+}
+.selection-res {
+  .catalog-list {
+    padding-bottom: 0 !important;
+  }
 }
