@@ -3834,3 +3834,50 @@ b {
     padding-bottom: 0 !important;
   }
 }
+.badge {
+  display: inline-flex;
+  min-width: 24px;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+
+
+  &--min {
+    font-weight: 400;
+    font-size: 11px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 2px;
+  }
+  &.red {
+    background-color: var(--color-red);
+  }
+}
+
+.custom-checkbox.custom-checkbox--radio-btn {
+  .custom-checkbox__text {
+    padding-left: 23px;
+  }
+  .custom-checkbox__text::after {
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+  }
+  input:checked + .custom-checkbox__text:after {
+    background-image: none;
+  }
+  input:checked + .custom-checkbox__text:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 4px;
+    margin-top: -4px;
+    background: #fff;
+  }
+}

@@ -8,7 +8,7 @@
         <div class="compare-page__header">
             <h1>Сравнение товаров</h1>
             <a href="" class="compare-page__clear-btn">
-                <svg width="15" height="18">
+                <svg width="15" height="18" class="me-2">
                     <use xlink:href="#svg-clear"/>
                 </svg>
                 <span>Очистить сравнение</span>
@@ -16,14 +16,139 @@
         </div>
         <div class="compare-page__filter">
             <div class="row">
-                <div class="col-xl-3 col-lg-4">
+                <div class="col-xl-3 col-lg-4 d-flex align-items-center">
                     Товаров в сравнении:
+                    <span class="badge badge--min rounded-pill red ms-3">2</span>
                 </div>
                 <div class="col-xl-9 col-lg-8">
+                    <div class="compare-page__filter__wrap">
+                        <div class="d-flex align-items-center">
+                            <span class="compare-page__filter__label">Характеристики:</span>
+                            <ul class="nav compare-page__filter__list">
+                                <li>
+                                    <label class="custom-checkbox custom-checkbox--radio-btn">
+                                        <input type="radio" checked name="filter" value="all">
+                                        <span class="custom-checkbox__text">Все</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom-checkbox custom-checkbox--radio-btn">
+                                        <input type="radio" name="filter" value="not">
+                                        <span class="custom-checkbox__text">Различающиеся</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
 
+                        <div class="d-flex align-items-center">
+                            <label class="compare-page__filter__label" for="cat">Категория:</label>
+                            <select class="js-select" name="cat" id="cat">
+                                <option selected>Ламинированная ДСП</option>
+                                <option>Ламинированная ДСП 1</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="compare-page__body">
+            <div class="row align-items-end">
+                <div class="col-xl-3 col-lg-4 compare-page__body__col-props">
+                    <ul class="nav compare-page__nav-props js-compare-props">
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n1"
+                            data-sinhro="compare-page__nav-props__line--n1">
+                            <span>Модификации</span>
+                        </li>
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n2"
+                            data-sinhro="compare-page__nav-props__line--n2">
+                            <span>Код декора</span>
+                        </li>
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n3"
+                            data-sinhro="compare-page__nav-props__line--n3">
+                            <span>Формат, мм</span>
+                        </li>
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n4"
+                            data-sinhro="compare-page__nav-props__line--n4">
+                            <span>Толщина, мм</span>
+                        </li>
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n5"
+                            data-sinhro="compare-page__nav-props__line--n5">
+                            <span>Тип цвета</span>
+                        </li>
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n6"
+                            data-sinhro="compare-page__nav-props__line--n6">
+                            <span>Структура поверхности Структура поверхности</span>
+                        </li>
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n5"
+                            data-sinhro="compare-page__nav-props__line--n7">
+                            <span>Тип цвета</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-xl-9 col-lg-8 col-6">
+                    <div class="compare-page__slider compare-page__slider--s1">
+                        <div id="compareSlider" class="swiper">
+                            <div class="swiper-wrapper">
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                            </div>
+                        </div>
+                        <button id="compareSliderPrev1"
+                                class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-prev"></use>
+                            </svg>
+                        </button>
+                        <button id="compareSliderNext1"
+                                class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="compare-page__fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 compare-page__fix__left">
+                        <div class="d-flex align-items-center">
+                            Товаров в сравнении:
+                            <span class="badge badge--min rounded-pill red ms-3">2</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-6">
+                        <div class="compare-page__fix-slider">
+                            <div id="compareMiniSlider" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                </div>
+                            </div>
+                            <button id="compareSliderMiniPrev1"
+                                    class="swiper-prev slider-nav slider-nav--fix swiper-button-disabled">
+                                <svg width="6" height="12">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <button id="compareSliderMiniNext1"
+                                    class="swiper-next slider-nav slider-nav--fix swiper-button-disabled">
+                                <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <!--#include virtual="/parts/footer.html" -->
