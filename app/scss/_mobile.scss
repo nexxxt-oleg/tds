@@ -1138,6 +1138,17 @@
   .selection-footer {
     padding-top:40px;
   }
+  .sort-top__cat {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .compare-page__header {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .empty-page p {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -1154,6 +1165,12 @@
       padding-top: 10px;
       padding-bottom: 10px;
     }
+  }
+  .compare-page__clear-btn {
+    width: 100%;
+  }
+  .sort-top__cat .swiper {
+    overflow: visible;
   }
   .fpad30 {
     padding-bottom: 10px;
