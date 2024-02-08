@@ -20,6 +20,8 @@
     padding-bottom: 10px;
     border-bottom: 1px solid #e8e8e8;
     margin-bottom: 35px;
+    position: relative;
+    z-index: 10;
 
     &__wrap {
       display: flex;
@@ -39,6 +41,11 @@
         padding-right: 20px;
       }
     }
+  }
+
+  &__body {
+    position: relative;
+    z-index: 5;
   }
 
   &__nav-props {
