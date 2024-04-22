@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 713.86 596.37">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #aaa;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke: #000;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #d3d3d3;
+      }
+
+      .cls-3 {
+        fill: #494949;
+      }
+
+      .cls-4 {
+        fill: #efeff0;
+      }
+
+      .cls-5 {
+        fill: #ccc;
+      }
+
+      .cls-6 {
+        fill: #999;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <rect class="cls-4" x="30.5" y="11.58" width="682.86" height="534.3"/>
+      <polygon class="cls-2" points="50.5 .5 693.36 .5 713.36 12.23 30.5 12.23 50.5 .5"/>
+      <rect class="cls-6" x="50.5" y="31.58" width="642.86" height="494.3"/>
+      <rect class="cls-1" x="50.5" y="248.75" width="642.86" height="24.76"/>
+      <rect class="cls-1" x="50.5" y="31.8" width="642.86" height="12.38"/>
+      <rect class="cls-1" x="50.5" y="485.93" width="642.86" height="39.95"/>
+      <rect class="cls-4" x="50.5" y="273.51" width="642.86" height="12.38"/>
+    </g>
+    <rect class="cls-4" x="371.93" y="17.58" width="335.43" height="522.3"/>
+    <polygon class="cls-4" points="297.83 595.87 .5 545.87 30.5 11.58 332.85 41.58 297.83 595.87"/>
+    <polygon class="cls-5" points="339.35 39.58 332.85 41.58 297.83 595.87 306.12 595.87 339.35 39.58"/>
+    <circle class="cls-3" cx="406.59" cy="358.81" r="10.85"/>
+    <circle class="cls-3" cx="270.79" cy="362.81" r="10.85"/>
+    <polygon class="cls-5" points="332.85 41.58 30.5 11.58 339.35 39.58 332.85 41.58"/>
+  </g>
+</svg>
