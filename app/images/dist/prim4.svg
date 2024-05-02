@@ -1,0 +1,24 @@
+<svg width="170" height="170" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.67 110.67">
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="Layer_1" data-name="Layer 1">
+            <circle cx="55.33" cy="55.35" r="10.03" fill="none" stroke="#ad2125" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            <circle cx="55.33" cy="55.35" r="24.02" transform="translate(-8.22 101.02) rotate(-80.71)" fill="none"
+                    stroke="#ad2125" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="55.33" cy="55.35" r="39.99" fill="none" stroke="#ad2125" stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            <path d="M102.17,26.84A54.8,54.8,0,1,1,83.48,8.29" fill="none" stroke="#ad2125" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <polyline points="55.33 55.35 93.33 17.34 94.84 15.84" fill="none" stroke="#ad2125" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            <polyline points="88.91 21.76 99.1 21.76 110.17 10.69 101.43 9.24 99.99 0.5 88.91 11.57 88.91 21.76"
+                      fill="none" stroke="#ad2125" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="96.5" y1="10.35" x2="95.6" y2="4.9" fill="none" stroke="#ad2125" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M35,12.16q.85-.4,1.74-.78" fill="none" stroke="#ad2125" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M19.4,23.94a48.17,48.17,0,0,1,11.9-9.83" fill="none" stroke="#ad2125" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </g>
+    </g>
+</svg>
