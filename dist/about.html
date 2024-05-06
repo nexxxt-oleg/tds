@@ -840,26 +840,28 @@
                 наличии на лучших условиях.</p>
         </div>
     </div>
-    <div class="border-top tpad100 show-rooms fpad100">
+    <div class="border-top tpad100 show-rooms ">
         <div class="row">
             <div class="col-lg-6">
                 <div class="show-rooms__title">
                     <span class="d-block">Посетите наш шоурум в</span>
-                    <div class="dropdown">
-                        <span data-bs-toggle="dropdown" class="dropdown-toggle show-rooms__title__city" id="showRoomsCity">Москве</span>
+                    <div class="dropdown nav flex-column">
+                        <span data-bs-toggle="dropdown" class="dropdown-toggle show-rooms__title__city"
+                              id="showRoomsCity">Москве</span>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="dropdown__title">Выберите город</div>
                             </li>
                             <li>
-                                <label class="custom-checkbox" >
+                                <label class="custom-checkbox" onclick="showRoomsCity('Москве', 'tab_city1');">
                                     <input class="js_city_rooms" type="radio" checked name="city" value="Москве">
                                     <span class="custom-checkbox__text">Москва</span>
                                 </label>
                             </li>
                             <li>
-                                <label class="custom-checkbox" >
-                                    <input class="js_city_rooms" type="radio"  name="city" value="Санкт-Петербурге">
+                                <label class="custom-checkbox"
+                                       onclick="showRoomsCity('Санкт-Петербурге', 'tab_city2');">
+                                    <input class="js_city_rooms" type="radio" name="city" value="Санкт-Петербурге">
                                     <span class="custom-checkbox__text">Санкт-Петербург</span>
                                 </label>
                             </li>
@@ -868,6 +870,358 @@
                 </div>
             </div>
         </div>
+
+        <div class="d-none">
+            <ul class="nav">
+                <li><a href="#city1" data-bs-toggle="tab" data-bs-target="#city1" id="tab_city1" class="active">1</a>
+                </li>
+                <li><a href="#city2" data-bs-toggle="tab" data-bs-target="#city2" id="tab_city2">2</a></li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="city1">
+                <div class="row tpad30 fpad45">
+                    <div class="col-lg-7">
+                        <div class="contacts-tab__info align-items-start mt-0">
+                            <div class="ico-red contacts-tab__info__ico">
+                                <svg width="15" height="18">
+                                    <use xlink:href="#svg-address"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-tab__info__value">
+                                <div class="adr">Москва, ул. Дубнинская, 81, строение 2
+                                    (заезд с Проектируемого проезда)
+                                </div>
+                                <div class="time">Пн-Пт: 09:00–18:00, Сб-Вс: выходной</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+
+                        <div class="show-rooms__play">
+                            <a href="" class="play-btn">
+                                <div class="d-flex align-items-center justify-content-center play-btn__wrap">
+                                        <span class="play-btn__ico">
+                                            <svg width="16" height="18">
+                                                <use xlink:href="#svg-play"></use>
+                                            </svg>
+                                        </span>
+                                    <span class="play-btn__caption">Смотреть виртуальную<br> экскурсию по шоуруму</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="contacts-tab__slider">
+                    <div class="swiper slider-full slider-photos">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city1"
+                                   class="contacts-tab__slider__item zoom-link"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city1"
+                                   class="contacts-tab__slider__item zoom-link"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city1"
+                                   class="contacts-tab__slider__item zoom-link"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city1"
+                                   class="contacts-tab__slider__item zoom-link"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="swiper-prev slider-nav swiper-button-disabled" >
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-prev"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-next slider-nav swiper-button-disabled" >
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-next"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="city2">
+
+                <div class="row tpad30 fpad45">
+                    <div class="col-lg-7">
+                        <div class="contacts-tab__info align-items-start mt-0">
+                            <div class="ico-red contacts-tab__info__ico">
+                                <svg width="15" height="18">
+                                    <use xlink:href="#svg-address"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-tab__info__value">
+                                <div class="adr">Санкт-Петербург, ул. Дубнинская, 81, строение 2
+                                    (заезд с Проектируемого проезда)
+                                </div>
+                                <div class="time">Пн-Пт: 09:00–18:00, Сб-Вс: выходной</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+
+                        <div class="show-rooms__play">
+                            <a href="" class="play-btn">
+                                <div class="d-flex align-items-center justify-content-center play-btn__wrap">
+                                        <span class="play-btn__ico">
+                                            <svg width="16" height="18">
+                                                <use xlink:href="#svg-play"></use>
+                                            </svg>
+                                        </span>
+                                    <span class="play-btn__caption">Смотреть виртуальную<br> экскурсию по шоуруму</span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contacts-tab__slider">
+                    <div class="swiper slider-full slider-photos">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city2"
+                                   class="contacts-tab__slider__item zoom-link"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city2"
+                                   class="contacts-tab__slider__item"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city2"
+                                   class="contacts-tab__slider__item zoom-link"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="images/dist/of1@2.jpg" data-fancybox="city2"
+                                   class="contacts-tab__slider__item zoom-link"
+                                >
+                                    <picture>
+                                        <source srcset="images/dist/of1.jpg, images/dist/of1@2.jpg 2x">
+                                        <img width="570" height="378" src="images/dist/of1.jpg" alt="">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="swiper-prev slider-nav swiper-button-disabled" >
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-prev"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-next slider-nav swiper-button-disabled" >
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-next"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contacts-sharing">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fpad30">
+                    <div class="fs-24 fw-medium">Подписывайтесь на наши социальные сети</div>
+                    <div class="fs-18 color-silver">и узнавайте всё самое интересное первыми!</div>
+                </div>
+                <div class="col-lg-3 col-6 fpad30">
+                    <a href="" target="_blank" class="btn btn--border w-100">
+                        <svg width="24" height="14" class="mr-15">
+                            <use xlink:href="#svg-vk"></use>
+                        </svg>
+                        ВКонтакте
+                    </a>
+                </div>
+                <div class="col-lg-3 col-6 fpad30">
+                    <a href="" target="_blank" class="btn btn--border w-100">
+                        <svg width="24" height="20" class="mr-15">
+                            <use xlink:href="#svg-telegram"></use>
+                        </svg>
+                        Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center fpad30">
+            <div class="text col-lg-6 fpad30">
+                <h2 class="fs-24">Дорогие партнеры и клиенты!<br>
+                    Мы рады сообщить, что теперь вы можете
+                    приобрести наши товары на Ozon!</h2>
+                <p>Теперь вам будет еще удобнее и быстрее заказать товар -
+                    буквально в один клик! Мы постоянно расширяем ассортимент
+                    продукции на Озон, поэтому следите за обновлениями.</p>
+            </div>
+            <div class="col-lg-3 fpad30">
+                <a href="">
+                    <img src="images/dist/ozon.svg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 fpad30 d-flex justify-content-center">
+                <a href="">
+                    <picture>
+                        <source data-srcset="images/dist/qr_ozon.jpg, images/dist/qr_ozon@2.jpg 2x" >
+                        <img width="121" height="120"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-src="images/dist/qr_ozon.jpg" class="lazy" alt="">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="silver-box tpad100">
+    <div class="container">
+        <div class="fs-24 fw-medium fpad45">Реквизиты ТД «Сервер»</div>
+        <ul class="nav flex-column list-doc fpad100">
+            <li>
+                <a href="" download="" class="list-doc__item d-flex align-items-center">
+                    <div class="list-doc__item__ico">
+                        <svg width="20" height="24" >
+                            <use xlink:href="#svg-doc"></use>
+                        </svg>
+                    </div>
+                    <div class="list-doc__item__title">
+                        Скачать реквизиты ООО «Эколес»
+                    </div>
+                    <div class="list-doc__item__ico">
+                        <svg width="24" height="24" >
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="fs-24 fw-medium fpad45">Документы и отчеты</div>
+        <ul class="nav flex-column list-doc fpad50">
+            <li>
+                <a href="" download="" class="list-doc__item d-flex align-items-center">
+                    <div class="list-doc__item__ico">
+                        <svg width="20" height="24" >
+                            <use xlink:href="#svg-doc"></use>
+                        </svg>
+                    </div>
+                    <div class="list-doc__item__title">
+                        Кодекс этики
+                    </div>
+                    <div class="list-doc__item__ico">
+                        <svg width="24" height="24" >
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" download="" class="list-doc__item d-flex align-items-center">
+                    <div class="list-doc__item__ico">
+                        <svg width="20" height="24" >
+                            <use xlink:href="#svg-doc"></use>
+                        </svg>
+                    </div>
+                    <div class="list-doc__item__title">
+                        Положение о противодействии коррупции
+                    </div>
+                    <div class="list-doc__item__ico">
+                        <svg width="24" height="24" >
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" download="" class="list-doc__item d-flex align-items-center">
+                    <div class="list-doc__item__ico">
+                        <svg width="20" height="24" >
+                            <use xlink:href="#svg-doc"></use>
+                        </svg>
+                    </div>
+                    <div class="list-doc__item__title">
+                        Результаты специальной оценки условий труда Эколес СОУТ Москва 2022
+                    </div>
+                    <div class="list-doc__item__ico">
+                        <svg width="24" height="24" >
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" download="" class="list-doc__item d-flex align-items-center">
+                    <div class="list-doc__item__ico">
+                        <svg width="20" height="24" >
+                            <use xlink:href="#svg-doc"></use>
+                        </svg>
+                    </div>
+                    <div class="list-doc__item__title">
+                        Результаты специальной оценки условий труда Эколес СОУТ Санкт-Петербург 2023
+                    </div>
+                    <div class="list-doc__item__ico">
+                        <svg width="24" height="24" >
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>
 

@@ -363,6 +363,10 @@ a {
   &.btn--border {
     color: #ad2125;
     border: 1px solid #ad2125;
+    &:hover {
+      background: #ad2125;
+      color: #fff;
+    }
   }
 }
 
@@ -4313,6 +4317,7 @@ b {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+  padding-top: 25px;
 
   &__wrap {
     height: 380px;
@@ -4458,6 +4463,104 @@ b {
       .custom-checkbox__text {
         font-weight: 400;
       }
+    }
+  }
+}
+
+.play-btn {
+ display: inline-flex;
+  background-color: rgba(173, 33, 37, .15);
+  border-radius: 50px;
+  height: 100px;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  &__wrap {
+    background: #ad2125;
+    border-radius: 35px;
+    color: #fff;
+    height: 70px;
+  }
+  &__ico {
+    height: 70px;
+    min-width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__caption {
+    padding-right: 35px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin-left: -5px;
+  }
+  &:hover {
+    .play-btn__wrap {
+      background: #961f23;
+    }
+  }
+}
+.show-rooms__play {
+  margin-top: -70px;
+  margin-left: 30px;
+}
+.fpad45 {
+  padding-bottom: 45px;
+}
+
+.slider-photos {
+  .swiper-slide {
+    width: 570px;
+    margin-right: 30px;
+  }
+}
+
+.zoom-link {
+  position: relative;
+  border-radius: 20px;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 12;
+    top: 50%;
+    left: 50%;
+    transition: all 0.2s ease-in-out;
+    background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B stroke-width: 0px; fill: %23ad2125; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath class='cls-1' d='m256,0C114.62,0,0,114.62,0,256s114.62,256,256,256,256-114.62,256-256C511.85,114.68,397.32.15,256,0Zm0,469.33c-117.82,0-213.33-95.51-213.33-213.33S138.18,42.67,256,42.67s213.33,95.51,213.33,213.33c-.13,117.77-95.57,213.2-213.33,213.33Zm106.67-213.33c0,11.78-9.55,21.33-21.33,21.33h-64v64c0,11.78-9.55,21.33-21.33,21.33s-21.33-9.55-21.33-21.33v-64h-64c-11.78,0-21.33-9.55-21.33-21.33s9.55-21.33,21.33-21.33h64v-64c0-11.78,9.55-21.33,21.33-21.33s21.33,9.55,21.33,21.33v64h64c11.78,0,21.33,9.55,21.33,21.33Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin: -50px 0 0 -50px;
+    opacity: 0;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+    &::before {
+      opacity: 1;
     }
   }
 }
