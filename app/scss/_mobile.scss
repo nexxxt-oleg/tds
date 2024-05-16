@@ -352,7 +352,10 @@
 }
 
 @media screen and (max-width: 991px) {
-
+  .show-rooms__play {
+    margin-top: 20px;
+    margin-left: 0;
+  }
   .footer__logo {
     margin-bottom: 20px;
   }
@@ -685,6 +688,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .show-rooms__title {
+    font-size: 24px;
+  }
+  .contacts-tab__slider {
+    margin-bottom: 50px;
+  }
   .header__icons__list {
     max-width: 540px;
   }
@@ -1159,6 +1168,98 @@
       font-size: 14px;
     }
   }
+  .banner-head {
+    height: 448px;
+    &.banner-head--about {
+      background-image: url("../images/dist/bg-about-mob.jpg");
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__wrap {
+      height: auto;
+      align-items: flex-start;
+      padding-top:80px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      br {
+        display: none;
+      }
+    }
+  }
+  .dealer-section{
+    padding: 20px 0 10px;
+  }
+  .prim-box {
+    padding: 20px 20px 120px 20px;
+    min-height: auto;
+    background-size: auto 130px;
+    background-position: bottom -15px right -1px;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .tpad100 {
+    padding-top: 50px;
+  }
+  .why-box {
+    padding: 20px;
+    &__header {
+      padding-bottom: 15px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__body {
+      font-size: 14px;
+    }
+  }
+  .text h2.fs-32 {
+    font-size: 18px;
+  }
+  .text h2.fs-42 {
+    font-size: 24px;
+  }
+  .fpad100 {
+    padding-bottom: 50px;
+  }
+  .tpad100 {
+    padding-top: 50px;
+  }
+  .slider-photos {
+    .slider-nav {
+      display: none !important;
+    }
+    .swiper-slide {
+      width: 210px;
+    }
+  }
+  .fs-24 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .fs-18 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contacts-sharing {
+    .btn {
+      font-size: 14px !important;
+    }
+  }
+  .hidden-mob {
+    display: none !important;
+  }
+  .ozon-link {
+    display: block;
+    width: 240px;
+    margin: 0 auto 50px;
+  }
 }
 
 @media screen and (max-width: 574px) {
@@ -1430,6 +1531,7 @@
   .selection__row {
     margin-right: 0;
   }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -1444,5 +1546,11 @@
         width: 100%;
       }
     }
+  }
+  .play-btn__caption {
+    padding-right: 20px;
+  }
+  .contacts-tab__info .time {
+    font-size: 12px;
   }
 }
