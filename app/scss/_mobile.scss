@@ -1260,6 +1260,24 @@
     width: 240px;
     margin: 0 auto 50px;
   }
+  .fpad45 {
+    padding-bottom: 10px;
+  }
+  .list-doc__item__ico {
+    width: 60px;
+    min-width: 60px;
+  }
+  .list-doc__item__ico--right {
+    display: none !important;
+  }
+  .list-doc__item__title {
+    line-height: 20px;
+  }
+  .show-rooms__play {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 574px) {
