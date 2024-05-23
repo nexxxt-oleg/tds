@@ -685,6 +685,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .catalog-categories__btn {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1294,6 +1297,9 @@
       padding-top: 10px;
       padding-bottom: 10px;
     }
+  }
+  .catalog-categories__btn .accordion-button2 span {
+    font-size: 12px;
   }
   .compare-page__clear-btn {
     width: 100%;

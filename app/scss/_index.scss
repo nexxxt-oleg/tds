@@ -1608,15 +1608,14 @@ img {
   .header__fix-menu__nav-ico__svg {
     position: relative;
     width: 30px;
+    margin: 0 auto;
 
     .header__icons__item__count {
-
       top: -2px;
     }
-
-    &:hover {
-      color: #000;
-    }
+  }
+  a:hover {
+    color: #000;
   }
 
   &__cart {
@@ -1635,8 +1634,14 @@ img {
     padding-left: 35px;
 
     li:not(:last-child) {
-      padding-right: 25px;
+      padding-right: 18px;
 
+    }
+
+    &__caption {
+      font-size: 13px;
+      line-height: 1.2;
+      padding-top: 3px;
     }
   }
 
@@ -4466,6 +4471,50 @@ b {
     }
   }
 }
+.catalog-categories__btn {
+  padding: 0 200px;
+  .accordion-button2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 46px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #f4f4f4;
+    cursor: pointer;
+    color: #484848;
+    span {
+      text-transform: uppercase;
+      flex-grow: 0;
+      font-size: 14px;
+      font-weight: 500;
+      display: none;
+    }
+    svg {
+      margin-left: 10px;
+      transition: all 0.2s ease-in-out;
+      transform: rotate(90deg);
+      min-width: 12px;
+      height: 12px;
+    }
+    &.collapsed {
+      .catalog-categories__open-text {
+        display: block;
+      }
+    }
+    &:not(.collapsed) {
+      .catalog-categories__close-text {
+        display: block;
+      }
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
 
 .play-btn {
  display: inline-flex;
@@ -4480,6 +4529,7 @@ b {
     border-radius: 35px;
     color: #fff;
     height: 70px;
+
   }
   &__ico {
     height: 70px;
