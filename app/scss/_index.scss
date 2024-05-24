@@ -1609,6 +1609,8 @@ img {
     position: relative;
     width: 30px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 
     .header__icons__item__count {
       top: -2px;

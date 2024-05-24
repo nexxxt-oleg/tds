@@ -315,6 +315,11 @@
                                 aria-selected="false">Распродажа
                         </button>
                     </div>
+                    <div class="swiper-slide w-auto nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4" role="tab"
+                                aria-selected="false">Уценка
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -403,6 +408,39 @@
                             </svg>
                         </button>
                         <button class="swiper-next slider-nav swiper-button-disabled" id="tab3_nav_next">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="tabs-slider__body__link">
+                        <a href="" class="link-more">
+                            Смотреть все
+                            <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab4" role="tabpanel">
+                    <div class="tabs-slider__products">
+                        <div class="swiper slider-product"
+                             data-scrollbar="tab4_scroll"
+                             data-navnext="tab4_nav_next"
+                             data-navprev="tab4_nav_prev">
+                            <div class="swiper-wrapper">
+                                <!--#include virtual="/parts/slider-product.html" -->
+                            </div>
+                            <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab4_scroll"></div>
+                        </div>
+                        <button class="swiper-prev slider-nav swiper-button-disabled" id="tab4_nav_prev">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-prev"></use>
+                            </svg>
+                        </button>
+                        <button class="swiper-next slider-nav swiper-button-disabled" id="tab4_nav_next">
                             <svg width="10" height="16">
                                 <use xlink:href="#svg-next"></use>
                             </svg>
