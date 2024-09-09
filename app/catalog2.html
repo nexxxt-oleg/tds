@@ -10,16 +10,18 @@
         Наполнения для шкафов
         <sup class="title-sup">50</sup>
     </h1>
-    <div class="main-content" id="catalogSb">
-        <div class="row">
+    <div>
+        <div class="row main-content" id="catalogSb">
             <div class="col-12 col-md-4 col-lg-3 col-xl-3 main-content__left">
-                <div class="sidebar">
-                    <div class="sidebar__inner">
+                <div id="sidebar" class="sidebar ">
+
+                    <div class="sidebar__inner theiaStickySidebar">
                         <!--#include virtual="/parts/filter-left.html" -->
                     </div>
+
                 </div>
             </div>
-            <div class="col-12 col-md-8 col-lg-9 col-xl-9 fpad60 content main-content__right">
+            <div id="content" class="col-12 col-md-8 col-lg-9 col-xl-9 fpad60 content main-content__right">
                 <div class="d-flex flex-column">
                     <!--#include virtual="/parts/sort-top.html" -->
                     <div class="filter-active">
@@ -584,7 +586,7 @@
         </div>
     </div>
 </div>
-<div class="silver-box">
+<div class="silver-box position-relative z-3">
     <div class="container">
         <h2>Просмотренные товары</h2>
         <div class="tabs-slider__products position-relative">

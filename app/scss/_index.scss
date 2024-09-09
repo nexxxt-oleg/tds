@@ -4618,6 +4618,8 @@ b {
 }
 
 .main-content {
+  position: relative;
+  z-index: 1;
   &__left {
     position: relative;
     z-index: 10;
