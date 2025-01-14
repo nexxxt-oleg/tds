@@ -4488,6 +4488,8 @@ b {
     background: #f4f4f4;
     cursor: pointer;
     color: #484848;
+    max-width: 500px;
+    margin: 20px auto 0;
     span {
       text-transform: uppercase;
       flex-grow: 0;
