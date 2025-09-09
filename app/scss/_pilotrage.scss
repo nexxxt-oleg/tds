@@ -530,3 +530,44 @@ body {
     justify-content: center;
   }
 }
+
+.home-brands {
+  background: #2b2b2b;
+  padding: 45px 0;
+  h2,
+  & .title-box__subtitle{
+    color: #fff;
+    text-align: left;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 134px;
+      padding: 15px;
+      &--center {
+        border-right: 1px solid #656565;
+        border-left: 1px solid #656565;
+      }
+    }
+
+    &--top {
+
+    }
+
+    &:not(.home-brands__list--bottom) .home-brands__list__item {
+      border-bottom: 1px solid #656565;
+    }
+  }
+
+
+}
