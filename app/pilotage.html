@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
     <meta charset="utf-8">
-
     <title>pilotage</title>
     <meta name="description" content="">
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
     <link rel="icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,15 +15,43 @@
 </head>
 <body>
 <div class="main pilotage">
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="row header__row">
-                <div class="col-lg-2">
+                <div class="col-lg-2 header__col-logo">
                     <a href="" class="header__logo">
                         Pilotage
                     </a>
+
+                    <div class="ms-auto only-mob">
+                        <div class="header__mob-col-nav">
+                            <a href="tel:+74951343484" class="header__mob-tel">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 480 480">
+                                    <path fill="currentColor"
+                                          d="m464.56,345.6c-1.31-1.04-96.56-69.7-122.7-64.77-12.48,2.21-19.62,10.72-33.94,27.76-2.3,2.75-7.84,9.34-12.14,14.03-9.05-2.95-17.88-6.54-26.42-10.75-44.07-21.46-79.68-57.06-101.14-101.14-4.21-8.54-7.8-17.37-10.75-26.42,4.7-4.32,11.3-9.86,14.11-12.22,16.96-14.24,25.49-21.38,27.7-33.89,4.53-25.92-64.08-121.82-64.8-122.69-6.3-9.01-16.32-14.7-27.28-15.52C79.39,0,0,102.99,0,120.34c0,1.01,1.46,103.47,127.81,232,128.4,126.21,230.85,127.66,231.86,127.66,17.36,0,120.34-79.39,120.34-107.2-.81-10.92-6.48-20.91-15.44-27.2Z"/>
+                                </svg>
+                            </a>
+                            <a data-bs-toggle="modal"
+                               href="topNavMen"
+                               data-bs-target="#topNavMenu"
+                               class="header__mob-toggle">
+
+                                <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg"
+                                     xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384 272">
+                                    <path fill="currentColor"
+                                          d="m360,48H24C10.4,48,0,37.6,0,24S10.4,0,24,0h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                    <path fill="currentColor"
+                                          d="m360,160H24c-13.6,0-24-10.4-24-24s10.4-24,24-24h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                    <path fill="currentColor"
+                                          d="m360,272H24c-13.6,0-24-10.4-24-24s10.4-24,24-24h336c13.6,0,24,10.4,24,24s-10.4,24-24,24"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-8 col-xl-7 only-pc">
                     <ul class="nav header__nav">
                         <li><a href="">Главная</a></li>
                         <li><a href="">Услуги</a></li>
@@ -38,7 +61,7 @@
                         <li><a href=""><i class="header__nav__area"></i>Заполнить заявку</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 header__right">
+                <div class="col-lg-2 col-xl-3 header__right only-pc">
                     <div class="header__work-time">
                         пн-пт: 09:00-18:00
                     </div>
@@ -90,7 +113,7 @@
             </div>
         </div>
         <div class="home-top__footer">
-            Из проекта в реальность за 14 дней
+            Из проекта в реальность <span>за 14 дней</span>
         </div>
     </div>
 
@@ -192,7 +215,7 @@
             </div>
         </div>
         <div class="row fpad50">
-            <div class="col-lg-4 fpad30">
+            <div class="col-lg-4 col-md-6 fpad30">
                 <div class="home-prim-banner">
                     <div class="home-prim-banner__wrap">
                         <h3>Реализация любых, даже самых смелых идей</h3>
@@ -209,7 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 fpad30">
+            <div class="col-lg-4 col-md-6 fpad30">
                 <div class="home-prim-banner">
                     <div class="home-prim-banner__wrap">
                         <h3>Индивидуальный подход</h3>
@@ -228,7 +251,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 fpad30">
+            <div class="col-lg-4 col-md-6 fpad30">
                 <div class="home-prim-banner">
                     <div class="home-prim-banner__wrap">
                         <h3>Нам доверяют профессионалы</h3>
@@ -265,7 +288,7 @@
                 </picture>
                 <div class="home-video__wrap__play">
                     <div class="home-video__wrap__play__btn">
-                        <svg width="22" href="24" xmlns="http://www.w3.org/2000/svg"
+                        <svg width="22" height="24" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 147.65 163.86">
                             <path fill="#fff"
                                   d="m26.75,3.61C11.98-4.86,0,2.08,0,19.11v125.64c0,17.04,11.98,23.97,26.75,15.51l109.81-62.98c14.78-8.48,14.78-22.21,0-30.69L26.75,3.61Z"/>
@@ -303,7 +326,7 @@
         </div>
 
         <div class="services row">
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -322,7 +345,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -341,7 +364,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -361,7 +384,7 @@
                 </a>
             </div>
 
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -380,7 +403,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -399,7 +422,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -418,7 +441,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -437,7 +460,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 col-md-6">
                 <a href="" class="services__item">
                     <div class="services__item__img">
                         <picture>
@@ -464,7 +487,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <h2>Реализованные проекты</h2>
-                    <ul class="projects__tabs nav">
+
+                    <ul class="projects__tabs nav ">
                         <li>
                             <a href="#tab1" class="active" data-bs-toggle="tab" data-bs-target="#tab1">Салоны</a>
                         </li>
@@ -475,6 +499,7 @@
                             <a href="#tab3" data-bs-toggle="tab" data-bs-target="#tab3">Частные проекты</a>
                         </li>
                     </ul>
+
                     <div class="tab-content">
                         <div class="tab-pane fade show active" id="tab1">
                             <div class="swiper projects__slider">
@@ -726,10 +751,39 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row flex-row-reverse">
                 <div class="col-xl-6 col-lg-6">
-
-
+                    <ul class="home-brands__list nav">
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand1.svg" loading="lazy" width="140" height="32" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand2.svg" loading="lazy" width="95" height="60" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand3.svg" loading="lazy" width="140" height="48" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand4.svg" loading="lazy" width="140" height="30" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand5.svg" loading="lazy" width="140" height="36" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand6.png" loading="lazy" width="140" height="24" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand7.svg" loading="lazy" width="140" height="38" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand8.svg" loading="lazy" width="140" height="24" alt="">
+                        </li>
+                        <li class="home-brands__list__item">
+                            <img src="./images/dist/p/brand9.svg" loading="lazy" width="140" height="51" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-lg-6">
                     <div class="home-brands__img">
                         <picture>
                             <source srcset="./images/dist/p/brand.jpg 1x, ./images/dist/p/brand@2.jpg 2x">
@@ -738,41 +792,6 @@
                                  loading="lazy"
                                  alt="">
                         </picture>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6">
-                    <div class="home-brands__list home-brands__list--top">
-                        <div class="home-brands__list__item">
-                            <img src="./images/dist/p/brand1.svg" loading="lazy" width="140" height="32" alt="">
-                        </div>
-                        <div class="home-brands__list__item home-brands__list__item--center">
-                            <img src="./images/dist/p/brand2.svg" loading="lazy" width="95" height="60" alt="">
-                        </div>
-                        <div class="home-brands__list__item">
-                            <img src="./images/dist/p/brand3.svg" loading="lazy" width="140" height="48" alt="">
-                        </div>
-                    </div>
-                    <div class="home-brands__list home-brands__list--center">
-                        <div class="home-brands__list__item ">
-                            <img src="./images/dist/p/brand4.svg" loading="lazy" width="140" height="30" alt="">
-                        </div>
-                        <div class="home-brands__list__item home-brands__list__item--center">
-                            <img src="./images/dist/p/brand5.svg" loading="lazy" width="140" height="36" alt="">
-                        </div>
-                        <div class="home-brands__list__item">
-                            <img src="./images/dist/p/brand6.png" loading="lazy" width="140" height="24" alt="">
-                        </div>
-                    </div>
-                    <div class="home-brands__list home-brands__list--bottom">
-                        <div class="home-brands__list__item">
-                            <img src="./images/dist/p/brand7.svg" loading="lazy" width="140" height="38" alt="">
-                        </div>
-                        <div class="home-brands__list__item home-brands__list__item--center">
-                            <img src="./images/dist/p/brand8.svg" loading="lazy" width="140" height="24" alt="">
-                        </div>
-                        <div class="home-brands__list__item">
-                            <img src="./images/dist/p/brand9.svg" loading="lazy" width="140" height="51" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -878,7 +897,7 @@
                         </a>
 
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 footer__bottom__col-politika">
                         <ul class="nav justify-content-end">
                             <li><a href="">Политика конфиденциальности</a></li>
                         </ul>
