@@ -127,8 +127,61 @@ body {
   &--black {
     background: #2b2b2b;
     color: #fff;
+    &:hover {
+      background: #e5ae78;
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    background: #e5ae78;
+    color: #fff;
   }
 }
+
+.home-top.home-top--raspil {
+  height: 719px;
+  background: url("../images/dist/p/bg-pilotag1.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+  .home-top__wrap {
+    background: transparent;
+    padding-bottom: 50px;
+  }
+  .header {
+    background: transparent;
+  }
+}
+
+.raspil-prim {
+  padding-bottom: 80px;
+  &__item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 30px 35px 35px;
+    &__ico {
+      flex-grow: 1;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 15px 0;
+      font-weight: 300;
+    }
+    h3 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 500;
+      padding-bottom: 15px;
+    }
+  }
+}
+
 
 @media (min-width: 1400px) {
   .pilotage .container {
@@ -346,6 +399,11 @@ body {
   &__title {
     h2 {
       color: #fff;
+      small {
+        display: block;
+        font-size: 24px;
+
+      }
     }
   }
 
@@ -812,6 +870,15 @@ body {
       font-size: 14px;
       height: 48px;
     }
+  }
+}
+
+.header__nav.header__nav--raspil {
+  justify-content: flex-end;
+  gap: 45px;
+  align-items: center;
+  .header__work-time {
+    line-height: 18px;
   }
 }
 
