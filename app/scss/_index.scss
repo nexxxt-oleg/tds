@@ -3189,7 +3189,7 @@ b {
 
 
     &__footer {
-      gap: 20px;
+      gap: 10px;
 
       li {
         width: calc(50% - 10px);
@@ -3342,6 +3342,7 @@ b {
       color: #8a8a8a;
       font-size: 14px;
       line-height: 20px;
+      max-width: 45%;
     }
 
     &__line {
@@ -3356,7 +3357,8 @@ b {
       color: #484848;
       font-size: 14px;
       line-height: 20px;
-      white-space: nowrap;
+      text-align: right;
+      max-width: 50%;
     }
   }
 }
