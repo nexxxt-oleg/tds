@@ -5029,6 +5029,9 @@ b {
   a {
     color: #ad2125;
     text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -5124,6 +5127,5 @@ b {
 .tabs-slider__products .slider-product__item {
   display: flex;
   flex-direction: column;
-
-
 }
+
