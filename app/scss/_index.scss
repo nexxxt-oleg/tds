@@ -4735,16 +4735,21 @@ b {
     z-index: 1;
   }
 }
-
+.tooltip-inner {
+  --bs-tooltip-max-width: 260px;
+  padding: 20px 15px !important;
+  line-height: 18px !important;
+  font-size: 13px;
+}
 .custom-tooltip {
   .tooltip-inner {
     --bs-tooltip-bg: #fff;
     --bs-tooltip-color: #484848;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
     opacity: 1;
-    font-size: 12px;
+    font-size: 13px;
     text-align: left;
-    line-height: 24px;
+    line-height: 18px !important;
 
     a {
       color: #ad2125;
