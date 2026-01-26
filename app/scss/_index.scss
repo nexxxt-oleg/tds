@@ -55,7 +55,7 @@ a {
     }
 
     &__right {
-      width: 280px;
+      width: 343px;
       margin-left: auto;
     }
 
@@ -74,7 +74,7 @@ a {
 
     &__cabinet {
       margin-left: auto;
-      margin-right: 12px;
+      margin-right: 25px;
 
       span {
         color: var(--color-main);
@@ -108,7 +108,7 @@ a {
   &__list {
     justify-content: space-between;
     width: 100%;
-    padding-right: 22px;
+    padding-right: 30px;
   }
 
   &__item {
@@ -163,7 +163,7 @@ a {
 }
 
 .header__city {
-  margin-left: 40px;
+  margin-left: 77px;
   padding-left: 28px;
   position: relative;
 
@@ -191,7 +191,7 @@ a {
 }
 
 .header__phone {
-  margin-left: 47px;
+  margin-left: 84px;
   padding-left: 32px;
   position: relative;
   padding-bottom: 6px;
@@ -232,7 +232,7 @@ a {
 }
 
 .header__email {
-  margin-left: 60px;
+  margin-left: 76px;
   padding-left: 35px;
   position: relative;
 
@@ -257,9 +257,9 @@ a {
   z-index: 1;
 
   &__col-btn {
-    width: 160px;
+    width: 165px;
     padding-right: 20px;
-    min-width: 160px;
+    min-width: 165px;
   }
 
   &__btn {
@@ -299,7 +299,7 @@ a {
       align-items: center;
       justify-content: center;
       height: 100%;
-      width: 48px;
+      width: 58px;
       background: transparent;
       border: none;
       cursor: pointer;
