@@ -2054,9 +2054,10 @@ img {
 }
 
 .footer__btn-up {
-  position: absolute;
-  z-index: 2;
-  top: -26px;
+  position: fixed;
+  opacity: 0;
+  z-index: 200;
+  bottom: 30px;
   background: #fff;
   display: flex;
   align-items: center;
