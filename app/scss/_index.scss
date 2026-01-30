@@ -2575,12 +2575,14 @@ h1 {
 
 .card-product__price {
   align-items: center;
+
   &__ico {
     min-width: 16px;
     color: #ad2125;
     margin-right: 10px;
   }
 }
+
 .catalog-item {
   position: relative;
 
@@ -4736,12 +4738,14 @@ b {
     z-index: 1;
   }
 }
+
 .tooltip-inner {
   --bs-tooltip-max-width: 260px;
   padding: 20px 15px !important;
   line-height: 18px !important;
   font-size: 13px;
 }
+
 .custom-tooltip {
   .tooltip-inner {
     --bs-tooltip-bg: #fff;
@@ -5027,6 +5031,7 @@ b {
   a {
     color: #ad2125;
     text-decoration: underline;
+
     &:hover {
       text-decoration: none;
     }
@@ -5113,8 +5118,10 @@ b {
 
   .catalog-list__col__hover {
     padding: 10px;
-    &:hover  {
+
+    &:hover {
       box-shadow: 0px 2px 5px 0px rgba(40, 40, 40, 0.3);
+
       .catalog-list__col__hover__footer {
         opacity: 1;
         visibility: visible;
@@ -5125,6 +5132,7 @@ b {
       padding-top: 0;
     }
   }
+
   .swiper {
     overflow: visible;
   }
@@ -5142,3 +5150,97 @@ b {
   }
 }
 
+
+.questions__item {
+  margin-top: 20px;
+  background: #f6f6f6;
+  border: 1px solid #f6f6f6;
+  border-radius: 20px;
+}
+
+.questions__item__header {
+  padding: 25px 25px 15px;
+  border-radius: 20px 20px 0 0;
+}
+
+.questions__item__header__info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.questions__item__header__name {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 14px;
+  color: #000;
+}
+
+.questions__item__header__date {
+  color: #9e9e9e;
+  font-size: 14px;
+}
+
+.questions__item__header__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+.questions__item__body {
+  border-top: 2px solid #fff;
+  padding: 25px 25px 25px 45px;
+}
+
+.questions__item__body__text {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+.questions__item__body__reg {
+  padding-top: 5px;
+
+  a {
+    color: #b60e1a;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+}
+
+.questions__item__form {
+  padding-right: 25px;
+}
+
+.questions__item__form textarea {
+  display: block;
+  padding: 10px 15px;
+  height: 80px;
+  width: 100%;
+  border-radius: 6px;
+  background: #fff;
+  resize: none;
+  border: 1px solid #cecece;
+  font-size: 14px;
+  line-height: 20px;
+
+  &::placeholder {
+    color: #a2a4a1;
+    opacity: 1;
+  }
+}
+
+.questions__item__form__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  gap: 20px;
+
+  .btn {
+    width: 150px;
+    justify-content: center;
+  }
+}
