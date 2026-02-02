@@ -1380,6 +1380,37 @@
 }
 
 @media screen and (max-width: 574px) {
+  .main-content__left.fix {
+    .sidebar__inner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0 15px;
+      background: var(--color-main);
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 100%;
+        background: var(--color-red);
+      }
+    }
+    .catalog-mob-btn-filter {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+  }
+  .main-content__left {
+    height: 56px;
+  }
+  .main-content__left {
+    max-width: 100%;
+  }
   .silver-box .catalog-list__col__hover  {
     padding-top: 0 !important;
     .catalog-list__col__hover__footer {
