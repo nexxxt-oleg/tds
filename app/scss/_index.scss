@@ -5208,6 +5208,7 @@ b {
     font-weight: 500;
   }
 }
+
 h1.mb-25 {
   margin-bottom: 25px;
 }
@@ -5243,5 +5244,152 @@ h1.mb-25 {
   .btn {
     width: 150px;
     justify-content: center;
+  }
+}
+
+.anchor-top {
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+
+  &__list {
+    gap: 25px;
+
+    a {
+      display: block;
+      font-size: 14px;
+      line-height: 2;
+      color: #484848;
+    }
+  }
+}
+
+
+.slider-content {
+  position: relative;
+  z-index: 1;
+  max-width: 470px;
+
+  &--left {
+    .swiper::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 100%;
+      background: #fff;
+      height: 100%;
+      width: 100vw;
+    }
+  }
+
+  &--right {
+    margin-left: auto;
+    .swiper::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 100%;
+      background: #fff;
+      height: 100%;
+      width: 100vw;
+    }
+  }
+
+  &--center {
+    max-width: 100%;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+  .slider-nav {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    margin-top: -24px;
+
+    &.swiper-next {
+      right: -24px;
+    }
+
+    &.swiper-prev {
+      left: -24px;
+    }
+  }
+
+  .swiper-pagination {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    bottom: -35px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    .swiper-pagination-bullet {
+      margin: 0;
+      width: 24px;
+      height: 5px;
+      border-radius: 3px;
+      background: #efeff0;
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        background: #ad2125;
+      }
+    }
+  }
+}
+
+.link {
+  color: #ad2125;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.video-item {
+  & video,
+  & iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 650 / 400;
+  }
+
+  &__caption {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+    padding-top: 18px;
+  }
+}
+
+.fpad10 {
+  padding-bottom: 10px;
+}
+
+.pdf-link{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  min-height: 84px;
+  gap: 20px;
+  text-decoration: none;
+  &__ico {
+    min-width: 24px;
+    width: 24px;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__size {
+    font-weight: 400;
   }
 }

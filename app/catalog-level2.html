@@ -1,0 +1,606 @@
+<!--#set var="title" value="Кромочные материалы" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li><a href="">Главная</a></li>
+        <li><a href="">Каталог</a></li>
+    </ul>
+    <h1>Шаблон каталога (второго уровня)</h1>
+    <div class="anchor-top">
+        <ul class="nav anchor-top__list">
+            <li><a href="#catalog-link">Категории</a></li>
+            <li><a href=#tabs-link"">Товары</a></li>
+            <li><a href="#desc-link">Описание</a></li>
+            <li><a href="#video-link">Видео</a></li>
+            <li><a href="#doc-link">Материалы</a></li>
+        </ul>
+    </div>
+
+    <div class="position-relative">
+        <div id="catalog-link" class="anchor-link-cat"></div>
+        <div class="row catalog-categories">
+            <div class="col-xl-2 col-lg-3 col-6 catalog-categories__item">
+                <a href="">
+                    <picture>
+                        <source data-srcset="images/dist/crom1.jpg, images/dist/crom1@2.jpg 2x">
+                        <img width="170" height="170"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-src="images/dist/crom1.jpg" class="lazy" alt="">
+                    </picture>
+                    <div class="catalog-categories__item__title">
+                        Кромка ПВХ Galoplast
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-6 catalog-categories__item">
+                <a href="">
+                    <picture>
+                        <source data-srcset="images/dist/crom2.jpg, images/dist/crom2@2.jpg 2x">
+                        <img width="170" height="170"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-src="images/dist/crom2.jpg" class="lazy" alt="">
+                    </picture>
+                    <div class="catalog-categories__item__title">
+                        Кромка ABS Egger
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-6 catalog-categories__item">
+                <a href="">
+                    <picture>
+                        <source data-srcset="images/dist/crom3.jpg, images/dist/crom3@2.jpg 2x">
+                        <img width="170" height="170"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-src="images/dist/crom3.jpg" class="lazy" alt="">
+                    </picture>
+                    <div class="catalog-categories__item__title">
+                        Кромки ПВХ / ABS Прочие
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-6 catalog-categories__item">
+                <a href="">
+                    <picture>
+                        <source data-srcset="images/dist/crom4.jpg, images/dist/crom4@2.jpg 2x">
+                        <img width="170" height="170"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-src="images/dist/crom4.jpg" class="lazy" alt="">
+                    </picture>
+                    <div class="catalog-categories__item__title">
+                        Профили и кант ПВХ
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-6 catalog-categories__item">
+                <a href="">
+                    <picture>
+                        <source data-srcset="images/dist/crom5.jpg, images/dist/crom5@2.jpg 2x">
+                        <img width="170" height="170"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-src="images/dist/crom5.jpg" class="lazy" alt="">
+                    </picture>
+                    <div class="catalog-categories__item__title">
+                        Кромка меламиновая
+                    </div>
+                </a>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-6 catalog-categories__item">
+                <a href="">
+                    <picture>
+                        <source data-srcset="images/dist/crom6.jpg, images/dist/crom6@2.jpg 2x">
+                        <img width="170" height="170"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                             data-src="images/dist/crom6.jpg" class="lazy" alt="">
+                    </picture>
+                    <div class="catalog-categories__item__title">
+                        Клей-расплав и контактный клей
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative">
+        <div id="tabs-link" class="anchor-link-cat"></div>
+        <div class="tabs-slider">
+            <div class="tabs-slider__header">
+                <div class="swiper overflow-visible" id="tabsNavSlider">
+                    <div class="nav swiper-wrapper tabs-slider__nav flex-nowrap">
+                        <div class="swiper-slide w-auto nav-item">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1" role="tab"
+                                    aria-selected="true">Новинки
+                            </button>
+                        </div>
+                        <div class="swiper-slide w-auto nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2" role="tab"
+                                    aria-selected="false">Хит продаж
+                            </button>
+                        </div>
+                        <div class="swiper-slide w-auto nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3" role="tab"
+                                    aria-selected="false">Распродажа
+                            </button>
+                        </div>
+                        <div class="swiper-slide w-auto nav-item">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4" role="tab"
+                                    aria-selected="false">Уценка
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-slider__body">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                        <div class="tabs-slider__products">
+                            <div class="swiper slider-product"
+                                 data-scrollbar="tab1_scroll"
+                                 data-navnext="tab1_nav_next"
+                                 data-navprev="tab1_nav_prev">
+                                <div class="swiper-wrapper">
+                                    <!--#include virtual="/parts/slider-product.html" -->
+                                </div>
+                                <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab1_scroll"></div>
+                            </div>
+                            <button class="swiper-prev slider-nav swiper-button-disabled" id="tab1_nav_prev">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"/>
+                                </svg>
+                            </button>
+                            <button class="swiper-next slider-nav swiper-button-disabled" id="tab1_nav_next">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="tabs-slider__body__link">
+                            <a href="" class="link-more">
+                                Смотреть все
+                                <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"/>
+                                </svg>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+                        <div class="tabs-slider__products">
+                            <div class="swiper slider-product"
+                                 data-scrollbar="tab2_scroll"
+                                 data-navnext="tab2_nav_next"
+                                 data-navprev="tab2_nav_prev">
+                                <div class="swiper-wrapper">
+                                    <!--#include virtual="/parts/slider-product.html" -->
+                                </div>
+                                <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab2_scroll"></div>
+                            </div>
+                            <button class="swiper-prev slider-nav swiper-button-disabled" id="tab2_nav_prev">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"/>
+                                </svg>
+                            </button>
+                            <button class="swiper-next slider-nav swiper-button-disabled" id="tab2_nav_next">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="tabs-slider__body__link">
+                            <a href="" class="link-more">
+                                Смотреть все
+                                <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel">
+                        <div class="tabs-slider__products">
+                            <div class="swiper slider-product"
+                                 data-scrollbar="tab3_scroll"
+                                 data-navnext="tab3_nav_next"
+                                 data-navprev="tab3_nav_prev">
+                                <div class="swiper-wrapper">
+                                    <!--#include virtual="/parts/slider-product.html" -->
+                                </div>
+                                <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab3_scroll"></div>
+                            </div>
+                            <button class="swiper-prev slider-nav swiper-button-disabled" id="tab3_nav_prev">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="swiper-next slider-nav swiper-button-disabled" id="tab3_nav_next">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="tabs-slider__body__link">
+                            <a href="" class="link-more">
+                                Смотреть все
+                                <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab4" role="tabpanel">
+                        <div class="tabs-slider__products">
+                            <div class="swiper slider-product"
+                                 data-scrollbar="tab4_scroll"
+                                 data-navnext="tab4_nav_next"
+                                 data-navprev="tab4_nav_prev">
+                                <div class="swiper-wrapper">
+                                    <!--#include virtual="/parts/slider-product.html" -->
+                                </div>
+                                <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab4_scroll"></div>
+                            </div>
+                            <button class="swiper-prev slider-nav swiper-button-disabled" id="tab4_nav_prev">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <button class="swiper-next slider-nav swiper-button-disabled" id="tab4_nav_next">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="tabs-slider__body__link">
+                            <a href="" class="link-more">
+                                Смотреть все
+                                <span class="link-more__ico">
+                                 <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative">
+        <div id="desc-link" class="anchor-link-cat"></div>
+    </div>
+    <section class="banner-card">
+        <div class="banner-card__desc">
+            <h2>Подбор мебельной кромки Galoplast®
+                к плитам ЛДСП</h2>
+            <p>Зачастую наши клиенты встречаются с проблемой подбора кромки. Воспользуйтесь нашим сервисом для быстрого
+                подбора мебельной кромки к плитам ЛДСП</p>
+            <div class="banner-card__desc__btn">
+                <a href="" class="btn btn--red text-uppercase">подобрать</a>
+            </div>
+        </div>
+        <div class="banner-card__pic">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/dist/banner2_mob.jpg">
+                <source media="(min-width: 769px)" data-srcset="images/dist/b-crom.jpg, images/dist/b-crom@2.jpg 2x">
+                <img
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        data-src="images/dist/b-crom.jpg" class="lazy" alt="">
+            </picture>
+        </div>
+    </section>
+
+    <div class="row flex-row-reverse justify-content-between fpad60 align-items-center">
+        <div class="col-xl-6 col-lg-6 col-12 fpad30 text position-relative z-2">
+            <div class="fpad30">
+                <img src="./images/dist/egger.svg" class="d-block" width="170" height="40" alt="">
+            </div>
+            <h2 class="mb-20">ТД Сервер является официальным
+                дилером компании Egger с 2011 года.</h2>
+            <p>Группа компаний «Egger» входит в число ведущих в мире компаний по деревопереработке. «Egger» производит
+                продукцию на 17 предприятиях в семи странах Европы. Продукция компании «Egger» находит применение для
+                отделки самых различных жилых и общественных помещений: кухонь, ванных комнат, офисов, гостиных и
+                спален. Производитель древесных материалов предлагает под единой маркой «Egger» обширную гамму
+                декоров.</p>
+
+            <h3>Преимущества</h3>
+            <ul>
+                <li>Высокое качество на вид и на ощупь</li>
+                <li>Входит в программу сочетания материалов по декору и структуре</li>
+                <li>Поставка в количестве от одного рулона</li>
+                <li>Большой ассортимент кромки различной толщины и ширины</li>
+            </ul>
+            <p>Компания Egger предоставляет услугу по раскрою кромки по ширине. Данная услуга позволяет Вам заказывать
+                кромки АБС в рулонах той ширины, которую Вы выбрали.Срок поставки кромки по данной услуге составляет от
+                7 недель. Для получения консультации по данной услуге обращайтесь к менеджерам Отдела продаж.</p>
+        </div>
+        <div class="col-xl-5 col-lg-6 col-12 fpad30 position-relative z-1">
+            <picture>
+                <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                <img
+                        width="470" height="660"
+                        src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+            </picture>
+        </div>
+    </div>
+
+    <div class="row justify-content-between fpad60 align-items-center">
+        <div class="fpad30 col-xl-6 col-lg-6 col-12 text position-relative z-2">
+            <h2>ТД Сервер является официальным
+                дилером компании Galoplast.</h2>
+            <p>Бренд «Galoplast» хорошо зарекомендовал себя как среди крупных компаний-производителей, так и среди
+                небольших предприятий, производящих мебель. Инновационный подход в производстве качественного продукта,
+                талант и способности специалистов, постоянное общение с партнерами и дилерами помогают вносить
+                качественные изменения в процессы производства, улучшая товар. Кромка «Galoplast» производится на самых
+                современных заводах с высокотехнологичными линиями изготовления кромочной ленты, компьютерным
+                управлением, исключающим человеческий фактор, и постоянным контролем качества.</p>
+        </div>
+        <div class="fpad30 col-xl-5 col-lg-6 col-12 position-relative z-1">
+            <picture>
+                <source data-srcset="images/dist/img2.jpg, images/dist/img2@2.jpg 2x">
+                <img
+                        width="470" height="470"
+                        src="images/dist/img2.jpg" loading="lazy" class="img-rounded" alt="">
+            </picture>
+        </div>
+    </div>
+
+    <div class="row flex-row-reverse justify-content-between fpad60 align-items-center">
+        <div class="col-xl-6 col-lg-6 col-12 fpad30 text position-relative z-2">
+
+            <h2 class="mb-20">ТД Сервер является официальным
+                дилером компании Egger с 2011 года.</h2>
+            <p>Группа компаний «Egger» входит в число ведущих в мире компаний по деревопереработке. «Egger» производит
+                продукцию на 17 предприятиях в семи странах Европы. Продукция компании «Egger» находит применение для
+                отделки самых различных жилых и общественных помещений: кухонь, ванных комнат, офисов, гостиных и
+                спален. Производитель древесных материалов предлагает под единой маркой «Egger» обширную гамму
+                декоров.</p>
+
+            <h3>Преимущества</h3>
+            <ul>
+                <li>Высокое качество на вид и на ощупь</li>
+                <li>Входит в программу сочетания материалов по декору и структуре</li>
+                <li>Поставка в количестве от одного рулона</li>
+                <li>Большой ассортимент кромки различной толщины и ширины</li>
+            </ul>
+            <a href="" class="btn btn--red text-uppercase ps-4 pe-4">Перейти в раздел</a>
+        </div>
+        <div class="col-xl-5 col-lg-6 col-12 fpad30 position-relative z-1">
+            <div class="slider-content slider-content--left">
+                <div class="swiper overflow-visible js-slider-content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                                <img
+                                        width="470" height="660"
+                                        src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                                <img
+                                        width="470" height="660"
+                                        src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                                <img
+                                        width="470" height="660"
+                                        src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <button class="swiper-prev slider-nav swiper-button-disabled" tabindex="0">
+                        <svg width="10" height="16">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-next slider-nav swiper-button-disabled" tabindex="0">
+                        <svg width="10" height="16">
+                            <use xlink:href="#svg-next"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-between fpad60 align-items-center">
+        <div class="fpad30 col-xl-6 col-lg-6 col-12 text position-relative z-2">
+            <h2>ТД Сервер является официальным
+                дилером компании Galoplast.</h2>
+            <p>Бренд «Galoplast» хорошо зарекомендовал себя как среди крупных компаний-производителей, так и среди
+                небольших предприятий, производящих мебель. Инновационный подход в производстве качественного продукта,
+                талант и способности специалистов, постоянное общение с партнерами и дилерами помогают вносить
+                качественные изменения в процессы производства, улучшая товар. Кромка «Galoplast» производится на самых
+                современных заводах с высокотехнологичными линиями изготовления кромочной ленты, компьютерным
+                управлением, исключающим человеческий фактор, и постоянным контролем качества.</p>
+            <a href="" class="link">Ссылка на раздел</a>
+        </div>
+        <div class="fpad30 col-xl-5 col-lg-6 col-12 position-relative z-1 d-flex">
+            <div class="slider-content slider-content--right">
+                <div class="swiper overflow-visible js-slider-content">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                                <img
+                                        width="470" height="660"
+                                        src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                                <img
+                                        width="470" height="660"
+                                        src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                                <img
+                                        width="470" height="660"
+                                        src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <button class="swiper-prev slider-nav swiper-button-disabled" tabindex="0">
+                        <svg width="10" height="16">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-next slider-nav swiper-button-disabled" tabindex="0">
+                        <svg width="10" height="16">
+                            <use xlink:href="#svg-next"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fpad60 text ">
+        <h2>Вариант слайдера</h2>
+
+        <div class="slider-content slider-content--center">
+            <div class="swiper overflow-visible js-slider-content2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                            <img
+                                    width="470" height="660"
+                                    src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                            <img
+                                    width="470" height="660"
+                                    src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                            <img
+                                    width="470" height="660"
+                                    src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                            <img
+                                    width="470" height="660"
+                                    src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                            <img
+                                    width="470" height="660"
+                                    src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source data-srcset="images/dist/img1.jpg, images/dist/img1@2.jpg 2x">
+                            <img
+                                    width="470" height="660"
+                                    src="images/dist/img1.jpg" loading="lazy" class="img-rounded" alt="">
+                        </picture>
+                    </div>
+                </div>
+
+                <button class="swiper-prev slider-nav swiper-button-disabled" tabindex="0">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </button>
+                <button class="swiper-next slider-nav swiper-button-disabled" tabindex="0">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-next"></use>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <div class="position-relative fpad60 text">
+        <div id="video-link" class="anchor-link-cat"></div>
+        <div class="row">
+            <div class="col-lg-6 fpad30 video-item">
+                <video width="650" height="400" controls poster="images/dist/video.jpg">
+                    <source src="https://212601.selcdn.ru/storage/Catalog/%D0%A4%D0%BE%D1%82%D0%BE%20%D0%91%D0%90%D0%9D%D0%9A/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE_%D0%BF%D0%BE_%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D1%83_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D1%85_%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B9_SlideLineM.mp4"
+                            type="video/mp4">
+                    Ваш браузер не поддерживает видео тег.
+                </video>
+                <div class="video-item__caption">Описание видео</div>
+            </div>
+            <div class="col-lg-6 fpad30 video-item">
+                <video width="650" height="400" controls poster="images/dist/video.jpg">
+                    <source src="https://212601.selcdn.ru/storage/Catalog/%D0%A4%D0%BE%D1%82%D0%BE%20%D0%91%D0%90%D0%9D%D0%9A/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE_%D0%BF%D0%BE_%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D1%83_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D1%85_%D0%B4%D0%B2%D0%B5%D1%80%D0%B5%D0%B9_SlideLineM.mp4"
+                            type="video/mp4">
+                    Ваш браузер не поддерживает видео тег.
+                </video>
+                <div class="video-item__caption">Описание видео</div>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative fpad90 text">
+        <div id="doc-link" class="anchor-link-cat"></div>
+        <h2>Материалы</h2>
+        <div class="row">
+            <div class="col-lg-6 fpad10">
+                <a href="" class="pdf-link">
+                    <div class="pdf-link__ico">
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-pdf"></use>
+                        </svg>
+                    </div>
+                    <div class="pdf-link__title">
+                        Петли мебельные. Общая характеристика <span class="pdf-link__size">(5 мб)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 fpad10">
+                <a href="" class="pdf-link">
+                    <div class="pdf-link__ico">
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-pdf"></use>
+                        </svg>
+                    </div>
+                    <div class="pdf-link__title">
+                        Петли мебельные. Общая характеристика <span class="pdf-link__size">(5 мб)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6 fpad10">
+                <a href="" class="pdf-link">
+                    <div class="pdf-link__ico">
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-pdf"></use>
+                        </svg>
+                    </div>
+                    <div class="pdf-link__title">
+                        Петли мебельные. Общая характеристика <span class="pdf-link__size">(5 мб)</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
