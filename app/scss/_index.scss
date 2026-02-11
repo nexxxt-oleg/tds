@@ -4218,7 +4218,7 @@ b {
   }
 
   &__info {
-    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
 
@@ -4253,7 +4253,7 @@ b {
 
     .adr {
       color: #484848;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 18px;
     }
 
@@ -4261,7 +4261,6 @@ b {
       color: #8a8a8a;
       font-size: 14px;
       line-height: 18px;
-      padding-top: 10px;
     }
   }
 
@@ -5417,5 +5416,54 @@ h1.mb-25 {
   }
   &__size {
     font-weight: 400;
+  }
+}
+
+.fpad15 {
+  padding-bottom: 15px;
+}
+
+.fs-14 {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.color-red {
+  color: #ac2024;
+}
+
+.contacts-tab__body__accordion {
+  padding-top: 30px;
+}
+
+.accordion {
+  &__btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    min-height: 36px;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    background: #f3dedf;
+    color: #ac2024;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__body {
+    padding-top: 30px;
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      b {
+        font-weight: 500;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      line-height: 18px;
+      color: #ad2125;
+    }
   }
 }
