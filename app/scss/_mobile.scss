@@ -375,6 +375,31 @@
 }
 
 @media screen and (max-width: 991px) {
+  .pdf-link__title {
+    line-height: 1.2;
+  }
+  .slider-content--center {
+    padding-top: 0;
+  }
+  .slider-content--left .swiper:after,
+  .slider-content--right .swiper:after {
+    display: none;
+  }
+  .slider-content {
+    max-width: 100%;
+
+    .swiper-pagination {
+      display: none !important;
+    }
+
+    .slider-nav {
+      display: none !important;
+    }
+
+    .swiper-slide {
+      width: 220px !important;
+    }
+  }
   .catalog-list__banner__wrap {
     padding-left: 30px;
     font-size: 18px;
@@ -716,6 +741,25 @@
 }
 
 @media screen and (max-width: 768px) {
+  .anchor-top {
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+  }
+  .slider-content--left,
+  .slider-content--right {
+    padding-top: 15px;
+  }
+  .pdf-link {
+    padding: 15px;
+    gap: 15px;
+  }
+  .anchor-top__list a {
+    font-size: 12px;
+  }
+  .video-item__caption {
+    padding-top: 10px;
+    font-size: 12px;
+  }
   .card-product__top-attr dd,
   .card-product__top-attr dt {
     font-size: 11px;
@@ -729,6 +773,7 @@
   }
   .catalog-list__col {
     padding-bottom: 40px;
+
     &::after {
       content: '';
       display: block;
@@ -752,7 +797,8 @@
   }
 
   body.filter_open {
-      overflow: hidden;
+    overflow: hidden;
+
     .header {
       display: none;
     }
@@ -767,6 +813,7 @@
   .btn.btn--actions {
     width: 24px;
     height: 24px !important;
+
     svg {
       width: 12px;
       height: 12px;
@@ -1017,7 +1064,6 @@
     &__item {
       padding-left: 5px;
       padding-right: 5px;
-      padding-bottom: 15px;
     }
   }
   .pagination {
@@ -1223,6 +1269,7 @@
   .selection__dropdown__item {
     padding-left: 10px;
     padding-right: 10px;
+
     span {
       font-size: 12px;
     }
@@ -1231,7 +1278,7 @@
     padding-bottom: 50px;
   }
   .selection-footer {
-    padding-top:40px;
+    padding-top: 40px;
   }
   .sort-top__cat {
     padding-top: 20px;
@@ -1246,35 +1293,42 @@
   }
   .page-404 {
     padding-bottom: 50px;
+
     img {
       width: 120px;
       height: 96px;
     }
+
     p {
       font-size: 14px;
     }
   }
   .banner-head {
     height: 448px;
+
     &.banner-head--about {
       background-image: url("../images/dist/bg-about-mob.jpg");
     }
+
     &__title {
       font-size: 24px;
     }
+
     &__wrap {
       height: auto;
       align-items: flex-start;
-      padding-top:80px;
+      padding-top: 80px;
     }
+
     &__subtitle {
       font-size: 16px;
+
       br {
         display: none;
       }
     }
   }
-  .dealer-section{
+  .dealer-section {
     padding: 20px 0 10px;
   }
   .prim-box {
@@ -1282,10 +1336,12 @@
     min-height: auto;
     background-size: auto 130px;
     background-position: bottom -15px right -1px;
+
     h2 {
       font-size: 18px;
       margin-bottom: 15px;
     }
+
     p {
       font-size: 14px;
     }
@@ -1295,12 +1351,15 @@
   }
   .why-box {
     padding: 20px;
+
     &__header {
       padding-bottom: 15px;
     }
+
     &__title {
       font-size: 18px;
     }
+
     &__body {
       font-size: 14px;
     }
@@ -1321,6 +1380,7 @@
     .slider-nav {
       display: none !important;
     }
+
     .swiper-slide {
       width: 210px;
     }
@@ -1388,6 +1448,7 @@
       right: 0;
       padding: 0 15px;
       background: var(--color-main);
+
       &::after {
         content: '';
         display: block;
@@ -1400,6 +1461,7 @@
         background: var(--color-red);
       }
     }
+
     .catalog-mob-btn-filter {
       margin-bottom: 0;
       border-radius: 0;
@@ -1411,8 +1473,9 @@
   .main-content__left {
     max-width: 100%;
   }
-  .silver-box .catalog-list__col__hover  {
+  .silver-box .catalog-list__col__hover {
     padding-top: 0 !important;
+
     .catalog-list__col__hover__footer {
       padding-left: 10px !important;
       padding-right: 10px !important;
@@ -1436,7 +1499,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 10px 20px;
-    .btn{
+
+    .btn {
       padding-top: 10px;
       padding-bottom: 10px;
     }
@@ -1557,7 +1621,7 @@
     max-width: 100px;
     flex-grow: 0;
   }
-  .card-product__price__val  {
+  .card-product__price__val {
     font-size: 14px;
     line-height: 16px;
   }
