@@ -5587,3 +5587,14 @@ h1.mb-25 {
     padding: 0 150px;
   }
 }
+
+.header__fix-menu__row {
+  .title-search-result {
+    position: absolute;
+    z-index: 100;
+    left: 20px;
+    top: 100%;
+    width: calc(100% - 20px);
+    margin-top: 24px;
+  }
+}

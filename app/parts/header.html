@@ -341,80 +341,122 @@
                             </button>
                         </div>
                     </div>
-                    <div class="header__fix-menu__col-search">
-                        <form action="">
-                            <div class="header__bottom__search">
-                                <input type="text" autocomplete="off" required="" name="s"
-                                       class="header__bottom__search__inp"
-                                       placeholder="Поиск по товарам, категориям, брендам">
-                                <button type="submit" class="header__bottom__search__submit">
-                                    <svg width="18" height="18">
-                                        <use xlink:href="#svg-search"/>
-                                    </svg>
-                                </button>
+                    <div class="d-flex flex-grow-1 position-relative align-items-center header__fix-menu__row">
+                        <div class="header__fix-menu__col-search">
+                            <form action="">
+                                <div class="header__bottom__search">
+                                    <input type="text" autocomplete="off" required="" name="s"
+                                           onclick="document.getElementById('resSearchFix').classList.toggle('active')"
+                                           class="header__bottom__search__inp"
+                                           placeholder="Поиск по товарам, категориям, брендам">
+                                    <button type="submit" class="header__bottom__search__submit">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-search"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <ul class="nav header__fix-menu__nav-ico">
+                            <li>
+                                <a href="">
+                                    <div class="header__fix-menu__nav-ico__svg">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-services"/>
+                                        </svg>
+
+                                    </div>
+                                    <div class="header__fix-menu__nav-ico__caption">Сервисы</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="header__fix-menu__nav-ico__svg">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-cabinet"/>
+                                        </svg>
+
+                                    </div>
+                                    <div class="header__fix-menu__nav-ico__caption">Войти</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="header__fix-menu__nav-ico__svg">
+                                        <span class="header__icons__item__count active">2</span>
+                                        <svg width="19" height="24">
+                                            <use xlink:href="#svg-compare"/>
+                                        </svg>
+
+                                    </div>
+                                    <div class="header__fix-menu__nav-ico__caption">Сравнить</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="header__fix-menu__nav-ico__svg">
+                                        <span class="header__icons__item__count active">1</span>
+                                        <svg width="22" height="24">
+                                            <use xlink:href="#svg-favourites"/>
+                                        </svg>
+
+                                    </div>
+                                    <div class="header__fix-menu__nav-ico__caption">Избранное</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="header__fix-menu__nav-ico__svg">
+                                        <span class="header__icons__item__count active">3</span>
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-cart"/>
+                                        </svg>
+
+                                    </div>
+                                    <div class="header__fix-menu__nav-ico__caption">Корзина</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div id="resSearchFix" class="title-search-result"
+                             style="display: none;">
+                            <div class="title-search-result__wrap">
+
+                                <div class="title-search-result__item">
+                                    <a href=""
+                                       class="d-flex align-items-center">
+                                        <div class="title-search-result__item__img">
+                                            <img
+                                                    width="48"
+                                                    height="48"
+                                                    src="./images/dist/s.jpg"
+                                                    alt="">
+                                        </div>
+                                        <div class="title-search-result__item__desc">
+                                            <div class="title-search-result__item__title">Столешница 4200х600х40 Irish
+                                                oak 2612/P (1п/5), e3,
+                                                Slotex
+                                            </div>
+                                            <div class="title-search-result__item__cost">
+                                                <span class="title-search-result__item__cost__val">21 642.00</span>
+                                                <span class="title-search-result__item__cost__currency">руб./шт</span>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="title-search-all">
+                                    <a class="link-more" href="">
+                                        Все результаты
+                                        <span class="link-more__ico">
+                     <svg width="6" height="12">
+                        <use xlink:href="#svg-next"/>
+                    </svg>
+                </span>
+                                    </a>
+                                </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                    <ul class="nav header__fix-menu__nav-ico">
-                        <li>
-                            <a href="">
-                                <div class="header__fix-menu__nav-ico__svg">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-services"/>
-                                    </svg>
-
-                                </div>
-                                <div class="header__fix-menu__nav-ico__caption">Сервисы</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="header__fix-menu__nav-ico__svg">
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-cabinet"/>
-                                    </svg>
-
-                                </div>
-                                <div class="header__fix-menu__nav-ico__caption">Войти</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="header__fix-menu__nav-ico__svg">
-                                    <span class="header__icons__item__count active">2</span>
-                                    <svg width="19" height="24">
-                                        <use xlink:href="#svg-compare"/>
-                                    </svg>
-
-                                </div>
-                                <div class="header__fix-menu__nav-ico__caption">Сравнить</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="header__fix-menu__nav-ico__svg">
-                                    <span class="header__icons__item__count active">1</span>
-                                    <svg width="22" height="24">
-                                        <use xlink:href="#svg-favourites"/>
-                                    </svg>
-
-                                </div>
-                                <div class="header__fix-menu__nav-ico__caption">Избранное</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" >
-                                <div class="header__fix-menu__nav-ico__svg">
-                                    <span class="header__icons__item__count active">3</span>
-                                    <svg width="24" height="24">
-                                        <use xlink:href="#svg-cart"/>
-                                    </svg>
-
-                                </div>
-                                <div class="header__fix-menu__nav-ico__caption">Корзина</div>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
