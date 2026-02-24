@@ -1041,7 +1041,7 @@
                         <div class="row">
                             <div class="col-xl-9 col-lg-10 fpad30">
                                 <div class="fpad30">
-                                    <button class="btn btn--silver">
+                                    <button class="btn btn--silver" data-bs-toggle="modal" data-bs-target="#questionModal">
                                         <span class="text-uppercase">Задать вопрос по товару</span>
                                     </button>
                                 </div>
@@ -1143,6 +1143,39 @@
                 </div>
 
 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="questionModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__title">
+                    Заказать звонок
+                </div>
+                <div class="btn-close" data-bs-dismiss="modal">
+                    <svg width="24" height="24">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal__body">
+                <form action="">
+                    <div class="fpad30">
+                        <textarea class="form-control" name="Ваш вопрос" placeholder="Ваш вопрос" required=""></textarea>
+                    </div>
+
+
+                        <button type="submit" class="btn btn--red w-100 text-uppercase">отправить</button>
+
+                    <!--div class="form-ps">
+                        Нажимая на кнопку «Заказать звонок», вы подтверждаете свое согласие с
+                        <a href="" target="_blank">Пользовательским
+                            соглашением</a> и <a href="" target="_blank">Политикой конфиденциальности</a>
+                    </div-->
+                </form>
             </div>
         </div>
     </div>

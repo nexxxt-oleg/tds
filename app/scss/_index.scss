@@ -5676,3 +5676,8 @@ h1.mb-25 {
                   rgba(0,0,0,0) calc(50% + 1.5px),
                   rgba(0,0,0,0) 100%);
 }
+
+textarea.form-control {
+  resize: none;
+  height: 200px;
+}
