@@ -375,6 +375,99 @@
 }
 
 @media screen and (max-width: 991px) {
+  .compare-page__nav-props li {
+    padding: 6px 0;
+    span {
+      font-size: 12px;
+      line-height: 1.2;
+      max-width: 50%;
+      padding-bottom: 5px;
+    }
+  }
+  .compare-page__nav-props li:not(:last-child):after {
+    left: -50px;
+  }
+  .compare-page__body__col-props {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    padding-left: 0;
+  }
+  .compare-page__body {
+    .card-product__top-attr__col1,
+    & .card-product__top-attr__col2 {
+      max-width: 100%;
+      width: 100%;
+      padding-right: 0;
+    }
+    .card-product__top-attr {
+      padding: 0 0 15px;
+      display: block !important;
+      margin-top: 0;
+    }
+    .card-product__compare-list li {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 10px;
+    }
+    .card-product__inner {
+      padding: 0;
+    }
+    .card-product__pic {
+      margin-bottom: 10px;
+    }
+    .slider-nav--pc {
+      display: none;
+    }
+    .card-product__badge {
+      position: relative;
+      left: auto;
+      top: auto;
+      display: block;
+    }
+  }
+  .compare-page__filter {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .compare-page__filter__wrap {
+    display: block;
+    padding-top: 15px;
+    .choices {
+      width: 100%;
+    }
+    .choices__input {
+      visibility: hidden;
+      display: none;
+    }
+    .choices__list--single {
+      display: block;
+      width: 100%;
+      padding: 7px 20px 7px 10px;
+      border-radius: 5px;
+      border: 1px solid #cecece;
+    }
+    .choices[data-type*=select-one]:after {
+      right: 10px;
+    }
+    .choices__list--dropdown {
+      width: 100%;
+    }
+    .choices__list--dropdown .choices__list {
+      text-align: left;
+    }
+  }
+  .compare-page__filter__label {
+    display: none;
+  }
+  .compare-page__header {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .compare-page__clear-btn {
+    width: 100%;
+  }
   .pdf-link__title {
     line-height: 1.2;
   }

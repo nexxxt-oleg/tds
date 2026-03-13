@@ -5685,3 +5685,26 @@ textarea.form-control {
   resize: none;
   height: 200px;
 }
+
+.catalog-categories__item {
+  .brand-item {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    &:hover  {
+      background-color: #f4f4f4 !important;
+    }
+    img {
+      border-radius: 0 !important;
+    }
+  }
+  a:hover {
+    .brand-item {
+      transform: scale(1.02);
+      img {
+        transform: scale(1) !important;
+      }
+    }
+  }
+
+}

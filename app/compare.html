@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-xl-9 col-lg-8">
                     <div class="compare-page__filter__wrap">
-                        <div class="d-flex align-items-center">
+                        <div class="d-lg-flex align-items-center d-none">
                             <span class="compare-page__filter__label">Характеристики:</span>
                             <ul class="nav compare-page__filter__list">
                                 <li>
@@ -79,14 +79,14 @@
                             data-sinhro="compare-page__nav-props__line--n6">
                             <span>Структура поверхности Структура поверхности</span>
                         </li>
-                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n5"
+                        <li class="compare-page__nav-props__line compare-page__nav-props__line--n7"
                             data-sinhro="compare-page__nav-props__line--n7">
                             <span>Тип цвета</span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="col-xl-9 col-lg-8 col-6">
+                <div class="col-xl-9 col-lg-8 col-6 position-relative z-3">
                     <div class="compare-page__slider compare-page__slider--s1">
                         <div id="compareSlider" class="swiper">
                             <div class="swiper-wrapper">
@@ -103,6 +103,30 @@
                             </svg>
                         </button>
                         <button id="compareSliderNext1"
+                                class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-next"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-lg-none col-6 position-relative z-3">
+                    <div class="compare-page__slider compare-page__slider--s2">
+                        <div id="compareSlider2" class="swiper">
+                            <div class="swiper-wrapper">
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                                <!--#include virtual="/parts/compare-slider.html" -->
+                            </div>
+                        </div>
+                        <button id="compareSliderPrev2"
+                                class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
+                            <svg width="10" height="16">
+                                <use xlink:href="#svg-prev"></use>
+                            </svg>
+                        </button>
+                        <button id="compareSliderNext2"
                                 class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
                             <svg width="10" height="16">
                                 <use xlink:href="#svg-next"></use>
@@ -147,6 +171,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="empty-page">
+        <div class="empty-page__ico">
+            <svg width="36" height="36">
+                <use xlink:href="#svg-compare"></use>
+            </svg>
+        </div>
+        <h1>Список сравнения пуст</h1>
+        <p>Для добавления товаров к сравнению перейдите в каталог</p>
+        <div class="d-flex justify-content-center">
+            <a href="/" class="btn btn--red w-21">
+                <span>ПЕРЕЙТИ В КАТАЛОГ</span>
+            </a>
         </div>
     </div>
 </div>
