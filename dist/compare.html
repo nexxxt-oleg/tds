@@ -630,36 +630,49 @@
             </div>
         </div>
         <div class="compare-page__body">
+            <div class="compare-page__mob-filter" id="mobFilterCompare">
+                <div class="compare-page__mob-filter__caption">Сравнение характеристик</div>
+                <label class="custom-checkbox-btn">
+                    <input type="checkbox" name="filter" value="1" >
+                    <span>Только различающиеся</span>
+                </label>
+            </div>
             <div class="row align-items-end">
                 <div class="col-xl-3 col-lg-4 compare-page__body__col-props">
                     <ul class="nav compare-page__nav-props js-compare-props">
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n1"
                             data-sinhro="compare-page__nav-props__line--n1">
-                            <span>Модификации</span>
+                            <span class="compare-props compare-props--n1"
+                                  data-sinhro="compare-props--n1">Модификации</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n2"
                             data-sinhro="compare-page__nav-props__line--n2">
-                            <span>Код декора</span>
+                            <span class="compare-props compare-props--n2"
+                                  data-sinhro="compare-props--n2">Код декора</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n3"
                             data-sinhro="compare-page__nav-props__line--n3">
-                            <span>Формат, мм</span>
+                            <span class="compare-props compare-props--n3"
+                                  data-sinhro="compare-props--n3">Формат, мм</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n4"
                             data-sinhro="compare-page__nav-props__line--n4">
-                            <span>Толщина, мм</span>
+                            <span class="compare-props compare-props--n4"
+                                  data-sinhro="compare-props--n4">Толщина, мм</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n5"
                             data-sinhro="compare-page__nav-props__line--n5">
-                            <span>Тип цвета</span>
+                            <span class="compare-props compare-props--n5"
+                                  data-sinhro="compare-props--n5">Тип цвета</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n6"
                             data-sinhro="compare-page__nav-props__line--n6">
-                            <span>Структура поверхности Структура поверхности</span>
+                            <span class="compare-props compare-props--n6" data-sinhro="compare-props--n6">Структура поверхности Структура поверхности</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n7"
                             data-sinhro="compare-page__nav-props__line--n7">
-                            <span>Тип цвета</span>
+                            <span class="compare-props compare-props--n7"
+                                  data-sinhro="compare-props--n7">Тип цвета</span>
                         </li>
                     </ul>
                 </div>
@@ -672,14 +685,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -714,7 +725,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -733,8 +743,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -753,22 +762,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -793,7 +832,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -830,8 +870,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -850,17 +889,46 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
@@ -868,14 +936,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -910,7 +976,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -929,8 +994,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -949,22 +1013,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -989,7 +1083,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -1026,8 +1121,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1046,17 +1140,46 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1064,14 +1187,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -1106,7 +1227,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -1125,8 +1245,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1145,22 +1264,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -1185,7 +1334,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -1222,8 +1372,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1242,17 +1391,46 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1260,14 +1438,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -1302,7 +1478,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -1321,8 +1496,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1341,22 +1515,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -1381,7 +1585,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -1418,8 +1623,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1438,34 +1642,66 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
                             </div>
                         </div>
-                        <button id="compareSliderPrev1"
-                                class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-prev"></use>
-                            </svg>
-                        </button>
-                        <button id="compareSliderNext1"
-                                class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-next"></use>
-                            </svg>
-                        </button>
+                        <div class="compare-page__slider__nav-line" id="compareSliderNav1">
+                            <button id="compareSliderPrev1"
+                                    class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <div class="pagination" id="compareSliderPage1"></div>
+                            <button id="compareSliderNext1"
+                                    class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="d-lg-none col-6 position-relative z-3">
@@ -1476,14 +1712,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -1518,7 +1752,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -1537,8 +1770,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1557,22 +1789,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -1597,7 +1859,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -1634,8 +1897,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1654,17 +1916,46 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1672,14 +1963,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -1714,7 +2003,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -1733,8 +2021,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1753,22 +2040,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -1793,7 +2110,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -1830,8 +2148,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1850,17 +2167,46 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1868,14 +2214,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -1910,7 +2254,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -1929,8 +2272,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -1949,22 +2291,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -1989,7 +2361,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -2026,8 +2399,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -2046,17 +2418,46 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
@@ -2064,14 +2465,12 @@
     <div class="card-product d-flex flex-column h-100">
 
         <a href="" class="card-product__link">
-
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
             <div class="card-product__badge">
                 <div class="card-product__badge__item status status--new">
                     Новинка
                 </div>
             </div>
-
             <div class="card-product__inner">
                 <dl class="d-flex card-product__top-attr">
                     <div class="d-flex card-product__top-attr__col1">
@@ -2106,7 +2505,6 @@
                     Минимальная покупка: <span>1 шт</span>
                 </div>
             </div>
-
         </a>
         <div class="card-product__footer">
             <div class="card-product__footer__col-count">
@@ -2125,8 +2523,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -2145,22 +2542,52 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                CROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 <div class="swiper-slide h-auto d-flex flex-column">
     <div class="card-product d-flex flex-column h-100">
-
         <a href="" class="card-product__link">
 
             <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="270" height="202">
@@ -2185,7 +2612,8 @@
                     </div>
                 </dl>
 
-                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h2>
 
                 <div class="card-product__quantity-ratio">
                     Количество в упаковке: 1 шт
@@ -2222,8 +2650,7 @@
                 </div>
             </div>
             <ul class="nav card-product__icons">
-
-                <li>
+                <li class="d-none d-sm-block">
                     <button class="btn btn--actions">
                         <svg width="16" height="18">
                             <use xlink:href="#svg-favourites"></use>
@@ -2242,34 +2669,67 @@
                 <button class="btn btn--red w-100">В КОРЗИНУ</button>
             </div>
         </div>
-
-        <div class="nav d-block card-product__compare-list">
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n1">CR8005D-HA</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n2">CROSLEY</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n3">Бежевый Бежевый Бежевый Бежевый</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n4">Да</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n5">Керамический Керамический Керамический Керамический</li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n6">Керамический </li>
-            <li class="compare-page__nav-props__line compare-page__nav-props__line--n7">Керамический Керамический</li>
+        <div class="card-product__footer__mob-fav">
+            <button class="btn btn--link w-100">
+                <svg width="16" height="18" class="me-2">
+                    <use xlink:href="#svg-favourites"></use>
+                </svg>
+                <span>В избранное</span>
+            </button>
         </div>
-
+        <div class="card-product__mob-nav"></div>
+        <div class="d-block card-product__compare-list">
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n1">
+                <div class="compare-props compare-props--n1"></div>
+                CR8005D-HA
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n2">
+                <div class="compare-props compare-props--n2"></div>
+                ROSLEY
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n3">
+                <div class="compare-props compare-props--n3"></div>
+                Бежевый Бежевый Бежевый
+                Бежевый
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n4">
+                <div class="compare-props compare-props--n4"></div>
+                Да</div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n5">
+                <div class="compare-props compare-props--n5"></div>
+                Керамический Керамический
+                Керамический Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n6">
+                <div class="compare-props compare-props--n6"></div>
+                Керамический
+            </div>
+            <div class="compare-page__nav-props__line compare-page__nav-props__line--n7">
+                <div class="compare-props compare-props--n7"></div>
+                Керамический Керамический
+            </div>
+        </div>
     </div>
 </div>
 
                             </div>
                         </div>
-                        <button id="compareSliderPrev2"
-                                class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-prev"></use>
-                            </svg>
-                        </button>
-                        <button id="compareSliderNext2"
-                                class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-next"></use>
-                            </svg>
-                        </button>
+
+                        <div class="compare-page__slider__nav-line" id="compareSliderNav2">
+                            <button id="compareSliderPrev2"
+                                    class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <div class="pagination" id="compareSliderPage2"></div>
+                            <button id="compareSliderNext2"
+                                    class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2804,6 +3264,534 @@
                                 </svg>
                             </button>
                             <button id="compareSliderMiniNext1"
+                                    class="swiper-next slider-nav slider-nav--fix swiper-button-disabled">
+                                <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-none col-6">
+                        <div class="compare-page__fix-slider">
+                            <div id="compareMiniSlider2" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+                                    <div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+                                    <div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+                                    <div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+<div class="swiper-slide h-auto d-flex flex-column">
+    <div class="card-product-min d-flex flex-column h-100">
+
+        <a href="" class="card-product-min__link">
+            <div class="card-product-min__pic">
+                <img src="./images/dist/lot1_min.jpg" alt="" width="70" height="52">
+            </div>
+            <div class="card-product-min__inner">
+
+                <h3 class="card-product-min__title">Столешница 4200х600х40 Irish 4200х600х40 Irish 4200х600х40 Irish oak
+                    2612/P (1п/5), e3, Slotex</h3>
+
+                <div class="card-product-min__price">
+                    <span class="card-product-min__price__val">21 642.00</span>
+                    <span class="card-product-min__price__currency">руб./шт</span>
+                </div>
+            </div>
+
+        </a>
+        <div class="card-product-min__footer">
+            <div class="card-product-min__footer__col-count">
+                <div class="quantity quantity--aflat">
+                    <input type="text" class="quantity__val" value="1">
+                    <button class="quantity__btn quantity__btn--plus">
+                        <svg width="8" height="8">
+                            <use xlink:href="#svg-plus"></use>
+                        </svg>
+                    </button>
+                    <button class="quantity__btn quantity__btn--minus">
+                        <svg width="8" height="2">
+                            <use xlink:href="#svg-minus"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="nav card-product__icons">
+
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="16" height="18">
+                            <use xlink:href="#svg-favourites"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="17" height="18">
+                            <use xlink:href="#svg-cart"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn--actions">
+                        <svg width="15" height="18">
+                            <use xlink:href="#svg-clear"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</div>
+                                </div>
+                            </div>
+                            <button id="compareSliderMiniPrev2"
+                                    class="swiper-prev slider-nav slider-nav--fix swiper-button-disabled">
+                                <svg width="6" height="12">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <button id="compareSliderMiniNext2"
                                     class="swiper-next slider-nav slider-nav--fix swiper-button-disabled">
                                 <svg width="6" height="12">
                                     <use xlink:href="#svg-next"></use>

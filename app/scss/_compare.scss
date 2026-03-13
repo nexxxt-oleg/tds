@@ -88,17 +88,7 @@
     font-size: 14px;
     line-height: 18px;
 
-    &:not(:last-child)::after {
-      content: '';
-      display: block;
-      position: absolute;
-      z-index: 10;
-      bottom: 0;
-      right: 0;
-      width: calc(100% + 30px);
-      height: 1px;
-      background: #e8e8e8;
-    }
+
   }
 }
 
@@ -133,6 +123,7 @@
   padding: 20px 0;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.29);
 }
+
 body.fixCompare {
   .compare-page__fix {
     margin-top: 0;
@@ -144,78 +135,134 @@ body.fixCompare {
 
 .compare-page__fix-slider {
   position: relative;
+
   .slider-nav {
     position: absolute;
     z-index: 60;
     top: 10px;
     width: 32px;
     height: 32px;
+
     &.swiper-next {
       right: -16px;
     }
+
     &.swiper-prev {
       left: -16px;
     }
   }
 }
+
 .card-product-min {
   &__link {
     display: flex;
     flex-grow: 1;
   }
+
   &__pic {
     width: 70px;
     min-width: 70px;
+
     img {
       display: block;
 
     }
   }
+
   &__inner {
     flex-grow: 1;
     padding-left: 18px;
     display: flex;
     flex-direction: column;
   }
+
   &__title {
     font-size: 12px;
     margin-bottom: 5px;
     line-height: 16px;
   }
-  .card-product__icons{
+
+  .card-product__icons {
     position: relative;
     top: auto;
     right: auto;
   }
+
   &__price {
     padding-bottom: 10px;
     margin-top: auto;
+
     &__val {
       font-size: 14px;
       font-weight: bold;
       white-space: nowrap;
       line-height: 16px;
     }
+
     &__currency {
       font-size: 12px;
       font-weight: bold;
       line-height: 16px;
     }
   }
+
   &__footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .quantity--aflat .quantity__val {
       height: 30px;
     }
+
     .quantity--aflat .quantity__btn {
       height: 30px;
     }
+
     &__col-count {
       width: 132px;
       min-width: 132px;
     }
   }
 
+}
+
+.compare-page__body {
+  .card-product__compare-list {
+    .compare-page__nav-props__line {
+      padding: 20px 0;
+      font-size: 14px;
+      line-height: 18px;
+      position: relative;
+      z-index: 15;
+
+      &:not(:last-child):after {
+        background: #e8e8e8;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1px;
+        left: -35px;
+        position: absolute;
+        width: calc(100% + 35px);
+        z-index: 10;
+      }
+    }
+  }
+
+  .card-product__inner,
+  .card-product__footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .slider-nav--pc {
+    top: 90px;
+  }
+}
+.card-product__mob-nav,
+.compare-page__slider__nav-line .pagination,
+.card-product__footer__mob-fav,
+.compare-page__mob-filter {
+  display: none;
 }

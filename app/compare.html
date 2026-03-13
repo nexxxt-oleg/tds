@@ -52,36 +52,49 @@
             </div>
         </div>
         <div class="compare-page__body">
+            <div class="compare-page__mob-filter" id="mobFilterCompare">
+                <div class="compare-page__mob-filter__caption">Сравнение характеристик</div>
+                <label class="custom-checkbox-btn">
+                    <input type="checkbox" name="filter" value="1" >
+                    <span>Только различающиеся</span>
+                </label>
+            </div>
             <div class="row align-items-end">
                 <div class="col-xl-3 col-lg-4 compare-page__body__col-props">
                     <ul class="nav compare-page__nav-props js-compare-props">
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n1"
                             data-sinhro="compare-page__nav-props__line--n1">
-                            <span>Модификации</span>
+                            <span class="compare-props compare-props--n1"
+                                  data-sinhro="compare-props--n1">Модификации</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n2"
                             data-sinhro="compare-page__nav-props__line--n2">
-                            <span>Код декора</span>
+                            <span class="compare-props compare-props--n2"
+                                  data-sinhro="compare-props--n2">Код декора</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n3"
                             data-sinhro="compare-page__nav-props__line--n3">
-                            <span>Формат, мм</span>
+                            <span class="compare-props compare-props--n3"
+                                  data-sinhro="compare-props--n3">Формат, мм</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n4"
                             data-sinhro="compare-page__nav-props__line--n4">
-                            <span>Толщина, мм</span>
+                            <span class="compare-props compare-props--n4"
+                                  data-sinhro="compare-props--n4">Толщина, мм</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n5"
                             data-sinhro="compare-page__nav-props__line--n5">
-                            <span>Тип цвета</span>
+                            <span class="compare-props compare-props--n5"
+                                  data-sinhro="compare-props--n5">Тип цвета</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n6"
                             data-sinhro="compare-page__nav-props__line--n6">
-                            <span>Структура поверхности Структура поверхности</span>
+                            <span class="compare-props compare-props--n6" data-sinhro="compare-props--n6">Структура поверхности Структура поверхности</span>
                         </li>
                         <li class="compare-page__nav-props__line compare-page__nav-props__line--n7"
                             data-sinhro="compare-page__nav-props__line--n7">
-                            <span>Тип цвета</span>
+                            <span class="compare-props compare-props--n7"
+                                  data-sinhro="compare-props--n7">Тип цвета</span>
                         </li>
                     </ul>
                 </div>
@@ -96,18 +109,21 @@
                                 <!--#include virtual="/parts/compare-slider.html" -->
                             </div>
                         </div>
-                        <button id="compareSliderPrev1"
-                                class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-prev"></use>
-                            </svg>
-                        </button>
-                        <button id="compareSliderNext1"
-                                class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-next"></use>
-                            </svg>
-                        </button>
+                        <div class="compare-page__slider__nav-line" id="compareSliderNav1">
+                            <button id="compareSliderPrev1"
+                                    class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <div class="pagination" id="compareSliderPage1"></div>
+                            <button id="compareSliderNext1"
+                                    class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="d-lg-none col-6 position-relative z-3">
@@ -120,18 +136,22 @@
                                 <!--#include virtual="/parts/compare-slider.html" -->
                             </div>
                         </div>
-                        <button id="compareSliderPrev2"
-                                class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-prev"></use>
-                            </svg>
-                        </button>
-                        <button id="compareSliderNext2"
-                                class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
-                            <svg width="10" height="16">
-                                <use xlink:href="#svg-next"></use>
-                            </svg>
-                        </button>
+
+                        <div class="compare-page__slider__nav-line" id="compareSliderNav2">
+                            <button id="compareSliderPrev2"
+                                    class="swiper-prev slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <div class="pagination" id="compareSliderPage2"></div>
+                            <button id="compareSliderNext2"
+                                    class="swiper-next slider-nav slider-nav--pc swiper-button-disabled">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -162,6 +182,30 @@
                                 </svg>
                             </button>
                             <button id="compareSliderMiniNext1"
+                                    class="swiper-next slider-nav slider-nav--fix swiper-button-disabled">
+                                <svg width="6" height="12">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-none col-6">
+                        <div class="compare-page__fix-slider">
+                            <div id="compareMiniSlider2" class="swiper">
+                                <div class="swiper-wrapper">
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                    <!--#include virtual="/parts/compare-slider-min.html" -->
+                                </div>
+                            </div>
+                            <button id="compareSliderMiniPrev2"
+                                    class="swiper-prev slider-nav slider-nav--fix swiper-button-disabled">
+                                <svg width="6" height="12">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </button>
+                            <button id="compareSliderMiniNext2"
                                     class="swiper-next slider-nav slider-nav--fix swiper-button-disabled">
                                 <svg width="6" height="12">
                                     <use xlink:href="#svg-next"></use>
