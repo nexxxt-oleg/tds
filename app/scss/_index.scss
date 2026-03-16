@@ -648,13 +648,11 @@ img {
     padding: 0 0 11px;
 
     &__col1 {
-      width: 45%;
-      max-width: 120px;
-      padding-right: 5px;
+      width: 100%;
     }
 
     &__col2 {
-      width: 55%;
+      width: 100%
     }
 
     dd {
@@ -3032,12 +3030,11 @@ img {
     padding-bottom: 0;
 
     .card-product__top-attr__col1 {
-      width: auto;
-      margin-right: 20px;
+      width: 100%;
     }
 
     .card-product__top-attr__col2 {
-      width: auto;
+      width: 100%;
     }
   }
 }
