@@ -5295,7 +5295,7 @@ h1.mb-25 {
 .anchor-top {
   border-bottom: 1px solid #e8e8e8;
   padding-bottom: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
   &__list {
 
@@ -5709,3 +5709,76 @@ textarea.form-control {
 
 }
 
+.brand-nav {
+  gap: 10px 25px;
+  padding-bottom: 10px;
+  b {
+    color: #484848;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  a {
+    color: #484848;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
+.silver-card {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+
+  &__logo {
+    min-height: 50px;
+    padding-bottom: 15px;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    min-height: 225px;
+    img {
+      display: block;
+      object-fit: contain;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.fs-30 {
+  font-size: 30px !important;
+  line-height: 1.2;
+}
+.fpad25 {
+  padding-bottom: 26px;
+}
+
+.gallery-text {
+  display: block;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 314 / 280;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+
+.links-list {
+  a {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #ad2125;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
