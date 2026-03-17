@@ -2701,6 +2701,9 @@ h1 {
     display: flex;
     height: 48px;
     width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -4009,7 +4012,7 @@ b {
     font-size: 11px;
     min-width: 18px;
     height: 18px;
-    padding: 0 2px;
+    padding: 0 4px;
   }
 
   &.red {
@@ -4096,7 +4099,7 @@ b {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   text-align: center;
 
   h1 {
@@ -5779,3 +5782,43 @@ textarea.form-control {
     }
   }
 }
+
+@media screen and (min-width: 1199px) {
+  .col-xl-1-5 {
+    width: 20%;
+  }
+}
+
+.catalog-list__col.fpad40 {
+  padding-bottom: 40px;
+}
+
+.sort-top__row {
+  display: flex;
+
+  .sort-top__col-pc {
+    display: flex;
+    flex-grow: 1;
+    gap: 35px;
+    align-items: center;
+    .catalog-sort__item span {
+      padding-bottom: 10px;
+    }
+    .catalog-sort {
+      padding-left: 20px;
+    }
+  }
+}
+
+.js-select {
+  border: none;
+  background: transparent;
+}
+
+.btn-exel {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+

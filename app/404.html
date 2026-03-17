@@ -10,7 +10,33 @@
         <img src="images/dist/404.svg" width="230" height="192" alt="">
         <h1>Страница не найдена!</h1>
         <p>Воспользуйтесь поиском или перейдите в каталог.</p>
-        <a href="" class="btn btn--red">ПЕРЕЙТИ В КАТАЛОГ</a>
+        <a href="" class="btn btn--red text-uppercase">ПЕРЕЙТИ на главную</a>
+    </div>
+    <div class="fpad90">
+        <div class="text text-center fpad15">
+            <h2>Возможно вас заинтересует</h2>
+        </div>
+        <div class="tabs-slider__products">
+            <div class="swiper slider-product"
+                 data-scrollbar="tab1_scroll"
+                 data-navnext="tab1_nav_next"
+                 data-navprev="tab1_nav_prev">
+                <div class="swiper-wrapper">
+                    <!--#include virtual="/parts/slider-product.html" -->
+                </div>
+                <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab1_scroll"></div>
+            </div>
+            <button class="swiper-prev slider-nav swiper-button-disabled" id="tab1_nav_prev">
+                <svg width="10" height="16">
+                    <use xlink:href="#svg-prev"/>
+                </svg>
+            </button>
+            <button class="swiper-next slider-nav swiper-button-disabled" id="tab1_nav_next">
+                <svg width="10" height="16">
+                    <use xlink:href="#svg-next"/>
+                </svg>
+            </button>
+        </div>
     </div>
 </div>
 <!--#include virtual="/parts/footer.html" -->
