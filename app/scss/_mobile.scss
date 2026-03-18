@@ -376,6 +376,14 @@
 
 @media screen and (max-width: 991px) {
 
+  .sort-top__row {
+    .sort-top__right {
+      width: 100%;
+      gap: 24px;
+      padding-bottom: 5px;
+    }
+  }
+
   .card-product__mob-nav {
     display: block;
     height: 150px;
