@@ -317,7 +317,7 @@ a {
   padding: 10px 15px;
   align-items: center;
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
   height: 48px;
   border-radius: 5px;
@@ -368,6 +368,12 @@ a {
       background: #ad2125;
       color: #fff;
     }
+  }
+
+  &.w-140 {
+    width: 140px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
@@ -5823,4 +5829,36 @@ textarea.form-control {
 
 .fpad20 {
   padding-bottom: 20px;
+}
+
+.services-box {
+  height: 220px;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 25px 200px 45px 40px;
+
+  h2 {
+    margin: 0 0 5px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__desc {
+    min-height: 100px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.radius-10 {
+  border-radius: 10px;
 }
