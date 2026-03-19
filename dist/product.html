@@ -593,7 +593,8 @@
                 <li><a href="#desc" onclick="document.getElementById('descTab').click();return true;">Описание</a></li>
                 <li><a href="">Комплектующие</a></li>
                 <li><a href="#desc" onclick="document.getElementById('analogTab').click();return true;">Аналоги</a></li>
-                <li><a href="#desc" onclick="document.getElementById('instructionsTab').click();return true;">Инструкции</a></li>
+                <li><a href="#desc"
+                       onclick="document.getElementById('instructionsTab').click();return true;">Инструкции</a></li>
             </ul>
             <ul class="nav product-page__btns">
                 <li>
@@ -616,8 +617,32 @@
                         Распечатать
                     </a>
                 </li>
-                <li>
-                    <a href="" class="product-page__btns__item btn btn--link">
+                <li class="hidden-911">
+                    <div class="dropdown">
+                        <a href="" class="product-page__btns__item btn btn--link" data-bs-toggle="dropdown">
+                            <div class="product-page__btns__item__ico">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#svg-share"></use>
+                                </svg>
+                            </div>
+                            Поделиться
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-menu--share">
+                            <div class="share-card">
+                                <div class="share js-share-pc rambler-share">
+                                    <div class="share-card__body">
+                                        <div class="share-card__label">Ссылка на товар</div>
+                                        <div class="share-card__link">
+                                            https://www.tdserver.ru/catalog/dekodekodekodekodekodekodekodekodeko
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="d-lg-none">
+                    <a href="#mobSharing" class="product-page__btns__item btn btn--link" data-bs-toggle="offcanvas">
                         <div class="product-page__btns__item__ico">
                             <svg width="24" height="24">
                                 <use xlink:href="#svg-share"></use>
@@ -878,7 +903,8 @@
                                 </div>
                                 <div class="card-product__min-count">
                                     <div>Наличие: <span class="status status--under-order">Под заказ</span></div>
-                                    <div class="mb-2">Ожидается на склад: <span class="d-block pt-1">Санкт-Петербург - 20 шт 07.03.2025</span></div>
+                                    <div class="mb-2">Ожидается на склад: <span class="d-block pt-1">Санкт-Петербург - 20 шт 07.03.2025</span>
+                                    </div>
                                     <div>
                                         Сроки возможной поставки:
                                         <span class="d-block pt-1">
@@ -934,24 +960,25 @@
                         </div>
                         <div class="product-page__box-delivery box-delivery">
                             <div class="box-delivery__top">
-                               <div class="box-delivery__top__label">
-                                   Доставка
-                               </div>
+                                <div class="box-delivery__top__label">
+                                    Доставка
+                                </div>
                                 <a href="">Подробнее</a>
                             </div>
                             <div class="box-delivery__body">
                                 <p><b>Санкт-Петербург</b> - бесплатная доставка
-                                при заказе от 10 000 рублей</p>
+                                    при заказе от 10 000 рублей</p>
 
                                 <p><b>Москва</b> - бесплатная доставка при заказе
-                                от 15 000 рублей</p>
+                                    от 15 000 рублей</p>
 
                                 <p><b>Регионы</b> - доставка для юридических лиц
-                                по тарифам ТК</p>
+                                    по тарифам ТК</p>
                             </div>
                             <div class="box-delivery__footer">
                                 <span>Расчет стоимости доставки в
-                                <a href="" class="border-link"><span class="text-nowrap">Ростов-на-Дону</span></a></span>
+                                <a href="" class="border-link"><span
+                                        class="text-nowrap">Ростов-на-Дону</span></a></span>
                             </div>
                         </div>
                     </div>
@@ -1149,12 +1176,14 @@
                     </button>
                 </li>
                 <li>
-                    <button id="analogTab" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4" type="button" role="tab">
+                    <button id="analogTab" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4" type="button"
+                            role="tab">
                         Аналоги
                     </button>
                 </li>
                 <li>
-                    <button id="instructionsTab" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab5" type="button" role="tab">
+                    <button id="instructionsTab" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab5"
+                            type="button" role="tab">
                         Инструкции, сертификаты
                     </button>
                 </li>
@@ -1715,7 +1744,8 @@
                         <div class="row">
                             <div class="col-xl-9 col-lg-10 fpad30">
                                 <div class="fpad30">
-                                    <button class="btn btn--silver" data-bs-toggle="modal" data-bs-target="#questionModal">
+                                    <button class="btn btn--silver" data-bs-toggle="modal"
+                                            data-bs-target="#questionModal">
                                         <span class="text-uppercase">Задать вопрос по товару</span>
                                     </button>
                                 </div>
@@ -1731,7 +1761,8 @@
                                                 </div>
                                             </div>
                                             <div class="questions__item__header__text">
-                                                Здравствуйте Подскажите, как этот ЛДСП будет вести себя в ванной комнате,
+                                                Здравствуйте Подскажите, как этот ЛДСП будет вести себя в ванной
+                                                комнате,
                                                 влагостойкий?
                                             </div>
                                         </div>
@@ -1739,7 +1770,8 @@
                                             <div class="questions__item__header__info">
                                                 <div class="questions__item__header__name">
                                                     <div class="questions__item__header__name__ava">
-                                                        <img src="images/dist/ava.jpg" width="24" height="24" loading="lazy" alt="">
+                                                        <img src="images/dist/ava.jpg" width="24" height="24"
+                                                             loading="lazy" alt="">
                                                     </div>
                                                     <span>ТД СЕРВЕР</span>
                                                 </div>
@@ -1748,7 +1780,8 @@
                                                 </div>
                                             </div>
                                             <div class="questions__item__body__text">
-                                                Добрый день. Покрытие устойчиво к влаге. Но использовать в ванной комнате не
+                                                Добрый день. Покрытие устойчиво к влаге. Но использовать в ванной
+                                                комнате не
                                                 рекомендуется.
                                             </div>
                                             <div class="questions__item__body__reg">
@@ -1767,7 +1800,8 @@
                                                 </div>
                                             </div>
                                             <div class="questions__item__header__text">
-                                                Здравствуйте Подскажите, как этот ЛДСП будет вести себя в ванной комнате,
+                                                Здравствуйте Подскажите, как этот ЛДСП будет вести себя в ванной
+                                                комнате,
                                                 влагостойкий?
                                             </div>
                                             <div class="questions__item__body__reg">
@@ -1786,7 +1820,8 @@
                                                 </div>
                                             </div>
                                             <div class="questions__item__header__text">
-                                                Здравствуйте Подскажите, как этот ЛДСП будет вести себя в ванной комнате,
+                                                Здравствуйте Подскажите, как этот ЛДСП будет вести себя в ванной
+                                                комнате,
                                                 влагостойкий?
                                             </div>
                                         </div>
@@ -1794,7 +1829,8 @@
                                             <div class="questions__item__header__info">
                                                 <div class="questions__item__header__name">
                                                     <div class="questions__item__header__name__ava">
-                                                        <img src="images/dist/ava.jpg" width="24" height="24" loading="lazy" alt="">
+                                                        <img src="images/dist/ava.jpg" width="24" height="24"
+                                                             loading="lazy" alt="">
                                                     </div>
                                                     <span>ТД СЕРВЕР</span>
                                                 </div>
@@ -1838,11 +1874,12 @@
             <div class="modal__body">
                 <form action="">
                     <div class="fpad30">
-                        <textarea class="form-control" name="Ваш вопрос" placeholder="Ваш вопрос" required=""></textarea>
+                        <textarea class="form-control" name="Ваш вопрос" placeholder="Ваш вопрос"
+                                  required=""></textarea>
                     </div>
 
 
-                        <button type="submit" class="btn btn--red w-100 text-uppercase">отправить</button>
+                    <button type="submit" class="btn btn--red w-100 text-uppercase">отправить</button>
 
                     <!--div class="form-ps">
                         Нажимая на кнопку «Заказать звонок», вы подтверждаете свое согласие с
@@ -1854,6 +1891,61 @@
         </div>
     </div>
 </div>
+
+<div class="offcanvas offcanvas--sharing offcanvas-bottom" tabindex="-1" id="mobSharing" >
+    <div class="offcanvas-body position-relative p-0 overflow-visible">
+        <button type="button" class="offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg width="16" height="16">
+                <use xlink:href="#svg-close"></use>
+            </svg>
+        </button>
+        <div class="share js-share-mob rambler-share">
+            <div class="share-card__body">
+                <div class="share-card__label">Ссылка на товар</div>
+                <div class="share-card__link">
+                    https://www.tdserver.ru/catalog/dekodekodekodekodekodekodekodekodeko
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    (function () {
+        var init = function () {
+            RamblerShare.init('.js-share-pc', {
+                "style": {},
+                "utm": "",
+                "counters": false,
+                "buttons": [
+                    "vkontakte",
+                    "odnoklassniki",
+                    "telegram",
+                    "max",
+                    "copy"
+                ]
+            });
+            RamblerShare.init('.js-share-mob', {
+                "style": {},
+                "utm": "",
+                "counters": false,
+                "buttons": [
+                    "vkontakte",
+                    "odnoklassniki",
+                    "telegram",
+                    "max",
+                    "copy"
+                ]
+            });
+        };
+        var script = document.createElement('script');
+        script.onload = init;
+        script.async = true;
+        script.src = 'https://developers.rambler.ru/likes/v1/widget.js';
+        document.head.appendChild(script);
+    })();
+</script>
 
 
 <footer class="footer">

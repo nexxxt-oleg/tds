@@ -1045,7 +1045,13 @@
       padding-bottom: 0;
     }
   }
-
+  .product-page__top-nav__left {
+    display: none;
+  }
+  .product-page__btns {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 768px) {
