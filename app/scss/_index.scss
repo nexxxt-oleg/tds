@@ -5832,6 +5832,7 @@ textarea.form-control {
 }
 
 .services-box {
+  position: relative;
   height: 220px;
   background-position: 100% 50%;
   background-repeat: no-repeat;
@@ -5839,6 +5840,7 @@ textarea.form-control {
   background-color: #f4f4f4;
   border-radius: 20px;
   padding: 25px 200px 45px 40px;
+  overflow: hidden;
 
   h2 {
     margin: 0 0 5px;
@@ -5851,11 +5853,36 @@ textarea.form-control {
   }
   &__desc {
     min-height: 100px;
+    position: relative;
+    z-index: 10;
   }
   &__btn {
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
+    z-index: 10
+  }
+  &__logo {
+    position: absolute;
+    z-index: 1;
+    right: 60px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 100%;
+    img {
+      display: block;
+      width: auto;
+      height: 100%;
+    }
   }
 }
 

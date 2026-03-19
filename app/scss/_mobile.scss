@@ -1824,8 +1824,16 @@
   .btn-exel,
   .catalog-sort__label,
   .compare-page__clear-btn,
-  .choices__inner {
+  .choices__inner,
+  .pdf-link__title {
     font-size: 12px;
+  }
+  .pdf-link {
+    min-height: 64px;
+    padding-left: 20px;
+  }
+  .fpad20 {
+    padding-bottom: 10px;
   }
   .choices__inner {
     line-height: 18px;
@@ -1844,6 +1852,37 @@
     li {
       padding-right: 5px;
     }
+  }
+  .services-box {
+    height: auto;
+    min-height: 186px;
+    padding: 30px 115px 35px 20px;
+    &__logo {
+      right: 20px;
+      width: 76px;
+      height: auto;
+      top: 38px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__btn {
+      flex-direction: column;
+      gap: 10px;
+      width: 138px;
+    }
+    p {
+      line-height: 18px;
+      font-size: 12px;
+    }
+  }
+  .services-box h2 {
+    font-size: 16px;
+  }
+  .fpad25 {
+    padding-bottom: 10px;
   }
 }
 
