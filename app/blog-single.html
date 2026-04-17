@@ -112,6 +112,17 @@
 
                 ]
             });
+            RamblerShare.init('.js-share-mob', {
+                "style": {},
+                "utm": "",
+                "counters": false,
+                "buttons": [
+                    "vkontakte",
+                    "odnoklassniki",
+                    "telegram",
+                    "max",
+                ]
+            });
         };
         var script = document.createElement('script');
         script.onload = init;
