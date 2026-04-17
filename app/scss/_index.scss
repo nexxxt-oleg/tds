@@ -5536,7 +5536,8 @@ h1.mb-25 {
 
     &__tags {
       gap: 10px;
-      a {
+      & a,
+      & span {
         display: flex;
         align-items: center;
         height: 30px;
@@ -6096,4 +6097,114 @@ textarea.form-control {
   border: none;
   margin-left: -18px;
   top: -85px;
+}
+
+.blog__single {
+  width: 100%;
+  max-width: 986px;
+  margin: 0 auto;
+  &__header {
+    position: relative;
+    padding-bottom: 30px;
+    h1 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0 0 25px;
+    }
+  }
+  &__date {
+    display: flex;
+    align-items: center;
+    .blog__list__item__date {
+      width: 200px;
+      padding-right: 15px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__body {
+    p {
+      color: #484848;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 20px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin: 35px 0;
+    }
+  }
+}
+
+.blog__single__share {
+  position: absolute;
+  z-index: 10;
+  left: 100%;
+  top: 0;
+  margin-left: 65px;
+  &__btn {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    color: #282828;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: #fff;
+    }
+    &.show {
+      background: #fff;
+      color: var(--color-red);
+    }
+  }
+  .dropdown-menu {
+    box-shadow: none;
+  }
+}
+
+.share-card-vertical .share {
+  flex-direction: column;
+  gap: 8px;
+  & > div {
+    margin: 0 !important;
+  }
+}
+
+.blog__products {
+  padding: 15px 0 0;
+}
+
+.border-line {
+  border-bottom: 1px solid #e8e8e8;
+  height: 90px;
+  margin-bottom: 90px;
+}
+
+.news-item--blog {
+  .blog__list__item__tags {
+    padding-top: 15px;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    aspect-ratio: 848 / 504;
+    object-fit: cover;
+  }
 }

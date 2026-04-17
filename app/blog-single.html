@@ -1,0 +1,123 @@
+<!--#set var="title" value="Блог" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li><a href="">Главная</a></li>
+    </ul>
+    <div class="blog">
+
+        <article class="blog__single">
+            <header class="blog__single__header">
+                <h1>С любовью и трепетом… Для самых маленьких мечтателей…</h1>
+                <div class="blog__single__date">
+                    <div class="blog__list__item__date">20 Января 2024</div>
+
+                    <ul class="nav blog__list__item__tags">
+                        <li>
+                            <a href="">Дизайн</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dropdown blog__single__share">
+                    <a href="" class="blog__single__share__btn" data-bs-toggle="dropdown">
+
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-share"></use>
+                        </svg>
+
+                    </a>
+                    <div class="dropdown-menu ">
+                        <div class="share-card-vertical">
+                            <div class="share js-share-pc rambler-share">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="blog__single__body">
+                <div class="blog__single__pic">
+                    <img src="images/dist/b1.jpg" loading="lazy" alt="">
+                </div>
+                <p>Новинка года — деревянные ручки для детей!</p>
+                <p>Основное преимущество ручек заключается в том, что они изготовлены из массива дуба. Данный материал
+                    пропитан минеральным маслом и безопасен для детей.</p>
+                <p>Необычные ручки прекрасно впишутся в интерьер любого детского пространства, при этом создавая
+                    определенный акцент в интерьере.</p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/dist/b2.jpg" loading="lazy" alt="">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/dist/b2.jpg" loading="lazy" alt="">
+                    </div>
+                </div>
+                <p>С деревянными ручками Ваш интерьер преобразится и наполнится теплом и уютом. Такое решение несомненно
+                    будет радовать взор Вас и Ваших детей!</p>
+                <video src="" poster="images/dist/b3.jpg"></video>
+            </div>
+        </article>
+
+        <section class="blog__products">
+            <div class="page-caption justify-content-center">
+                <h2>Купить товары</h2>
+            </div>
+            <div class="tabs-slider__products">
+                <div class="swiper slider-product"
+                     data-scrollbar="tab4_scroll"
+                     data-navnext="tab4_nav_next"
+                     data-navprev="tab4_nav_prev">
+                    <div class="swiper-wrapper">
+                        <!--#include virtual="/parts/slider-product.html" -->
+                    </div>
+                    <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab4_scroll"></div>
+                </div>
+                <button class="swiper-prev slider-nav swiper-button-disabled" id="tab4_nav_prev">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </button>
+                <button class="swiper-next slider-nav swiper-button-disabled" id="tab4_nav_next">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-next"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <div class="border-line"></div>
+        <section class=" position-relative">
+            <div class="page-caption">
+                <h2>Читайте также</h2>
+            </div>
+
+            <div class="position-relative news-slider">
+                <!--#include virtual="/parts/slider-news2.html" -->
+            </div>
+        </section>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var init = function () {
+            RamblerShare.init('.js-share-pc', {
+                "style": {},
+                "utm": "",
+                "counters": false,
+                "buttons": [
+                    "vkontakte",
+                    "odnoklassniki",
+                    "telegram",
+                    "max",
+
+                ]
+            });
+        };
+        var script = document.createElement('script');
+        script.onload = init;
+        script.async = true;
+        script.src = 'https://developers.rambler.ru/likes/v1/widget.js';
+        document.head.appendChild(script);
+    })();
+</script>
+<!--#include virtual="/parts/footer.html" -->
