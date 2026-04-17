@@ -6176,7 +6176,9 @@ textarea.form-control {
     box-shadow: none;
   }
 }
-
+.blog__single__footer {
+  display: none;
+}
 .share-card-vertical .share {
   flex-direction: column;
   gap: 8px;
