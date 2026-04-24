@@ -3539,6 +3539,7 @@ b {
 .complete-set__group__header__col4 {
   min-width: 170px;
 }
+
 .complete-set__group__item__col-price {
   min-width: 270px;
 }
@@ -3607,9 +3608,11 @@ b {
 
 .complete-set__group {
   margin-bottom: 35px;
+
   .card-product__title {
     font-size: 14px;
   }
+
   &__header {
     display: flex;
     background: #f4f4f4;
@@ -5031,6 +5034,7 @@ b {
 .catalog-list__col__hover .card-product {
   flex-grow: 1;
 }
+
 .card-product__info-footer .not-stock {
   background: #ececec;
   border-radius: 6px;
@@ -5040,6 +5044,7 @@ b {
   margin-left: 5px;
   padding: 0 6px;
 }
+
 .catalog-list__col__hover__footer {
   /*display: none;*/
   opacity: 0;
@@ -5339,6 +5344,7 @@ h1.mb-25 {
 
   &--right {
     margin-left: auto;
+
     .swiper::after {
       content: '';
       display: block;
@@ -5381,6 +5387,7 @@ h1.mb-25 {
     display: flex;
     justify-content: center;
     gap: 5px;
+
     .swiper-pagination-bullet {
       margin: 0;
       width: 24px;
@@ -5388,6 +5395,7 @@ h1.mb-25 {
       border-radius: 3px;
       background: #efeff0;
       opacity: 1;
+
       &.swiper-pagination-bullet-active {
         background: #ad2125;
       }
@@ -5398,6 +5406,7 @@ h1.mb-25 {
 .link {
   color: #ad2125;
   text-decoration: underline;
+
   &:hover {
     text-decoration: none;
   }
@@ -5425,7 +5434,7 @@ h1.mb-25 {
   padding-bottom: 10px;
 }
 
-.pdf-link{
+.pdf-link {
   display: flex;
   align-items: center;
   padding: 15px 30px;
@@ -5434,14 +5443,17 @@ h1.mb-25 {
   min-height: 84px;
   gap: 20px;
   text-decoration: none;
+
   &__ico {
     min-width: 24px;
     width: 24px;
   }
+
   &__title {
     font-size: 14px;
     font-weight: 500;
   }
+
   &__size {
     font-weight: 400;
   }
@@ -5455,6 +5467,7 @@ h1.mb-25 {
   font-size: 14px;
   line-height: 1.3;
 }
+
 .color-red {
   color: #ac2024;
 }
@@ -5477,12 +5490,15 @@ h1.mb-25 {
     font-size: 14px;
     line-height: 18px;
   }
+
   &__body {
     padding-top: 30px;
+
     p {
       font-size: 14px;
       line-height: 24px;
       margin-bottom: 20px;
+
       b {
         font-weight: 500;
       }
@@ -5500,13 +5516,16 @@ h1.mb-25 {
   margin: 0 -45px;
   display: flex;
   flex-wrap: wrap;
+
   &__item {
     width: 50%;
     padding: 0 45px 60px;
+
     &__img {
       display: block;
       height: 320px;
-      img  {
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -5518,6 +5537,7 @@ h1.mb-25 {
     &__desc {
       padding: 15px 22px 0;
     }
+
     &__date {
       color: #8a8a8a;
       font-size: 12px;
@@ -5536,6 +5556,7 @@ h1.mb-25 {
 
     &__tags {
       gap: 10px;
+
       & a,
       & span {
         display: flex;
@@ -5562,14 +5583,17 @@ h1.mb-25 {
 .blog__header {
   padding-bottom: 25px;
   border-bottom: 1px solid #e8e8e8;
+
   h1 {
     margin-bottom: 0;
   }
+
   &__desc {
     color: #8a8a8a;
     font-size: 16px;
     line-height: 24px;
   }
+
   &__send {
     display: flex;
     justify-content: flex-end;
@@ -5580,6 +5604,7 @@ h1.mb-25 {
 .blog__cats {
   padding-top: 30px;
   padding-bottom: 60px;
+
   &__label {
     color: #484848;
     font-size: 14px;
@@ -5589,6 +5614,7 @@ h1.mb-25 {
 
   &__list {
     gap: 10px;
+
     a {
       display: flex;
       align-items: center;
@@ -5600,6 +5626,7 @@ h1.mb-25 {
       font-size: 14px;
       line-height: 20px;
       transition: all 0.2s ease-in-out;
+
       &:hover,
       &.active {
         color: #fff;
@@ -5608,8 +5635,10 @@ h1.mb-25 {
     }
   }
 }
+
 .blog {
   padding-bottom: 100px;
+
   &__pagination {
     padding: 0 150px;
   }
@@ -5630,6 +5659,7 @@ h1.mb-25 {
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 30px;
   gap: 16px;
+
   a {
     display: block;
     position: relative;
@@ -5637,6 +5667,7 @@ h1.mb-25 {
     line-height: 1.3;
     padding: 0 0 10px;
     color: #484848;
+
     &.active {
       &::after {
         content: '';
@@ -5652,10 +5683,13 @@ h1.mb-25 {
     }
   }
 }
+
 .product-page__offers___item {
   position: relative;
+
   &.close {
     color: #bababa;
+
     span {
       position: relative;
       z-index: 2;
@@ -5673,19 +5707,18 @@ h1.mb-25 {
   width: 100%;
   height: 100%;
 
-  background:
-          linear-gradient(to top left,
-                  rgba(0,0,0,0) 0%,
-                  rgba(0,0,0,0) calc(50% - 1.5px),
-                  rgba(239,239,240,1) 50%,
-                  rgba(0,0,0,0) calc(50% + 1.5px),
-                  rgba(0,0,0,0) 100%),
-          linear-gradient(to top right,
-                  rgba(0,0,0,0) 0%,
-                  rgba(0,0,0,0) calc(50% - 1.5px),
-                  rgba(239,239,240,1) 50%,
-                  rgba(0,0,0,0) calc(50% + 1.5px),
-                  rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top left,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0) calc(50% - 1.5px),
+          rgba(239, 239, 240, 1) 50%,
+          rgba(0, 0, 0, 0) calc(50% + 1.5px),
+          rgba(0, 0, 0, 0) 100%),
+  linear-gradient(to top right,
+                  rgba(0, 0, 0, 0) 0%,
+                  rgba(0, 0, 0, 0) calc(50% - 1.5px),
+                  rgba(239, 239, 240, 1) 50%,
+                  rgba(0, 0, 0, 0) calc(50% + 1.5px),
+                  rgba(0, 0, 0, 0) 100%);
 }
 
 textarea.form-control {
@@ -5698,16 +5731,20 @@ textarea.form-control {
     height: auto;
     aspect-ratio: 1 / 1;
     width: 100%;
-    &:hover  {
+
+    &:hover {
       background-color: #f4f4f4 !important;
     }
+
     img {
       border-radius: 0 !important;
     }
   }
+
   a:hover {
     .brand-item {
       transform: scale(1.02);
+
       img {
         transform: scale(1) !important;
       }
@@ -5719,12 +5756,14 @@ textarea.form-control {
 .brand-nav {
   gap: 10px 25px;
   padding-bottom: 10px;
+
   b {
     color: #484848;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.3;
   }
+
   a {
     color: #484848;
     font-size: 14px;
@@ -5748,6 +5787,7 @@ textarea.form-control {
     justify-content: center;
     padding-bottom: 15px;
     min-height: 225px;
+
     img {
       display: block;
       object-fit: contain;
@@ -5761,12 +5801,14 @@ textarea.form-control {
   font-size: 30px !important;
   line-height: 1.2;
 }
+
 .fpad25 {
   padding-bottom: 26px;
 }
 
 .gallery-text {
   display: block;
+
   img {
     display: block;
     width: 100%;
@@ -5784,6 +5826,7 @@ textarea.form-control {
     font-size: 14px;
     line-height: 1.3;
     color: #ad2125;
+
     &:hover {
       text-decoration: underline;
     }
@@ -5808,9 +5851,11 @@ textarea.form-control {
     flex-grow: 1;
     gap: 35px;
     align-items: center;
+
     .catalog-sort__item span {
       padding-bottom: 10px;
     }
+
     .catalog-sort {
       padding-left: 20px;
     }
@@ -5848,15 +5893,18 @@ textarea.form-control {
     font-size: 24px;
     line-height: 1.2;
   }
+
   p {
     font-size: 14px;
     line-height: 20px;
   }
+
   &__desc {
     min-height: 100px;
     position: relative;
     z-index: 10;
   }
+
   &__btn {
     display: flex;
     align-items: center;
@@ -5864,6 +5912,7 @@ textarea.form-control {
     position: relative;
     z-index: 10
   }
+
   &__logo {
     position: absolute;
     z-index: 1;
@@ -5873,12 +5922,14 @@ textarea.form-control {
     display: flex;
     align-items: center;
   }
+
   &__bg {
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
     height: 100%;
+
     img {
       display: block;
       width: auto;
@@ -5901,12 +5952,13 @@ textarea.form-control {
 .share {
   display: flex;
   flex-wrap: wrap;
+
   & > div {
     order: 1;
 
 
-
     &[data-rambler-share="vkontakte"] {
+      border-radius: 5px;
       background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 66.71 41.62'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill-rule: evenodd; fill: %230077ff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M0,0c.54,26,13.54,41.62,36.33,41.62h1.29v-14.88c8.38.83,14.71,6.96,17.25,14.88h11.83c-3.25-11.83-11.79-18.38-17.13-20.88,5.33-3.08,12.83-10.58,14.62-20.75h-10.75c-2.33,8.25-9.25,15.75-15.83,16.46V0h-10.75v28.83c-6.67-1.67-15.08-9.75-15.46-28.83H0Z'/%3E%3C/g%3E%3C/svg%3E");
       background-size: 24px 15px;
       width: 48px !important;
@@ -5917,6 +5969,7 @@ textarea.form-control {
       transition: all 0.2s ease-in-out;
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
       &:hover {
         background-color: transparent !important;
       }
@@ -5925,7 +5978,9 @@ textarea.form-control {
         display: none !important;
       }
     }
+
     &[data-rambler-share="odnoklassniki"] {
+      border-radius: 5px;
       background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 319.95 512'%3E%3Cg id='Bold'%3E%3Cpath fill='%23f97400' d='M4.71,274.79c-13.08,25.71,1.77,37.99,35.65,58.99,28.8,17.79,68.59,24.3,94.14,26.9-10.47,10.07,37.53-36.1-100.71,96.87-29.31,28.1,17.88,73.17,47.17,45.67l79.3-76.48c30.36,29.21,59.46,57.19,79.3,76.59,29.31,27.61,76.48-17.09,47.49-45.67-2.18-2.07-107.46-103.06-101.03-96.87,25.88-2.6,65.07-9.49,93.53-26.9l-.02-.02c33.88-21.1,48.73-33.37,35.84-59.07-7.79-14.59-28.78-26.79-56.73-5.7,0,0-37.74,28.91-98.6,28.91s-98.6-28.91-98.6-28.91c-27.93-21.21-49-8.9-56.7,5.7h0Z'/%3E%3Cpath fill='%23f97400' d='M159.98,259.03c74.2,0,134.78-57.98,134.78-129.37S234.18,0,159.98,0,25.17,57.98,25.17,129.66s60.59,129.37,134.81,129.37ZM159.98,65.69c36.46,0,66.2,28.61,66.2,63.98s-29.74,63.68-66.2,63.68-66.2-28.61-66.2-63.68c-.02-35.39,29.72-63.98,66.2-63.98h0Z'/%3E%3C/g%3E%3C/svg%3E");
       background-size: 15px 24px;
       width: 48px !important;
@@ -5936,6 +5991,7 @@ textarea.form-control {
       transition: all 0.2s ease-in-out;
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
       &:hover {
         background-color: transparent !important;
       }
@@ -5944,7 +6000,9 @@ textarea.form-control {
         display: none !important;
       }
     }
+
     &[data-rambler-share="telegram"] {
+      border-radius: 5px;
       background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 511.99 426.67'%3E%3Cg id='Bold'%3E%3Cpath fill='%230088cc' d='M200.9,281.2l-8.47,119.13c12.12,0,17.37-5.21,23.66-11.46l56.81-54.29,117.72,86.21c21.59,12.03,36.8,5.7,42.62-19.86L510.51,38.86l.02-.02c6.85-31.91-11.54-44.39-32.58-36.57L23.77,176.16c-31,12.03-30.53,29.31-5.27,37.14l116.12,36.12L404.33,80.65c12.69-8.41,24.23-3.75,14.74,4.65l-218.18,195.9Z'/%3E%3C/g%3E%3C/svg%3E");
       background-size: 24px 20px;
       width: 48px !important;
@@ -5955,6 +6013,7 @@ textarea.form-control {
       transition: all 0.2s ease-in-out;
       background-position: 50% 50%;
       background-repeat: no-repeat;
+
       &:hover {
         background-color: transparent !important;
       }
@@ -5965,6 +6024,7 @@ textarea.form-control {
     }
 
     &[data-rambler-share="max"] {
+      border-radius: 5px;
       width: 48px !important;
       min-width: 48px !important;
       height: 48px !important;
@@ -5975,6 +6035,7 @@ textarea.form-control {
       background-repeat: no-repeat;
       background-size: 24px 24px;
       background-image: url("data:image/svg+xml,%0A%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 47.76 47.76'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-1, .cls-2, .cls-3 %7B fill-rule: evenodd; %7D .cls-2 %7B fill: url(%23radial-gradient); %7D .cls-3 %7B fill: url(%23linear-gradient); %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='-283.28' y1='98.85' x2='-241.16' y2='111.29' gradientTransform='translate(287 128.69) scale(1 -1)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%234cf'/%3E%3Cstop offset='.66' stop-color='%2353e'/%3E%3Cstop offset='1' stop-color='%2393d'/%3E%3C/linearGradient%3E%3CradialGradient id='radial-gradient' cx='-650.32' cy='414.14' fx='-650.32' fy='414.14' r='1' gradientTransform='translate(15810.27 35589.84) rotate(51.36) scale(57.95 -23.88)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='blue'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M24.39,47.62c-4.69,0-6.86-.69-10.65-3.44-2.39,3.09-9.98,5.51-10.31,1.37,0-3.1-.68-5.73-1.46-8.59-.92-3.53-1.97-7.46-1.97-13.15C0,10.23,11.11,0,24.27,0s23.49,10.73,23.49,23.95c.04,13.01-10.41,23.6-23.36,23.67ZM24.58,11.75c-6.41-.33-11.4,4.12-12.51,11.11-.91,5.78.71,12.83,2.09,13.19.66.16,2.33-1.19,3.36-2.23,1.72,1.19,3.71,1.91,5.79,2.07,6.64.32,12.31-4.76,12.76-11.42.26-6.68-4.85-12.33-11.49-12.71h0Z'/%3E%3Cpath class='cls-3' d='M24.39,47.62c-4.69,0-6.86-.69-10.65-3.44-2.39,3.09-9.98,5.51-10.31,1.37,0-3.1-.68-5.73-1.46-8.59-.92-3.53-1.97-7.46-1.97-13.15C0,10.23,11.11,0,24.27,0s23.49,10.73,23.49,23.95c.04,13.01-10.41,23.6-23.36,23.67ZM24.58,11.75c-6.41-.33-11.4,4.12-12.51,11.11-.91,5.78.71,12.83,2.09,13.19.66.16,2.33-1.19,3.36-2.23,1.72,1.19,3.71,1.91,5.79,2.07,6.64.32,12.31-4.76,12.76-11.42.26-6.68-4.85-12.33-11.49-12.71h0Z'/%3E%3Cpath class='cls-2' d='M24.39,47.62c-4.69,0-6.86-.69-10.65-3.44-2.39,3.09-9.98,5.51-10.31,1.37,0-3.1-.68-5.73-1.46-8.59-.92-3.53-1.97-7.46-1.97-13.15C0,10.23,11.11,0,24.27,0s23.49,10.73,23.49,23.95c.04,13.01-10.41,23.6-23.36,23.67ZM24.58,11.75c-6.41-.33-11.4,4.12-12.51,11.11-.91,5.78.71,12.83,2.09,13.19.66.16,2.33-1.19,3.36-2.23,1.72,1.19,3.71,1.91,5.79,2.07,6.64.32,12.31-4.76,12.76-11.42.26-6.68-4.85-12.33-11.49-12.71h0Z'/%3E%3C/g%3E%3C/svg%3E");
+
       &:hover {
         background-color: transparent !important;
       }
@@ -6024,6 +6085,7 @@ textarea.form-control {
   background: #fff;
   padding: 20px;
   border-radius: 20px;
+
   &__body {
     border-top: 1px solid #e8e8e8;
     width: 100%;
@@ -6041,6 +6103,7 @@ textarea.form-control {
   font-weight: 500;
   padding-bottom: 15px;
 }
+
 .share-card__link {
   width: 100%;
   height: 32px;
@@ -6053,6 +6116,7 @@ textarea.form-control {
   font-size: 14px;
   line-height: 22px;
   color: #484848;
+
   &::after {
     content: '';
     display: block;
@@ -6062,10 +6126,11 @@ textarea.form-control {
     right: 0;
     width: 30px;
     height: 100%;
-    background: linear-gradient(90deg,rgba(244, 244, 244, 0) 0%, rgba(244, 244, 244, 1) 70%, rgba(244, 244, 244, 1) 100%);
+    background: linear-gradient(90deg, rgba(244, 244, 244, 0) 0%, rgba(244, 244, 244, 1) 70%, rgba(244, 244, 244, 1) 100%);
   }
 
 }
+
 .btn.show,
 .product-page__btns__item {
   border: none !important;
@@ -6103,9 +6168,11 @@ textarea.form-control {
   width: 100%;
   max-width: 986px;
   margin: 0 auto;
+
   &__header {
     position: relative;
     padding-bottom: 30px;
+
     h1 {
       font-size: 30px;
       font-weight: 500;
@@ -6114,9 +6181,11 @@ textarea.form-control {
       padding: 0 0 25px;
     }
   }
+
   &__date {
     display: flex;
     align-items: center;
+
     .blog__list__item__date {
       width: 200px;
       padding-right: 15px;
@@ -6131,6 +6200,7 @@ textarea.form-control {
       line-height: 24px;
       margin: 0 0 20px;
     }
+
     img {
       width: 100%;
       height: auto;
@@ -6154,6 +6224,7 @@ textarea.form-control {
   left: 100%;
   top: 0;
   margin-left: 65px;
+
   &__btn {
     display: flex;
     width: 48px;
@@ -6164,24 +6235,30 @@ textarea.form-control {
     background-color: #f4f4f4;
     border-radius: 6px;
     transition: all 0.2s ease-in-out;
+
     &:hover {
       background: #fff;
     }
+
     &.show {
       background: #fff;
       color: var(--color-red);
     }
   }
+
   .dropdown-menu {
     box-shadow: none;
   }
 }
+
 .blog__single__footer {
   display: none;
 }
+
 .share-card-vertical .share {
   flex-direction: column;
   gap: 8px;
+
   & > div {
     margin: 0 !important;
   }
@@ -6201,6 +6278,7 @@ textarea.form-control {
   .blog__list__item__tags {
     padding-top: 15px;
   }
+
   img {
     display: block;
     width: 100%;
@@ -6213,11 +6291,13 @@ textarea.form-control {
 
 .cart-top {
   padding-bottom: 30px;
+
   &__left {
     display: flex;
     align-items: center;
     gap: 50px;
   }
+
   &__links {
     display: flex;
     align-items: center;
@@ -6230,13 +6310,16 @@ textarea.form-control {
   cursor: pointer;
   user-select: none;
 }
+
 .cart-body {
   padding-bottom: 30px;
 }
+
 .cart-body__search {
   position: relative;
   z-index: 10;
   margin-bottom: 25px;
+
   &__wrap {
     display: flex;
     align-items: center;
@@ -6245,6 +6328,7 @@ textarea.form-control {
     background: #efeff0;
     border-radius: 5px;
   }
+
   &__label {
     font-size: 18px;
     line-height: 1.2;
@@ -6252,8 +6336,10 @@ textarea.form-control {
     white-space: nowrap;
     flex-grow: 0;
   }
+
   &__inp {
     flex-grow: 1;
+
     input {
       display: block;
       width: 100%;
@@ -6264,12 +6350,14 @@ textarea.form-control {
       border-radius: 5px;
       font-size: 14px;
       line-height: 26px;
+
       &::placeholder {
         opacity: 1;
         color: #a3a3a3;
       }
     }
   }
+
   &__res {
     visibility: hidden;
     top: 100%;
@@ -6304,16 +6392,19 @@ textarea.form-control {
   &__item {
     padding: 17px;
     display: flex;
+
     .card-product__col-img {
       width: 90px;
       min-width: 90px;
       padding-right: 20px;
+
       img {
         width: 100%;
         height: 52px;
         object-fit: cover;
       }
     }
+
     &:not(:first-child) {
       border-top: 1px solid #e8e8e8;
     }
@@ -6321,9 +6412,11 @@ textarea.form-control {
     .card-product__col-title {
       width: 230px;
       flex-grow: 1;
+
       .card-product__top-attr {
         padding-bottom: 6px;
       }
+
       .card-product__title {
         font-size: 14px;
         margin: 0;
@@ -6334,12 +6427,14 @@ textarea.form-control {
       width: 100px;
       min-width: 100px;
     }
+
     .card-product__price {
       width: 145px;
       min-width: 145px;
       height: 48px;
       padding-bottom: 0;
     }
+
     .card-product__col-units {
       width: 35px;
       min-width: 35px;
@@ -6347,8 +6442,10 @@ textarea.form-control {
       font-size: 14px;
       line-height: 48px;
     }
+
     .card-product__col-bay-search {
       margin-left: auto;
+
       .btn {
         font-size: 12px;
         white-space: nowrap;
@@ -6391,18 +6488,22 @@ textarea.form-control {
     width: 240px;
     flex-grow: 1;
   }
+
   &__col2 {
     width: 135px;
     min-width: 135px;
   }
+
   &__col3 {
     width: 175px;
     min-width: 175px;
   }
+
   &__col4 {
     width: 210px;
     min-width: 210px;
   }
+
   &__col-img {
     width: 140px;
     min-width: 140px;
@@ -6413,12 +6514,15 @@ textarea.form-control {
     border-right: 1px solid #efeff0;
     border-bottom: 1px solid #efeff0;
     position: relative;
+
     &__wrap {
       display: flex;
       padding: 20px 0;
       gap: 20px;
+
       .cart-body__group__col-img {
         padding-left: 20px;
+
         img {
           height: 90px;
           object-fit: cover;
@@ -6437,6 +6541,7 @@ textarea.form-control {
 
     &.active_set {
       border-color: #484848;
+
       &::after {
         content: '';
         display: block;
@@ -6456,14 +6561,17 @@ textarea.form-control {
     align-items: center;
     gap: 20px;
     height: 90px;
+
     .quantity {
       min-width: 102px;
       width: 102px;
     }
+
     .card-product__col-units {
       font-size: 14px;
     }
   }
+
   &__col-price {
     display: flex;
     align-items: center;
@@ -6471,6 +6579,7 @@ textarea.form-control {
     justify-content: space-between;
     padding-right: 20px;
   }
+
   &__clear {
     padding: 5px;
     min-width: 28px;
@@ -6480,16 +6589,19 @@ textarea.form-control {
   &__sets-btn {
     padding-top: 15px;
     width: 160px;
+
     .btn {
       text-transform: uppercase;
       font-size: 12px;
       height: 36px;
       padding: 5px;
+
       &.collapsed {
         .text-close {
           display: none;
         }
       }
+
       &:not(.collapsed) {
         .text-open {
           display: none;
@@ -6509,12 +6621,14 @@ textarea.form-control {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   padding: 15px 30px 30px;
   margin-bottom: 20px;
+
   &__info {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
     border-bottom: 1px solid #efeff0;
+
     span {
       color: #484848;
       font-size: 14px;
@@ -6530,12 +6644,14 @@ textarea.form-control {
 
   &__itog {
     padding-bottom: 25px;
+
     &__label {
       font-size: 14px;
       line-height: 1.2;
       font-weight: 500;
       padding-bottom: 10px;
     }
+
     &__price {
       .cost {
         display: block;
@@ -6543,6 +6659,7 @@ textarea.form-control {
         line-height: 1.2;
         font-weight: bold;
       }
+
       .old-cost {
         display: block;
         font-size: 18px;
@@ -6566,12 +6683,14 @@ textarea.form-control {
     color: #484848;
     font-size: 14px;
     line-height: 18px;
+
     &--select {
       border-color: #ad2125;
       background-color: #fbf4f4;
       background-position: 15px 50%;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 469.2 512.02'%3E%3Cpath fill='%23ad2125' d='M143.09,197.48c8.34,8.34,8.34,21.85,0,30.17-8.34,8.34-21.85,8.34-30.17,0-8.34-8.34-8.34-21.85,0-30.17,8.34-8.34,21.85-8.34,30.17,0h0ZM438.6,327.29l-12.05,12.05c-.58,26.3-10.77,52.42-30.61,72.51l-67.56,68.44c-20.12,20.37-46.95,31.64-75.58,31.72h-.36c-28.48,0-55.25-11.09-75.39-31.23L18.82,323.92c-13.87-13.85-20.57-32.9-18.43-52.33L16.71,124.05c1.09-9.73,8.62-17.47,18.3-18.79l146.97-20.1c19.88-2.65,39.89,4.12,53.93,18.15l159.47,158.12c8.26,8.26,14.87,17.56,19.86,27.48,17.32-24.87,14.89-59.63-7.3-81.81L246,49.13c-4.89-4.89-11.63-7.15-18.15-6.23l-146.97,20.1c-11.71,1.58-22.44-6.59-24.04-18.24-1.58-11.67,6.59-22.42,18.24-24.02L222.06.61c19.65-2.79,39.87,4.07,53.93,18.18l161.9,157.97c41.51,41.49,41.75,108.95.68,150.55l.02-.02ZM365.25,291.66l-159.47-158.12c-4.76-4.76-11.43-6.95-18.07-6.12l-130.45,17.86-14.49,130.99c-.7,6.46,1.51,12.82,6.12,17.41l158.21,156.86c12.14,12.16,28.2,18.79,45.29,18.79h.21c17.19-.04,33.3-6.81,45.35-19.05l67.56-68.44c24.64-24.96,24.51-65.43-.3-90.22l.02.04Z'/%3E%3C/svg%3E");
       background-size: 16px 18px;
+
       .promo__var {
         color: #ad2125;
       }
@@ -6583,14 +6702,17 @@ textarea.form-control {
       background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%2316a085' d='M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256,256-114.84,256-256S397.16,0,256,0ZM254.06,328.94c-8.26,8.26-19.11,12.37-30.02,12.37s-21.87-4.16-30.21-12.48l-59.35-57.51,29.72-30.66,59.58,57.75,123.93-121.62,29.95,30.4-123.58,121.75h-.02Z'/%3E%3C/svg%3E");
       background-position: 15px 50%;
       background-size: 18px 18px;
+
       .promo__var {
         color: #16a085;
       }
     }
   }
+
   &__btn {
     padding-bottom: 10px;
   }
+
   &__price {
     padding: 15px 0;
     border-top: 1px solid #efeff0;
@@ -6609,15 +6731,19 @@ textarea.form-control {
   border-radius: 10px;
   background: #efeff0;
   gap: 10px;
+
   &__item {
     width: calc(50% - 5px);
     cursor: pointer;
+
     input {
       display: none;
+
       &:checked + .cart-sidebar__switch__item__val {
         background-color: #fff;
       }
     }
+
     &__val {
       display: flex;
       align-items: center;
@@ -6634,8 +6760,9 @@ textarea.form-control {
   }
 }
 
-.cart-sidebar__user-promo{
+.cart-sidebar__user-promo {
   padding: 10px 0 15px;
+
   &__btn {
     display: flex;
     align-items: center;
@@ -6652,6 +6779,7 @@ textarea.form-control {
     line-height: 1.2;
     border-radius: 5px;
   }
+
   &__header {
     padding-bottom: 5px;
     display: flex;
@@ -6661,15 +6789,18 @@ textarea.form-control {
     font-size: 14px;
     line-height: 1.2;
     font-weight: 500;
+
     .remove {
       color: #ad2125;
       font-size: 12px;
       cursor: pointer;
     }
   }
+
   &__inp {
     position: relative;
     margin-bottom: 10px;
+
     input {
       width: 100%;
       display: block;
@@ -6683,6 +6814,7 @@ textarea.form-control {
       line-height: 24px;
     }
   }
+
   &__submit {
     position: absolute;
     z-index: 10;
@@ -6702,6 +6834,7 @@ textarea.form-control {
   &__footer {
     padding-bottom: 15px;
   }
+
   &__status {
     display: flex;
     align-items: center;
@@ -6709,6 +6842,7 @@ textarea.form-control {
     line-height: 1.2;
     letter-spacing: 0.02em;
     gap: 10px;
+
     .status-ok {
       color: #16a085;
     }
@@ -6719,26 +6853,31 @@ textarea.form-control {
   border-radius: 20px;
   padding: 25px 30px;
   border: 2px solid #efeff0;
+
   p {
     color: #484848;
     font-size: 14px;
     line-height: 1.3;
     padding-bottom: 12px;
     margin: 0;
+
     b {
       font-weight: 500;
     }
-    .price{
+
+    .price {
       display: block;
       font-size: 18px;
     }
   }
+
   &__footer {
     margin-top: 5px;
     padding-top: 20px;
     border-top: 1px solid #efeff0;
     font-size: 13px;
     letter-spacing: 0.02em;
+
     a {
       text-decoration: underline;
       color: #ad2125;
@@ -6748,6 +6887,7 @@ textarea.form-control {
 
 .cart-footer {
   padding-bottom: 100px;
+
   &__title {
     text-align: center;
     margin-bottom: 25px;
@@ -6756,6 +6896,7 @@ textarea.form-control {
 
 .cart-body__excel {
   padding-bottom: 40px;
+
   &__wrap {
     border-radius: 20px;
     padding: 30px;
@@ -6782,9 +6923,11 @@ textarea.form-control {
     .input-file {
       margin-bottom: 25px;
     }
+
     .custom-checkbox {
       margin-bottom: 25px;
     }
+
     .btn {
       min-width: 160px;
       text-align: center;
@@ -6799,10 +6942,12 @@ textarea.form-control {
 
   &__example {
     padding-left: 90px;
+
     &__item {
       padding-bottom: 30px;
       font-size: 14px;
       line-height: 1.2;
+
       a {
         text-decoration: none;
         color: #ad2125;
@@ -6823,6 +6968,7 @@ textarea.form-control {
   display: inline-flex;
   align-items: center;
   gap: 30px;
+
   &__text {
     font-size: 13px;
     color: #8a8a8a;
@@ -6856,6 +7002,7 @@ textarea.form-control {
     position: absolute;
     z-index: 1;
   }
+
   span {
     background: #fff;
     position: relative;
@@ -6865,6 +7012,7 @@ textarea.form-control {
     padding-right: 10px;
     white-space: nowrap;
   }
+
   b {
     font-size: 14px;
     line-height: 18px;
@@ -6874,4 +7022,115 @@ textarea.form-control {
     padding-left: 10px;
     font-weight: 500;
   }
+}
+
+.cart-body__res__item__alert {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    color: #ad2125;
+    min-width: 13px;
+  }
+}
+
+.cart-body__res__item__right {
+  padding: 0 0 0 10px;
+  line-height: 18px;
+
+  a {
+    font-size: 13px;
+    color: #ad2125;
+    text-decoration: none;
+  }
+}
+
+.dropdown-toggle-excel {
+  &__line {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:not(.collapsed) {
+    .dropdown-toggle-excel__line {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.cart-body__res__error {
+  padding: 35px;
+  border-radius: 20px;
+  background: #fbf4f4;
+
+  &__title {
+    padding: 0 0 20px 45px;
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+    background-position: 0 2px;
+    background-size: 24px 22px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 486.46 444.7'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cg%3E%3Cpath fill='%23ad2125' d='M243.23,312.5c-13.6,0-25,11.4-25,25s11.4,25,25,25,25-11.4,24.4-24.4c.6-14.3-10.7-25.6-24.4-25.6Z'/%3E%3Cpath fill='%23ad2125' d='M474.63,401.1c15.7-27.1,15.8-59.4.2-86.4L318.23,43.5C302.73,16.2,274.73,0,243.33,0s-59.4,16.3-74.9,43.4L11.63,314.9c-15.6,27.3-15.5,59.8.3,86.9,15.6,26.8,43.5,42.9,74.7,42.9h312.8c31.3,0,59.4-16.3,75.2-43.6ZM440.63,381.5c-8.7,15-24.1,23.9-41.3,23.9H86.53c-17,0-32.3-8.7-40.8-23.4-8.6-14.9-8.7-32.7-.1-47.7L202.43,62.9c8.5-14.9,23.7-23.7,40.9-23.7s32.4,8.9,40.9,23.8l156.7,271.4c8.4,14.6,8.3,32.2-.3,47.1Z'/%3E%3Cpath fill='%23ad2125' d='M237.03,137c-11.9,3.4-19.3,14.2-19.3,27.3.6,7.9,1.1,15.9,1.7,23.8,1.7,30.1,3.4,59.6,5.1,89.7.6,10.2,8.5,17.6,18.7,17.6s18.2-7.9,18.7-18.2c0-6.2,0-11.9.6-18.2,1.1-19.3,2.3-38.6,3.4-57.9.6-12.5,1.7-25,2.3-37.5,0-4.5-.6-8.5-2.3-12.5-5.1-11.2-17-16.9-28.9-14.1Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+}
+
+.share > div[data-rambler-share=copy]:after {
+  font-family: 'Rubik', sans-serif;
+}
+
+.share__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.cart-sharing__header {
+  padding: 20px 20px 0;
+  text-align: center;
+}
+
+.cart-sharing__title {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+
+.cart-sharing__text {
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.cart-sharing__qr {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid #e8e8e8;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.dropdown--qr {
+  z-index: 10;
+
+  .dropdown-menu {
+    width: 305px;
+    border-radius: 20px;
+    margin: 10px 0 !important;
+  }
+
+  .share {
+    padding-left: 10px;
+    justify-content: center;
+  }
+
 }

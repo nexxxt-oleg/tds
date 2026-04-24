@@ -582,7 +582,7 @@
     <ul class="nav breadcrumb">
         <li><a href="">Главная</a></li>
     </ul>
-    <div class="compare-page__header cart-top row">
+    <div class="compare-page__header cart-top row position-relative z-3">
         <div class="col-lg-9">
             <div class="cart-top__left">
                 <h1 class="mb-0">Ваша корзина</h1>
@@ -595,22 +595,70 @@
                         </div>
                         Распечатать
                     </a>
-                    <a href="" class="product-page__btns__item btn btn--link" data-bs-toggle="dropdown">
-                        <div class="product-page__btns__item__ico">
-                            <svg width="24" height="24">
-                                <use xlink:href="#svg-share"></use>
-                            </svg>
-                        </div>
-                        Поделиться корзиной
-                    </a>
+                    <div class="dropdown-center dropdown--qr">
+                        <a href="" class="product-page__btns__item btn btn--link" data-bs-toggle="dropdown">
+                            <div class="product-page__btns__item__ico">
+                                <svg width="24" height="24">
+                                    <use xlink:href="#svg-share"></use>
+                                </svg>
+                            </div>
+                            Поделиться корзиной
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="cart-sharing">
+                                <div class="cart-sharing__header">
+                                    <div class="cart-sharing__title">
+                                        Поделитесь корзиной
+                                        удобным для вас способом
+                                    </div>
+                                    <div class="cart-sharing__text">
+                                        Отсканируйте QR-код, чтобы<br>
+                                        открыть корзину.
+                                    </div>
+                                    <div class="cart-sharing__qr">
+                                        <img src="images/dist/qr.jpg" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                                <div class="share-card">
+                                    <div class="share  rambler-share">
+
+                                        <div data-rambler-share="vkontakte">
+                                            <a href="" class="share__link"></a>
+                                        </div>
+                                        <div data-rambler-share="odnoklassniki">
+                                            <a href="" class="share__link"></a>
+                                        </div>
+                                        <div data-rambler-share="telegram">
+                                            <a href="" class="share__link"></a>
+                                        </div>
+                                        <div data-rambler-share="max">
+                                            <a href="" class="share__link"></a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="share-card__body">
+                                        <div class="share-card__label">Ссылка на товар</div>
+                                        <div class="share-card__link">
+                                            https://www.tdserver.ru/catalog/dekodekodekodekodekodekodekodekodeko
+                                        </div>
+                                    </div>
+                                    <div class="share-copy">
+                                        <button class="btn btn--red w-100 text-uppercase">Скопировать ссылку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
                 <div class="dropdown ">
-                    <a href="#excel" data-bs-target="#excel" data-bs-toggle="collapse" class="dropdown-toggle-excel btn-exel">
+                    <a href="#excel" data-bs-target="#excel" data-bs-toggle="collapse"
+                       class="dropdown-toggle-excel btn-exel collapsed">
                         <svg width="16" height="18" class="me-2">
                             <use xlink:href="#svg-exel3"></use>
                         </svg>
                         <span>Загрузить корзину из Exсel</span>
-                        <svg width="12" height="6" class="ms-1">
+                        <svg width="12" height="6" class="ms-1 dropdown-toggle-excel__line">
                             <use xlink:href="#svg-drop2"></use>
                         </svg>
                     </a>
@@ -630,7 +678,7 @@
         </div>
     </div>
 
-    <div class="row cart-body">
+    <div class="row cart-body position-relative z-1">
         <div class="col-lg-9">
             <div class="accordion-collapse collapse" id="excel">
                 <div class="cart-body__excel">
@@ -652,7 +700,7 @@
                                         </label>
 
                                         <label class="custom-checkbox">
-                                            <input type="checkbox"  name="clear" value="1">
+                                            <input type="checkbox" name="clear" value="1">
                                             <span class="custom-checkbox__text">Очистить корзину перед загрузкой</span>
                                         </label>
 
@@ -707,7 +755,10 @@
                                 <div class="col-lg-6">
                                     <div class="cart-body__res__item__right">
                                         <span class="cart-body__res__item__alert">
-                                            Проверьте правильно ли вы указали количество
+                                             <svg width="13" height="13" class="me-2">
+                                                <use xlink:href="#svg-i"></use>
+                                            </svg>
+                                            <span>Проверьте правильно ли вы указали количество</span>
                                         </span>
                                     </div>
                                 </div>
@@ -721,6 +772,13 @@
                                     <div class="cart-body__res__item__right">
                                         <a href="">Посмотреть</a>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div class="cart-body__res__error">
+                                <div class="cart-body__res__error__title">Ошибки загрузки корзины из Excel</div>
+                                <div class="cart-body__res__error__text">Строка 1. Артикул ‘xxxxxxxxx’ количество
+                                    ‘1000’. Ошибка: Неверный артикул.
                                 </div>
                             </div>
                         </div>
@@ -2321,7 +2379,7 @@
         });
 
         const excelFile = document.getElementById('excelFile');
-        excelFile.addEventListener('change', (event)=> {
+        excelFile.addEventListener('change', (event) => {
             let file = event.target.files[0];
             document.getElementById('excelFileName').innerText = file.name;
         });
@@ -3761,9 +3819,19 @@
                   d="M256,128c-11.78,0-21.33,9.55-21.33,21.33v92.27l-71.91,45.06c-10.01,6.26-13.06,19.45-6.81,29.46,6.26,10.01,19.45,13.06,29.46,6.81l81.92-51.2c6.29-3.94,10.08-10.88,10.01-18.3v-104.09c0-11.78-9.55-21.33-21.33-21.33Z"/>
         </symbol>
 
-        <svg  id="svg-status-ok2" viewBox="0 0 512 512">
-           <path fill="currentColor" d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256,256-114.84,256-256S397.16,0,256,0ZM254.06,328.94c-8.26,8.26-19.11,12.37-30.02,12.37s-21.87-4.16-30.21-12.48l-59.35-57.51,29.72-30.66,59.58,57.75,123.93-121.62,29.95,30.4-123.58,121.75h-.02Z"/>
-        </svg>
+        <symbol id="svg-status-ok2" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                  d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256,256-114.84,256-256S397.16,0,256,0ZM254.06,328.94c-8.26,8.26-19.11,12.37-30.02,12.37s-21.87-4.16-30.21-12.48l-59.35-57.51,29.72-30.66,59.58,57.75,123.93-121.62,29.95,30.4-123.58,121.75h-.02Z"/>
+        </symbol>
+
+        <symbol id="svg-i" viewBox="0 0 330 330">
+            <path fill="currentColor"
+                  d="M165,0C74.02,0,0,74.02,0,165s74.02,165,165,165,165-74.02,165-165S255.98,0,165,0ZM165,300c-74.44,0-135-60.56-135-135S90.56,30,165,30s135,60.56,135,135-60.56,135-135,135Z"/>
+            <path fill="currentColor"
+                  d="M165,70c-11.03,0-20,8.98-20,20.01s8.97,19.99,20,19.99,20-8.97,20-19.99-8.97-20.01-20-20.01Z"/>
+            <path fill="currentColor"
+                  d="M165,140c-8.28,0-15,6.72-15,15v90c0,8.28,6.72,15,15,15s15-6.72,15-15v-90c0-8.28-6.72-15-15-15Z"/>
+        </symbol>
     </svg>
 </div>
 
