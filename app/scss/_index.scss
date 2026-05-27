@@ -7134,3 +7134,15 @@ textarea.form-control {
   }
 
 }
+
+.web-master {
+  display: flex !important;
+  align-items: center;
+  gap: 5px;
+  &__logo {
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
