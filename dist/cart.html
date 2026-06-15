@@ -607,8 +607,8 @@
         <div class="col-auto flex-grow-1 cart-top__col-link">
             <div class="cart-top__left">
 
-                <div class="cart-top__links">
-                    <a href="javascript:(print());" class="product-page__btns__item btn btn--link ">
+                <div class="cart-top__links cart-top__mob-border">
+                    <a href="javascript:(print());" class="product-page__btns__item btn--print btn btn--link ">
                         <div class="product-page__btns__item__ico">
                             <svg width="24" height="24">
                                 <use xlink:href="#svg-print"></use>
@@ -672,18 +672,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="dropdown ">
+                <div class="dropdown cart-top__mob-border">
                     <a href="#excel" data-bs-target="#excel" data-bs-toggle="collapse"
                        class="dropdown-toggle-excel btn-exel collapsed">
-                        <svg width="16" height="18" class="me-2">
-                            <use xlink:href="#svg-exel3"></use>
-                        </svg>
+                        <div class="btn-exel__ico">
+                            <svg width="16" height="18" class="me-2">
+                                <use xlink:href="#svg-exel3"></use>
+                            </svg>
+                        </div>
                         <span>Загрузить корзину из Exсel</span>
                         <svg width="12" height="6" class="ms-1 dropdown-toggle-excel__line">
                             <use xlink:href="#svg-drop2"></use>
                         </svg>
                     </a>
                 </div>
+
+
             </div>
 
         </div>
@@ -701,6 +705,7 @@
 
     <div class="row cart-body position-relative z-1">
         <div class="col-lg-8 col-xxl-9">
+
             <div class="accordion-collapse collapse" id="excel">
                 <div class="cart-body__excel">
                     <div class="cart-body__excel__wrap">
@@ -806,7 +811,15 @@
                     </div>
                 </div>
             </div>
+            <div class="cart-top__mob-border">
+                <a href="" class="cart-top__search-toggle-mob">
+                    <span>Быстрое добавление товара</span>
 
+                    <svg width="12" height="6" class="ms-auto dropdown-toggle-excel__line">
+                        <use xlink:href="#svg-drop2"></use>
+                    </svg>
+                </a>
+            </div>
             <div class="cart-body__search">
                 <form action="">
                     <div class="cart-body__search__wrap">
@@ -929,6 +942,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="cart-body__status">
                 <svg width="24" height="24">
                     <use xlink:href="#svg-status-ok"></use>
@@ -1272,7 +1286,7 @@
                     <svg width="24" height="24">
                         <use xlink:href="#svg-status-not"></use>
                     </svg>
-                    <span>Товара нет на складе / товар под заказе</span>
+                    <span>Товара нет на складе / <span class="text-nowrap">товар под заказе</span></span>
                 </div>
 
                 <div class="cart-body__group">
