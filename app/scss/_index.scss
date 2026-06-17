@@ -7193,3 +7193,129 @@ textarea.form-control {
 .cart-top__search-toggle-mob {
   display: none;
 }
+
+.offcanvas.offcanvas-end {
+  border: none;
+  border-radius: 20px 0 0 20px;
+  --bs-offcanvas-width: 670px;
+  overflow: hidden;
+  .offcanvas-body {
+    padding: 35px 40px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .offcanvas-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0 25px 0;
+      border-bottom: 1px solid #efeff0;
+      margin-bottom: 20px;
+      .offcanvas-close {
+        position: relative;
+        z-index: 10;
+        top: auto;
+        left: auto;
+        margin: 0;
+      }
+
+      &__title {
+        color: #484848;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.product-add {
+  display: flex;
+  gap: 20px;
+  padding: 15px 20px;
+  margin-bottom: 35px;
+  border: 1px solid #efeff0;
+  &__col-img {
+    width: 115px;
+    min-width: 115px;
+    height: 110px;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: 50% 0;
+      margin: 0;
+    }
+  }
+  &__col-desc {
+    flex-grow: 1;
+  }
+
+  &__footer {
+    display: flex;
+    padding-top: 5px;
+    gap: 30px;
+    align-items: center;
+    .card-product__count {
+      font-size: 14px;
+    }
+    .card-product__price {
+      padding-bottom: 0 !important;
+      .card-product__price__val {
+         font-size: 16px;
+      }
+      .card-product__price__currency {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.set-modal {
+  padding-bottom: 35px;
+  &__title {
+    color: #484848;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    padding: 0 0 20px;
+  }
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+    .complete-set__filter__item{
+      padding: 5px 15px;
+    }
+  }
+  &__body {
+    position: relative;
+    padding: 0 25px;
+    .slider-nav {
+      position: absolute;
+      z-index: 100;
+      top: 50%;
+      margin-top: -24px;
+      &.swiper-prev {
+        left: 0;
+      }
+      &.swiper-next {
+        right: 0;
+      }
+    }
+
+  }
+}
+
+.product-add-footer {
+  padding-top: 10px;
+  text-align: center;
+  &__ps {
+    font-size: 14px;
+    color: #ad2125;
+    line-height: 1.3;
+    margin-top: 10px;
+    display: block;
+  }
+}

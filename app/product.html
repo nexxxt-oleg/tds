@@ -357,7 +357,7 @@
                                         </div>
                                     </div>
                                     <div class="card-product__box-btn__col-bay">
-                                        <button class="btn btn--red w-100 ps-1 pe-1">В КОРЗИНУ</button>
+                                        <button data-bs-toggle="offcanvas" data-bs-target="#addToCart"  class="btn btn--red w-100 ps-1 pe-1">В КОРЗИНУ</button>
                                     </div>
                                 </div>
                                 <ul class="nav justify-content-between product-page__box-price__footer">
@@ -1314,7 +1314,86 @@
     </div>
 </div>
 
-<div class="offcanvas offcanvas--sharing offcanvas-bottom" tabindex="-1" id="mobSharing" >
+
+<div class="offcanvas offcanvas--addcart offcanvas-end" tabindex="-1" id="addToCart" >
+    <div class="offcanvas-body position-relative ">
+        <div class="offcanvas-header">
+            <div class="offcanvas-header__title">Товар добавлен в корзину</div>
+            <button type="button" class="offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="16" height="16">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="product-add card-product">
+            <div class="product-add__col-img">
+                <img class="card-product__pic" src="./images/dist/lot1.jpg" alt="" width="115" height="110">
+            </div>
+            <div class="product-add__col-desc">
+                <dl class="card-product__top-attr">
+                    <div class="d-flex card-product__top-attr__col1">
+                        <dd>
+                            Код:
+                        </dd>
+                        <dt>20050133</dt>
+                    </div>
+                    <div class="d-flex card-product__top-attr__col2">
+                        <dd>
+                            Артикул:
+                        </dd>
+                        <dt>2612/P</dt>
+                    </div>
+                </dl>
+                <h2 class="card-product__title">Столешница 4200х600х40 Irish oak 2612/P (1п/5), e3, Slotex</h2>
+                <div class="product-add__footer">
+                    <div class="card-product__count">1 шт.</div>
+                    <div class="card-product__price">
+                        <span class="card-product__price__val">21 642.00</span>
+                        <span class="card-product__price__currency">руб.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="set-modal">
+            <div class="set-modal__title">Комплектующие, необходимые для монтажа</div>
+            <div class="set-modal__filter">
+                <a href="" class="complete-set__filter__item active">
+                    Блок питания
+                </a>
+                <a href="" class="complete-set__filter__item active">
+                    Освещение
+                </a>
+            </div>
+            <div class="set-modal__body">
+                <div class="set-modal__slider tabs-slider__products">
+                    <div class="swiper" id="setModal">
+                        <div class="swiper-wrapper">
+                            <!--#include virtual="/parts/slider-product.html" -->
+                        </div>
+
+                    </div>
+                </div>
+                <button class="swiper-prev slider-nav swiper-button-disabled" id="sdd_nav_prev">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </button>
+                <button class="swiper-next slider-nav swiper-button-disabled" id="add_nav_next">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="product-add-footer">
+            <a href="" class="btn btn--red w-100">ПЕРЕЙТИ В КОРЗИНУ</a>
+            <a href="" class="product-add-footer__ps">Больше не напоминать про обязательные комплектующие</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="offcanvas offcanvas--sharing offcanvas-bottom " tabindex="-1" id="mobSharing" >
     <div class="offcanvas-body position-relative p-0 overflow-visible">
         <button type="button" class="offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
             <svg width="16" height="16">
