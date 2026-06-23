@@ -686,10 +686,34 @@
                         </svg>
                     </a>
                 </div>
-
-
             </div>
-
+            <div class="d-lg-none d-sm-flex justify-content-between align-items-center">
+                <div class="cart-top__mob-border">
+                    <a href="#cartSharingModal" data-bs-toggle="modal" data-bs-target="#cartSharingModal"
+                       class="product-page__btns__item btn btn--link">
+                        <div class="product-page__btns__item__ico">
+                            <svg width="24" height="24">
+                                <use xlink:href="#svg-share"></use>
+                            </svg>
+                        </div>
+                        Поделиться корзиной
+                    </a>
+                </div>
+                <div class="cart-top__mob-border">
+                    <a href="#cartExcelModal" data-bs-toggle="modal" data-bs-target="#cartExcelModal"
+                       class="dropdown-toggle-excel btn-exel collapsed">
+                        <div class="btn-exel__ico">
+                            <svg width="16" height="18" class="me-2">
+                                <use xlink:href="#svg-exel3"></use>
+                            </svg>
+                        </div>
+                        <span>Загрузить корзину из Exсel</span>
+                        <svg width="12" height="6" class="ms-1 dropdown-toggle-excel__line">
+                            <use xlink:href="#svg-drop2"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="d-flex justify-content-end compare-page__header__btns cart-top__col-btn col-auto col-lg-3">
@@ -1544,10 +1568,10 @@
                                                     </div>
 
                                                     <span class="cart-body__group__clear">
-                                        <svg width="18" height="18">
-                                            <use xlink:href="#svg-clear"></use>
-                                        </svg>
-                                    </span>
+                                                        <svg width="18" height="18">
+                                                            <use xlink:href="#svg-clear"></use>
+                                                        </svg>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2444,6 +2468,181 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="cartExcelModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content--mob-p">
+            <div class="modal__header">
+                <div class="modal__title">
+                    Загрузить корзину из Exсel
+                </div>
+                <div class="btn-close" data-bs-dismiss="modal">
+                    <svg width="24" height="24">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="row cart-body__excel__row">
+                    <div class="col-lg-6">
+                        <form action="" method="post" enctype="multipart/form-data">
+                            <div class="cart-body__excel__form">
+                                <div class="cart-body__excel__form__text">
+                                    Загружайте не более 500 артикулов в файле.<br>
+                                    Поддерживаемые форматы csv, xlsx.
+                                </div>
+
+                                <div class="cart-body__excel__example">
+                                    <div class="cart-body__excel__example__item">
+                                        Требования к файлу xlsx - <a href="">Cкачать</a><br>
+                                        <a href="">Пример файла xlsx</a>
+                                    </div>
+                                    <div class="cart-body__excel__example__item">
+                                        Требования к файлу csv - <a href="">Cкачать</a><br>
+                                        <a href="">Пример файла csv</a>
+                                    </div>
+                                </div>
+
+                                <label class="input-file">
+
+                                    <input id="excelFile2" type="file" name="file">
+                                    <span class="input-file__btn btn btn--silver text-uppercase">Выберите файл</span>
+                                    <span id="excelFile2Name" class="input-file__text">Файл не выбран</span>
+                                </label>
+
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="clear" value="1">
+                                    <span class="custom-checkbox__text">Очистить корзину перед загрузкой</span>
+                                </label>
+
+                                <button class="btn btn--red" type="submit">ЗАГРУЗИТЬ</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="cart-body__res">
+                    <div class="cart-body__excel__title">Результат загрузки корзины из Excel</div>
+                    <div class="cart-body__res__row">
+                        <div>
+                            <div class="cart-body__res__item">
+                                <span>Загружено товаров</span>
+                                <b>8/9</b>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cart-body__res__item">
+                                <span>В наличии</span>
+                                <b>7</b>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cart-body__res__item">
+                                <span>Уточняйте</span>
+                                <b>0</b>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cart-body__res__item">
+                                <span>Отсутствует</span>
+                                <div class="d-inline-flex">
+                                    <span class="cart-body__res__item__alert pe-0 ps-2">
+                                         <svg width="13" height="13">
+                                            <use xlink:href="#svg-i"></use>
+                                        </svg>
+                                    </span>
+                                    <b>1</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="cart-body__res__item">
+                                <span>Не загружено</span>
+                                <b>1</b>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="cart-body__res__item__right">
+                                <a href="">Посмотреть</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-body__res__error">
+                        <div class="cart-body__res__error__title">Ошибки загрузки корзины из Excel</div>
+                        <div class="cart-body__res__error__text">Строка 1. Артикул ‘xxxxxxxxx’ количество
+                            ‘1000’. Ошибка: Неверный артикул.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cartSharingModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content modal-content--mob-p">
+            <div class="modal__body">
+                <div class="cart-sharing">
+                    <div class="btn-close" data-bs-dismiss="modal">
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-close"></use>
+                        </svg>
+                    </div>
+
+                    <div class="cart-sharing__header">
+                        <div class="cart-sharing__title">Поделитесь корзиной
+                            удобным для вас способом
+                        </div>
+                        <div class="cart-sharing__text">
+                            Отсканируйте QR-код, чтобы<br>
+                            открыть корзину.
+                        </div>
+                        <div class="cart-sharing__qr">
+                            <img src="images/dist/qr.jpg" loading="lazy" alt="">
+                        </div>
+                    </div>
+                    <div class="share-card">
+                        <div class="share  rambler-share">
+
+                            <div data-rambler-share="vkontakte">
+                                <a href="" class="share__link"></a>
+                            </div>
+                            <div data-rambler-share="odnoklassniki">
+                                <a href="" class="share__link"></a>
+                            </div>
+                            <div data-rambler-share="telegram">
+                                <a href="" class="share__link"></a>
+                            </div>
+                            <div data-rambler-share="max">
+                                <a href="" class="share__link"></a>
+                            </div>
+
+                        </div>
+
+                        <div class="share-card__body">
+                            <div class="share-card__label">Ссылка на товар</div>
+                            <div class="share-card__link">
+                                https://www.tdserver.ru/catalog/dekodekodekodekodekodekodekodekodeko
+                            </div>
+                        </div>
+                        <div class="share-copy">
+                            <button class="btn btn--red w-100 text-uppercase">Скопировать ссылку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script>
     document.addEventListener("DOMContentLoaded", () => {
         const sets = document.querySelectorAll('.accordion-sets');
@@ -2461,6 +2660,12 @@
         excelFile.addEventListener('change', (event) => {
             let file = event.target.files[0];
             document.getElementById('excelFileName').innerText = file.name;
+        });
+
+        const excelFile2 = document.getElementById('excelFile2');
+        excelFile2.addEventListener('change', (event) => {
+            let file = event.target.files[0];
+            document.getElementById('excelFile2Name').innerText = file.name;
         });
 
     });

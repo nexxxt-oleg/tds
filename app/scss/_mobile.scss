@@ -11,6 +11,13 @@
 }
 
 @media screen and (max-width: 1399px) {
+  .header__city {
+    margin-left: 15px;
+  }
+  .header__phone,
+  .header__email {
+    margin-left: 30px;
+  }
   .cart-top__col-link {
     order: 3;
     width: 100%;
@@ -494,6 +501,40 @@
 }
 
 @media screen and (max-width: 991px) {
+  .modal__body {
+    .cart-sharing {
+      width: 260px;
+      margin: 0 auto;
+      padding-top: 30px;
+      .cart-sharing__header {
+        padding: 0;
+      }
+      .share-card {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+      }
+      .share.rambler-share {
+        padding-left: 20px;
+      }
+      .btn-close {
+        position: absolute;
+        z-index: 10;
+        top: 20px;
+        right: 20px;
+      }
+      .cart-sharing__qr {
+        img {
+          width: 140px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .cart-top__left {
+    display: none !important;
+  }
   .cart-top__links {
     .btn--print {
       display: none !important;
@@ -1214,6 +1255,61 @@
 }
 
 @media screen and (max-width: 768px) {
+  .btn-close {
+    width: 16px;
+    height: 16px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .fs-14 {
+    font-size: 12px;
+  }
+  .modal-content {
+    padding: 15px;
+  }
+  .modal-dialog {
+    .cart-body__res__error {
+      padding: 15px 20px;
+    }
+    .cart-body__res__error__title {
+      font-size: 16px;
+      padding-left: 35px;
+    }
+    .cart-body__excel__example {
+      padding-left: 0;
+      border-bottom: 2px solid #efeff0;
+      margin-bottom: 25px;
+    }
+    .cart-body__res__error__text {
+      padding-left: 35px;
+      font-size: 12px;
+    }
+
+    .cart-body__excel__row {
+      background: none;
+    }
+
+    .cart-body__excel__example__item {
+      padding-bottom: 25px;
+    }
+
+    .cart-body__excel__title {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    .cart-body__res__item__right {
+      padding: 0;
+      text-align: right;
+      margin-top: -10px;
+    }
+    .cart-body__res__error {
+      margin-top: 20px;
+    }
+  }
+
   .cart-mob-toolbar__price {
     font-size: 14px;
     padding-bottom: 3px;
@@ -2086,6 +2182,25 @@
 }
 
 @media screen and (max-width: 574px) {
+  .modal-dialog .cart-body__res__error__title {
+    padding-bottom: 10px;
+    min-height: 40px;
+  }
+  .cart-body__excel__form {
+    .input-file {
+      display: block;
+      .input-file__text {
+        display: block;
+        padding-top: 20px;
+      }
+    }
+    .btn {
+      height: 48px;
+    }
+  }
+  .modal-content.modal-content--mob-p {
+    padding: 20px 10px;
+  }
   .cart-body__search {
     display: none;
   }
