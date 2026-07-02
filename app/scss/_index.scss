@@ -6472,6 +6472,8 @@ textarea.form-control {
 }
 
 .cart-body__group {
+  position: relative;
+  z-index: 1;
   &__header {
     display: flex;
     align-items: center;
@@ -7492,4 +7494,118 @@ textarea.form-control {
 }
 .br-5 video{
   border-radius: 5px;
+}
+
+.mob-search-modal {
+  &__header {
+    padding: 20px 15px;
+  }
+  &__body{
+    padding: 20px 15px;
+    background: #efeff0;
+    height: calc(100vh - 65px);
+
+  }
+  &__form {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    &__inp {
+      display: block;
+      width: 100%;
+      height: 36px;
+      padding: 5px 15px;
+      border-radius: 5px;
+      background: #fff;
+      border: 1px solid #cecece;
+      font-size: 12px;
+      line-height: 24px;
+      &::placeholder {
+        opacity: 1;
+        color: #a3a3a3;
+      }
+    }
+  }
+
+  &__res {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 5px;
+    height: calc(100vh - 165px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    &:not(.show) {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ss-scroll {
+  opacity: 1 !important;
+  background: #ad2125 !important;
+  margin-left: -5px;
+  width: 6px !important;
+  border-radius: 3px !important;
+}
+
+.mob-search-modal__res__item {
+  .cart-body__group__col1 {
+    padding-bottom: 0 !important;
+    min-height: 75px;
+  }
+  .cart-body__group__item__wrap {
+    padding: 10px 0 !important;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .cart-body__group__item__wrap .cart-body__group__col-img {
+    top: 10px;
+  }
+  .card-product__title {
+    margin-bottom: 0;
+  }
+}
+
+#mobSearchProductModal {
+  .modal-dialog {
+    margin: 0;
+    height: 100vh;
+    background: #efeff0;
+    .modal-content {
+      border-radius: 0;
+    }
+  }
+}
+
+#mobSearchResOffcanvas {
+  width: 100%;
+  background: #efeff0;
+  z-index: 9999;
+  border-right: none;
+  top: 63px;
+  .cart-body__group__item {
+    background: #fff;
+  }
+}
+
+.cart-body__group__col-btn {
+  display: flex;
+  padding-top: 15px;
+  gap: 10px;
+  .cart-body__group__bay {
+    width: 132px;
+  }
+}
+
+.btn-close:active,
+.btn-close:hover,
+.btn-close:focus {
+  outline: none !important;
+  box-shadow: none;
 }

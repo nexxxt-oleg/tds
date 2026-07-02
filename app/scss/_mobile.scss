@@ -501,6 +501,25 @@
 }
 
 @media screen and (max-width: 991px) {
+  .cart-body__search__item {
+    display: block;
+    padding-left: 100px;
+    position: relative;
+    .card-product__col-img {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    .card-product__col-desc {
+      flex-wrap: wrap;
+    }
+    .card-product__col-title {
+      width: 100%;
+    }
+    .card-product__col-units {
+      display: none;
+    }
+  }
   .modal__body {
     .cart-sharing {
       width: 260px;
