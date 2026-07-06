@@ -1,0 +1,298 @@
+<!--#set var="title" value="Оформление заказа" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="silver-box pt-0">
+    <div class="container order-page">
+
+        <div class="order-page__header">
+            <h1 class="mb-0 ">Оформление заказа</h1>
+        </div>
+        <div class="order-page__body">
+            <div class="row" id="catalogSb">
+                <div class="col-lg-7 col-xxl-8">
+                    <div class="order-page__group">
+                        <div class="order-page__group__wrap">
+                            <h3 class="order-page__group__title mb-15">Город отправления*</h3>
+                            <ul class="nav order-page__group__check-list">
+                                <li>
+                                    <label class="custom-checkbox custom-checkbox--radio-btn">
+                                        <input type="radio" checked name="city" value="Москва">
+                                        <span class="custom-checkbox__text">Москва</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom-checkbox custom-checkbox--radio-btn">
+                                        <input type="radio" name="city" value="Санкт-Петербург">
+                                        <span class="custom-checkbox__text">Санкт-Петербург</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="order-page__group order-page__group--warning">
+                        <div class="order-page__group__wrap">
+                            <h3 class="order-page__group__title mb-15">Уже есть аккаунт?</h3>
+                            <p class="mb-0"><a href="">Авторизуйтесь</a>, поля заказа заполнятся автоматически.</p>
+                        </div>
+                    </div>
+                    <div class="order-page__group">
+                        <div class="order-page__group__wrap">
+                            <h3 class="order-page__group__title">Личные данные</h3>
+                            <ul class="nav order-page__group__check-list order-page__group__check-list--border mb-15">
+                                <li>
+                                    <label class="custom-checkbox custom-checkbox--radio-btn">
+                                        <input type="radio" checked name="user" value="Юридическое лицо">
+                                        <span class="custom-checkbox__text">Юридическое лицо</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom-checkbox custom-checkbox--radio-btn">
+                                        <input type="radio" name="user" value="Физическое лицо">
+                                        <span class="custom-checkbox__text">Физическое лицо</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="order-page__inp">
+                                <label>Ф.И.О.*</label>
+                                <input type="text" name="fio" class="form-control"
+                                       required autocomplete="off">
+                            </div>
+                            <div class="order-page__inp">
+                                <label>Телефон*</label>
+                                <input type="tel" name="phone" class="form-control js-mask-phone"
+                                       required autocomplete="off">
+                            </div>
+                            <div class="order-page__inp">
+                                <label>E-Mail*</label>
+                                <input type="email" name="phone" class="form-control"
+                                       required autocomplete="off">
+                            </div>
+                            <div class="tpad15">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" value="reg" name="reg">
+                                    <span class="custom-checkbox__text color-red">Зарегистрироваться на сайте с этими данными</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-page__group">
+                        <div class="order-page__group__wrap">
+                            <h3 class="order-page__group__title">Способ получения</h3>
+
+                            <div class="order-page__inp">
+                                <label>Город получения*</label>
+                                <select name="city" class="form-select" aria-label="Выберите города">
+                                    <option disabled selected>Выберите город</option>
+                                    <option>Москва</option>
+                                    <option>Москва</option>
+                                    <option>Москва</option>
+                                    <option>Москва</option>
+                                    <option>Москва</option>
+                                </select>
+                            </div>
+
+                            <div class="order-page__option">
+                                <div class="order-page__option__ico active">
+                                    <svg width="24" height="22" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 512 469.33">
+                                        <path fill="currentColor"
+                                              d="M320,362.67H0V64C0,28.65,28.65,0,64,0h192c35.35,0,64,28.65,64,64v298.67ZM362.67,362.67h149.33v-106.67h-149.33v106.67ZM405.33,85.33h-42.67v128h149.33v-21.33c-.07-58.88-47.79-106.6-106.67-106.67ZM65.24,405.33c-.78,3.5-1.2,7.08-1.24,10.67,0,29.46,23.88,53.33,53.33,53.33s53.33-23.88,53.33-53.33c-.04-3.59-.46-7.16-1.24-10.67h-104.19ZM363.9,405.33c-.78,3.5-1.2,7.08-1.24,10.67,0,29.46,23.88,53.33,53.33,53.33s53.33-23.88,53.33-53.33c-.04-3.59-.46-7.16-1.24-10.67h-104.19Z"/>
+                                    </svg>
+                                </div>
+                                <div class="order-page__option__desc">
+                                    <b>Доставка курьером</b>
+                                    <p>Доставка заказа курьером одной из курьерских служб</p>
+                                    <b>Стоимость: 600.00 руб.</b>
+                                </div>
+                            </div>
+                            <div class="order-page__option-ac">
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed order-page__option-ac__header"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                        <span class="order-page__option-ac__ico">
+                                            <img src="images/dist/sdek.png" width="66" height="15" alt="">
+                                        </span>
+                                        <span class="accordion-button__line">
+                                            <svg width="18" height="18" class="d-block">
+                                                <use xlink:href="#svg-circle-down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="accordion-collapse collapse" id="collapse1">
+                                        <div class="order-page__option-ac__body">
+                                            <div class="order-page__option-check">
+                                                <label class="custom-checkbox custom-checkbox--radio-btn">
+                                                    <input type="radio" name="delivery" value="1">
+                                                    <span class="custom-checkbox__text">Посылка склад-дверь</span>
+                                                </label>
+                                                <div class="order-page__option-check__price">Стоимость: 600.00 руб.
+                                                </div>
+                                            </div>
+                                            <div class="order-page__option-check">
+                                                <label class="custom-checkbox custom-checkbox--radio-btn">
+                                                    <input type="radio" name="delivery" value="2">
+                                                    <span class="custom-checkbox__text">Посылка дверь-дверь</span>
+                                                </label>
+                                                <div class="order-page__option-check__price">Стоимость: 600.00 руб.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed order-page__option-ac__header"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                        <span class="order-page__option-ac__ico">
+                                            <img src="images/dist/kc.png" width="65" height="17" alt="">
+                                        </span>
+                                        <span class="accordion-button__line">
+                                            <svg width="18" height="18" class="d-block">
+                                                <use xlink:href="#svg-circle-down"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="accordion-collapse collapse" id="collapse2">
+                                        <div class="order-page__option-ac__body">
+                                            <div class="order-page__option-check">
+                                                <label class="custom-checkbox custom-checkbox--radio-btn">
+                                                    <input type="radio" name="delivery" value="3">
+                                                    <span class="custom-checkbox__text">Посылка склад-дверь</span>
+                                                </label>
+                                                <div class="order-page__option-check__price">Стоимость: 600.00 руб.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-page__option">
+                                <div class="order-page__option__ico">
+                                    <svg width="20" height="24" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 426.67 512">
+                                        <path fill="currentColor"
+                                              d="M364.18,367.21c83.32-84.28,83.32-219.91,0-304.19-82.31-83.31-216.57-84.12-299.88-1.81-.61.6-1.21,1.2-1.81,1.81-83.53,84.49-83.28,220.54.55,304.73l76.46,71.23c40.74,40.28,106.25,40.45,147.2.38l77.48-72.15ZM241.96,312.51c-18.03,8.93-39.2,8.93-57.24,0l-42.67-21.33c-21.74-10.79-35.47-32.99-35.39-57.26v-63.25c-.09-24.27,13.63-46.48,35.37-57.28l42.67-21.33c18.03-8.96,39.21-8.96,57.24,0l42.67,21.33c21.75,10.79,35.47,33,35.39,57.28v63.27c.08,24.27-13.64,46.47-35.37,57.26l-42.67,21.31ZM276.25,164.14c.7,2.11,1.07,4.31,1.09,6.53v63.27c.03,8.09-4.54,15.5-11.8,19.09l-42.67,21.33c-6.01,2.99-13.08,2.99-19.09,0l-42.67-21.33c-7.25-3.6-11.82-11.02-11.78-19.11v-63.25c.03-2.18.4-4.33,1.09-6.4l46.51,23.25c10.33,5.16,22.48,5.16,32.81,0l46.51-23.38ZM384,490.67c0,11.78-9.55,21.33-21.33,21.33H64c-11.78,0-21.33-9.55-21.33-21.33s9.55-21.33,21.33-21.33h298.67c11.78,0,21.33,9.55,21.33,21.33Z"/>
+                                    </svg>
+                                </div>
+                                <div class="order-page__option__desc">
+                                    <b>Самовывоз из ПВЗ</b>
+                                    <p>Доставка заказа на пункт самовывоза одной из курьерских служб</p>
+                                    <b>Стоимость: 300.00 руб.</b>
+                                </div>
+                            </div>
+                            <div class="order-page__option">
+                                <div class="order-page__option__ico">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 512 512.01">
+                                        <path fill="currentColor"
+                                              d="M512,512.01h-106.67v-234.67c0-23.57-19.09-42.67-42.67-42.67h-213.33c-23.57,0-42.67,19.09-42.67,42.67v234.67H0V214.26c0-19.69,9.07-38.27,24.55-50.41L216.55,13.6c23.17-18.13,55.7-18.13,78.87,0l192,150.25c15.51,12.14,24.55,30.72,24.55,50.41v297.75h.02ZM234.67,426.68h-64v85.33h64v-85.33ZM234.67,298.68h-64v85.33h64v-85.33ZM341.33,426.68h-64v85.33h64v-85.33Z"/>
+                                    </svg>
+                                </div>
+                                <div class="order-page__option__desc">
+                                    <b>Самовывоз со склада</b>
+                                    <p><a href="">Где можно забрать товар</a></p>
+                                    <b>Стоимость: 0 руб.</b>
+                                </div>
+                            </div>
+                            <div class="order-page__option">
+                                <div class="order-page__option__ico">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                              d="M7.94,21c.03.16.06.33.06.5,0,1.38-1.12,2.5-2.5,2.5s-2.5-1.12-2.5-2.5c0-.17.02-.34.06-.5h4.88ZM12,2h-.68c.44.93.68,1.94.68,3,0,1.87-.73,3.63-2.05,4.95l-4.95,4.84S.03,9.92,0,9.89v9.11h15V5c0-1.65-1.35-3-3-3ZM19,6h-2v6h7v-1c0-2.76-2.24-5-5-5ZM17,19h7v-5h-7v5ZM17.06,21c-.03.16-.06.33-.06.5,0,1.38,1.12,2.5,2.5,2.5s2.5-1.12,2.5-2.5c0-.17-.02-.34-.06-.5h-4.89,0ZM10,5c0,1.34-.52,2.59-1.47,3.53l-3.53,3.46-3.53-3.45c-.95-.95-1.47-2.21-1.47-3.54S.52,2.41,1.47,1.47c.94-.94,2.2-1.47,3.53-1.47s2.59.52,3.53,1.47c.94.94,1.47,2.2,1.47,3.54ZM6.5,5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5,1.5.67,1.5,1.5,1.5,1.5-.67,1.5-1.5Z"/>
+                                    </svg>
+                                </div>
+                                <div class="order-page__option__desc">
+                                    <b>Грузобагаж</b>
+                                    <p><a href="">Подробнее о доставке</a></p>
+                                    <b>Стоимость: 0 руб.</b>
+                                </div>
+                            </div>
+
+                            <div class="order-page__inp">
+                                <label>Адрес получения*</label>
+                                <input type="text" name="address" class="form-control"
+                                       required autocomplete="off">
+                            </div>
+
+                            <div class="order-page__inp pb-0">
+                                <label>Комментарий</label>
+                                <textarea placeholder="Комментарий к заказу" name="comment"
+                                          class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-page__group">
+                        <div class="order-page__group__wrap">
+                            <h3 class="order-page__group__title">Способ оплаты</h3>
+                            <div class="order-page__option">
+                                <div class="order-page__option__ico active">
+                                    <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 512 426.67">
+                                        <path fill="currentColor"
+                                              d="M448,85.33H106.67c-18.33,0-35.67-7.94-47.68-21.31,11.73-13.1,28.78-21.35,47.68-21.35h384c27.9-.13,27.88-42.56,0-42.67H106.67C47.77,0,0,47.77,0,106.67v213.33c0,58.9,47.77,106.67,106.67,106.67h341.33c35.35,0,64-28.65,64-64v-213.33c0-35.35-28.65-64-64-64ZM426.67,277.33c-27.9-.13-27.9-42.54,0-42.67,27.9.13,27.9,42.54,0,42.67Z"/>
+                                    </svg>
+                                </div>
+                                <div class="order-page__option__desc">
+                                    <b>Наличный расчет</b>
+                                    <p class="mb-0">Оплата наличными при получении заказа курьеру.</p>
+                                </div>
+                            </div>
+                            <div class="order-page__option pb-0">
+                                <div class="order-page__option__ico">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 512 512.03">
+                                        <path fill="currentColor"
+                                              d="M512,213.37v-44.61c0-23.42-12.78-44.97-33.34-56.19L286.66,7.84c-19.1-10.45-42.21-10.45-61.31,0L33.34,112.57C12.78,123.78,0,145.34,0,168.76v44.61h64v192H21.33v64H0v42.67h512v-42.67h-21.33v-64h-42.67v-192h64ZM298.67,213.37v192h-85.33v-192h85.33ZM106.67,213.37h64v192h-64v-192ZM405.33,405.37h-64v-192h64v192Z"/>
+                                    </svg>
+                                </div>
+                                <div class="order-page__option__desc">
+                                    <b>Безналичный расчет</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xxl-4 main-content__left mw-100">
+                    <div class="sidebar__inner theiaStickySidebar">
+                        <div class="cart-sidebar bg-white">
+                            <div class="cart-sidebar__title">Ваш заказ</div>
+                            <div class="cart-sidebar__info">
+                                <span class="fw-normal">Товары, 1 шт.</span>
+                                <span>10 928 руб.</span>
+                            </div>
+                            <div class="cart-sidebar__info">
+                                <span class="fw-normal">Скидка</span>
+                                <span>0 руб.</span>
+                            </div>
+                            <div class="cart-sidebar__info">
+                                <span class="fw-normal">Вес</span>
+                                <span>65 кг</span>
+                            </div>
+                            <div class="cart-sidebar__info">
+                                <span class="fw-normal">Доставка</span>
+                                <span>600 руб.</span>
+                            </div>
+
+                            <div class="cart-sidebar__itog-order">
+                                <div class="cart-sidebar__itog__label">
+                                    Итого:
+                                </div>
+                                <div class="cart-sidebar__itog__price">
+                                    <span class="cost">1 000 000.00 руб.</span>
+                                </div>
+                            </div>
+                            <div class="cart-sidebar__footer">
+                                <button class="btn btn--red w-100 text-uppercase">ОФОРМИТЬ ЗАКАЗ</button>
+                                <div class="cart-sidebar__footer__ps">
+                                    Нажимая на кнопку «Оформить заказ», вы подтверждаете свое согласие с <a href="">Политикой
+                                    конфиденциальности</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
