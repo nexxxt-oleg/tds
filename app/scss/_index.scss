@@ -7825,6 +7825,16 @@ textarea.form-control {
 .group-download {
   padding: 50px 0 35px;
   border-bottom: 1px solid #e8e8e8;
+  position: relative;
+  &__anchor {
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    user-select: none;
+    top: -30px;
+  }
   &__header {
     display: flex;
     align-items: center;
