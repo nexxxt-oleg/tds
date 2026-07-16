@@ -1729,6 +1729,11 @@
                 offcanvas.show();
             });
         });
+
+        const qr = document.querySelector('.dropdown--qr .product-page__btns__item');
+        qr.addEventListener('show.bs.dropdown', event => {
+            console.log('QR SHOW');
+        });
     });
 
     function closeOffcanvas() {

@@ -4151,6 +4151,13 @@ b {
 
   &__ico {
     margin: 0 auto;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    .top-ico-anchor__ico {
+      color: var(--color-red);
+    }
   }
 }
 
