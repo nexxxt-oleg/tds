@@ -7806,3 +7806,52 @@ textarea.form-control {
     text-decoration: underline;
   }
 }
+
+.search-box {
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 500;
+    padding-bottom: 25px;
+  }
+  &__inp {
+    position: relative;
+    .header__bottom__search__inp {
+      border-color: #cecece;
+    }
+  }
+}
+.group-download {
+  padding: 50px 0 35px;
+  border-bottom: 1px solid #e8e8e8;
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+    &__ico {
+      min-width: 48px;
+    }
+
+    &__title {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+
+  .catalog-categories__item__title {
+    text-align: left;
+    padding-bottom: 25px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.group-download:last-child {
+  border-bottom: none !important;
+}
+.tpad50 {
+  padding-top: 50px;
+}
