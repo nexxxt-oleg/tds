@@ -7916,3 +7916,48 @@ textarea.form-control {
     color: #ad2125;
   }
 }
+
+.order-finish {
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 570px;
+  padding: 50px 70px 70px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 30px;
+    span {
+      font-size: 24px;
+      color: #484848;
+      font-weight: 500;
+      font-family: 'Rubik', sans-serif;
+    }
+    svg {
+      min-width: 40px;
+    }
+  }
+  &__body {
+    padding: 30px 0;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #484848;
+    b {
+      font-weight: 500;
+    }
+  }
+  &__footer {
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #484848;
+    a {
+      color: #ad2125;
+    }
+  }
+}
