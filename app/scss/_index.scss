@@ -7872,3 +7872,44 @@ textarea.form-control {
 .tpad50 {
   padding-top: 50px;
 }
+
+.modal__title sup {
+  color: #ad2125;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.modal__body__cart {
+  height: calc(100vh - 260px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 -20px 0 0;
+  padding-right: 20px;
+}
+.modal__fix-footer {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  background: #fff;
+  padding: 20px 50px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  .btn {
+    width: 310px;
+    justify-content: center;
+  }
+}
+
+.modal__body__cart__header {
+  padding: 10px 0;
+  margin-bottom: 30px;
+  border-top: 1px solid #efeff0;
+  border-bottom: 1px solid #efeff0;
+  .checkbox-custom__val{
+    color: #ad2125;
+  }
+}
