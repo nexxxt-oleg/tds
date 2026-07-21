@@ -5476,7 +5476,7 @@ h1.mb-25 {
 }
 
 .color-red {
-  color: #ac2024;
+  color: #ac2024 !important;
 }
 
 .contacts-tab__body__accordion {
@@ -8100,8 +8100,49 @@ textarea.form-control {
     font-size: 15px;
     line-height: 24px;
     font-weight: 500;
+    color: #484848;
     &:not(:last-child) {
       border-bottom: 1px solid #e8e8e8;
     }
   }
+}
+
+.delivery-phone {
+  color: #484848;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.delivery-region {
+  padding-top: 30px;
+  border-top: 1px solid #e8e8e8;
+  &__caption {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 25px;
+  }
+  &__item {
+    border-bottom: 1px solid #e8e8e8;
+    &__header {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 500;
+      color: #484848;
+      svg {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &__body {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.color-black {
+  color: #484848 !important;
 }
