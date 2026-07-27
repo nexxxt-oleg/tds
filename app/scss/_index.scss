@@ -4032,13 +4032,14 @@ b {
 .custom-checkbox.custom-checkbox--radio-btn {
   .custom-checkbox__text {
     padding-left: 23px;
+    line-height: 18px;
   }
 
   .custom-checkbox__text::after {
     border-radius: 8px;
     width: 16px;
     height: 16px;
-    margin-top: 1px;
+
   }
 
   input:checked + .custom-checkbox__text:after {
@@ -4053,7 +4054,7 @@ b {
     border-radius: 4px;
     position: absolute;
     z-index: 20;
-    top: 50%;
+    top: 8px;
     left: 4px;
     margin-top: -4px;
     background: #fff;
