@@ -2278,8 +2278,29 @@
   .order-page__option-ac .accordion-item {
     padding-left: 0;
   }
-  .order-page__group {
+  .order-page__group,
+  .card {
     padding: 15px;
+  }
+  .fs-15,
+  .list-numb__caption,
+  .list-numb__text__wrap p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .card h3,
+  .delivery-region__item__header {
+    font-size: 18px;
+  }
+  .list-numb {
+    margin-bottom: 15px;
+  }
+  .delivery-phone {
+    margin-bottom: 10px;
+    display: block;
+  }
+  .pay-list {
+    flex-wrap: wrap;
   }
 }
 
