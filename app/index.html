@@ -2,74 +2,58 @@
 <!--#include virtual="/parts/header.html" -->
 
 <div class="container">
-    <div class="swiper home-slider" id="homeSlider">
+    <div class="home-slider-box">
+        <div class="swiper home-slider" id="homeSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="home-slider-item">
 
-        <div class="swiper-wrapper">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/dist/sl1_mob.jpg">
+                            <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
+                            <img src="images/dist/sl1.jpg" loading="lazy" alt="">
+                        </picture>
 
-            <div class="swiper-slide">
-                <div class="home-slider__item">
-                    <div class="home-slider__item__inner">
-                        <h2>AvanTech & Sensys:<br>
-                            команда победителей.</h2>
-                        <p>При покупке ящиков AvanTech YOU* - петли Sensys в подарок!</p>
                     </div>
-                    <picture>
-                        <source media="(max-width: 640px)" srcset="images/dist/sl1_mob.jpg">
-                        <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
-                        <img src="images/dist/sl1.jpg" loading="lazy" alt="">
-                    </picture>
-                    <div class="swiper-lazy-preloader"></div>
                 </div>
-            </div>
+                <div class="swiper-slide">
+                    <div class="home-slider-item">
 
-            <div class="swiper-slide">
-                <div class="home-slider__item">
-                    <div class="home-slider__item__inner">
-                        <h2>AvanTech & Sensys:<br>
-                            команда победителей.</h2>
-                        <p>При покупке ящиков AvanTech YOU* - петли Sensys в подарок!</p>
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/dist/sl1_mob.jpg">
+                            <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
+                            <img src="images/dist/sl1.jpg" loading="lazy" alt="">
+                        </picture>
+
                     </div>
-                    <picture>
-                        <source media="(max-width: 640px)" srcset="images/dist/sl1_mob.jpg">
-                        <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
-                        <img src="images/dist/sl1.jpg" loading="lazy" alt="">
-                    </picture>
-                    <div class="swiper-lazy-preloader"></div>
                 </div>
-            </div>
+                <div class="swiper-slide">
+                    <div class="home-slider-item">
 
-            <div class="swiper-slide">
-                <div class="home-slider-item">
-                    <div class="home-slider__item__inner">
-                        <h2>AvanTech & Sensys:<br>
-                            команда победителей.</h2>
-                        <p>При покупке ящиков AvanTech YOU* - петли Sensys в подарок!</p>
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/dist/sl1_mob.jpg">
+                            <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
+                            <img src="images/dist/sl1.jpg" loading="lazy" alt="">
+                        </picture>
+
                     </div>
-                    <picture>
-                        <source media="(max-width: 640px)" srcset="images/dist/sl1_mob.jpg">
-                        <source media="(min-width: 641px)" srcset="images/dist/sl1.jpg, images/dist/sl1@2.jpg 2x">
-                        <img src="images/dist/sl1.jpg" loading="lazy" alt="">
-                    </picture>
-                    <div class="swiper-lazy-preloader"></div>
                 </div>
-            </div>
 
+            </div>
+            <div class="home-slider__nav">
+                <button class="swiper-prev slider-nav swiper-button-disabled">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </button>
+                <button class="swiper-next slider-nav swiper-button-disabled">
+                    <svg width="10" height="16">
+                        <use xlink:href="#svg-next"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <div class="home-slider__pagination"></div>
-        <div class="home-slider__nav">
-            <button class="swiper-prev slider-nav swiper-button-disabled">
-                <svg width="10" height="16">
-                    <use xlink:href="#svg-prev"></use>
-                </svg>
-            </button>
-            <button class="swiper-next slider-nav swiper-button-disabled">
-                <svg width="10" height="16">
-                    <use xlink:href="#svg-next"></use>
-                </svg>
-            </button>
-        </div>
-
-
+        <div class="home-slider__pagination" id="homeSliderPage"></div>
     </div>
     <div class="catalog-categories">
         <div class="row ">
