@@ -1345,6 +1345,52 @@
 }
 
 @media screen and (max-width: 768px) {
+  .brochures-card__img {
+    padding-bottom: 10px;
+  }
+  .teh-box__img {
+    height: 165px;
+  }
+  .js-slider-col4 {
+    overflow: visible;
+    .swiper-slide {
+      width: 220px;
+    }
+  }
+  .slider-nav-center {
+    .slider-nav {
+      display: none !important;
+    }
+  }
+
+  .single-brand-group,
+  .single-brand-group__border {
+    padding-bottom: 20px;
+  }
+  #brandLinkSlider {
+    overflow: visible;
+  }
+  .single-brand__nav__list a {
+    height: 55px;
+  }
+  .single-brand {
+    padding-left: 0;
+    margin-bottom: 5px;
+    &__img {
+      left: auto;
+      right: 0;
+      width: 64px;
+      height: 64px;
+    }
+  }
+  .single-brand__desc__top {
+    padding-right: 80px;
+    min-height: 80px;
+    display: block;
+  }
+  .single-brand__production {
+    padding-top: 15px;
+  }
   .blog__list__item__img img {
     border-radius: 10px;
   }
