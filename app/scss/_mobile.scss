@@ -100,6 +100,12 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .blog__list {
+    margin: 0 -15px;
+    &__item {
+      padding: 0 15px 30px;
+    }
+  }
   .cart-mob-toolbar__price {
     font-size: 20px;
     font-weight: bold;
@@ -501,6 +507,31 @@
 }
 
 @media screen and (max-width: 991px) {
+  .blog__header__desc {
+    padding-top: 10px;
+  }
+  .blog {
+    padding-bottom: 50px;
+  }
+  .blog__pagination {
+    padding: 0;
+  }
+  .blog__cats {
+    padding: 15px 0 35px;
+  }
+  .blog__list {
+    display: block;
+  }
+  .blog__list__item {
+    width: 100%;
+  }
+  .blog__header__send {
+    display: block;
+    padding-top: 15px;
+  }
+  .blog__cats__label {
+    padding-bottom: 15px;
+  }
   .order-page__body .main-content__left {
     height: auto !important;
   }
@@ -1314,6 +1345,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .blog__list__item__img img {
+    border-radius: 10px;
+  }
+  .blog__header__desc {
+    font-size: 14px;
+    line-height: 1.2;
+    br {
+      display: none;
+    }
+  }
   .order-page__option__ico {
     min-width: 74px;
     width: 74px;
@@ -2305,6 +2346,19 @@
 }
 
 @media screen and (max-width: 574px) {
+  .blog__list__item__title {
+    font-size: 14px;
+  }
+  .blog__list__item__img {
+    height: 172px;
+  }
+  .blog__list__item__desc {
+    padding: 15px 10px 0;
+  }
+  .blog__header__send .btn {
+    width: 142px;
+    justify-content: center;
+  }
   .modal__fix-footer {
     border-radius: 0 0 10px 10px;
   }
@@ -2905,6 +2959,9 @@
 }
 
 @media screen and (max-width: 360px) {
+  .pagination__nav {
+    justify-content: space-between !important;
+  }
   .header__icons__item {
     width: 50px;
   }

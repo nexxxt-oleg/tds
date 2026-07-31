@@ -26,14 +26,16 @@
                 <div class="blog__cats__label">Категории</div>
             </div>
             <div class="col-xl-10 col-lg-9">
-                <ul class="nav blog__cats__list">
-                    <li><a href="" class="active">Все</a></li>
-                    <li><a href="">Дизайн</a></li>
-                    <li><a href="">Технологии</a></li>
-                    <li><a href="">Декор</a></li>
-                    <li><a href="">Кухня</a></li>
-                    <li><a href="">ПВХ</a></li>
-                </ul>
+                <div class="swiper overflow-visible" id="mobCatsFilter">
+                    <div class="swiper-wrapper blog__cats__list">
+                        <div class="swiper-slide w-auto"><a href="" class="active">Все</a></div>
+                        <div class="swiper-slide w-auto"><a href="">Дизайн</a></div>
+                        <div class="swiper-slide w-auto"><a href="">Технологии</a></div>
+                        <div class="swiper-slide w-auto"><a href="">Декор</a></div>
+                        <div class="swiper-slide w-auto"><a href="">Кухня</a></div>
+                        <div class="swiper-slide w-auto"><a href="">ПВХ</a></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="blog__list">
@@ -164,15 +166,17 @@
 <script src="js/isotope.pkgd.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        let grid = document.querySelector('.blog__list');
+        if (window.screen.width > 991) {
+            let grid = document.querySelector('.blog__list');
 
-        let iso = new Isotope(grid, {
-            // options...
-            itemSelector: '.blog__list__item',
-            masonry: {
-                columnWidth: '.blog__list__item'
-            }
-        });
+            let iso = new Isotope(grid, {
+                // options...
+                itemSelector: '.blog__list__item',
+                masonry: {
+                    columnWidth: '.blog__list__item'
+                }
+            });
+        }
     });
 </script>
 <!--#include virtual="/parts/footer.html" -->
