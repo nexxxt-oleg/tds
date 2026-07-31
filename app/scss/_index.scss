@@ -2480,10 +2480,10 @@ h1 {
 }
 
 .selection-footer {
-  border-top: 1px solid #e8e8e8;
+
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-bottom: 30px;
 
   &__wrap {
     width: 100%;
@@ -8130,4 +8130,12 @@ textarea.form-control {
   object-fit: cover;
   display: block;
   border-radius: 15px;
+}
+
+
+@media (min-width: 1200px) {
+  .col-xl-1-5 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
 }
