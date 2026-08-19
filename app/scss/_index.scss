@@ -380,13 +380,16 @@ a {
 .dropdown-toggle::after {
   color: var(--color-red);
 }
+
 .home-slider-box {
   margin-bottom: 30px;
   position: relative;
 }
+
 .home-slider {
   border-radius: 15px;
   overflow: hidden;
+
   &__item {
     position: relative;
   }
@@ -1396,13 +1399,13 @@ img {
 }
 
 .modal {
-  --bs-modal-width: 470px;
+  --bs-modal-width: 510px;
 }
 
 .modal-content {
-  padding: 35px 50px;
+  padding: 40px 68px;
   border: none !important;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .modal__header {
@@ -2478,9 +2481,11 @@ h1 {
 .fpad100 {
   padding-bottom: 100px;
 }
+
 .download-wrap-top h1 {
   text-align: center;
 }
+
 .selection-footer {
 
   display: flex;
@@ -6451,6 +6456,7 @@ textarea.form-control {
 .cart-body__group {
   position: relative;
   z-index: 1;
+
   &__header {
     display: flex;
     align-items: center;
@@ -7118,6 +7124,7 @@ textarea.form-control {
   display: flex !important;
   align-items: center;
   gap: 5px;
+
   &__logo {
     color: #fff;
     display: inline-flex;
@@ -7128,6 +7135,7 @@ textarea.form-control {
 
 .cart-top {
   align-items: center;
+
   h1 {
     padding-right: 30px;
   }
@@ -7135,12 +7143,14 @@ textarea.form-control {
 
 .card-product__delivery-info {
   padding-top: 5px;
+
   &__label {
     font-size: 12px;
     line-height: 1.2;
     color: #8a8a8a;
     padding-bottom: 5px;
   }
+
   &__value {
     font-size: 12px;
     line-height: 1.2;
@@ -7159,11 +7169,13 @@ textarea.form-control {
   background-position: 80px 5px;
   background-repeat: no-repeat;
 }
+
 .cart-body__group__mob-set-btn,
 .cart-body__group__mob-label,
 .cart-mob-toolbar {
   display: none;
 }
+
 .cart-body__group__list {
   margin-bottom: 20px;
 }
@@ -7178,11 +7190,13 @@ textarea.form-control {
   border-radius: 20px 0 0 20px;
   --bs-offcanvas-width: 670px;
   overflow: hidden;
+
   .offcanvas-body {
     padding: 35px 40px;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+
     .offcanvas-header {
       display: flex;
       align-items: center;
@@ -7190,6 +7204,7 @@ textarea.form-control {
       padding: 0 0 25px 0;
       border-bottom: 1px solid #efeff0;
       margin-bottom: 20px;
+
       .offcanvas-close {
         position: relative;
         z-index: 10;
@@ -7213,10 +7228,12 @@ textarea.form-control {
   padding: 15px 20px;
   margin-bottom: 35px;
   border: 1px solid #efeff0;
+
   &__col-img {
     width: 115px;
     min-width: 115px;
     height: 110px;
+
     img {
       display: block;
       width: 100%;
@@ -7226,6 +7243,7 @@ textarea.form-control {
       margin: 0;
     }
   }
+
   &__col-desc {
     flex-grow: 1;
   }
@@ -7235,14 +7253,18 @@ textarea.form-control {
     padding-top: 5px;
     gap: 30px;
     align-items: center;
+
     .card-product__count {
       font-size: 14px;
     }
+
     .card-product__price {
       padding-bottom: 0 !important;
+
       .card-product__price__val {
-         font-size: 16px;
+        font-size: 16px;
       }
+
       .card-product__price__currency {
         font-size: 16px;
       }
@@ -7252,6 +7274,7 @@ textarea.form-control {
 
 .set-modal {
   padding-bottom: 35px;
+
   &__title {
     color: #484848;
     font-size: 20px;
@@ -7259,26 +7282,32 @@ textarea.form-control {
     font-weight: 500;
     padding: 0 0 20px;
   }
+
   &__filter {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding-bottom: 20px;
-    .complete-set__filter__item{
+
+    .complete-set__filter__item {
       padding: 5px 15px;
     }
   }
+
   &__body {
     position: relative;
     padding: 0 25px;
+
     .slider-nav {
       position: absolute;
       z-index: 100;
       top: 50%;
       margin-top: -24px;
+
       &.swiper-prev {
         left: 0;
       }
+
       &.swiper-next {
         right: 0;
       }
@@ -7290,6 +7319,7 @@ textarea.form-control {
 .product-add-footer {
   padding-top: 10px;
   text-align: center;
+
   &__ps {
     font-size: 14px;
     color: #ad2125;
@@ -7313,27 +7343,33 @@ textarea.form-control {
     top: 0;
     width: 140px;
   }
+
   &__desc {
     flex-grow: 1;
+
     &__top {
       display: flex;
       align-items: center;
       justify-content: space-between;
       height: 70px;
       border-bottom: 1px solid #e8e8e8;
+
       h1 {
         margin-bottom: 0;
       }
     }
   }
+
   &__production {
     display: flex;
     align-items: center;
     gap: 10px;
     font-size: 14px;
+
     &__flag {
       min-width: 24px;
       width: 24px;
+
       img {
         display: block;
         width: 100%;
@@ -7342,8 +7378,10 @@ textarea.form-control {
       }
     }
   }
+
   &__nav {
     width: 100%;
+
     &__list {
 
       a {
@@ -7362,6 +7400,7 @@ textarea.form-control {
 .single-brand-group {
   position: relative;
   padding-bottom: 45px;
+
   &__header {
     position: absolute;
     z-index: 1;
@@ -7370,9 +7409,11 @@ textarea.form-control {
     width: 100%;
     height: 1px;
   }
+
   &__border {
     padding-bottom: 45px;
     border-bottom: 1px solid #e8e8e8;
+
     &.fpad30 {
       padding-bottom: 30px;
     }
@@ -7381,6 +7422,7 @@ textarea.form-control {
 
 .single-brand-cat {
   padding-bottom: 30px;
+
   a {
     display: block;
     text-decoration: none;
@@ -7388,6 +7430,7 @@ textarea.form-control {
     color: #484848;
 
   }
+
   &__img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -7395,6 +7438,7 @@ textarea.form-control {
     object-fit: cover;
     border-radius: 5px;
   }
+
   &__title {
     text-align: center;
     padding-top: 15px;
@@ -7408,10 +7452,12 @@ textarea.form-control {
   flex-grow: 1;
   border-radius: 5px;
   border: 1px solid #f4f4f4;
+
   &__ico {
     width: 24px;
     min-width: 24px;
   }
+
   &__text {
     font-size: 14px;
     line-height: 1.3;
@@ -7424,8 +7470,10 @@ textarea.form-control {
   padding: 20px;
   border-radius: 5px;
   background: #f4f4f4;
+
   &__img {
     padding-bottom: 20px;
+
     img {
       width: 100%;
       aspect-ratio: 272 / 193;
@@ -7442,6 +7490,7 @@ textarea.form-control {
 
 .teh-box {
   display: block;
+
   &__img {
     display: flex;
     align-items: center;
@@ -7449,10 +7498,12 @@ textarea.form-control {
     height: 230px;
     border-radius: 5px;
     border: 1px solid #f4f4f4;
+
     img {
 
     }
   }
+
   &__title {
     padding-top: 15px;
     font-size: 14px;
@@ -7463,20 +7514,24 @@ textarea.form-control {
 
 .slider-nav-center {
   position: relative;
+
   .slider-nav {
     position: absolute;
     z-index: 10;
     top: 50%;
     margin-top: -24px;
+
     &.swiper-prev {
       left: -24px;
     }
+
     &.swiper-next {
       right: -24px;
     }
   }
 }
-.br-5 video{
+
+.br-5 video {
   border-radius: 5px;
 }
 
@@ -7484,16 +7539,19 @@ textarea.form-control {
   &__header {
     padding: 20px 15px;
   }
-  &__body{
+
+  &__body {
     padding: 20px 15px;
     background: #efeff0;
     height: calc(100vh - 65px);
 
   }
+
   &__form {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+
     &__inp {
       display: block;
       width: 100%;
@@ -7504,6 +7562,7 @@ textarea.form-control {
       border: 1px solid #cecece;
       font-size: 12px;
       line-height: 24px;
+
       &::placeholder {
         opacity: 1;
         color: #a3a3a3;
@@ -7518,6 +7577,7 @@ textarea.form-control {
     height: calc(100vh - 165px);
     overflow-x: hidden;
     overflow-y: auto;
+
     &:not(.show) {
       visibility: hidden;
       opacity: 0;
@@ -7542,15 +7602,19 @@ textarea.form-control {
     padding-bottom: 0 !important;
     min-height: 75px;
   }
+
   .cart-body__group__item__wrap {
     padding: 10px 0 !important;
   }
+
   &:not(:last-child) {
     border-bottom: 1px solid #e8e8e8;
   }
+
   .cart-body__group__item__wrap .cart-body__group__col-img {
     top: 10px;
   }
+
   .card-product__title {
     margin-bottom: 0;
   }
@@ -7561,6 +7625,7 @@ textarea.form-control {
     margin: 0;
     height: 100vh;
     background: #efeff0;
+
     .modal-content {
       border-radius: 0;
     }
@@ -7573,6 +7638,7 @@ textarea.form-control {
   z-index: 9999;
   border-right: none;
   top: 63px;
+
   .cart-body__group__item {
     background: #fff;
   }
@@ -7582,6 +7648,7 @@ textarea.form-control {
   display: flex;
   padding-top: 15px;
   gap: 10px;
+
   .cart-body__group__bay {
     width: 132px;
   }
@@ -7606,25 +7673,31 @@ textarea.form-control {
     border: 1px solid #fff;
     background: #fff;
     margin-bottom: 10px;
+
     &__title {
       font-size: 18px;
       font-weight: 500;
       line-height: 20px;
       margin-bottom: 25px;
+
       &.mb-15 {
         margin-bottom: 15px;
       }
     }
+
     &__check-list {
       gap: 15px 30px;
+
       &--border {
         padding: 18px 0;
         border-top: 1px solid #e8e8e8;
         border-bottom: 1px solid #e8e8e8;
       }
     }
+
     p {
       font-size: 14px;
+
       a {
         color: #ad2125;
         text-decoration: underline;
@@ -7645,6 +7718,7 @@ textarea.form-control {
 .mb-15 {
   margin-bottom: 15px;
 }
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -7652,8 +7726,10 @@ textarea.form-control {
 .tpad15 {
   padding-top: 15px;
 }
+
 .order-page__inp {
   padding-bottom: 15px;
+
   label {
     display: block;
     color: #2f2f2f;
@@ -7661,6 +7737,7 @@ textarea.form-control {
     line-height: 1.2;
     padding-bottom: 10px;
   }
+
   textarea.form-control {
     height: 86px;
   }
@@ -7678,6 +7755,7 @@ textarea.form-control {
   display: flex;
   align-items: center;
   gap: 30px;
+
   &__ico {
     width: 140px;
     min-width: 140px;
@@ -7688,13 +7766,16 @@ textarea.form-control {
     justify-content: center;
     border: 2px solid #cccbcb;
     color: #cccbcb;
+
     &.active {
       color: #ad2125;
       border-color: #ad2125;
     }
   }
+
   &__desc {
     flex-grow: 1;
+
     b {
       display: block;
       color: #2f2f2f;
@@ -7702,11 +7783,13 @@ textarea.form-control {
       font-weight: 500;
       line-height: 18px;
     }
+
     p {
       color: #848484;
       font-size: 14px;
       line-height: 18px;
       margin-bottom: 5px;
+
       a {
         text-decoration: none;
       }
@@ -7718,10 +7801,12 @@ textarea.form-control {
 .order-page__option-ac {
   margin-bottom: 20px;
   border-top: 1px solid #e8e8e8;
+
   .accordion-item {
     border-bottom: 1px solid #e8e8e8;
     padding-left: 35px;
   }
+
   &__header {
     cursor: pointer;
     min-height: 48px;
@@ -7730,6 +7815,7 @@ textarea.form-control {
     align-items: center;
     user-select: none;
   }
+
   &__body {
     padding-top: 10px;
     padding-bottom: 15px;
@@ -7747,12 +7833,14 @@ textarea.form-control {
 
 .order-page__option-check {
   padding-bottom: 10px;
+
   .order-page__option-check__price {
     padding: 5px 0 0 23px;
     font-size: 14px;
     font-weight: 500;
     color: #302f2f;
   }
+
   .custom-checkbox__text {
     color: #302f2f;
   }
@@ -7773,9 +7861,11 @@ textarea.form-control {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   .cart-sidebar__itog__price .cost {
     font-size: 18px;
   }
+
   .cart-sidebar__itog__label {
     padding-bottom: 0;
   }
@@ -7785,6 +7875,7 @@ textarea.form-control {
   padding-top: 20px;
   font-size: 12px;
   line-height: 1.2;
+
   a {
     color: #484848;
     text-decoration: underline;
@@ -7799,17 +7890,21 @@ textarea.form-control {
     font-weight: 500;
     padding-bottom: 25px;
   }
+
   &__inp {
     position: relative;
+
     .header__bottom__search__inp {
       border-color: #cecece;
     }
   }
 }
+
 .group-download {
   padding: 50px 0 35px;
   border-bottom: 1px solid #e8e8e8;
   position: relative;
+
   &__anchor {
     display: block;
     width: 100%;
@@ -7819,11 +7914,13 @@ textarea.form-control {
     user-select: none;
     top: -30px;
   }
+
   &__header {
     display: flex;
     align-items: center;
     gap: 30px;
     padding-bottom: 40px;
+
     &__ico {
       min-width: 48px;
     }
@@ -7846,6 +7943,7 @@ textarea.form-control {
 .group-download:last-child {
   border-bottom: none !important;
 }
+
 .tpad50 {
   padding-top: 50px;
 }
@@ -7863,6 +7961,7 @@ textarea.form-control {
   margin: 0 -20px 0 0;
   padding-right: 20px;
 }
+
 .modal__fix-footer {
   position: absolute;
   z-index: 100;
@@ -7875,11 +7974,13 @@ textarea.form-control {
   padding: 20px 50px;
   border-radius: 0 0 15px 15px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+
   .btn {
     width: 310px;
     justify-content: center;
   }
 }
+
 .modal__body__cart .pe-1 {
   padding-right: 20px !important;
 }
@@ -7889,7 +7990,8 @@ textarea.form-control {
   margin-bottom: 30px;
   border-top: 1px solid #efeff0;
   border-bottom: 1px solid #efeff0;
-  .checkbox-custom__val{
+
+  .checkbox-custom__val {
     color: #ad2125;
   }
 }
@@ -7902,21 +8004,25 @@ textarea.form-control {
   padding: 50px 70px 70px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
   background: #fff;
+
   &__header {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
     gap: 30px;
+
     span {
       font-size: 24px;
       color: #484848;
       font-weight: 500;
       font-family: 'Rubik', sans-serif;
     }
+
     svg {
       min-width: 40px;
     }
   }
+
   &__body {
     padding: 30px 0;
     border-top: 1px solid #e8e8e8;
@@ -7925,15 +8031,18 @@ textarea.form-control {
     font-size: 14px;
     line-height: 18px;
     color: #484848;
+
     b {
       font-weight: 500;
     }
   }
+
   &__footer {
     padding-top: 30px;
     font-size: 14px;
     line-height: 18px;
     color: #484848;
+
     a {
       color: #ad2125;
     }
@@ -7948,12 +8057,15 @@ textarea.form-control {
   border: none !important;
   padding: 30px;
   border-radius: 20px;
+
   h2 {
     color: #484848;
   }
+
   p {
     color: #8a8a8a;
   }
+
   h3 {
     color: #484848;
     font-size: 24px;
@@ -7973,6 +8085,7 @@ textarea.form-control {
   counter-reset: num;
   margin: 0;
   padding: 0;
+
   & > li {
     position: relative;
     padding-left: 53px;
@@ -8028,6 +8141,7 @@ textarea.form-control {
     .text-close {
       display: none;
     }
+
     svg {
       transform: rotate(180deg);
     }
@@ -8049,6 +8163,7 @@ textarea.form-control {
     color: #8a8a8a;
     font-size: 15px;
     line-height: 24px;
+
     &:not(:last-child) {
       margin-bottom: 15px;
     }
@@ -8059,6 +8174,7 @@ textarea.form-control {
   display: flex;
   padding-bottom: 15px;
   gap: 10px;
+
   &__item {
     display: flex;
     align-items: center;
@@ -8073,12 +8189,14 @@ textarea.form-control {
 .card__list-border {
   display: block;
   padding-bottom: 5px;
+
   li {
     padding: 12px 0;
     font-size: 15px;
     line-height: 24px;
     font-weight: 500;
     color: #484848;
+
     &:not(:last-child) {
       border-bottom: 1px solid #e8e8e8;
     }
@@ -8095,13 +8213,16 @@ textarea.form-control {
 .delivery-region {
   padding-top: 30px;
   border-top: 1px solid #e8e8e8;
+
   &__caption {
     font-size: 15px;
     font-weight: 500;
     padding-bottom: 25px;
   }
+
   &__item {
     border-bottom: 1px solid #e8e8e8;
+
     &__header {
       padding: 20px 0;
       display: flex;
@@ -8111,10 +8232,12 @@ textarea.form-control {
       line-height: 1;
       font-weight: 500;
       color: #484848;
+
       svg {
         transition: all 0.3s ease-in-out;
       }
     }
+
     &__body {
       padding-bottom: 15px;
     }
@@ -8139,5 +8262,220 @@ textarea.form-control {
   .col-xl-1-5 {
     flex: 0 0 auto;
     width: 20%;
+  }
+}
+
+.modal__logo {
+  width: 100%;
+  display: block;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.btn-close2 {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 100%;
+  width: 60px;
+  height: 60px;
+  svg {
+    color: #fff;
+  }
+}
+
+.modal__form-inp {
+  position: relative;
+  margin-bottom: 25px;
+  label {
+    display: block;
+    font-size: 14px;
+    color: #484848;
+    line-height: 1.1;
+    padding-bottom: 6px;
+    margin: 0;
+    width: 100%;
+  }
+  &__pass {
+    position: relative;
+    .form-control {
+      padding-right: 50px;
+    }
+    &__ico {
+      width: 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 20px;
+      color: #c3c3c3;
+      &.active {
+        color: #484848;
+      }
+    }
+  }
+  &__error {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    color: #ad2125;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 2px;
+  }
+
+  &__top {
+    color: #8a8a8a;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+.modal__body__tabs {
+  width: 100%;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  flex-wrap: nowrap;
+  background: #e8e8e8;
+  margin-bottom: 25px;
+  li {
+    width: calc(50% - 2.5px);
+    flex-grow: 1;
+  }
+  .nav-link {
+    cursor: pointer;
+    height: 38px;
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #484848;
+    font-size: 16px;
+    font-weight: 500;
+    &.active {
+      background: #fff;
+    }
+  }
+}
+
+.modal__body__soc {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 25px;
+  &__header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      display: inline-block;
+      vertical-align: top;
+      white-space: nowrap;
+      padding: 0 20px;
+      font-size: 14px;
+      line-height: 18px;
+      position: relative;
+      &::after,
+      &::before {
+        content: '';
+        width: 200px;
+        height: 1px;
+        background: #e8e8e8;
+        position: absolute;
+        z-index: 1;
+        display: block;
+        top: 50%;
+      }
+      &::after {
+        left: 100%;
+      }
+      &::before {
+        right: 100%;
+      }
+    }
+  }
+
+  &__list {
+    padding-top: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    &__item {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.modal__body__footer {
+  text-align: center;
+  a {
+    font-size: 14px;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.modal__body__reg {
+  &__header {
+    padding-top: 15px;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 25px;
+    p {
+      font-size: 13px;
+      line-height: 18px;
+      margin-bottom: 15px;
+      padding: 0;
+    }
+  }
+}
+
+.modal__body__alert {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  &__ico {
+    min-width: 68px;
+  }
+  &__text {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+.modal__body__footer-info {
+  font-size: 14px;
+  line-height: 18px;
+  a {
+    color: #ad2125;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
