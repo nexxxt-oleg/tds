@@ -508,6 +508,29 @@
 }
 
 @media screen and (max-width: 991px) {
+
+  .user-cabinet {
+    .cart-sidebar {
+      padding: 0 0 5px !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      border-bottom: 1px solid #e8e8e8;
+
+      .swiper-slide {
+        width: auto;
+        a {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .user-cabinet__body {
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
   .blog__header__desc {
     padding-top: 10px;
   }
@@ -1353,9 +1376,23 @@
       padding-left: 18px;
     }
   }
+
 }
 
 @media screen and (max-width: 768px) {
+  .p-personal__submit {
+    width: 100%;
+  }
+  .form-control {
+    padding: 5px 15px;
+    height: 36px;
+  }
+  .form-select {
+    height: 36px;
+  }
+  .order-page__inp label {
+    padding-bottom: 5px;
+  }
   .brochures-card__img {
     padding-bottom: 10px;
   }

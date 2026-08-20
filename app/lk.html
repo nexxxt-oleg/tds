@@ -1,0 +1,185 @@
+<!--#set var="title" value="Личные данные" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li><a href="">Главная</a></li>
+        <li>Личные данные</li>
+    </ul>
+    <div class="row fpad50 user-cabinet">
+        <div class="col-xxl-3 col-xl-4 col-lg-5">
+            <div class="cart-sidebar bg-white">
+                <div class="user-cabinet__navigation swiper overflow-visible" id="mobNavCabinet">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="/personal/" >Новости</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/order/">Мои заказы</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/basket-excel/">Загрузить корзину из Excel</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="active">Личные данные</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/actions/">Персональные скидки</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="?logout=yes&amp;redirect=Y">Выйти из&nbsp;аккаунта</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xxl-9 col-xl-8 col-lg-7">
+            <div class="order-page__group user-cabinet__body">
+                <div class="order-page__group__wrap">
+                    <div class="p-account__main col sticky-column p-0">
+                        <div class="content-box-title mt-0">
+                            <h1>Личные данные</h1>
+                        </div>
+                        <div class="p-personal">
+                            <form class="checkout__form" action="/personal/profile/" enctype="multipart/form-data"
+                                  method="post">
+                                <input type="hidden" name="sessid" id="sessid" value="325a15c1ffb7e600262e16485bcd5e94">
+                                <input
+                                        type="hidden" name="lang" value="s1">
+                                <input type="hidden" name="ID" value="17807">
+                                <input type="hidden" name="LOGIN" value="klondike-company">
+                                <input type="hidden" name="EMAIL" value="o.chugunova@koti.co">
+                                <div class="fpad30">
+                                    <div class="order-page__inp">
+                                        <label class="checkout__name" for="checkout-name">Логин</label>
+                                        <input class="checkout__input form-control" name="LOGIN"
+                                               value="klondike-company"
+                                               type="text"
+                                               id="checkout-name" placeholder="Иванов Иван Иванович"><span
+                                            class="checkout__extra-text"></span>
+                                    </div>
+                                    <div class="order-page__inp">
+                                        <label class="checkout__name2" for="checkout-name">ФИО контактного лица</label>
+                                        <input class="checkout__input form-control" name="NAME" value="Клондайк"
+                                               type="text"
+                                               id="checkout-name2"
+                                               placeholder="Иванов Иван Иванович">
+                                    </div>
+                                    <div class="order-page__inp">
+                                        <label class="checkout__name" for="checkout-email">E-mail</label>
+                                        <input class="checkout__input form-control" type="email" name="EMAIL"
+                                               value="o.chugunova@koti.co"
+                                               id="checkout-email" placeholder="ivanov@gmail.com">
+                                    </div>
+                                    <div class="order-page__inp">
+                                        <label class="checkout__name" for="checkout-telefon">Телефон</label>
+                                        <input class="checkout__input form-control" readonly=""
+                                               id="checkout-telefon"
+                                               onfocus="this.removeAttribute('readonly')"
+                                               required="" name="PERSONAL_MOBILE" value="">
+                                    </div>
+
+
+                                    <div class="order-page__inp">
+                                        <label>Город</label>
+                                        <select name="UF_CITY" class="checkout__select form-select"
+                                                data-placeholder="Выберите город">
+                                            <option disabled="" selected="">Выберите город</option>
+                                            <option value="1930" selected="" data-id_city_on_site="23133">
+                                                Санкт-Петербург
+                                            </option>
+                                            <option value="1984" data-id_city_on_site="23132">Москва</option>
+                                        </select>
+                                    </div>
+                                    <button name="save" value="Сохранить"
+                                            class="p-personal__submit btn btn--red w-100 text-uppercase" type="submit">
+                                        Сохранить изменения
+                                    </button>
+                                </div>
+
+                                <div class="p-password">
+                                    <div class="order-page__inp">
+                                        <a href="/local/tools/clear_cache.php"
+                                           class="p-personal__submit btn btn--silver w-21 text-uppercase">Сбросить
+                                            кеш</a>
+                                    </div>
+                                    <div class="fpad25"></div>
+                                    <div class="order-page__inp">
+                                        <h3 class="p-password__title order-page__group__title">Сменить пароль</h3>
+                                        <div class="checkout">
+                                            <div class="order-page__inp">
+
+                                                <div class="d-flex justify-content-between">
+                                                    <label>Новый пароль</label>
+                                                    <span class="modal__form-inp__top">
+                                                        не менее 6 символов
+                                                    </span>
+                                                </div>
+                                                <div class="modal__form-inp__pass">
+                                                    <input id="NEW_PASSWORD" type="password" name="NEW_PASSWORD"
+                                                           class="form-control"
+                                                           required autocomplete="off">
+                                                    <div class="js-pass modal__form-inp__pass__ico"
+                                                         data-target="NEW_PASSWORD">
+                                                        <svg width="24" height="19">
+                                                            <use xlink:href="#svg-pass"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="order-page__inp">
+                                                <div class="d-flex justify-content-between">
+                                                    <label>Новый пароль подтверждение</label>
+                                                    <span class="modal__form-inp__top">
+                                                        не менее 6 символов
+                                                    </span>
+                                                </div>
+                                                <div class="modal__form-inp__pass">
+                                                    <input id="NEW_PASSWORD_CONFIRM" type="password" name="NEW_PASSWORD_CONFIRM"
+                                                           class="form-control"
+                                                           required autocomplete="off">
+                                                    <div class="js-pass modal__form-inp__pass__ico"
+                                                         data-target="NEW_PASSWORD_CONFIRM">
+                                                        <svg width="24" height="19">
+                                                            <use xlink:href="#svg-pass"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <button name="save" value="Сохранить" class="p-personal__submit btn btn--red w-100 text-uppercase"
+                                                    type="submit">
+                                                Сменить пароль
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <script>
+
+
+
+
+                            document.addEventListener("DOMContentLoaded", () => {
+                                if (document.getElementById('mobNavCabinet') && window.screen.width < 992) {
+
+                                    new Swiper('#mobNavCabinet', {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 25,
+
+                                    });
+                                }
+                            });
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
