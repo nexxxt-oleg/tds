@@ -1078,18 +1078,8 @@
                                             Количество
                                         </div>
                                         <div class="cart-body__group__col-quantity">
-                                            <div class="quantity">
-                                                <input type="text" class="quantity__val" value="1">
-                                                <button class="quantity__btn quantity__btn--plus">
-                                                    <svg width="8" height="8">
-                                                        <use xlink:href="#svg-plus"></use>
-                                                    </svg>
-                                                </button>
-                                                <button class="quantity__btn quantity__btn--minus">
-                                                    <svg width="8" height="2">
-                                                        <use xlink:href="#svg-minus"></use>
-                                                    </svg>
-                                                </button>
+                                            <div class="quantity quantity--readonly">
+                                                <input type="text" class="quantity__val" readonly value="2">
                                             </div>
                                             <div class="card-product__col-units">
                                                 шт.
@@ -1106,11 +1096,40 @@
                                                 <span class="card-product__price__currency">руб.</span>
                                             </div>
 
-                                            <span class="cart-body__group__clear">
-                                        <svg width="18" height="18">
-                                            <use xlink:href="#svg-clear"></use>
-                                        </svg>
-                                    </span>
+                                            <div class="cart-body__group__clear">
+                                                <div class="btn-group dropup">
+                                                    <button type="button" class="btn btn--link"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <svg width="24" height="24">
+                                                            <use xlink:href="#svg-more"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-menu-end">
+                                                        <li>
+                                                            <button class="dropdown-menu__item btn btn--link w-100 js_add_cart_set">
+                                                                <span class="dropdown-menu__item__ico">
+                                                                    <svg width="24" height="24">
+                                                                        <use xlink:href="#svg-cart"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Добавить в корзину</span>
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="dropdown-menu__item btn btn--link w-100"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#attentionSetModal">
+                                                                <span class="dropdown-menu__item__ico">
+                                                                    <svg width="24" height="24">
+                                                                        <use xlink:href="#svg-clear"></use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Удалить</span>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1153,18 +1172,8 @@
                                                 Количество
                                             </div>
                                             <div class="cart-body__group__col-quantity">
-                                                <div class="quantity">
-                                                    <input type="text" class="quantity__val" value="1">
-                                                    <button class="quantity__btn quantity__btn--plus">
-                                                        <svg width="8" height="8">
-                                                            <use xlink:href="#svg-plus"></use>
-                                                        </svg>
-                                                    </button>
-                                                    <button class="quantity__btn quantity__btn--minus">
-                                                        <svg width="8" height="2">
-                                                            <use xlink:href="#svg-minus"></use>
-                                                        </svg>
-                                                    </button>
+                                                <div class="quantity quantity--readonly">
+                                                    <input type="text" class="quantity__val" readonly value="3">
                                                 </div>
                                                 <div class="card-product__col-units">
                                                     шт.
@@ -1181,11 +1190,40 @@
                                                     <span class="card-product__price__currency">руб.</span>
                                                 </div>
 
-                                                <span class="cart-body__group__clear">
-                                        <svg width="18" height="18">
-                                            <use xlink:href="#svg-clear"></use>
-                                        </svg>
-                                    </span>
+                                                <div class="cart-body__group__clear">
+                                                    <div class="btn-group dropup">
+                                                        <button type="button" class="btn btn--link"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <svg width="24" height="24">
+                                                                <use xlink:href="#svg-more"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-end">
+                                                            <li>
+                                                                <button class="dropdown-menu__item btn btn--link w-100 js_add_cart_set">
+                                                                    <span class="dropdown-menu__item__ico">
+                                                                        <svg width="24" height="24">
+                                                                            <use xlink:href="#svg-cart"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>Добавить в корзину</span>
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <button class="dropdown-menu__item btn btn--link w-100"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#attentionSetModal">
+                                                                    <span class="dropdown-menu__item__ico">
+                                                                        <svg width="24" height="24">
+                                                                            <use xlink:href="#svg-clear"></use>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span>Удалить</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1245,7 +1283,7 @@
                                     </div>
                                     <div class="cart-body__group__sets-btn">
                                         <button class="btn btn btn--silver w-100 collapsed" data-bs-toggle="collapse"
-                                                data-bs-target="#collapse_1">
+                                                data-bs-target="#collapse_2">
                                             <span class="text-open">ПОСМОТРЕТЬ НАБОР</span>
                                             <span class="text-close">Скрыть НАБОР</span>
                                         </button>
@@ -2614,7 +2652,7 @@
                                                 Slotex</h2>
                                             <div class="cart-body__group__sets-btn">
                                                 <button class="btn btn btn--silver w-100 collapsed"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse_1">
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse_3">
                                                     <span class="text-open">ПОСМОТРЕТЬ НАБОР</span>
                                                     <span class="text-close">Скрыть НАБОР</span>
                                                 </button>
@@ -2673,7 +2711,7 @@
                                         <div class="cart-body__group__mob-set-btn">
                                             <div class="cart-body__group__sets-btn">
                                                 <button class="btn btn--silver w-100 collapsed"
-                                                        data-bs-toggle="collapse" data-bs-target="#collapse_1"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapse_3"
                                                         aria-expanded="false">
                                                     <span class="text-open">ПОСМОТРЕТЬ НАБОР</span>
                                                     <span class="text-close">Скрыть НАБОР</span>
@@ -2682,7 +2720,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="accordion-collapse collapse accordion-sets" id="collapse_1">
+                                    <div class="accordion-collapse collapse accordion-sets" id="collapse_3">
                                         <div class="cart-body__group__sets-caption">Состав набора</div>
                                         <div class="cart-body__group__sets-item">
                                             <div class="cart-body__group__item__wrap card-product">
@@ -2851,6 +2889,12 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="message-container">
+        <div class="message" id="message">
+            Товар дополнительно добавлен в корзину
+        </div>
 </div>
 
 <div class="modal fade" id="cartSharingModal" tabindex="-1">
@@ -3180,6 +3224,37 @@
     </div>
 </div>
 
+<div class="modal fade" id="attentionSetModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__title">
+                    Внимание!
+                </div>
+                <div class="btn-close2" data-bs-dismiss="modal">
+                    <svg width="24" height="24">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal__body">
+                <div class="fs-14 fpad25">
+                    После удаления товара набор будет расформирован. Остальные товары останутся в корзине как отдельные
+                    позиции.
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="" class="btn btn--red w-100 text-uppercase">УДАЛИТЬ</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="" class="btn btn--silver w-100 text-uppercase">ОТМЕНИТЬ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.css">
 <script src="https://cdn.jsdelivr.net/npm/simple-scrollbar@latest/simple-scrollbar.min.js"></script>
 
@@ -3231,6 +3306,34 @@
          qr.addEventListener('show.bs.dropdown', event => {
              console.log('QR SHOW');
          });*/
+
+        const messageEl = document.getElementById('message');
+        let timeoutId = null;
+
+        function showMessage(text) {
+
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+                timeoutId = null;
+            }
+
+            messageEl.textContent = text || 'Товар дополнительно добавлен в корзину';
+
+            messageEl.classList.add('show');
+
+            timeoutId = setTimeout(() => {
+                messageEl.classList.remove('show');
+                timeoutId = null;
+            }, 5000);
+        }
+
+
+        document.querySelectorAll('.js_add_cart_set').forEach(itemSet => {
+            itemSet.addEventListener('click', function (e) {
+                e.preventDefault();
+                showMessage();
+            });
+        });
     });
 
     function closeOffcanvas() {
@@ -5110,11 +5213,14 @@
             <path fill="currentColor" d="M256,341.33c-15.62.02-30.7-5.69-42.39-16.04-6.98-6.21-13.59-12.25-17.92-16.58l-61.29-60.25c-8.73-7.91-9.4-21.4-1.5-30.13,7.91-8.73,21.4-9.4,30.13-1.5.43.39.84.79,1.23,1.21l61.44,60.35c4.01,3.99,9.98,9.41,16.19,14.93,8.06,7.11,20.16,7.11,28.22,0,6.19-5.5,12.16-10.92,16.04-14.78l61.57-60.5c8.07-8.59,21.57-9.01,30.16-.94,8.59,8.07,9.01,21.57.94,30.16-.39.42-.8.82-1.23,1.21l-61.42,60.35c-4.27,4.27-10.82,10.24-17.77,16.41-11.69,10.38-26.78,16.12-42.41,16.11Z"/>
         </symbol>
 
-
         <symbol id="svg-pass" viewBox="0 0 512.19 398.72">
             <path fill="currentColor" d="M496.54,144.3C463.45,90.41,388.19,0,256.09,0S48.73,90.41,15.65,144.3c-20.86,33.74-20.86,76.38,0,110.12,33.09,53.89,108.35,144.3,240.45,144.3s207.36-90.41,240.45-144.3c20.86-33.74,20.86-76.38,0-110.12ZM460.17,232.09c-28.42,46.21-92.74,123.97-204.07,123.97s-175.66-77.76-204.07-123.97c-12.39-20.06-12.39-45.39,0-65.45,28.42-46.21,92.74-123.97,204.07-123.97s175.66,77.67,204.07,123.97c12.39,20.06,12.39,45.39,0,65.45h0Z"/>
             <path fill="currentColor" d="M256.09,92.69c-58.91,0-106.67,47.76-106.67,106.67s47.76,106.67,106.67,106.67,106.67-47.76,106.67-106.67c-.07-58.88-47.79-106.6-106.67-106.67ZM256.09,263.36c-35.35,0-64-28.65-64-64s28.65-64,64-64,64,28.65,64,64-28.65,64-64,64Z"/>
         </symbol>
+
+        <svg id="svg-more" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,0C5.38,0,0,5.38,0,12s5.38,12,12,12,12-5.38,12-12S18.62,0,12,0ZM12,22c-5.51,0-10-4.49-10-10S6.49,2,12,2s10,4.49,10,10-4.49,10-10,10ZM8,12c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5.67-1.5,1.5-1.5,1.5.67,1.5,1.5ZM19,12c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5.67-1.5,1.5-1.5,1.5.67,1.5,1.5ZM13.5,12c0,.83-.67,1.5-1.5,1.5s-1.5-.67-1.5-1.5.67-1.5,1.5-1.5,1.5.67,1.5,1.5Z"/>
+        </svg>
     </svg>
 </div>
 
