@@ -1,0 +1,43 @@
+<!--#set var="title" value="Результаты поиска" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li><a href="">Главная</a></li>
+    </ul>
+    <h1>
+        Мы не смогли ничего найти по вашему запросу:<br>
+        <span class="color-red">iphone 15</span>
+    </h1>
+    <div class="text fpad15">
+        <ul>
+            <li>Проверьте, нет ли опечатки в запросе</li>
+            <li>Попробуйте изменить ваш запрос</li>
+        </ul>
+        <h2>Возможно вас заинтересует</h2>
+    </div>
+    <div class="main-content fpad100 search-page">
+        <div class="tabs-slider__products">
+            <div class="swiper slider-product"
+                 data-scrollbar="tab4_scroll"
+                 data-navnext="tab4_nav_next"
+                 data-navprev="tab4_nav_prev">
+                <div class="swiper-wrapper">
+                    <!--#include virtual="/parts/slider-product.html" -->
+                </div>
+                <div class="swiper-scrollbar swiper-scrollbar--mob" id="tab4_scroll"></div>
+            </div>
+            <button class="swiper-prev slider-nav swiper-button-disabled" id="tab4_nav_prev">
+                <svg width="10" height="16">
+                    <use xlink:href="#svg-prev"></use>
+                </svg>
+            </button>
+            <button class="swiper-next slider-nav swiper-button-disabled" id="tab4_nav_next">
+                <svg width="10" height="16">
+                    <use xlink:href="#svg-next"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
