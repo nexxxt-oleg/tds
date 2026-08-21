@@ -8598,3 +8598,21 @@ textarea.form-control {
 .search-page__nav.card-product__tab__nav .nav-link {
   opacity: 1 !important;
 }
+
+.search-page__group-filter {
+  margin: -5px 0 50px;
+  display: flex;
+  align-items: center;
+  &__label {
+    min-width: 192px;
+    font-size: 14px;
+  }
+  &__value {
+    width: 360px;
+    .form-select {
+      background-color: #f4f4f4;
+      border-color: #f4f4f4 !important;
+      color: #8a8a8a !important;
+    }
+  }
+}
