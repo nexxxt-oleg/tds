@@ -1380,6 +1380,26 @@
 }
 
 @media screen and (max-width: 768px) {
+  .catalog-filter__list__ul {
+    a {
+      font-size: 12px;
+    }
+  }
+  .filter-teh__header {
+    font-size: 16px;
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+  .filter-teh__body {
+    margin-bottom: 0;
+  }
+  .catalog-filter__footer {
+    .btn {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 36px;
+    }
+  }
   .p-personal__submit {
     width: 100%;
   }
