@@ -8614,6 +8614,29 @@ textarea.form-control {
       border-color: #f4f4f4 !important;
       color: #8a8a8a !important;
     }
+
+    .choices__inner {
+      background-color: #f4f4f4;
+      border-color: #f4f4f4 !important;
+      color: #8a8a8a !important;
+      border-radius: 5px;
+      font-size: 14px;
+      height: 48px;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    .choices[data-type*=select-one]:after {
+      right: 10px;
+    }
+    .choices__list--dropdown {
+      width: 100%;
+      text-align: left;
+    }
+    .choices__list--dropdown .choices__list {
+      text-align: left;
+      padding-left: 10px;
+    }
   }
 }
 .catalog-filter__list__ul{

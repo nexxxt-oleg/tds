@@ -474,7 +474,7 @@
     </h1>
     <div class="main-content fpad50 search-page">
         <div class="card-product__tab">
-            <ul class="nav card-product__tab__nav tabs-slider__header search-page__nav">
+            <ul class="nav card-product__tab__nav tabs-slider__header search-page__nav position-relative z-1">
                 <li>
                     <button id="descTab" class="nav-link active" data-bs-toggle="tab" data-bs-target="#search_tab1"
                             type="button" role="tab" aria-selected="true">
@@ -501,7 +501,7 @@
                 </li>
             </ul>
 
-            <div class="tab-content">
+            <div class="tab-content position-relative z-2">
                 <div class="tab-pane active" id="search_tab1" role="tabpanel" tabindex="0">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse1">
@@ -2581,8 +2581,8 @@
                         <div class="search-page__group-filter">
                             <div class="search-page__group-filter__label">Выберите категорию:</div>
                             <div class="search-page__group-filter__value">
-                                <select name="cat2" class="form-select">
-                                    <option disabled selected>Категория</option>
+                                <select name="cat2" class="form-select js-select">
+                                    <option selected>Категория</option>
                                     <option>Категория2</option>
                                     <option>Категория3</option>
                                 </select>
@@ -2682,8 +2682,8 @@
                         <div class="search-page__group-filter">
                             <div class="search-page__group-filter__label">Выберите категорию:</div>
                             <div class="search-page__group-filter__value">
-                                <select name="cat" class="form-select">
-                                    <option disabled selected>Категория</option>
+                                <select name="cat" class="form-select js-select">
+                                    <option selected>Категория</option>
                                     <option>Категория2</option>
                                     <option>Категория3</option>
                                 </select>

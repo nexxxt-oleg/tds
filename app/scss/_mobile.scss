@@ -1380,6 +1380,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  .search-page__group-filter {
+    margin-top: 0;
+    display: block;
+  }
+  .search-page__group-filter__label {
+    padding-bottom: 10px;
+  }
   .catalog-filter__list__ul {
     a {
       font-size: 12px;
