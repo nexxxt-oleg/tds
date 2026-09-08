@@ -1496,6 +1496,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .breadcrumb li {
+    font-size: 12px;
+  }
   .lk-order-footer__itog {
     padding-top: 20px;
   }
