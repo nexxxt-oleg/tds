@@ -1,0 +1,221 @@
+<!--#set var="title" value="Личные данные" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li><a href="">Главная</a></li>
+        <li>Личные данные</li>
+    </ul>
+    <div class="row fpad50 user-cabinet">
+        <div class="col-xxl-3 col-xl-4 col-lg-5">
+            <div class="cart-sidebar bg-white">
+                <div class="user-cabinet__navigation swiper overflow-visible" id="mobNavCabinet">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="/personal/">Новости</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/order/">Мои заказы</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/basket-excel/">Загрузить корзину из Excel</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="active">Личные данные</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/actions/">Персональные скидки</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="?logout=yes&amp;redirect=Y">Выйти из&nbsp;аккаунта</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xxl-9 col-xl-8 col-lg-7">
+            <div class="content-box-title mt-0">
+                <h1>Мои заказы</h1>
+            </div>
+            <div class="lk-order-filter">
+                <div class="swiper overflow-visible" id="filterOrder">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide w-auto">
+                            <a href="" class="active lk-order-filter__item">Активные <span>3</span></a>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <a href="" class="lk-order-filter__item">Все <span>100</span></a>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <a href="" class="lk-order-filter__item">Выполненные <span>100</span></a>
+                        </div>
+                        <div class="swiper-slide w-auto">
+                            <a href="" class="lk-order-filter__item">Отмененные <span>100</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lk-orders">
+                <div class="lk-orders__item">
+                    <div class="lk-orders__item__col1">
+                        <div class="lk-orders__item__numb">
+                            <span>№ 129506</span>
+                            <span class="lk-orders__item__date">24.10.2023 | 14:30:51</span>
+                        </div>
+                        <div>
+                            <span>4329 шт.</span>
+                        </div>
+                    </div>
+                    <div class="lk-orders__item__col2">
+                        <div class="lk-orders__item__price">
+                            <span>172 554.16 руб.</span>
+                        </div>
+                        <div>
+                            <span>500 кг</span>
+                        </div>
+                    </div>
+                    <div class="lk-orders__item__col3">
+                        <div class="lk-orders__item__status status status--accept">Принят</div>
+                    </div>
+                    <div class="lk-orders__item__col4">
+                        <a href="" class="btn btn--link">
+                            <svg width="16" height="16">
+                                <use xlink:href="#svg-link-info"></use>
+                            </svg>
+                            <span>Подробнее</span>
+                        </a>
+                        <a href="" class="btn btn--link">
+                            <svg width="16" height="16">
+                                <use xlink:href="#svg-repeat"></use>
+                            </svg>
+                            <span>Повторить</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lk-orders__item">
+                    <div class="lk-orders__item__col1">
+                        <div class="lk-orders__item__numb">
+                            <span>№ 129506</span>
+                            <span class="lk-orders__item__date">24.10.2023 | 14:30:51</span>
+                        </div>
+                        <div>
+                            <span>4329 шт.</span>
+                        </div>
+                    </div>
+                    <div class="lk-orders__item__col2">
+                        <div class="lk-orders__item__price">
+                            <span>172 554.16 руб.</span>
+                        </div>
+                        <div>
+                            <span>500 кг</span>
+                        </div>
+                    </div>
+                    <div class="lk-orders__item__col3">
+                        <div class="lk-orders__item__status status status--completed">Выполнен</div>
+                    </div>
+                    <div class="lk-orders__item__col4">
+                        <a href="" class="btn btn--link">
+                            <svg width="16" height="16">
+                                <use xlink:href="#svg-link-info"></use>
+                            </svg>
+                            <span>Подробнее</span>
+                        </a>
+                        <a href="" class="btn btn--link">
+                            <svg width="16" height="16">
+                                <use xlink:href="#svg-repeat"></use>
+                            </svg>
+                            <span>Повторить</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="lk-orders__item">
+                    <div class="lk-orders__item__col1">
+                        <div class="lk-orders__item__numb">
+                            <span>№ 129506</span>
+                            <span class="lk-orders__item__date">24.10.2023 | 14:30:51</span>
+                        </div>
+                        <div>
+                            <span>4329 шт.</span>
+                        </div>
+                    </div>
+                    <div class="lk-orders__item__col2">
+                        <div class="lk-orders__item__price">
+                            <span>172 554.16 руб.</span>
+                        </div>
+                        <div>
+                            <span>500 кг</span>
+                        </div>
+                    </div>
+                    <div class="lk-orders__item__col3">
+                        <div class="lk-orders__item__status status status--cancelled">Отменен</div>
+                    </div>
+                    <div class="lk-orders__item__col4">
+                        <a href="" class="btn btn--link">
+                            <svg width="16" height="16">
+                                <use xlink:href="#svg-link-info"></use>
+                            </svg>
+                            <span>Подробнее</span>
+                        </a>
+                        <a href="" class="btn btn--link">
+                            <svg width="16" height="16">
+                                <use xlink:href="#svg-repeat"></use>
+                            </svg>
+                            <span>Повторить</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lk-orders__pagination">
+                <div class="pagination">
+                    <button class="pagination__more">показать еще</button>
+                    <ul class="nav justify-content-center pagination__nav">
+                        <li class="pagination__nav__prev">
+                            <a href="" class="pagination__nav__btn">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-prev"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="pagination__nav__item">
+                                1
+                            </a>
+                        </li>
+                        <li>
+                        <span class="pagination__nav__item active">
+                            2
+                        </span>
+                        </li>
+                        <li>
+                            <a href="" class="pagination__nav__item">
+                                3
+                            </a>
+                        </li>
+                        <li>
+                        <span class="pagination__nav__item">
+                            ...
+                        </span>
+                        </li>
+                        <li>
+                            <a href="" class="pagination__nav__item">
+                                12
+                            </a>
+                        </li>
+                        <li class="pagination__nav__next">
+                            <a href="" class="pagination__nav__btn">
+                                <svg width="10" height="16">
+                                    <use xlink:href="#svg-next"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

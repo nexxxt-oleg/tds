@@ -1,0 +1,302 @@
+<!--#set var="title" value="Личные данные" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li><a href="">Главная</a></li>
+        <li>Личные данные</li>
+    </ul>
+    <div class="row fpad50 user-cabinet">
+        <div class="col-xxl-3 col-xl-4 col-lg-5">
+            <div class="cart-sidebar bg-white">
+                <div class="user-cabinet__navigation swiper overflow-visible" id="mobNavCabinet">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="/personal/">Новости</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/order/">Мои заказы</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/basket-excel/">Загрузить корзину из Excel</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="active">Личные данные</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="/personal/actions/">Персональные скидки</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="?logout=yes&amp;redirect=Y">Выйти из&nbsp;аккаунта</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xxl-9 col-xl-8 col-lg-7">
+            <div class="content-box-title mt-0 fpad30">
+                <h1 class="mb-2">Заказ № 129506</h1>
+                <div class="lk-orders__item__date">24.10.2023 | 14:30:51</div>
+            </div>
+            <div class="lk-order-top">
+                <div class="row  ">
+                    <div class="col-sm-6">
+
+                        <div class="lk-order-top__info align-items-center mb-15">
+                            <span class="lk-order-top__info__label">Статус заказа:</span>
+                            <span class="lk-order-top__info__value">
+                                <span class="status status--completed">Выполнен</span>
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">Сумма заказа:</span>
+                            <span class="lk-order-top__info__value">
+                               17 524.68 руб.
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">Сумма доставки:</span>
+                            <span class="lk-order-top__info__value">
+                              0.00 руб.
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">Общий вес:</span>
+                            <span class="lk-order-top__info__value">
+                              0 кг
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">Общая сумма:</span>
+                            <span class="lk-order-top__info__value">
+                               17 524.68 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="lk-order-top__caption">Данные получателя</div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">E-mail:</span>
+                            <span class="lk-order-top__info__value">
+                               kotikov@7877796.ru
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">ФИО:</span>
+                            <span class="lk-order-top__info__value">
+                               kotikov@7877796.ru
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">Телефон:</span>
+                            <span class="lk-order-top__info__value">
+                               111
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">Доставка:</span>
+                            <span class="lk-order-top__info__value">
+                               Россия, Московская обл, Москва
+                            </span>
+                        </div>
+                        <div class="lk-order-top__info">
+                            <span class="lk-order-top__info__label">Комментарий:</span>
+                            <span class="lk-order-top__info__value">
+                               Россия, Московская обл, Москва
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lk-order-products">
+                <div class="lk-order-products__header">
+                    <div class="row align-items-center">
+                        <div class=" col-lg-6">
+                            <span class="lk-order-products__header__caption">Счет № 182825 на сумму: 17 524.68 руб.</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between col-lg-6">
+                            <span class="lk-order-products__header__caption">Статус: Ждет подтверждения</span>
+                            <div class="lk-order-products__header__btn">
+                                <button data-bs-toggle="collapse" data-bs-target="#lk-orders" class="btn btn--link ">
+                                    <span class="text-close">Скрыть товары</span>
+                                    <span class="text-open">Открыть товары</span>
+                                    <span class="ico">
+                                        <svg width="12" height="6">
+                                            <use xlink:href="#svg-up"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lk-order-products__body">
+                    <div id="lk-orders" class="accordion-collapse collapse show">
+                        <div class="lk-order-products__list">
+                            <div class="lk-order-products__list__header">
+                                <div class="lk-order-products__list__col1">
+                                    Артикул
+                                </div>
+                                <div class="lk-order-products__list__col2">
+                                    Название
+                                </div>
+                                <div class="lk-order-products__list__col3">
+                                    Количество
+                                </div>
+                                <div class="lk-order-products__list__col4">
+                                    Цена
+                                </div>
+                            </div>
+                            <div class="lk-order-products__list__item">
+                                <div class="lk-order-products__list__col1">
+                                    20009942
+                                </div>
+                                <div class="lk-order-products__list__col2">
+                                    <div class="lk-order-products__list__title">Столешница 3000х600х40 Scottish oak
+                                        2613/P (1п/5), e1, Slotex
+                                    </div>
+                                </div>
+                                <div class="lk-order-products__list__col3">
+                                    1 шт.
+                                </div>
+                                <div class="lk-order-products__list__col4">
+                                    8 352.00 руб.
+                                </div>
+                            </div>
+                            <div class="lk-order-products__list__item">
+                                <div class="lk-order-products__list__col1">
+                                    20009942
+                                </div>
+                                <div class="lk-order-products__list__col2">
+                                    <div class="lk-order-products__list__title">Столешница 3000х600х40 Scottish oak
+                                        2613/P (1п/5), e1, Slotex
+                                    </div>
+                                </div>
+                                <div class="lk-order-products__list__col3">
+                                    1 шт.
+                                </div>
+                                <div class="lk-order-products__list__col4">
+                                    8 352.00 руб.
+                                </div>
+                            </div>
+                            <div class="lk-order-products__list__item">
+                                <div class="lk-order-products__list__col1">
+                                    20009942
+                                </div>
+                                <div class="lk-order-products__list__col2">
+                                    <div class="lk-order-products__list__title">Столешница 3000х600х40 Scottish oak
+                                        2613/P (1п/5), e1, Slotex
+                                    </div>
+                                </div>
+                                <div class="lk-order-products__list__col3">
+                                    1 шт.
+                                </div>
+                                <div class="lk-order-products__list__col4">
+                                    8 352.00 руб.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="lk-order-footer">
+                <div class="lk-order-footer__title">Состав заказа: 4 товара</div>
+                <div class="lk-order-products__list">
+                    <div class="lk-order-products__list__header">
+                        <div class="lk-order-products__list__col1">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="all" name="arts">
+                                <span class="custom-checkbox__text">Артикул</span>
+                            </label>
+                        </div>
+                        <div class="lk-order-products__list__col2">
+                            Название
+                        </div>
+                        <div class="lk-order-products__list__col3">
+                            Количество
+                        </div>
+                        <div class="lk-order-products__list__col4">
+                            Цена
+                        </div>
+                    </div>
+                    <div class="lk-order-products__list__item">
+                        <div class="lk-order-products__list__col1">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="1" name="art">
+                                <span class="custom-checkbox__text">20009942</span>
+                            </label>
+                        </div>
+                        <div class="lk-order-products__list__col2">
+                            <div class="lk-order-products__list__title">Столешница 3000х600х40 Scottish oak
+                                2613/P (1п/5), e1, Slotex
+                            </div>
+                        </div>
+                        <div class="lk-order-products__list__col3">
+                            1 шт.
+                        </div>
+                        <div class="lk-order-products__list__col4">
+                            8 352.00 руб.
+                        </div>
+                    </div>
+                    <div class="lk-order-products__list__item">
+                        <div class="lk-order-products__list__col1">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="2" name="art">
+                                <span class="custom-checkbox__text">20009942</span>
+                            </label>
+                        </div>
+                        <div class="lk-order-products__list__col2">
+                            <div class="lk-order-products__list__title">Столешница 3000х600х40 Scottish oak
+                                2613/P (1п/5), e1, Slotex
+                            </div>
+                        </div>
+                        <div class="lk-order-products__list__col3">
+                            1 шт.
+                        </div>
+                        <div class="lk-order-products__list__col4">
+                            8 352.00 руб.
+                        </div>
+                    </div>
+                    <div class="lk-order-products__list__item">
+                        <div class="lk-order-products__list__col1">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" value="3" name="art">
+                                <span class="custom-checkbox__text">20009942</span>
+                            </label>
+                        </div>
+                        <div class="lk-order-products__list__col2">
+                            <div class="lk-order-products__list__title">Столешница 3000х600х40 Scottish oak
+                                2613/P (1п/5), e1, Slotex
+                            </div>
+                        </div>
+                        <div class="lk-order-products__list__col3">
+                            1 шт.
+                        </div>
+                        <div class="lk-order-products__list__col4">
+                            8 352.00 руб.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lk-order-footer__itog">
+                    <div class="lk-order-footer__itog__btn">
+                        <a href="" class="btn btn--red w-100">В КОРЗИНУ</a>
+                    </div>
+                    <div class="lk-order-footer__itog__label">
+                        Общая сумма:
+                    </div>
+                    <div class="lk-order-footer__itog__cost">
+                        17 524.68 руб.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->
