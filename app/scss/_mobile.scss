@@ -508,16 +508,83 @@
 }
 
 @media screen and (max-width: 991px) {
+  .lk-order-footer__itog__btn {
+    order: 3;
+    padding: 20px 0 0;
+  }
+  .lk-order-footer__itog__label {
+    width: calc(50% - 2px);
+    min-width: calc(50% - 2px);
+    margin-left: 0;
+  }
+  .lk-order-footer__itog__cost {
+    width: calc(50% - 3px);
+    min-width: calc(50% - 3px);
+    text-align: right;
+  }
+  .lk-order-footer__itog {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .lk-order-top__caption {
+    height: auto;
+    padding-top: 5px;
+  }
+
+  .lk-order-products {
+    margin-bottom: 25px;
+  }
+  .lk-order-products__body {
+    .lk-order-products__list__header {
+      display: none;
+    }
+    .lk-order-products__list {
+      border-top: 1px solid #e8e8e8;
+    }
+  }
+  .lk-order-products__list__col3 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 5px 0;
+  }
+  .lk-order-products__list__col2 {
+    padding: 0 0 5px;
+  }
+  .lk-order-products__list__col4 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+    justify-content: space-between;
+
+    padding: 5px 0;
+  }
+  .lk-order-products__list__label {
+    font-size: 12px;
+  }
+  .lk-order-products__list__col1 {
+    width: 100%;
+    padding-left: 0;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 10px;
+  }
+  .lk-order-products__list__item {
+    display: block;
+    padding: 20px 15px;
+  }
 
   .lk-orders__item {
     flex-wrap: wrap;
-    &__col1 {
-      width: 50%;
-      min-width: 50%;
-    }
+
     &__col2 {
-      width: calc(50% - 16px);
-      min-width: calc(50% - 16px);
+      width: calc(100% - 210px);
     }
   }
 
@@ -1388,10 +1455,108 @@
       padding-left: 18px;
     }
   }
+  .lk-order-products__header__caption {
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+  .lk-order-products__header__btn {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+  .lk-order-products__header {
+    padding: 15px 0;
+  }
+
+  .lk-order-footer {
+    .lk-order-products__list {
+      border: 1px solid #e8e8e8;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+    .lk-order-products__list__header {
+      border-radius: 5px 5px 0 0;
+      padding: 0 15px;
+      .lk-order-products__list__col1 {
+        padding-bottom: 0;
+      }
+      .lk-order-products__list__col2 {
+        display: none;
+      }
+      .lk-order-products__list__col3 {
+        display: none;
+      }
+      .lk-order-products__list__col4 {
+        display: none;
+      }
+    }
+  }
 
 }
 
 @media screen and (max-width: 768px) {
+  .lk-order-footer__itog {
+    padding-top: 20px;
+  }
+
+  .lk-order-top__caption {
+    height: auto;
+  }
+  .lk-order-top__info__label {
+    width: calc(50% - 3px);
+  }
+  .lk-order-top__info.mb-15 {
+    margin-bottom: 0;
+  }
+  .lk-order-top__info__value {
+    width: calc(50% - 3px);
+  }
+  .lk-order-top {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+  }
+  .lk-orders {
+    padding-bottom: 25px;
+  }
+  .lk-orders__item {
+    border: 1px solid #e8e8e8;
+    padding: 16px;
+    gap: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .lk-orders__item__col2 {
+    order: 2;
+    display: block !important;
+    width: 100%;
+    min-width: 100%;
+  }
+  .lk-orders__item__col4 {
+    order: 3;
+    width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    padding-top: 15px;
+    gap: 35px !important;
+  }
+  .lk-orders__item__col2 > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 6px 0;
+    width: 100%;
+    min-width: 100%;
+  }
+  .lk-orders__item__col3 {
+    width: calc(100% - 200px);
+    min-width: calc(100% - 200px);
+    margin-left: auto;
+    justify-content: flex-end;
+  }
   .search-page__group-filter {
     margin-top: 0;
     display: block;
@@ -2552,28 +2717,7 @@
   .lk-orders {
     padding-bottom: 20px;
   }
-  .lk-orders__item {
-    gap: 6px;
-    &__col1 {
-      width: 100%;
-      min-width: 100%;
-    }
-    &__col2 {
-      width: 100%;
-      min-width: 100%;
-    }
-    span {
-      font-size: 12px;
-    }
-    &__col4 {
-      width: 200px;
-      min-width: 200px;
-      gap: 5px;
-      .btn {
-        gap: 5px;
-      }
-    }
-  }
+
   .blog__list__item__title {
     font-size: 14px;
   }
