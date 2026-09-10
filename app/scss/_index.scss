@@ -3838,7 +3838,9 @@ b {
 
     .news-page__item__date {
       white-space: nowrap;
-      padding: 0 40px;
+      width: 150px;
+      min-width: 50px;
+      padding-top: 2px;
     }
   }
 
