@@ -3479,7 +3479,16 @@ b {
 
 .dop-product {
   display: flex;
+  border: none;
+  background: transparent;
   align-items: center;
+  cursor: pointer;
+  text-align: left;
+  color: var(--color-main);
+
+  &:hover {
+    color: var(--color-red);
+  }
 
   &__img {
     width: 70px;
