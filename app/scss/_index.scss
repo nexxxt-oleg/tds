@@ -3754,7 +3754,7 @@ b {
       z-index: 1;
     }
 
-    &::after {
+   /* &::after {
       content: '';
       position: absolute;
       z-index: 10;
@@ -3766,7 +3766,7 @@ b {
       background-size: 64px 45px;
       top: 0;
       left: 0;
-    }
+    }*/
   }
 
   &__title {
