@@ -5225,6 +5225,19 @@ button.complete-set__filter__item {
   }
 }
 
+table {
+  width: 100% !important;
+  height: auto !important;
+  border-left: 1px solid #999999;
+  border-top: 1px solid #999999;
+}
+table td {
+  padding: 10px;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+
+
 
 .questions__item {
   margin-top: 20px;
@@ -7380,6 +7393,17 @@ textarea.form-control {
     left: 0;
     top: 0;
     width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background: #f4f4f4;
+    border-radius: 3px;
+    img {
+      display: block;
+      max-width: 100%;
+    }
   }
 
   &__desc {
