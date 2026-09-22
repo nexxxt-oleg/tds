@@ -4176,6 +4176,10 @@ button.complete-set__filter__item {
   }
 }
 
+.header__city__active__val {
+  cursor: pointer;
+  user-select: none;
+}
 .contacts-tab {
   &__nav {
     border-bottom: 1px solid #e8e8e8;
