@@ -26,7 +26,11 @@
     }
 
     table {
+        border-spacing: 0;
         width: 100%;
+        border: none;
+    }
+    td {
         border: none;
     }
 </style>
@@ -82,7 +86,7 @@
                 </div>
             </td>
             <td style="width: 240px">
-                <table style="width: 100%; border: 1px solid #f4f4f4;">
+                <table  style="width: 100%; border: 2px solid #f4f4f4; padding: 0; margin: 0; ">
                     <tr style="vertical-align: top">
                         <td style="width: 10px;"></td>
                         <td style="width: 40%; padding-top: 5px;padding-bottom: 5px;">
@@ -92,6 +96,24 @@
                         <td style=" padding-top: 5px;padding-bottom: 5px;">
                             <div style="font-size: 12px; color: #999;">Артикул</div>
                             <div style="font-size: 12px; color: #000;">20225</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="vertical-align: middle; text-align: center; height: 40px; font-size: 14px; background: #f4f4f4">
+                            Склад
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top">
+                        <td style="width: 10px; padding-bottom: 10px"></td>
+                        <td colspan="2" style="padding-bottom: 10px">
+                            <span style="font-size: 12px; color: #999;">Артикул</span>
+                            <span style="font-size: 12px; color: #000;">20225</span>
+                        </td>
+                    </tr>
+                    <tr style="vertical-align: top">
+                        <td style="width: 10px; padding-bottom: 10px"></td>
+                        <td colspan="2" style="font-size: 16px; font-weight: bold; padding-bottom: 10px">
+                            10000
                         </td>
                     </tr>
                 </table>

@@ -8663,6 +8663,7 @@ textarea.form-control {
   z-index: 1000;
 
   .message {
+    visibility: hidden;
     text-align: center;
     padding: 20px;
     background: #e7f5f3;
@@ -8675,6 +8676,7 @@ textarea.form-control {
     user-select: none;
 
     &.show {
+      visibility: visible;
       opacity: 1;
       transform: translateY(0);
     }
