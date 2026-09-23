@@ -508,6 +508,9 @@
 }
 
 @media screen and (max-width: 991px) {
+  .sort-top__views-count {
+    padding-bottom: 0;
+  }
   .lk-order-footer__itog__btn {
     order: 3;
     padding: 20px 0 0;
