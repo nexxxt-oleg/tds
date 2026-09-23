@@ -135,15 +135,16 @@ a {
       position: absolute;
       z-index: 10;
       top: 0;
-      right: 50%;
-      margin-right: -20px;
+      left: 50%;
+      margin-left: 2px;
 
       &:not(.active) {
         display: none;
       }
 
       &.active {
-        width: 18px;
+        min-width: 18px;
+        padding: 0 5px;
         height: 18px;
         border-radius: 9px;
         line-height: 18px;
