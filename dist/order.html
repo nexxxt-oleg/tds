@@ -760,8 +760,6 @@
         </div>
     </div>
 </div>
-
-
 <footer class="footer">
     <div class="container">
         <a href="/" class="footer__logo">
@@ -872,10 +870,11 @@
             </div>
             <div class="col-xl-7 col-lg-6">
                 <div class="footer__caption">Будьте в курсе новостей</div>
-                <form action="" class="footer__form-subscription" id="subscription">
+                <form action="" class="footer__form-subscription" id="subscription" onsubmit="return openModal(event, 'subscriptionModal');">
                     <div class="d-flex footer__form-subscription__row">
                         <div class="footer__form-subscription__col-inp position-relative">
-                            <input autocomplete="off" type="email" placeholder="E-mail" class="form-control" id="subscriptionEmail" required>
+                            <input autocomplete="off" type="email" placeholder="E-mail" class="form-control"
+                                   id="subscriptionEmail" required>
                         </div>
                         <div class="footer__form-subscription__col-submit">
                             <button type="submit" class="btn btn--red w-100">ПОДПИСАТЬСЯ</button>
@@ -905,7 +904,8 @@
                     <a href="" target="_blank" class="web-master">
                         <span class="web-master__logo">
                            <svg width="24" href="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.06 28">
-                                <path fill="#fff" d="M18.22,3.52H5.85L0,0v25.04h.14l11.78,2.96h.21l11.78-2.96h.14V0l-5.85,3.52h0ZM11.94,24.43L.96,21.43V4.48h.01V1.72l4.57,2.76h12.96l4.57-2.76v2.76h.01v16.95l-11.03,3h-.14,0Z"/>
+                                <path fill="#fff"
+                                      d="M18.22,3.52H5.85L0,0v25.04h.14l11.78,2.96h.21l11.78-2.96h.14V0l-5.85,3.52h0ZM11.94,24.43L.96,21.43V4.48h.01V1.72l4.57,2.76h12.96l4.57-2.76v2.76h.01v16.95l-11.03,3h-.14,0Z"/>
                                 <path fill="#fff" d="M14.42,16.41h-4.78l2.37,2.36h0s0,0,0,0h0s2.39-2.37,2.39-2.37Z"/>
                             </svg>
                             Разработка сайта</span> — Котиков Consulting
@@ -1222,30 +1222,12 @@
                         <div class="row">
                             <div class="col-6">
                                 <div id="nav1" class="catalog-modal__menu menu-level2">
-                                    <div class="catalog-modal__menu__group">
-                                        <div class="catalog-modal__menu__group__letter">
-                                            К
-                                        </div>
-                                        <ul class="nav flex-column">
-                                            <li>
-                                                <a href="">Конфирмат</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Крепеж разный</a>
-                                            </li>
-                                        </ul>
 
-                                    </div>
-                                    <div class="catalog-modal__menu__group">
-                                        <div class="catalog-modal__menu__group__letter">
-                                            У
-                                        </div>
-                                        <ul class="nav flex-column">
-                                            <li>
-                                                <a href="">Уголки мебельные</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <p class="fw-medium fpad15 fs-14">Персональные скидки доступны в личном
+                                            кабинете.</p>
+                                        <p class="fpad30 fs-14">Авторизуйтесь, чтобы воспользоваться предложением.</p>
+                                        <a href="" class="btn btn--red">АВТОРИЗОВАТЬСЯ</a>
+
                                 </div>
                                 <div id="nav2" class="catalog-modal__menu menu-level2">
                                     <div class="catalog-modal__menu__group">
@@ -2141,7 +2123,8 @@
             </div>
             <div class="modal__body">
                 <div class="fs-14">
-                    Введенные на странице данные не будут сохранены. Скопируйте их перед тем, как закроете или обновите страницу.
+                    Введенные на странице данные не будут сохранены. Скопируйте их перед тем, как закроете или обновите
+                    страницу.
                 </div>
             </div>
         </div>
@@ -2171,6 +2154,41 @@
                     <li><a href="">Персональные скидки</a></li>
                     <li><a href="">Выйти из аккаунта</a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="subscriptionModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="btn-close2" data-bs-dismiss="modal">
+                    <svg width="24" height="24">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </div>
+                <div class="d-flex flex-column w-100">
+                    <div class="modal__header__ico">
+                        <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.13 50.13">
+                            <path fill="#484848"
+                                  d="M50.13,20.89v18.8c0,5.77-4.68,10.44-10.44,10.44H10.44c-5.77,0-10.44-4.68-10.44-10.44v-22.98C0,10.95,4.68,6.27,10.44,6.27h16.71c1.15,0,2.09.94,2.09,2.09s-.94,2.09-2.09,2.09H10.44c-2.4,0-4.47,1.36-5.54,3.32l15.73,15.73c2.44,2.44,6.41,2.44,8.86,0l7.98-7.98c.81-.81,2.13-.81,2.95,0s.81,2.13,0,2.95l-7.98,7.98c-2.03,2.03-4.72,3.05-7.39,3.05s-5.35-1.02-7.39-3.05l-13.47-13.49v20.74c0,3.45,2.82,6.27,6.27,6.27h29.24c3.45,0,6.27-2.82,6.27-6.27v-18.8c0-1.15.94-2.09,2.09-2.09s2.09.94,2.09,2.09Z"/>
+                            <path fill="#ad2125"
+                                  d="M41.78,0c-4.62,0-8.36,3.74-8.36,8.36s3.74,8.36,8.36,8.36,8.36-3.74,8.36-8.36S46.39,0,41.78,0ZM41.78,12.53c-2.3,0-4.18-1.88-4.18-4.18s1.88-4.18,4.18-4.18,4.18,1.88,4.18,4.18-1.88,4.18-4.18,4.18Z"/>
+                        </svg>
+                    </div>
+                    <div class="modal__title text-center">
+                        Спасибо за подписку!
+                    </div>
+                </div>
+            </div>
+            <div class="modal__body text-center">
+
+                <div class="fs-16">
+                    Теперь вы будете в числе первых узнавать <br>о новых предложениях от ТД Сервер.<br><br>
+                    Следите за почтой!
+                </div>
             </div>
         </div>
     </div>
