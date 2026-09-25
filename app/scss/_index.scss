@@ -3919,6 +3919,21 @@ button.complete-set__filter__item {
   }
 }
 
+.order-page__option__ico {
+  img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+
+  }
+  &:not(.active) {
+    img {
+      filter: grayscale(100%);
+      opacity: 0.8;
+    }
+  }
+}
+
 .footer-dop-slider {
   padding-top: 100px;
   padding-bottom: 100px;
