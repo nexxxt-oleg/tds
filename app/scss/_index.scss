@@ -5179,6 +5179,17 @@ button.complete-set__filter__item {
     border-radius: 6px;
     background: #e7f5f3;
     color: #16a085;
+
+  }
+
+  & .status--under-order {
+    display: inline-block;
+    height: 18px;
+    margin-left: 5px;
+    padding: 0 6px;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
   }
 
   .data {
