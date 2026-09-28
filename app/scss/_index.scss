@@ -2638,7 +2638,7 @@ h1 {
   font-weight: 500;
 
   &--under-order {
-    background: #6d7a8a;
+    background: #1263d4;
   }
 
   &--new {
@@ -5187,9 +5187,11 @@ button.complete-set__filter__item {
     height: 18px;
     margin-left: 5px;
     padding: 0 6px;
+    background: #6d7a8a !important;
     border-radius: 6px !important;
     font-size: 12px !important;
     line-height: 18px !important;
+    font-weight: 400 !important;
   }
 
   .data {
