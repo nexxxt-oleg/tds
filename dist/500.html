@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>500</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            background: #222;
+            font-family: Rubik, 'sans-serif';
+        }
+        .error {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 30px;
+            background: #222;
+        }
+        .error__wrap {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .error img {
+            display: block;
+            margin: 0 auto 30px;
+        }
+        .error h1 {
+            font-family: Rubik, 'sans-serif';
+            margin: 0 0 15px;
+            padding: 0;
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 500;
+            color: #fff;
+        }
+        .error p {
+            display: block;
+            margin-bottom: 30px;
+            color: #8a8a8a;
+            font-size: 16px;
+            line-height: 18px;
+            font-family: Rubik, 'sans-serif';
+        }
+        .error .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: 202px;
+            height: 48px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: Rubik, 'sans-serif';
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 5px;
+            background: #ad2125;
+        }
+
+        @media (max-width: 768px) {
+            .error img {
+                width: 170px;
+                height: 126px;
+                margin-bottom: 15px;
+            }
+            .error h1 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+            .error p {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error">
+        <div class="error__wrap">
+            <img src="images/dist/500.svg" alt="" loading="lazy" width="240" height="177">
+            <h1>Проводятся технические работы!</h1>
+            <p>Сайт снова будет доступен через несколько минут.<br><br>
+            Попробуйте обновить страницу чуть позже.</p>
+            <a href="/" class="btn">ОБНОВИТЬ СТРАНИЦУ</a>
+        </div>
+    </div>
+</body>
+</html>
