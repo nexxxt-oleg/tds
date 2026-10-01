@@ -1697,8 +1697,8 @@ img {
 }
 
 .modal-full-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   height: 82px;
 
   .btn-close {
@@ -9264,4 +9264,23 @@ textarea.form-control {
 
 .modal__header-mob {
   display: none;
+}
+
+.modal-full-header__left {
+  width: 330px;
+  .btn {
+    height: 46px;
+    &__ico {
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      margin-left: 10px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ad2125;
+    }
+  }
 }
