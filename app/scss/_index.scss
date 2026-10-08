@@ -568,6 +568,7 @@ img {
     left: 10px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     &__item {
       margin-bottom: 10px;
@@ -578,6 +579,7 @@ img {
       letter-spacing: 0.02em;
       font-weight: 500;
       align-items: center;
+      margin-right: auto;
       border-radius: 5px;
 
       &--new {
