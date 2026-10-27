@@ -3468,6 +3468,9 @@
 }
 
 @media screen and (max-width: 360px) {
+  .card-product__order-add {
+    padding-right: 15px;
+  }
   .btn-checkbox span {
     padding: 5px;
     gap: 5px;
