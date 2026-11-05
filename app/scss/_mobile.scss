@@ -1517,6 +1517,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .card-product__alert {
+    margin-top: 5px;
+  }
   .card-product__order-add {
     width: 100%;
     margin-left: 0;

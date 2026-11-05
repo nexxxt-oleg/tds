@@ -9480,3 +9480,18 @@ textarea.form-control {
   background: #efeff0;
   color: #8a8a8a;
 }
+
+.availability-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  span {
+    color: #484848 !important;
+    white-space: nowrap;
+  }
+  &__line {
+    flex-grow: 1;
+    height: 10px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
