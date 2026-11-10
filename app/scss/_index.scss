@@ -9495,3 +9495,22 @@ textarea.form-control {
     border-bottom: 1px solid #e8e8e8;
   }
 }
+
+.tooltip-close-wrap {
+  position: relative;
+  padding-top: 20px;
+}
+.tooltip-close-btn {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: -5px;
+  right: 0;
+  width: 9px;
+  height: 9px;
+  background-image: url("data:image/svg+xml,%3Csvg id='_Слой_2' data-name='Слой 2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cpath d='M301.25,256L502.62,54.64c12.5-12.5,12.5-32.77,0-45.27-12.5-12.5-32.77-12.5-45.27,0h0l-201.36,201.38L54.64,9.38C42.14-3.13,21.87-3.13,9.38,9.38c-12.5,12.5-12.5,32.77,0,45.27l201.38,201.36L9.38,457.36c-12.5,12.5-12.5,32.77,0,45.27s32.77,12.5,45.27,0l201.36-201.38,201.36,201.38c12.5,12.5,32.77,12.5,45.27,0,12.5-12.5,12.5-32.77,0-45.27l-201.38-201.36Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  user-select: none;
+  cursor: pointer;
+}
