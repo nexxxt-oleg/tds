@@ -523,6 +523,12 @@
 }
 
 @media screen and (max-width: 991px) {
+  .lk-orders__item__col5  {
+    display: block !important;
+    width: calc(100% - 400px);
+    flex-grow: 1;
+  }
+
   .cart-body__footer-btn__item {
     flex-grow: 1;
   }
@@ -1615,8 +1621,15 @@
     width: 100%;
     min-width: 100%;
   }
-  .lk-orders__item__col4 {
+  .lk-orders__item__col5 {
     order: 3;
+    width: 100%;
+    min-width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 5px;
+  }
+  .lk-orders__item__col4 {
+    order: 4;
     width: 100%;
     min-width: 100%;
     justify-content: center;
