@@ -9519,3 +9519,32 @@ textarea.form-control {
   user-select: none;
   cursor: pointer;
 }
+
+.politica-chek {
+  display: flex;
+  gap: 10px;
+  &__inp {
+    min-width: 16px;
+    padding-top: 2px;
+    .custom-checkbox__text {
+      width: 16px;
+      height: 16px;
+      padding-left: 0;
+      user-select: none;
+      &::after {
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border: 1px solid #cccbcb;
+      }
+    }
+
+    .custom-checkbox input:checked+.custom-checkbox__text:after {
+      border-color: #ad2125;
+    }
+  }
+  &__text {
+    flex-grow: 1;
+    user-select: none;
+  }
+}
