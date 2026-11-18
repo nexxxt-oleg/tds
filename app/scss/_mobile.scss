@@ -115,6 +115,9 @@
 }
 
 @media screen and (max-width: 1199px) {
+  .banner-catalog-top__btn {
+    flex-direction: column;
+  }
   .blog__list {
     margin: 0 -15px;
 
@@ -1523,6 +1526,23 @@
 }
 
 @media screen and (max-width: 768px) {
+  .banner-catalog-top {
+
+    &__wrap {
+      min-height: 268px;
+      flex-direction: column;
+      gap: 20px;
+      padding: 25px 20px;
+      align-items: flex-start;
+    }
+  }
+  .banner-catalog-top__desc h2 {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .banner-catalog-top__desc p {
+    font-size: 12px;
+  }
   .card-product__alert {
     margin-top: 5px;
   }

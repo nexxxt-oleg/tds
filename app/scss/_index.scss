@@ -9548,3 +9548,64 @@ textarea.form-control {
     user-select: none;
   }
 }
+
+.banner-catalog-top {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+  min-height: 140px;
+  border-radius: 20px;
+  &__wrap {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 25px 40px;
+    gap: 30px;
+    min-height: 140px;
+  }
+  &__bg {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__desc {
+    flex-grow: 1;
+    h2 {
+      font-size: 24px;
+      line-height: 1.2;
+      color: #fff;
+      margin: 0;
+      padding-bottom: 10px;
+      font-weight: 500;
+    }
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .btn {
+      min-width: 249px;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
